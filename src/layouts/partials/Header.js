@@ -22,7 +22,7 @@ const Header = () => {
   //sticky header
   useEffect(() => {
     const header = headerRef.current;
-    const headerHeight = header.clientHeight + 100;
+    const headerHeight = header.clientHeight + 60;
     let prevScroll = 0;
     window.addEventListener("scroll", () => {
       const scrollY = window.scrollY;
@@ -107,7 +107,7 @@ const Header = () => {
                 </ul>
               </li>
             </div>
-            <div className="hidden md:flex items-center">
+            <div className="hidden md:flex items-center pl-8">
               <Link className="nav-trade-btn" href={config.nav_button.link}>
                 Trade Now
               </Link>

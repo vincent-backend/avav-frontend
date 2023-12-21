@@ -17,23 +17,6 @@
   @apply mb-5 leading-10;
 }
 
-// social icon style
-.social-icons {
-  @apply space-x-4;
-  li {
-    @apply inline-block;
-    a {
-      @apply block h-11 w-11 rounded-full border text-center hover:text-primary hover:border-primary transition-all duration-300;
-
-      svg {
-        @apply m-auto h-11;
-      }
-    }
-  }
-}
-
-
-
 //footer
 .footer-copy-write {
    a{
@@ -48,4 +31,9 @@
 // home
 .bd-home {
   @apply bg-[url('/images/home/md/bg_top_pic.png')] bg-no-repeat bg-center max-w-fit h-auto;
+}
+
+.site-link {
+  @apply w-full md:w-[186px] h-[186px] bg-contain bg-no-repeat bg-[url('/images/home/top_logo_bg_nor.svg')]  active:bg-[url('/images/home/top_logo_bg_hover.svg')] hover:bg-[url('/images/home/top_logo_bg_hover.svg')];
+
 }
