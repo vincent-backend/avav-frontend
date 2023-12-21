@@ -1,0 +1,37 @@
+{
+  "site": {
+    "title": "$AVAV",
+    "base_url": "/",
+    "favicon": "/favicon.ico",
+    "logo": "/logo.svg",
+    "width": "82",
+    "height": "24",
+    "logo_mobile": "/images/logo-mobile.png",
+    "logo_text": "AVAV"
+  },
+
+  "params": {
+    "tag_manager_id": "",
+    "contact_form_action": "#",
+    "copyright": "Admin@Avav.com"
+  },
+
+  "nav_button": {
+    "enable": true,
+    "label_en": "EN",
+    "label_cn": "汉语",
+    "link": "/"
+  },
+
+  "metadata": {
+    "meta_author": "Admin@Avav.com",
+    "meta_image": "images/meta-img.png",
+    "meta_description": "AVAV was the first inscriptions meme of Avalanche Ecology to receive a diamond badge, with a trading volume of 500,000 AVAX in three days. The inscription takes more than 1 month from the beginning to the end of the inscription, and holds more than 50,000 coins"
+  },
+
+  "disqus": {
+    "enable": true,
+    "shortname": "AVAV",
+    "settings": {}
+  }
+}
