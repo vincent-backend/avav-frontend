@@ -1,0 +1,21 @@
+html {
+  @apply text-base;
+}
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+}
+
+body {
+  @apply text-[15px] bg-body font-primary font-normal leading-relaxed text-text;
+}
+
+h1,
+h2,
+h3 {
+  @apply font-primary leading-tight text-primary;
+}
+
+

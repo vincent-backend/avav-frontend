@@ -1,46 +1,22 @@
 {
   "cn": [
     {
-      "name": "首页",
-      "url": "https://www.staticfile.org"
+      "name": "Telegram",
+      "url": "https://www.telegram.org"
     },
     {
-      "name": "数据统计",
-      "url": "https://www.staticfile.org/statistics"
-    },
-    {
-      "name": "API",
-      "url": "/"
-    },
-    {
-      "name": "意见反馈",
-      "url": "https://github.com/staticfile/static/issues"
-    },
-    {
-      "name": "简介",
-      "url": "https://www.staticfile.org/about"
+      "name": "Twitter",
+      "url": "https://www.twitter.org"
     }
   ],
-  "en": [
+  "main": [
     {
-      "name": "Home",
-      "url": "https://www.staticfile.org"
+      "name": "Telegram",
+      "url": "https://www.telegram.org"
     },
     {
-      "name": "Statistics",
-      "url": "https://www.staticfile.org/statistics"
-    },
-    {
-      "name": "API",
-      "url": "/"
-    },
-    {
-      "name": "Feedback",
-      "url": "https://github.com/staticfile/static/issues"
-    },
-    {
-      "name": "About",
-      "url": "https://www.staticfile.org/about"
+      "name": "Twitter",
+      "url": "https://www.twitter.org"
     }
   ]
 }
