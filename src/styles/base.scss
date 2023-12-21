@@ -12,8 +12,12 @@ h3 {
   @apply font-primary leading-tight text-primary;
 }
 
+h1 {
+  @apply text-[50px] md:text-[130px] font-secondary;
+}
+
 h2 {
-  @apply text-h2 text-primary;
+  @apply text-[40px] md:text-[110px] font-secondary;
 }
 
 h4 {

@@ -26,7 +26,7 @@ module.exports = {
         primary: "#ffffff",
         text: "#747272",
         dark: "#747272",
-        cred: "#FB2C1F",
+        cred: "#FD2C2F",
         body: "#000000"
       },
       fontFamily: {

@@ -1,19 +1,17 @@
 import config from "@/config/config.json";
 import menu from "@/config/menu.json";
-import { contact_info } from "@/config/config.json";
 import Logo from "@/layouts/components/Logo";
 import Link from "next/link";
 
 const Footer = () => {
-  const { copyright } = config.params;
-  const { email, phone, location } = config.contact_info;
+  const { email} = config.contact_info;
   return (
     <footer className="bg-black">
       <div className="container">
 
         <div className="flex flex-col md:flex-row justify-start md:justify-between items-start md:items-center pt-8">
           <Logo />
-          <p className="text-white md:text-dark">{contact_info.email}</p>
+          <p className="text-white md:text-dark">{email}</p>
         </div>
         <div className="w-full h-[1px] bg-[#1b1b1b]" />
         <div className="flex flex-col lg:flex-row pb-6 md:py-6">

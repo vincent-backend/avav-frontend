@@ -46,7 +46,7 @@ const Header = () => {
           }`}
         ref={headerRef}
       >
-        <nav className={clsx("navbar nav-container", showMenu && "bg-[url('/images/home/bg-menu.png')] md:bg-none scroll-y-contain")}>
+        <nav className={clsx("navbar nav-container", showMenu && "bg-[url('/images/home/bg-menu.png')] bg-cover md:bg-none scroll-y-contain")}>
           {/* logo */}
           <div className="order-0">
             <Logo src={logo} />
@@ -80,7 +80,7 @@ const Header = () => {
                   </li>
                 </React.Fragment>
               ))}
-              <li className="nav-item nav-dropdown group relative mt-[75%] md:mt-0">
+              <li className="nav-item nav-dropdown group relative mt-[85%] md:mt-0">
                 <span className="nav-link inline-flex items-center">
                   EN
                   <svg className="h-4 w-4 fill-current ml-1" viewBox="0 0 20 20">
@@ -130,7 +130,7 @@ const Header = () => {
               >
                 <svg width="60px" height="60px" viewBox="0 0 88 88" version="1.1">
                   <title>home_menu@2x</title>
-                  <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="页面-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                     <g id="$avav_h5" transform="translate(-657.000000, -94.000000)">
                       <g id="Navigation-Bar" transform="translate(0.000000, 88.000000)">
                         <g id="home_menu" transform="translate(657.000000, 6.000000)">
