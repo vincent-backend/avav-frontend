@@ -6,7 +6,7 @@
   @apply fixed left-0 w-full top-0 z-50 transition-all duration-500 ;
 
   &-sticky {
-    @apply py-[10px];
+    @apply py-0;
   }
 
   &.unpinned {

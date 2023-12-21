@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  @apply text-[15px] bg-[#030708] font-primary font-normal leading-relaxed text-text;
+  @apply text-[16px] bg-[#0F0F0F] font-primary font-normal leading-relaxed text-text;
 }
 
 h1,
@@ -12,4 +12,10 @@ h3 {
   @apply font-primary leading-tight text-primary;
 }
 
+h2 {
+  @apply text-h2 text-primary;
+}
 
+h4 {
+  @apply text-h4 text-primary font-secondary;
+}

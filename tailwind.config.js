@@ -31,7 +31,8 @@ module.exports = {
       },
       fontFamily: {
         primary: ['var(--font-pingfang)'],
-        secondary: ['var(--font-alimama)']
+        secondary: ['var(--font-alimama)'],
+        third: ['var(--font-mont-bold)']
       }
     },
   },

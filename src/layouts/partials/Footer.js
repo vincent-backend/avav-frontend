@@ -1,5 +1,6 @@
 import config from "@/config/config.json";
 import menu from "@/config/menu.json";
+import { contact_info } from "@/config/config.json";
 import Logo from "@/layouts/components/Logo";
 import Link from "next/link";
 
@@ -7,36 +8,48 @@ const Footer = () => {
   const { copyright } = config.params;
   const { email, phone, location } = config.contact_info;
   return (
-    <footer className="">
+    <footer className="bg-black">
       <div className="container">
-        <div className="row border-y border-border py-12">
-          <div className="animate md:col-6 lg:col-3">
-            <Logo />
-          </div>
-          <div className="animate mt-8 md:col-6 lg:col-3 lg:mt-0">
-            <h3 className="h5">Socials</h3>
-            <div className="mt-5">
-              {email && <Link href={`mailto:${email}`}>{email}</Link>}
-              {/* social icons */}
+
+        <div className="flex flex-col md:flex-row justify-start md:justify-between items-start md:items-center pt-8">
+          <Logo />
+          <p className="text-white md:text-dark">{contact_info.email}</p>
+        </div>
+        <div className="w-full h-[1px] bg-[#1b1b1b]" />
+        <div className="flex flex-col lg:flex-row pb-6 md:py-6">
+          <div className="w-full flex flex-col md:flex-row md:py-6">
+            <div className="animate mt-8 md:mt-0 w-full leading-8">
+              <h3 className="h5">Contact</h3>
+              <div className="flex flex-col">
+                <a href="">Dextools</a>
+                <a href="">BaseScan</a>
+              </div>
+            </div>
+            <div className="animate mt-8 md:mt-0 w-full leading-8">
+              <h3 className="h5">Socials</h3>
+              <div className="flex flex-col">
+                <a href="">Telegram</a>
+                <a href="">Twitter</a>
+                <a href="">FriendTech</a>
+                <a href="">Medium</a>
+              </div>
             </div>
           </div>
-          <div className="animate mt-8 md:col-6 lg:col-3 lg:mt-0">
-            <h3 className="h5">Quick Links</h3>
-            {/* footer menu */}
-            <ul className="mt-5 leading-10">
-              sss
-            </ul>
+          <div className="w-full flex flex-col md:flex-row md:py-6 leading-8">
+            <div className="animate mt-8 md:mt-0 w-full">
+              <h3 className="h5">More</h3>
+              <div className="flex flex-col">
+                <a href="">$avav Tools</a>
+                <a href="">Contact</a>
+              </div>
+            </div>
+            <div className="animate mt-8 md:mt-0 w-full md:min-w-[350px]">
+              <h4 className="font-third text-center lg:text-right">Proudly Based Worldwide.</h4>
+              <div className="flex flex-row text-center lg:text-right justify-center lg:justify-end">
+                <h6 className="md:max-w-[283px] break-all">0xac1bd2486aaf3b5c0fc3fd868558b082a531b2b4</h6>
+              </div>
+            </div>
           </div>
-          <div className="animate mt-8 md:col-6 lg:col-3 lg:mt-0">
-            <h3 className="h5">Location & Contact</h3>
-            <ul className="mt-5 leading-10">
-              <li>a</li>
-            </ul>
-          </div>
-        </div>
-        {/* copyright */}
-        <div className=" py-6 text-center">
-          Copyright
         </div>
       </div>
     </footer>

@@ -22,7 +22,7 @@ const Header = () => {
   //sticky header
   useEffect(() => {
     const header = headerRef.current;
-    const headerHeight = header.clientHeight + 200;
+    const headerHeight = header.clientHeight + 100;
     let prevScroll = 0;
     window.addEventListener("scroll", () => {
       const scrollY = window.scrollY;
@@ -46,7 +46,7 @@ const Header = () => {
           }`}
         ref={headerRef}
       >
-        <nav className={clsx("navbar nav-container", showMenu && "bg-[url('/images/home/bg-menu.png')] md:bg-none")}>
+        <nav className={clsx("navbar nav-container", showMenu && "bg-[url('/images/home/bg-menu.png')] md:bg-none scroll-y-contain")}>
           {/* logo */}
           <div className="order-0">
             <Logo src={logo} />
