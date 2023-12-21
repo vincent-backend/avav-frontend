@@ -6,7 +6,6 @@ const primaryFont = localFont({
   src: [
     {
       path: "../font/PingFang-Medium.ttf",
-      weight: "400",
       style: "normal",
     }
   ],

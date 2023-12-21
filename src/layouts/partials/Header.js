@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useRef, useState } from "react";
 import { CgClose } from "react-icons/cg";
+import clsx from "clsx";
 
 const Header = () => {
   // distructuring the main menu from menu object
@@ -40,14 +41,12 @@ const Header = () => {
 
   return (
     <>
-      <div className="header-height-fix"></div>
       <header
-        className={`header ${sticky && "header-sticky"} ${
-          direction === 1 && "unpinned"
-        }`}
+        className={`header ${sticky && "header-sticky"} ${direction === 1 && "unpinned"
+          }`}
         ref={headerRef}
       >
-        <nav className="navbar container">
+        <nav className={clsx("navbar nav-container", showMenu && "bg-[url('/images/home/bg-menu.png')] md:bg-none")}>
           {/* logo */}
           <div className="order-0">
             <Logo src={logo} />
@@ -55,93 +54,92 @@ const Header = () => {
 
           <ul
             id="nav-menu"
-            className={`navbar-nav order-2 w-full justify-center md:w-auto md:space-x-2 lg:order-1 lg:flex ${
-              !showMenu && "hidden"
-            }`}
+            className={clsx(!showMenu && "hidden", "navbar-nav order-2 w-full justify-center md:justify-end md:mr-[114px] md:w-auto md:space-x-2 md:order-1 md:flex")}
           >
-            {main.map((menu, i) => (
-              <React.Fragment key={`menu-${i}`}>
-                {menu.hasChildren ? (
-                  <li className="nav-item nav-dropdown group relative">
-                    <span className="nav-link inline-flex items-center">
-                      {menu.name}
-                      <svg className="h-4 w-4 fill-current" viewBox="0 0 20 20">
-                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                      </svg>
-                    </span>
-                    <ul className="nav-dropdown-list hidden max-h-0 w-full overflow-hidden border border-border-secondary py-0 transition-all duration-500 group-hover:block group-hover:max-h-[106px] group-hover:py-2 lg:invisible lg:absolute lg:left-1/2 lg:block lg:w-auto lg:-translate-x-1/2 lg:group-hover:visible lg:group-hover:opacity-100">
-                      {menu.children.map((child, i) => (
-                        <li className="nav-dropdown-item" key={`children-${i}`}>
-                          <Link
-                            href={child.url}
-                            className={`nav-dropdown-link block transition-all ${
-                              asPath === child.url && "active"
-                            }`}
-                          >
-                            {child.name}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </li>
-                ) : (
+            <div className="w-full h-screen md:bg-none md:flex md:justify-end md:h-auto md:space-x-11">
+              <div className="h-10 md:hidden" />
+              <li className="nav-item md:hidden">
+                <Link
+                  href="/"
+                  className={`nav-link block ${asPath === "/" && "active"
+                    }`}
+                >
+                  Home
+                </Link>
+              </li>
+              {main.map((menu, i) => (
+                <React.Fragment key={`menu-${i}`}>
                   <li className="nav-item">
                     <Link
                       href={menu.url}
-                      className={`nav-link block ${
-                        asPath === menu.url && "active"
-                      }`}
+                      className={`nav-link block ${asPath === menu.url && "active"
+                        }`}
                     >
                       {menu.name}
                     </Link>
                   </li>
-                )}
-              </React.Fragment>
-            ))}
-            {config.nav_button.enable && (
-              <li className="nav-item lg:hidden">
-                <Link
-                  className="btn btn-primary hidden lg:flex"
-                  href={config.nav_button.link}
-                >
-                  {config.nav_button.label}
-                </Link>
+                </React.Fragment>
+              ))}
+              <li className="nav-item nav-dropdown group relative mt-[75%] md:mt-0">
+                <span className="nav-link inline-flex items-center">
+                  EN
+                  <svg className="h-4 w-4 fill-current ml-1" viewBox="0 0 20 20">
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                  </svg>
+                </span>
+                <ul className="nav-dropdown-list hidden max-h-0 w-[150px] mx-auto overflow-hidden border border-border-secondary py-0 transition-all duration-500 group-hover:block group-hover:max-h-[106px] group-hover:py-1 md:invisible md:absolute md:left-1/2 md:block md:w-auto md:-translate-x-1/2 md:group-hover:visible md:group-hover:opacity-100">
+                  <li className="nav-dropdown-item" key={`children-EN`}>
+                    <Link
+                      href={`#`}
+                      className={`nav-dropdown-link block transition-all active`}
+                    >
+                      EN
+                    </Link>
+                  </li>
+                  <li className="nav-dropdown-item" key={`children-CN`}>
+                    <Link
+                      href={`#`}
+                      className={`nav-dropdown-link block transition-all`}
+                    >
+                      中文
+                    </Link>
+                  </li>
+                </ul>
               </li>
-            )}
-          </ul>
-          <div className="order-1 ml-auto flex items-center md:ml-0">
-            {config.nav_button.enable && (
-              <Link
-                className="btn btn-primary hidden lg:flex"
-                href={config.nav_button.link}
-              >
-                {config.nav_button.label}
+            </div>
+            <div className="hidden md:flex items-center">
+              <Link className="nav-trade-btn" href={config.nav_button.link}>
+                Trade Now
               </Link>
-            )}
+            </div>
+          </ul>
 
+          <div className="order-1 flex items-center md:ml-0">
             {/* navbar toggler */}
             {showMenu ? (
               <button
-                className="h-8 w-8 text-3xl text-dark lg:hidden"
+                className="h-8 w-8 text-3xl text-white md:hidden"
                 onClick={() => setShowMenu(!showMenu)}
               >
                 <CgClose />
               </button>
             ) : (
               <button
-                className="text-dark lg:hidden"
+                className="text-dark md:hidden -mr-3"
                 onClick={() => setShowMenu(!showMenu)}
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 32 32"
-                  width="32px"
-                  height="32px"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M 5 5 L 5 11 L 11 11 L 11 5 L 5 5 z M 13 5 L 13 11 L 19 11 L 19 5 L 13 5 z M 21 5 L 21 11 L 27 11 L 27 5 L 21 5 z M 7 7 L 9 7 L 9 9 L 7 9 L 7 7 z M 15 7 L 17 7 L 17 9 L 15 9 L 15 7 z M 23 7 L 25 7 L 25 9 L 23 9 L 23 7 z M 5 13 L 5 19 L 11 19 L 11 13 L 5 13 z M 13 13 L 13 19 L 19 19 L 19 13 L 13 13 z M 21 13 L 21 19 L 27 19 L 27 13 L 21 13 z M 7 15 L 9 15 L 9 17 L 7 17 L 7 15 z M 15 15 L 17 15 L 17 17 L 15 17 L 15 15 z M 23 15 L 25 15 L 25 17 L 23 17 L 23 15 z M 5 21 L 5 27 L 11 27 L 11 21 L 5 21 z M 13 21 L 13 27 L 19 27 L 19 21 L 13 21 z M 21 21 L 21 27 L 27 27 L 27 21 L 21 21 z M 7 23 L 9 23 L 9 25 L 7 25 L 7 23 z M 15 23 L 17 23 L 17 25 L 15 25 L 15 23 z"
-                  />
+                <svg width="60px" height="60px" viewBox="0 0 88 88" version="1.1">
+                  <title>home_menu@2x</title>
+                  <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="$avav_h5" transform="translate(-657.000000, -94.000000)">
+                      <g id="Navigation-Bar" transform="translate(0.000000, 88.000000)">
+                        <g id="home_menu" transform="translate(657.000000, 6.000000)">
+                          <rect id="矩形" fill="#EAEAEA" opacity="0" x="0" y="0" width="88" height="88"></rect>
+                          <path d="M63,55 L63,59 L25,59 L25,55 L63,55 Z M63,42 L63,46 L25,46 L25,42 L63,42 Z M63,29 L63,33 L25,33 L25,29 L63,29 Z" id="ic" fill="#FFFFFF"></path>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
                 </svg>
               </button>
             )}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="661px" height="995px" viewBox="0 0 661 995" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>bg_right_light@2x</title>
+    <defs>
+        <filter x="-65.5%" y="-85.9%" width="230.9%" height="271.7%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="120.075934" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-110.7%" y="-140.9%" width="321.5%" height="381.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="120.075934" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.75487264">
+        <g id="$avav_h5" transform="translate(-89.000000, -1656.000000)">
+            <g id="bg_right_light" transform="translate(89.000000, 1656.000000)">
+                <path d="M883.671785,305.320675 C943.916073,353.959572 901.228904,467.283005 788.327483,558.435224 C675.426062,649.587443 435.227858,737.515153 374.983569,688.876256 C314.73928,640.237359 457.261897,473.450176 570.163318,382.297958 C683.064739,291.145739 823.427496,256.681778 883.671785,305.320675 Z" id="Ellipse-23" fill="#FF000C" opacity="0.484884353" filter="url(#filter-1)"></path>
+                <path d="M835.615017,333.239289 C872.147686,362.724091 846.261809,431.42053 777.79739,486.676823 C709.332971,541.933115 546.926649,587.823964 529.728878,572.54273 C512.531107,557.261496 577.036294,435.159056 645.500713,379.902764 C713.965132,324.646471 799.082348,303.754487 835.615017,333.239289 Z" id="Ellipse-23" fill="#FF6F29" opacity="0.568155924" filter="url(#filter-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
