@@ -120,8 +120,10 @@ export default function Home() {
             </div>
           </div>
           {/* THE BLOCKCHAIN BUILT TO SCALE */}
-          <div className="flex flex-col md:flex-row-reverse justify-start items-end -mt-12 md:mt-0">
-            <Image alt="pic_1" src="/images/home/pic_1.png" width={390} height={512} className="lg:mr-10 -z-10" />
+          <div className="flex flex-col md:flex-row-reverse justify-start items-end md:mt-0">
+            <div className="relative min-w-[350px] md:min-w-[250px] lg:min-w-[350px] min-h-[512px] -mt-[50px] md:mt-0">
+            <Image alt="pic_1" src="/images/home/pic_1.png" width={390} height={512} className="-z-10 absolute md:bottom-0 md:right-10 lg:right-[56px] min-w-[390px] min-h-[512px]" />
+            </div>
             <div className="bd-blog">
               <p className="title">THE BLOCKCHAIN BUILT TO SCALE</p>
               <div className="underline"></div>
@@ -129,6 +131,10 @@ export default function Home() {
               <p className="description">Users hate waiting. Scaling at the cost of performance or security is not an option. Avalanche’s novel architecture allows for a universe of independent, but interconnected, blockchains that are all validated and kept secure by dynamic subsets of validators.</p>
             </div>
           </div>
+        </section>
+        {/* THE BLOCKCHAIN BUILT TO SCALE */}
+        <section>
+          
         </section>
       </div>
     </Base>
