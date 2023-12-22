@@ -1,22 +1,46 @@
-[
-    {
-        "id": 1,
-        "question": "How Do I Buy and Sell $avav?",
-        "answer": "$avav Is Available To Trade Here, Visit Sushi.com, Change Your Network From Ethereum To avav, and Import The avav Contract Address Found Here. Select Approve, execute the transaction, then complete the swap to $avav."
-    },
-    {
-        "id": 2,
-        "question": "Will $avav List On More CEXs?",
-        "answer": "bb"
-    },
-    {
-        "id": 3,
-        "question": "Is There A $avav Roadmap Available?",
-        "answer": "cc"
-    },
-    {
-        "id": 4,
-        "question": "What Are $avav?",
-        "answer": "dd"
-    }
-]
+{
+    "fen": [
+        {
+            "id": 1,
+            "question": "How Do I Buy and Sell $avav?",
+            "answer": "$avav Is Available To Trade Here, Visit Sushi.com, Change Your Network From Ethereum To avav, and Import The avav Contract Address Found Here. Select Approve, execute the transaction, then complete the swap to $avav."
+        },
+        {
+            "id": 2,
+            "question": "Will $avav List On More CEXs?",
+            "answer": "bb"
+        },
+        {
+            "id": 3,
+            "question": "Is There A $avav Roadmap Available?",
+            "answer": "cc"
+        },
+        {
+            "id": 4,
+            "question": "What Are $avav?",
+            "answer": "dd"
+        }
+    ],
+    "fcn": [
+        {
+            "id": 1,
+            "question": "我如何买卖$avav？",
+            "answer": "$avav 可在此处进行交易，访问 Sushi.com，将您的网络从以太坊更改为 avav，然后导入此处找到的 avav 合约地址。选择批准，执行交易，然后完成到 $avav 的交换。"
+        },
+        {
+            "id": 2,
+            "question": "$avav 会在更多 CEX 上上市吗？",
+            "answer": "$avav 将在更多 CEX 上上市。"
+        },
+        {
+            "id": 3,
+            "question": "有可用的 $avav 路线图吗？",
+            "answer": "有可用的 $avav 路线图吗？"
+        },
+        {
+            "id": 4,
+            "question": "$avav是什么？",
+            "answer": "$avav是..."
+        }
+    ]
+}

@@ -11,6 +11,14 @@ import { markdownify } from "@/lib/utils/textConverter";
 export default function Home({data}) {
   const { locale } = useTranslation();
   const [factive, setFActive] = useState(null);
+
+  const [c_faq, setFaq] = useState(locale==="cn" ? faqs.fcn : faqs.fen);
+  // static data
+  let c_data = data.filter((dt) => dt.lang === locale)[0];
+  const [frontmatter, setFrontmatter] = useState(c_data);
+  // 
+  let { banner, blog_1, blog_2, blog_3, blog_4 } = frontmatter;
+
   const handleFaqToggle = (index) => {
     if (factive === index) {
         setFActive(null);
@@ -19,15 +27,11 @@ export default function Home({data}) {
     }
   }
 
-  // static data
-  let c_data = data.filter((dt) => dt.lang === locale)[0];
-  const [frontmatter, setFrontmatter] = useState(c_data);
-  // 
-  let { banner } = frontmatter;
-
   useEffect(() => {
     //frontmatter
     setFrontmatter(data.filter((dt) => dt.lang === locale)[0]);
+    if (locale === "cn") setFaq(faqs.fcn);
+    else setFaq(faqs.fen);
 
   }, [locale, data]);
 
@@ -145,18 +149,10 @@ export default function Home({data}) {
               className="md:mt-[100px] -ml-3 lg:ml-12"
             />
             <div className="bd-blog">
-              <p className="title">BUILD IT YOUR WAY</p>
+              <p className="title">{blog_1.title}</p>
               <div className="underline"></div>
-              <p className="subtitle">
-                Avalanche has the advanced tooling you need to accelerate from
-                idea to launch.
-              </p>
-              <p className="description">
-                Don’t miss out because it took too long to deploy on Mainnet.
-                Take advantage of the low-code tooling and configurability that
-                makes it easy to launch your Web3 innovation in less than 60
-                seconds.
-              </p>
+              <p className="subtitle">{blog_1.subtitle}</p>
+              <p className="description">{blog_1.description}</p>
             </div>
           </div>
           {/* THE BLOCKCHAIN BUILT TO SCALE */}
@@ -171,19 +167,10 @@ export default function Home({data}) {
               />
             </div>
             <div className="bd-blog">
-              <p className="title">THE BLOCKCHAIN BUILT TO SCALE</p>
+              <p className="title">{blog_2.title}</p>
               <div className="underline"></div>
-              <p className="subtitle">
-                Subnets set a new bar for scalability, without sacrificing
-                speed, reliability, and security.
-              </p>
-              <p className="description">
-                Users hate waiting. Scaling at the cost of performance or
-                security is not an option. Avalanche’s novel architecture allows
-                for a universe of independent, but interconnected, blockchains
-                that are all validated and kept secure by dynamic subsets of
-                validators.
-              </p>
+              <p className="subtitle">{blog_2.subtitle}</p>
+              <p className="description">{blog_2.description}</p>
             </div>
           </div>
         </section>
@@ -199,19 +186,10 @@ export default function Home({data}) {
                   height={280}
                   className="-z-10 hidden lg:block absolute -top-10 -right-32"
                 />
-                <p className="title">JOIN WEB3&apos;s MOST VIBRANT COMMUNITY</p>
+                <p className="title">{blog_3.title}</p>
                 <div className="underline"></div>
-                <p className="subtitle">
-                  Find the answers, connections, and info you need to accelerate
-                  your Web3 aspirations.
-                </p>
-                <p className="description">
-                  Over the last year, tens of thousands of people came together
-                  at Avalanche events worldwide. As one of the industry’s most
-                  diverse and supportive communities, Avalanche boasts members
-                  from all walks of life, with over 18 languages supported
-                  across the 1M+ strong online community.
-                </p>
+                <p className="subtitle">{blog_3.subtitle}</p>
+                <p className="description">{blog_3.description}</p>
               </div>
             </div>
             <div className="flex justify-start md:relative md:h-[240px]">
@@ -232,17 +210,10 @@ export default function Home({data}) {
                   height={280}
                   className="-z-20 lg:hidden absolute -top-24 -right-5"
                 />
-                <p className="title">SOMETIMES RED IS ALSO GREEN</p>
+                <p className="title">{blog_4.title}</p>
                 <div className="underline"></div>
-                <p className="subtitle">
-                  Technology that isn’t sustainable has no claim on the future.
-                </p>
-                <p className="description">
-                  When it comes to the energy required to run, no other
-                  blockchain comes close. According to the Crypto Carbon Ratings
-                  Institute, Avalanche consumes the same energy as only 46 US
-                  households each year.
-                </p>
+                <p className="subtitle">{blog_4.subtitle}</p>
+                <p className="description">{blog_4.description}</p>
               </div>
             </div>
           </div>
@@ -266,7 +237,7 @@ export default function Home({data}) {
         <section className="my-16 md:my-20 lg:my-40">
           <h3 className="text-[25px] md:text-[40px] text-cred">FAQS</h3>
           <div className="divide-y divide-[#1B1B1B]">
-            {faqs.map((faq, index) => {
+            {c_faq.map((faq, index) => {
               return(
                 <FaqItem key={index} faq={faq} active={factive} handleToggle={handleFaqToggle} />
               )

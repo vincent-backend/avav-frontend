@@ -127,7 +127,7 @@ const Header = () => {
             </div>
             <div className="hidden md:flex items-center pl-8">
               <Link className="nav-trade-btn" href={config.nav_button.link}>
-                Trade Now
+                {locale == "en" ? `Trade Now`:`立即交易`}
               </Link>
             </div>
           </ul>
