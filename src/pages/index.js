@@ -34,14 +34,17 @@ export default function Home({data}) {
   return (
     <Base>
       {/*background*/}
-      <div className="absolute w-[750px] h-[1267px] md:w-[1921px] md:h-[1187px] top-0 -left-[180px] sm:-left-0 md:left-auto md:-right-[300px] lg:-right-[250px] xl:right-0 bg-[url('/images/home/bg_top_pic.png')] md:bg-[url('/images/home/md/bg_top_pic.png')] -z-30">
-        {/* top graph */}
-        <div className="absolute w-[750px] h-[750px] top-[852px] right-0 md:top-[150px] md:right-[150px] bg-[url('/images/home/top_graph.gif')] md:bg-[url('/images/home/md/top_graph.gif')] -z-10">
-        <Link href="/"
-          className="absolute md:hidden right-[2%] sm:right-[3%] bottom-[30%] w-[50px] h-[50px] bg-contain bg-no-repeat bg-[url('/images/home/arrow.svg')]"
-        />
+      <div className="absolute w-full h-[1602px] md:h-[1187px] top-0 left-0 overflow-x-hidden -z-10">
+        <div className="absolute w-[750px] h-[1267px] md:w-[1921px] md:h-[1187px] top-0 -left-[180px] sm:-left-0 md:left-auto md:right-0 bg-[url('/images/home/bg_top_pic.png')] md:bg-[url('/images/home/md/bg_top_pic.png')] -z-30">
+          {/* top graph */}
+          <div className="absolute w-[750px] h-[750px] top-[852px] right-0 md:top-[150px] md:right-[150px] bg-[url('/images/home/top_graph.gif')] md:bg-[url('/images/home/md/top_graph.gif')] -z-10">
+          <Link href="/"
+            className="absolute md:hidden right-[2%] sm:right-[3%] bottom-[30%] w-[50px] h-[50px] bg-contain bg-no-repeat bg-[url('/images/home/arrow.svg')]"
+          />
+          </div>
         </div>
       </div>
+      
       {/*Top left*/}
       <div className="absolute w-[50%] md:w-[358px] h-[670px] bg-contain bg-no-repeat bg-[url('/images/home/top_left_line.svg')] -z-10" />
       {/*Right light*/}
@@ -50,7 +53,7 @@ export default function Home({data}) {
       <div className="absolute w-[55%] h-[804px] md:w-[1000px] top-[1800px] md:top-[1689px] left-0 bg-contain bg-center bg-no-repeat bg-[url('/images/home/line.gif')] md:bg-[url('/images/home/md/line.gif')] -z-10" />
       
       <div className="absolute w-[100%] h-[566px] md:w-[1000px] md:h-[800px] top-[2900px] md:top-[2817px] right-0 bg-contain bg-no-repeat bg-[url('/images/home/bg_Decoration_2.gif')] md:bg-[url('/images/home/md/bg_Decoration_2.gif')] -z-10" />
-      <div className="-z-10 absolute w-[234px] h-[430px] top-[3720px] md:top-[3886px] right-0 bg-[url('/images/home/bg_Decoration_3.png')]" />
+      <div className="-z-10 absolute w-[234px] h-[430px] top-[4020px] md:top-[3886px] right-0 bg-[url('/images/home/bg_Decoration_3.png')]" />
       <div className="container pt-[110px] md:pt-[254px]">
         <section className="min-h-[1602px] md:min-h-[1000px]">
           {/* Banner */}
