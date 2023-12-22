@@ -14,7 +14,7 @@ const Base = ({
   canonical,
   children,
 }) => {
-  const { meta_author, meta_description } = config.metadata;
+  const { meta_image, meta_author, meta_description } = config.metadata;
   const { base_url } = config.site;
   const main = useRef();
   const router = useRouter();
@@ -72,6 +72,18 @@ const Base = ({
         <meta
           name="twitter:description"
           content={plainify(description ? description : meta_description)}
+        />
+
+        {/* og-image */}
+        <meta
+          property="og:image"
+          content={`${base_url}${meta_image}`}
+        />
+
+        {/* twitter-image */}
+        <meta
+          name="twitter:image"
+          content={`${base_url}${meta_image}`}
         />
 
         <meta name="twitter:card" content="summary_large_image" />
