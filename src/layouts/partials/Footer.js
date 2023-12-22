@@ -25,7 +25,7 @@ const Footer = () => {
           </div>
           <div className="mt-4 md:mt-0 md:min-w-[350px]">
             <h4 className="font-third text-center lg:text-right">
-              Proudly Based Worldwide.
+              AVAV
             </h4>
           </div>
         </div>
