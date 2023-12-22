@@ -11,7 +11,7 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row justify-start md:justify-between items-start md:items-center pt-8">
           <Logo />
-          <p className="text-white md:text-dark">{email}</p>
+          <Link href={`mailto:${email}`} className="text-white md:text-dark">{email}</Link>
         </div>
         <div className="w-full h-[1px] bg-[#1b1b1b]" />
         <div className="flex flex-col lg:flex-row pb-6 md:py-6">
@@ -19,17 +19,17 @@ const Footer = () => {
             <div className="animate mt-8 md:mt-0 w-full leading-8">
               <h6>Contact</h6>
               <div className="flex flex-col">
-                <a href="">Dextools</a>
-                <a href="">BaseScan</a>
+                <a href="https://dextools.io/">Dextools</a>
+                <a href="https://basescan.org/">BaseScan</a>
               </div>
             </div>
             <div className="animate mt-8 md:mt-0 w-full leading-8">
               <h6>Socials</h6>
               <div className="flex flex-col">
-                <a href="">Telegram</a>
-                <a href="">Twitter</a>
-                <a href="">FriendTech</a>
-                <a href="">Medium</a>
+                <a href="https://telegram.org/">Telegram</a>
+                <a href="https://twitter.com">Twitter</a>
+                <a href="https://www.friend.tech/">FriendTech</a>
+                <a href="https://medium.com/">Medium</a>
               </div>
             </div>
           </div>

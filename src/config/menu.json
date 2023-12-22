@@ -2,21 +2,21 @@
   "cn": [
     {
       "name": "Telegram",
-      "url": "https://www.telegram.org"
+      "url": "https://telegram.com"
     },
     {
       "name": "Twitter",
-      "url": "https://www.twitter.org"
+      "url": "https://twitter.com"
     }
   ],
   "main": [
     {
       "name": "Telegram",
-      "url": "https://www.telegram.org"
+      "url": "https://telegram.com"
     },
     {
       "name": "Twitter",
-      "url": "https://www.twitter.org"
+      "url": "https://twitter.com"
     }
   ]
 }
