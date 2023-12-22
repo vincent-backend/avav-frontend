@@ -57,3 +57,19 @@
     @apply text-base w-[90%] md:w-[80%] lg:w-[426px] pt-2 leading-6;
   }
 }
+
+.right-light {
+  animation: ani1 3.6s ease-out infinite; 
+
+  @keyframes ani1 {
+    0%,
+    100% {
+      opacity: 0.2;
+    }
+    
+    50% {
+      opacity: 0.5;
+    }
+  }
+}
+

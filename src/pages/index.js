@@ -34,22 +34,33 @@ export default function Home({data}) {
   return (
     <Base>
       {/*background*/}
-      <div className="absolute w-[750px] h-[1267px] md:w-[1921px] md:h-[1187px] top-0 -right-[50%] md:right-0 bg-[url('/images/home/bg_top_pic.png')] md:bg-[url('/images/home/md/bg_top_pic.png')] -z-10">
-        <div className="absolute w-[750px] h-[750px] top-[852px] right-0 md:top-[150px] md:right-[150px] bg-[url('/images/home/top_graph.gif')] md:bg-[url('/images/home/md/top_graph.gif')] -z-10" />
+      <div className="absolute w-[750px] h-[1267px] md:w-[1921px] md:h-[1187px] top-0 -left-[180px] sm:-left-0 md:left-auto md:-right-[300px] lg:-right-[250px] xl:right-0 bg-[url('/images/home/bg_top_pic.png')] md:bg-[url('/images/home/md/bg_top_pic.png')] -z-30">
+        {/* top graph */}
+        <div className="absolute w-[750px] h-[750px] top-[852px] right-0 md:top-[150px] md:right-[150px] bg-[url('/images/home/top_graph.gif')] md:bg-[url('/images/home/md/top_graph.gif')] -z-10">
+        <Link href="/"
+          className="absolute md:hidden right-[2%] sm:right-[3%] bottom-[30%] w-[50px] h-[50px] bg-contain bg-no-repeat bg-[url('/images/home/arrow.svg')]"
+        />
+        </div>
       </div>
-      {/* top graph */}
-      
+      {/*Top left*/}
       <div className="absolute w-[50%] md:w-[358px] h-[670px] bg-contain bg-no-repeat bg-[url('/images/home/top_left_line.svg')] -z-10" />
-      <div className="absolute w-[661px] md:w-[1100px] h-[995px] md:h-[1658px] top-[700px] md:top-[389px] right-0 bg-[url('/images/home/bg_right_light.svg')] md:bg-[url('/images/home/md/bg_right_light.svg')] opacity-70 -z-10" />
-      <div className="absolute w-[306px] h-[804px] md:w-[706px] top-[1070px] md:top-[1611px] left-0 bg-[url('/images/home/line.png')] md:bg-[url('/images/home/md/line.png')] -z-10" />
-      <div className="absolute w-[100%] md:w-[840px] h-[566px] top-[1760px] md:top-[2820px] right-0 bg-contain bg-no-repeat bg-[url('/images/home/bg_Decoration_2.svg')] md:bg-[url('/images/home/md/bg_Decoration_2.svg')] -z-10" />
+      {/*Right light*/}
+      <div className="right-light absolute w-[80%] md:w-[1100px] h-[925px] md:h-[1658px] top-[1150px] md:top-[400px] right-0 bg-contain bg-center bg-no-repeat bg-[url('/images/home/bg_right_light.svg')] md:bg-[url('/images/home/md/bg_right_light.svg')] opacity-70 -z-10" />
+      {/*Left line*/}
+      <div className="absolute w-[55%] h-[804px] md:w-[1000px] top-[1800px] md:top-[1689px] left-0 bg-contain bg-center bg-no-repeat bg-[url('/images/home/line.gif')] md:bg-[url('/images/home/md/line.gif')] -z-10" />
+      
+      <div className="absolute w-[100%] h-[566px] md:w-[1000px] md:h-[800px] top-[2900px] md:top-[2817px] right-0 bg-contain bg-no-repeat bg-[url('/images/home/bg_Decoration_2.gif')] md:bg-[url('/images/home/md/bg_Decoration_2.gif')] -z-10" />
       <div className="-z-10 absolute w-[234px] h-[430px] top-[3720px] md:top-[3886px] right-0 bg-[url('/images/home/bg_Decoration_3.png')]" />
       <div className="container pt-[110px] md:pt-[254px]">
-        <section className="min-h-[1602px] md:min-h-[1292px]">
+        <section className="min-h-[1602px] md:min-h-[1000px]">
           {/* Banner */}
           <div className="flex flex-col justify-start md:max-w-[670px]">
               <h2 className="whitespace-nowrap">{banner.title}</h2>
+              <div className="relative">
               <h1 className="text-cred">$AVAV</h1>
+              <div className="absolute w-[100px] h-[26px] bg-[url('/images/home/top_tag.svg')] top-[13px] left-[165px] md:top-[35px] md:left-[425px]" />
+              </div>
+              
               <div className="mt-[20px] md:mt-[136px]">
                 {markdownify(banner.content, "h6", "text-white leading-6")}
               </div>
@@ -122,13 +133,13 @@ export default function Home({data}) {
         </section>
         <section>
           {/* BUILD IT YOUR WAY */}
-          <div className="flex flex-col justify-start md:flex-row mt-[40px] md:mt-[200px] md:gap-[80px] xl:gap-[146px]">
+          <div className="flex flex-col justify-start md:flex-row mt-[40px] md:mt-[200px] md:gap-[80px] xl:gap-[106px]">
             <Image
               alt="bg_coin"
-              src="/images/home/bg_coin.png"
+              src="/images/home/logo_2.gif"
               width={220}
               height={220}
-              className="md:mt-[120px] lg:ml-10"
+              className="md:mt-[100px] -ml-3 lg:ml-12"
             />
             <div className="bd-blog">
               <p className="title">BUILD IT YOUR WAY</p>
@@ -180,7 +191,7 @@ export default function Home({data}) {
               <div className="bd-blog bd-blog-right relative">
                 <Image
                   alt="decoration_1"
-                  src="/images/home/bg_Decoration_1.png"
+                  src="/images/home/bg_ic.gif"
                   width={253}
                   height={280}
                   className="-z-10 hidden lg:block absolute -top-10 -right-32"
@@ -213,10 +224,10 @@ export default function Home({data}) {
               <div className="bd-blog relative">
                 <Image
                   alt="decoration_1"
-                  src="/images/home/bg_Decoration_1.png"
+                  src="/images/home/bg_ic.gif"
                   width={253}
                   height={280}
-                  className="-z-10 lg:hidden absolute -top-24 -right-5"
+                  className="-z-20 lg:hidden absolute -top-24 -right-5"
                 />
                 <p className="title">SOMETIMES RED IS ALSO GREEN</p>
                 <div className="underline"></div>

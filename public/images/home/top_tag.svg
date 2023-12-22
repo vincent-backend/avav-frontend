@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="26px" viewBox="0 0 100 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>top_tag@2x</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="$avav_Home" transform="translate(-783.000000, -396.000000)">
+            <g id="1" transform="translate(359.000000, 164.000000)">
+                <g id="top_tag" transform="translate(424.000000, 232.000000)">
+                    <path d="M99.3230204,0.5 L91.6307127,25.5 L0.676979635,25.5 L8.36928733,0.5 L99.3230204,0.5 Z" id="矩形" stroke="#FD2C2F" opacity="0.3"></path>
+                    <text id="Memecoins" font-family="PingFang-SC-Bold, PingFang SC" font-size="14" font-weight="bold" fill="#FD2C2F">
+                        <tspan x="12" y="17">Memecoins </tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
