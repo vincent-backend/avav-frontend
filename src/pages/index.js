@@ -1,8 +1,21 @@
 import Base from "@/layouts/Baseof";
 import Image from "next/image";
 import Link from "next/link";
+import FaqItem from "@/layouts/components/FaqItem";
+import faqs from "@/content/home/faqs.json";
+import { useState } from "react";
 
 export default function Home() {
+
+  const [factive, setFActive] = useState(null);
+  const handleFaqToggle = (index) => {
+    if (factive === index) {
+        setFActive(null);
+    } else {
+        setFActive(index);
+    }
+  }
+
   return (
     <Base>
       {/*background*/}
@@ -11,8 +24,8 @@ export default function Home() {
       <div className="absolute w-[661px] md:w-[1100px] h-[995px] md:h-[1658px] top-[700px] md:top-[389px] right-0 bg-[url('/images/home/bg_right_light.svg')] md:bg-[url('/images/home/md/bg_right_light.svg')] opacity-70 -z-10" />
       <div className="absolute w-[306px] h-[804px] md:w-[706px] top-[1070px] md:top-[1611px] left-0 bg-[url('/images/home/line.png')] md:bg-[url('/images/home/md/line.png')] -z-10" />
       <div className="absolute w-[100%] md:w-[840px] h-[566px] top-[1760px] md:top-[2820px] right-0 bg-contain bg-no-repeat bg-[url('/images/home/bg_Decoration_2.svg')] md:bg-[url('/images/home/md/bg_Decoration_2.svg')] -z-10" />
-      <div className="absolute w-[234px] h-[430px] top-[3220px] md:top-[4086px] right-0 bg-[url('/images/home/bg_Decoration_3.png')]" />
-      <div className="container pt-[110px] md:pt-[254px] min-h-[5000px]">
+      <div className="-z-10 absolute w-[234px] h-[430px] top-[3720px] md:top-[3886px] right-0 bg-[url('/images/home/bg_Decoration_3.png')]" />
+      <div className="container pt-[110px] md:pt-[254px]">
         <section className="animate">
           {/* Banner */}
           <div className="flex flex-col lg:flex-row">
@@ -63,7 +76,7 @@ export default function Home() {
               <Image
                 alt="Bitget"
                 src="/images/home/top_card_logo_2.svg"
-                width={72}
+                width={82}
                 height={118}
                 className="h-[63.4%] w-auto"
               />
@@ -136,7 +149,7 @@ export default function Home() {
           {/* THE BLOCKCHAIN BUILT TO SCALE */}
           <div className="flex flex-col mx-auto max-w-[890px]">
             <div className="relative w-full h-[400px] sm:h-[450px] md:h-[155px]">
-            <Image
+              <Image
                 alt="pic_1"
                 src="/images/home/pic_1.png"
                 width={390}
@@ -160,13 +173,19 @@ export default function Home() {
               </p>
             </div>
           </div>
-
         </section>
         {/* JOIN WEB3's MOST VIBRANT COMMUNITY */}
         <section className="mt-12 md:mt-[212px]">
           <div className="flex flex-col mx-auto max-w-[890px]">
             <div className="flex justify-end">
-              <div className="bd-blog bd-blog-right">
+              <div className="bd-blog bd-blog-right relative">
+                <Image
+                  alt="decoration_1"
+                  src="/images/home/bg_Decoration_1.png"
+                  width={253}
+                  height={280}
+                  className="-z-10 hidden lg:block absolute -top-10 -right-32"
+                />
                 <p className="title">JOIN WEB3&apos;s MOST VIBRANT COMMUNITY</p>
                 <div className="underline"></div>
                 <p className="subtitle">
@@ -183,10 +202,23 @@ export default function Home() {
               </div>
             </div>
             <div className="flex justify-start md:relative md:h-[240px]">
-              <Image alt="pic_2" src="/images/home/pic_2.png" width={532} height={632} className="-z-10 md:absolute md:-bottom-[176px] md:-left-[100px] lg:-left-[250px] md:min-w-[532px] md:min-h-[632px]" />
+              <Image
+                alt="pic_2"
+                src="/images/home/pic_2.png"
+                width={532}
+                height={632}
+                className="-z-10 md:absolute md:-bottom-[176px] md:-left-[100px] lg:-left-[250px] md:min-w-[532px] md:min-h-[632px]"
+              />
             </div>
             <div className="flex flex-row justify-start">
-              <div className="bd-blog">
+              <div className="bd-blog relative">
+                <Image
+                  alt="decoration_1"
+                  src="/images/home/bg_Decoration_1.png"
+                  width={253}
+                  height={280}
+                  className="-z-10 lg:hidden absolute -top-24 -right-5"
+                />
                 <p className="title">SOMETIMES RED IS ALSO GREEN</p>
                 <div className="underline"></div>
                 <p className="subtitle">
@@ -203,8 +235,30 @@ export default function Home() {
           </div>
         </section>
         {/* Connect To AVAX */}
-        <section className="container">
-          dsfdsf
+        <section className="mt-16 md:mt-20 lg:mt-40">
+          <Link href="#">
+            <div className="flex items-center justify-start w-full aspect-[4.6] md:aspect-[8] bg-contain bg-center bg-no-repeat bg-[url('/images/home/banner_bg.png')] md:bg-[url('/images/home/md/banner_bg.png')]">
+              <h3 className="pl-4 md:pl-20 pr-1">Connect To AVAX</h3>
+              <Image
+                alt="arrow"
+                src="/images/home/banner_ic_arrow.svg"
+                width={28}
+                height={28}
+                className="w-4 h-4 md:w-7 md:h-7"
+              />
+            </div>
+          </Link>
+        </section>
+        {/* FAQ */}
+        <section className="my-16 md:my-20 lg:my-40">
+          <h3 className="text-[25px] md:text-[40px] text-cred">FAQS</h3>
+          <div className="divide-y divide-[#1B1B1B]">
+            {faqs.map((faq, index) => {
+              return(
+                <FaqItem key={index} faq={faq} active={factive} handleToggle={handleFaqToggle} />
+              )
+            })}
+          </div>
         </section>
       </div>
     </Base>

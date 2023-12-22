@@ -61,8 +61,7 @@ const Header = () => {
               <li className="nav-item md:hidden">
                 <Link
                   href="/"
-                  className={`nav-link block ${asPath === "/" && "active"
-                    }`}
+                  className={clsx("nav-link block", asPath === "/" && "active")}
                 >
                   Home
                 </Link>
