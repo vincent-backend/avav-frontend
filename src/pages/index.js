@@ -52,8 +52,9 @@ export default function Home({data}) {
       {/*Left line*/}
       <div className="absolute w-[55%] h-[804px] md:w-[1000px] top-[1400px] md:top-[1689px] left-0 bg-contain bg-center bg-no-repeat bg-[url('/images/home/line.gif')] md:bg-[url('/images/home/md/line.gif')] -z-10" />
       
-      <div className="absolute w-[100%] h-[566px] md:w-[1000px] md:h-[800px] top-[2500px] md:top-[2817px] right-0 bg-contain bg-no-repeat bg-[url('/images/home/bg_Decoration_2.gif')] md:bg-[url('/images/home/md/bg_Decoration_2.gif')] -z-10" />
-      <div className="-z-10 absolute w-[234px] h-[430px] top-[3880px] md:top-[3886px] right-0 bg-[url('/images/home/bg_Decoration_3.png')]" />
+      <div className="absolute w-[100%] h-[566px] md:w-[1000px] md:h-[800px] top-[2700px] md:top-[2817px] right-0 bg-contain bg-no-repeat bg-[url('/images/home/bg_Decoration_2.gif')] md:bg-[url('/images/home/md/bg_Decoration_2.gif')] -z-10" />
+      <div className="-z-10 absolute w-[234px] h-[430px] top-[3800px] md:top-[3886px] right-0 bg-[url('/images/home/bg_Decoration_3.png')]" />
+
       <div className="container pt-[110px] md:pt-[254px]">
         <section className="min-h-[120%] md:min-h-[1000px]">
           {/* Banner */}

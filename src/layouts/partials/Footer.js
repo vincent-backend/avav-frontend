@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="w-full h-[1px] bg-[#1b1b1b]" />
         <div className="flex flex-col md:flex-row justify-center pb-6 md:py-6 md:gap-20">
           <div className="flex flex-row justify-center flex-grow-1 mt-4 md:mt-0 leading-8">
-            <div className="min-w-[150px]">
+            <div className="flex-col">
               <h6>Socials</h6>
               <div className="flex flex-col">
                 <Link href="https://t.me/AVAV_official">Telegram</Link>
