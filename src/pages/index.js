@@ -34,16 +34,18 @@ export default function Home({data}) {
   return (
     <Base>
       {/*background*/}
-      <div className="absolute w-[750px] h-[1267px] md:w-[1921px] md:h-[1187px] top-0 left-0 bg-[url('/images/home/bg_top_pic.png')] md:bg-[url('/images/home/md/bg_top_pic.png')] -z-10" />
+      <div className="absolute w-[750px] h-[1267px] md:w-[1921px] md:h-[1187px] top-0 -right-[50%] md:right-0 bg-[url('/images/home/bg_top_pic.png')] md:bg-[url('/images/home/md/bg_top_pic.png')] -z-10">
+        <div className="absolute w-[750px] h-[750px] top-[852px] right-0 md:top-[150px] md:right-[150px] bg-[url('/images/home/top_graph.gif')] md:bg-[url('/images/home/md/top_graph.gif')] -z-10" />
+      </div>
       {/* top graph */}
-      <div className="absolute w-[750px] h-[750px] top-[150px] left-[1020px] bg-[url('/images/home/top_graph.gif')] md:bg-[url('/images/home/md/top_graph.gif')] -z-10" />
+      
       <div className="absolute w-[50%] md:w-[358px] h-[670px] bg-contain bg-no-repeat bg-[url('/images/home/top_left_line.svg')] -z-10" />
       <div className="absolute w-[661px] md:w-[1100px] h-[995px] md:h-[1658px] top-[700px] md:top-[389px] right-0 bg-[url('/images/home/bg_right_light.svg')] md:bg-[url('/images/home/md/bg_right_light.svg')] opacity-70 -z-10" />
       <div className="absolute w-[306px] h-[804px] md:w-[706px] top-[1070px] md:top-[1611px] left-0 bg-[url('/images/home/line.png')] md:bg-[url('/images/home/md/line.png')] -z-10" />
       <div className="absolute w-[100%] md:w-[840px] h-[566px] top-[1760px] md:top-[2820px] right-0 bg-contain bg-no-repeat bg-[url('/images/home/bg_Decoration_2.svg')] md:bg-[url('/images/home/md/bg_Decoration_2.svg')] -z-10" />
       <div className="-z-10 absolute w-[234px] h-[430px] top-[3720px] md:top-[3886px] right-0 bg-[url('/images/home/bg_Decoration_3.png')]" />
       <div className="container pt-[110px] md:pt-[254px]">
-        <section className="animate">
+        <section className="min-h-[1602px] md:min-h-[1292px]">
           {/* Banner */}
           <div className="flex flex-col justify-start md:max-w-[670px]">
               <h2 className="whitespace-nowrap">{banner.title}</h2>
