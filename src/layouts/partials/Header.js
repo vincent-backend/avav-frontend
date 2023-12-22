@@ -42,11 +42,11 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header ${sticky && "header-sticky"} ${direction === 1 && "unpinned"
+        className={`header ${sticky && "header-sticky"} ${!showMenu && direction === 1 && "unpinned"
           }`}
         ref={headerRef}
       >
-        <nav className={clsx("navbar nav-container", showMenu && "bg-[url('/images/home/bg-menu.png')] bg-cover md:bg-none scroll-y-contain")}>
+        <nav className={clsx("navbar nav-container", showMenu && "bg-[url('/images/home/bg-menu.png')] bg-cover md:bg-none overscroll-y-none")}>
           {/* logo */}
           <div className="order-0">
             <Logo src={logo} />
