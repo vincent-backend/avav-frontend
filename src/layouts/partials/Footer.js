@@ -17,14 +17,14 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row pb-6 md:py-6">
           <div className="w-full flex flex-col md:flex-row md:py-6">
             <div className="animate mt-8 md:mt-0 w-full leading-8">
-              <h3 className="h5">Contact</h3>
+              <h6>Contact</h6>
               <div className="flex flex-col">
                 <a href="">Dextools</a>
                 <a href="">BaseScan</a>
               </div>
             </div>
             <div className="animate mt-8 md:mt-0 w-full leading-8">
-              <h3 className="h5">Socials</h3>
+              <h6>Socials</h6>
               <div className="flex flex-col">
                 <a href="">Telegram</a>
                 <a href="">Twitter</a>
@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
           <div className="w-full flex flex-col md:flex-row md:py-6 leading-8">
             <div className="animate mt-8 md:mt-0 w-full">
-              <h3 className="h5">More</h3>
+              <h6>More</h6>
               <div className="flex flex-col">
                 <a href="">$avav Tools</a>
                 <a href="">Contact</a>
@@ -44,7 +44,7 @@ const Footer = () => {
             <div className="animate mt-8 md:mt-0 w-full md:min-w-[350px]">
               <h4 className="font-third text-center lg:text-right">Proudly Based Worldwide.</h4>
               <div className="flex flex-row text-center lg:text-right justify-center lg:justify-end">
-                <h6 className="md:max-w-[283px] break-all">0xac1bd2486aaf3b5c0fc3fd868558b082a531b2b4</h6>
+                <h6 className="md:max-w-[283px] break-all text-text">0xac1bd2486aaf3b5c0fc3fd868558b082a531b2b4</h6>
               </div>
             </div>
           </div>
