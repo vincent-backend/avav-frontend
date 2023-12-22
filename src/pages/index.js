@@ -236,7 +236,7 @@ export default function Home() {
         </section>
         {/* Connect To AVAX */}
         <section className="mt-16 md:mt-20 lg:mt-40">
-          <Link href="#">
+          <Link href="https://avascriptions.com/market/token?tick=avav">
             <div className="flex items-center justify-start w-full aspect-[4.6] md:aspect-[8] bg-contain bg-center bg-no-repeat bg-[url('/images/home/banner_bg.png')] md:bg-[url('/images/home/md/banner_bg.png')]">
               <h3 className="pl-4 md:pl-20 pr-1">Connect To AVAX</h3>
               <Image
