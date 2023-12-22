@@ -4,7 +4,7 @@ nav:
   trade_now: "立即交易"
 banner:
   title: "欢迎来到"
-  content: "非常惊人的胜利。非常惊人的胜利<br>$AVAV 是雪崩生态第一个获得钻石徽章的铭文模因，三天交易量达到 500,000 AVAX。铭文从开始到铭文结束历时1个多月，持有币5万多"
+  content: "非常惊人的胜利。<br>$AVAV 是雪崩生态第一个获得钻石徽章的铭文模因，三天交易量达到 500,000 AVAX。铭文从开始到铭文结束历时1个多月，持有币5万多"
   btn_con: "连接到 AVAX"
 blog_1:
   title: "按照您的方式构建"
@@ -22,18 +22,4 @@ blog_4:
   title: "有时红色也是绿色"
   subtitle: "不可持续的技术就没有未来。"
   description: "当谈到运行所需的能量时，没有其他区块链可以与之相媲美。根据 Crypto Carbon Ratings Institute 的数据，Avalanche 每年消耗的能源相当于 46 个ø家庭的能源消耗。"
-faqs:
-  title: "常问问题"
-  faq_1:
-    title: "我如何买卖$avav？"
-    answer: "$avav 可在此处进行交易，访问 Sushi.com，将您的网络从以太坊更改为 avav，然后导入此处找到的 avav 合约地址。选择批准，执行交易，然后完成到 $avav 的交换。"
-  faq_2:
-    title: "$avav 会在更多 CEX 上上市吗？"
-    answer: "$avav 将在更多 CEX 上上市。"
-  faq_3:
-    title: "有可用的 $avav 路线图吗？"
-    answer: "有可用的 $avav 路线图吗？"
-  faq_4:
-    title: "$avav是什么？"
-    answer: "$avav是..."
 ---

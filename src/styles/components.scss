@@ -45,7 +45,7 @@
   }
 
   .title {
-    @apply text-[30px] md:text-[50px] font-secondary text-white leading-8 md:leading-[60px];
+    @apply text-[30px] md:text-[50px]  font-secondary text-white leading-8 md:leading-[60px];
   }
   .underline {
     @apply h-[1px] w-[90%] md:w-[80%] lg:w-[426px] bg-white;
