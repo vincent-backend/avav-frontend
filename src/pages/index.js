@@ -39,11 +39,11 @@ export default function Home({data}) {
     <Base>
       {/*background*/}
       <div className="absolute w-full h-[1602px] md:h-[1187px] top-0 left-0 overflow-x-hidden -z-10">
-        <div className="absolute w-[750px] h-[1267px] md:w-[1921px] md:h-[1187px] top-0 -left-[180px] sm:-left-0 md:left-auto md:right-0 bg-[url('/images/home/bg_top_pic.png')] md:bg-[url('/images/home/md/bg_top_pic.png')] -z-30">
+        <div className="absolute w-full aspect-[0.592] md:aspect-auto md:w-[1920px] md:h-[1187px] top-0 sm:-left-0 md:left-auto md:right-0 bg-contain bg-center bg-no-repeat bg-[url('/images/home/bg_top_pic.png')] md:bg-[url('/images/home/md/bg_top_pic.png')] -z-30">
           {/* top graph */}
-          <div className="absolute w-[750px] h-[750px] top-[852px] right-0 md:top-[150px] md:right-[150px] bg-[url('/images/home/top_graph.gif')] md:bg-[url('/images/home/md/top_graph.gif')] -z-10">
+          <div className="absolute w-full aspect-square md:w-[750px] -bottom-[26.73%] right-0 md:top-[150px] md:right-[150px] bg-contain bg-center bg-no-repeat bg-[url('/images/home/top_graph.gif')] md:bg-[url('/images/home/md/top_graph.gif')] -z-10">
           <Link href="/"
-            className="absolute md:hidden right-[2%] sm:right-[3%] bottom-[30%] w-[50px] h-[50px] bg-contain bg-no-repeat bg-[url('/images/home/arrow.svg')]"
+            className="absolute md:hidden right-[20px] bottom-[30%] w-[50px] h-[50px] bg-contain bg-no-repeat bg-[url('/images/home/arrow.svg')] z-10"
           />
           </div>
         </div>
@@ -52,14 +52,14 @@ export default function Home({data}) {
       {/*Top left*/}
       <div className="absolute w-[50%] md:w-[358px] h-[670px] bg-contain bg-no-repeat bg-[url('/images/home/top_left_line.svg')] -z-10" />
       {/*Right light*/}
-      <div className="right-light absolute w-[80%] md:w-[1100px] h-[925px] md:h-[1658px] top-[1150px] md:top-[400px] right-0 bg-contain bg-center bg-no-repeat bg-[url('/images/home/bg_right_light.svg')] md:bg-[url('/images/home/md/bg_right_light.svg')] opacity-70 -z-10" />
+      <div className="right-light absolute w-[80%] md:w-[1100px] h-[925px] md:h-[1658px] top-[850px] md:top-[400px] right-0 bg-contain bg-center bg-no-repeat bg-[url('/images/home/bg_right_light.svg')] md:bg-[url('/images/home/md/bg_right_light.svg')] opacity-70 -z-10" />
       {/*Left line*/}
-      <div className="absolute w-[55%] h-[804px] md:w-[1000px] top-[1800px] md:top-[1689px] left-0 bg-contain bg-center bg-no-repeat bg-[url('/images/home/line.gif')] md:bg-[url('/images/home/md/line.gif')] -z-10" />
+      <div className="absolute w-[55%] h-[804px] md:w-[1000px] top-[1400px] md:top-[1689px] left-0 bg-contain bg-center bg-no-repeat bg-[url('/images/home/line.gif')] md:bg-[url('/images/home/md/line.gif')] -z-10" />
       
-      <div className="absolute w-[100%] h-[566px] md:w-[1000px] md:h-[800px] top-[2900px] md:top-[2817px] right-0 bg-contain bg-no-repeat bg-[url('/images/home/bg_Decoration_2.gif')] md:bg-[url('/images/home/md/bg_Decoration_2.gif')] -z-10" />
-      <div className="-z-10 absolute w-[234px] h-[430px] top-[4020px] md:top-[3886px] right-0 bg-[url('/images/home/bg_Decoration_3.png')]" />
+      <div className="absolute w-[100%] h-[566px] md:w-[1000px] md:h-[800px] top-[2500px] md:top-[2817px] right-0 bg-contain bg-no-repeat bg-[url('/images/home/bg_Decoration_2.gif')] md:bg-[url('/images/home/md/bg_Decoration_2.gif')] -z-10" />
+      <div className="-z-10 absolute w-[234px] h-[430px] top-[3520px] md:top-[3886px] right-0 bg-[url('/images/home/bg_Decoration_3.png')]" />
       <div className="container pt-[110px] md:pt-[254px]">
-        <section className="min-h-[1602px] md:min-h-[1000px]">
+        <section className="min-h-[120%] md:min-h-[1000px]">
           {/* Banner */}
           <div className="flex flex-col justify-start md:max-w-[670px]">
               <h2 className="whitespace-nowrap">{banner.title}</h2>
@@ -79,7 +79,7 @@ export default function Home({data}) {
               </Link>
             </div>
           {/* Site Link */}
-          <div className="flex flex-wrap justify-center lg:justify-start max-w-[880px] gap-4 mt-[24px] md:mt-[60px]">
+          <div className="flex flex-wrap justify-center lg:justify-start max-w-[880px] gap-4 mt-[400px] md:mt-[60px]">
             <Link href="/" className="site-link">
               <Image
                 alt="AVALANCHE"
@@ -107,8 +107,6 @@ export default function Home({data}) {
                 className="h-[63.4%] w-auto"
               />
             </Link>
-            <div className="w-[186px] aspect-square hidden lg:flex" />
-            <div className="w-[186px] aspect-square hidden lg:flex" />
             <Link href="/" className="site-link">
               <Image
                 alt="BitMart"
@@ -136,11 +134,21 @@ export default function Home({data}) {
                 className="h-[63.4%] w-auto"
               />
             </Link>
+            <Link href="/" className="site-link">
+              <Image
+                alt="CoinMarketCap"
+                src="/images/home/top_card_logo_7.png"
+                width={118}
+                height={132}
+                className="h-[61.68%] w-auto"
+              />
+            </Link>
+            <div className="w-[140px] aspect-square lg:hidden" />
           </div>
         </section>
         <section>
           {/* BUILD IT YOUR WAY */}
-          <div className="flex flex-col justify-start md:flex-row mt-[40px] md:mt-[200px] md:gap-[80px] xl:gap-[106px]">
+          <div className="flex flex-col justify-start md:flex-row mt-[50px] md:mt-[200px] md:gap-[80px] xl:gap-[106px]">
             <Image
               alt="bg_coin"
               src="/images/home/logo_2.gif"
