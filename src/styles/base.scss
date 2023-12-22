@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  @apply text-[16px] bg-[#0F0F0F] font-primary font-normal leading-relaxed text-text;
+  @apply text-[16px] bg-[#0F0F0F] font-primary font-normal leading-relaxed text-text overflow-x-hidden;
 }
 
 h1,

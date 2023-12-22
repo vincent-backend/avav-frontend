@@ -111,30 +111,100 @@ export default function Home() {
         <section>
           {/* BUILD IT YOUR WAY */}
           <div className="flex flex-col justify-start md:flex-row mt-[40px] md:mt-[200px] md:gap-[80px] xl:gap-[146px]">
-            <Image alt="bg_coin" src="/images/home/bg_coin.png" width={220} height={220} className="md:mt-[120px] lg:ml-10" />
+            <Image
+              alt="bg_coin"
+              src="/images/home/bg_coin.png"
+              width={220}
+              height={220}
+              className="md:mt-[120px] lg:ml-10"
+            />
             <div className="bd-blog">
               <p className="title">BUILD IT YOUR WAY</p>
               <div className="underline"></div>
-              <p className="subtitle">Avalanche has the advanced tooling you need to accelerate from idea to launch.</p>
-              <p className="description">Don’t miss out because it took too long to deploy on Mainnet. Take advantage of the low-code tooling and configurability that makes it easy to launch your Web3 innovation in less than 60 seconds.</p>
+              <p className="subtitle">
+                Avalanche has the advanced tooling you need to accelerate from
+                idea to launch.
+              </p>
+              <p className="description">
+                Don’t miss out because it took too long to deploy on Mainnet.
+                Take advantage of the low-code tooling and configurability that
+                makes it easy to launch your Web3 innovation in less than 60
+                seconds.
+              </p>
             </div>
           </div>
           {/* THE BLOCKCHAIN BUILT TO SCALE */}
-          <div className="flex flex-col md:flex-row-reverse justify-start items-end md:mt-0">
-            <div className="relative min-w-[350px] md:min-w-[250px] lg:min-w-[350px] min-h-[512px] -mt-[50px] md:mt-0">
-            <Image alt="pic_1" src="/images/home/pic_1.png" width={390} height={512} className="-z-10 absolute md:bottom-0 md:right-10 lg:right-[56px] min-w-[390px] min-h-[512px]" />
+          <div className="flex flex-col mx-auto max-w-[890px]">
+            <div className="relative w-full h-[400px] sm:h-[450px] md:h-[155px]">
+            <Image
+                alt="pic_1"
+                src="/images/home/pic_1.png"
+                width={390}
+                height={512}
+                className="-z-10 absolute right-0 bottom-0 md:top-0"
+              />
             </div>
             <div className="bd-blog">
               <p className="title">THE BLOCKCHAIN BUILT TO SCALE</p>
               <div className="underline"></div>
-              <p className="subtitle">Subnets set a new bar for scalability, without sacrificing speed, reliability, and security.</p>
-              <p className="description">Users hate waiting. Scaling at the cost of performance or security is not an option. Avalanche’s novel architecture allows for a universe of independent, but interconnected, blockchains that are all validated and kept secure by dynamic subsets of validators.</p>
+              <p className="subtitle">
+                Subnets set a new bar for scalability, without sacrificing
+                speed, reliability, and security.
+              </p>
+              <p className="description">
+                Users hate waiting. Scaling at the cost of performance or
+                security is not an option. Avalanche’s novel architecture allows
+                for a universe of independent, but interconnected, blockchains
+                that are all validated and kept secure by dynamic subsets of
+                validators.
+              </p>
+            </div>
+          </div>
+
+        </section>
+        {/* JOIN WEB3's MOST VIBRANT COMMUNITY */}
+        <section className="mt-12 md:mt-[212px]">
+          <div className="flex flex-col mx-auto max-w-[890px]">
+            <div className="flex justify-end">
+              <div className="bd-blog bd-blog-right">
+                <p className="title">JOIN WEB3&apos;s MOST VIBRANT COMMUNITY</p>
+                <div className="underline"></div>
+                <p className="subtitle">
+                  Find the answers, connections, and info you need to accelerate
+                  your Web3 aspirations.
+                </p>
+                <p className="description">
+                  Over the last year, tens of thousands of people came together
+                  at Avalanche events worldwide. As one of the industry’s most
+                  diverse and supportive communities, Avalanche boasts members
+                  from all walks of life, with over 18 languages supported
+                  across the 1M+ strong online community.
+                </p>
+              </div>
+            </div>
+            <div className="flex justify-start md:relative md:h-[240px]">
+              <Image alt="pic_2" src="/images/home/pic_2.png" width={532} height={632} className="-z-10 md:absolute md:-bottom-[176px] md:-left-[100px] lg:-left-[250px] md:min-w-[532px] md:min-h-[632px]" />
+            </div>
+            <div className="flex flex-row justify-start">
+              <div className="bd-blog">
+                <p className="title">SOMETIMES RED IS ALSO GREEN</p>
+                <div className="underline"></div>
+                <p className="subtitle">
+                  Technology that isn’t sustainable has no claim on the future.
+                </p>
+                <p className="description">
+                  When it comes to the energy required to run, no other
+                  blockchain comes close. According to the Crypto Carbon Ratings
+                  Institute, Avalanche consumes the same energy as only 46 US
+                  households each year.
+                </p>
+              </div>
             </div>
           </div>
         </section>
-        {/* THE BLOCKCHAIN BUILT TO SCALE */}
-        <section>
-          
+        {/* Connect To AVAX */}
+        <section className="container">
+          dsfdsf
         </section>
       </div>
     </Base>
