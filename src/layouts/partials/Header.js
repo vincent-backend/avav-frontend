@@ -2,14 +2,18 @@ import Logo from "../components/Logo";
 import config from "@/config/config.json";
 import menu from "@/config/menu.json";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useRouter, withRouter } from "next/router";
 import React, { useEffect, useRef, useState } from "react";
 import { CgClose } from "react-icons/cg";
 import clsx from "clsx";
+import useTranslation from "@/hooks/useTranslation";
 
 const Header = () => {
+  const { locale, setLocale } = useTranslation();
+
   // distructuring the main menu from menu object
-  const { main } = menu;
+  const { en, cn } = menu;
+  const [c_menu, setMenu] = useState(locale === "en" ? en : cn);
 
   // states declaration
   const [showMenu, setShowMenu] = useState(false);
@@ -17,7 +21,8 @@ const Header = () => {
   const headerRef = useRef(null);
   const [direction, setDirection] = useState(null);
 
-  const { asPath } = useRouter();
+  const asPath = useRouter();
+  const langParam = asPath.query.lang;
 
   //sticky header
   useEffect(() => {
@@ -34,7 +39,17 @@ const Header = () => {
         setDirection(null);
       }
     });
-  }, []);
+
+    if (langParam === "cn") {
+      setLocale("cn");
+      setMenu(cn);
+    }
+    else {
+      setLocale("en");
+      setMenu(en);
+    }
+
+  }, [langParam]);
 
   // logo source
   const { logo } = config.site;
@@ -48,8 +63,8 @@ const Header = () => {
       >
         <nav className={clsx("navbar nav-container", showMenu && "bg-[url('/images/home/bg-menu.png')] bg-cover md:bg-none overscroll-y-none")}>
           {/* logo */}
-          <div className="order-0">
-            <Logo src={logo} />
+          <div className="order-0"  onClick={()=>setShowMenu(false)}>
+            <Logo src={logo}/>
           </div>
 
           <ul
@@ -60,28 +75,30 @@ const Header = () => {
               <div className="h-10 md:hidden" />
               <li className="nav-item md:hidden">
                 <Link
-                  href="/"
-                  className={clsx("nav-link block", asPath === "/" && "active")}
+                  href=""
+                  className={clsx("nav-link block", asPath.pathname == "/" && "active")}
+                  onClick={()=>setShowMenu(false)}
                 >
                   Home
                 </Link>
               </li>
-              {main.map((menu, i) => (
+              {c_menu.map((menu, i) => (
                 <React.Fragment key={`menu-${i}`}>
                   <li className="nav-item">
                     <Link
                       href={menu.url}
-                      className={`nav-link block ${asPath === menu.url && "active"
+                      className={`nav-link block ${asPath.pathname === menu.url && "active"
                         }`}
+                        onClick={()=>setShowMenu(false)}
                     >
                       {menu.name}
                     </Link>
                   </li>
                 </React.Fragment>
               ))}
-              <li className="nav-item nav-dropdown group relative mt-[85%] md:mt-0">
+              <li className="nav-item nav-dropdown group relative mt-[50%] md:mt-0">
                 <span className="nav-link inline-flex items-center">
-                  EN
+                  {locale == "en" ? "EN" : "中文"}
                   <svg className="h-4 w-4 fill-current ml-1" viewBox="0 0 20 20">
                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                   </svg>
@@ -89,16 +106,18 @@ const Header = () => {
                 <ul className="nav-dropdown-list hidden max-h-0 w-[150px] mx-auto overflow-hidden border border-border-secondary py-0 transition-all duration-500 group-hover:block group-hover:max-h-[106px] group-hover:py-1 md:invisible md:absolute md:left-1/2 md:block md:w-auto md:-translate-x-1/2 md:group-hover:visible md:group-hover:opacity-100">
                   <li className="nav-dropdown-item" key={`children-EN`}>
                     <Link
-                      href={`#`}
-                      className={`nav-dropdown-link block transition-all active`}
+                      href=""
+                      className={clsx("nav-dropdown-link block transition-all", locale == "en" && "active")}
+                      onClick={()=>setShowMenu(false)}
                     >
                       EN
                     </Link>
                   </li>
                   <li className="nav-dropdown-item" key={`children-CN`}>
                     <Link
-                      href={`#`}
-                      className={`nav-dropdown-link block transition-all`}
+                      href="/?lang=cn"
+                      className={clsx("nav-dropdown-link block transition-all", locale == "cn" && "active")}
+                      onClick={()=>setShowMenu(false)}
                     >
                       中文
                     </Link>

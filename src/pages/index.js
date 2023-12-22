@@ -2,11 +2,13 @@ import Base from "@/layouts/Baseof";
 import Image from "next/image";
 import Link from "next/link";
 import FaqItem from "@/layouts/components/FaqItem";
-import faqs from "@/content/home/faqs.json";
-import { useState } from "react";
+import faqs from "@/content/faqs.json";
+import { useEffect, useState } from "react";
+import { getDataFromContent } from "@/lib/contentParser";
+import useTranslation from "@/hooks/useTranslation";
 
-export default function Home() {
-
+export default function Home({data}) {
+  const { locale } = useTranslation();
   const [factive, setFActive] = useState(null);
   const handleFaqToggle = (index) => {
     if (factive === index) {
@@ -15,6 +17,18 @@ export default function Home() {
         setFActive(index);
     }
   }
+
+  // static data
+  let c_data = data.filter((dt) => dt.lang === locale)[0];
+  const [frontmatter, setFrontmatter] = useState(c_data);
+  // 
+  let { banner } = frontmatter;
+
+  useEffect(() => {
+    //frontmatter
+    setFrontmatter(data.filter((dt) => dt.lang === locale)[0]);
+
+  }, [locale, data]);
 
   return (
     <Base>
@@ -30,21 +44,16 @@ export default function Home() {
           {/* Banner */}
           <div className="flex flex-col lg:flex-row">
             <div className="flex flex-col justify-start w-full">
-              <h2 className="whitespace-nowrap">Welcome To</h2>
+              <h2 className="whitespace-nowrap">{banner.title}</h2>
               <h1 className="text-cred">$AVAV</h1>
               <p className="mt-[20px] md:mt-[136px] text-white leading-6">
-                A Very Amazing Victory. A very amazing victory<br></br>
-                $AVAV was the first inscriptions meme of Avalanche Ecology to
-                receive a diamond badge, with a trading volume of 500,000 AVAX
-                in three days. The inscription takes more than 1 month from the
-                beginning to the end of the inscription, and holds more than
-                50,000 coins
+               {banner.content}
               </p>
               <Link
                 href="/"
                 className="bg-[url('/images/home/banner_btn_bg.svg')] w-[200px] h-[50px] text-center text-white leading-[50px] mt-[20px] md:mt-[30px]"
               >
-                Connect To AVAX
+                {banner.btn_con}
               </Link>
             </div>
             <div className="max-w-[670px] w-full relative">
@@ -264,3 +273,14 @@ export default function Home() {
     </Base>
   );
 }
+
+// for homepage data
+export const getStaticProps = async () => {
+  const data = await getDataFromContent("./src/content/home");
+
+  return {
+    props: {
+      data
+    },
+  };
+};

@@ -1,6 +1,7 @@
 import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
+import { Glob } from "glob";
 
 // get list page data, ex: _index.md
 export const getDataFromContent = async (folder) => {
@@ -28,6 +29,7 @@ export const getDataFromContent = async (folder) => {
 
 // Get all filenames in posts directory as ['en/filename.md']
 export function getAllFileNames(directoryPath, filesList = []) {
+  
   const files = fs.readdirSync(directoryPath);
 
   files.forEach((file) => {
