@@ -42,12 +42,7 @@ export default function Home({ data }) {
       tl.fromTo(
         ".banner-title",
         { y: 20, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.5, delay: 0.5 }
-      ).fromTo(
-        ".top-graph",
-        { y: 20, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.6,},
-        ">-0.3"
+        { y: 0, opacity: 1, duration: 0.5, delay: 0.6 }
       )
         .fromTo(
           ".banner-content",
@@ -60,6 +55,12 @@ export default function Home({ data }) {
           { y: 20, opacity: 0 },
           { y: 0, opacity: 1, duration: 0.5 },
           ">-0.3"
+        )
+        .fromTo(
+          ".top-graph",
+          { y: 20, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.6,},
+          ">-0.2"
         );
     });
 
