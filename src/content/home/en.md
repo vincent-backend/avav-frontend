@@ -4,7 +4,7 @@ nav:
   trade_now: "Trade Now"
 banner:
   title: "Welcome To"
-  content: "<b>A V</b>ery <b>A</b>mazing <b>V</b>ictory.<br>$AVAV is the first inscription meme in Avalanche Ecology to receive the diamond badge, with a three-day transaction volume reaching 500,000 AVAX (25.5M usd vol). It took more than a month from the beginning to the end of the inscription, and more than 50,000 coins were held. When you see this name, you can create an emotional resonance with the community. It is a super meme with global attributes."
+  content: "<b>A V</b>ery <b>A</b>mazing <b>V</b>ictory.<br>$AVAV is the first inscription meme in Avalanche Ecology to receive the diamond badge, with a three-day transaction volume reaching 500,000 AVAX (25.5M usd vol). It took more than a month from the beginning to the end of the inscription, and more than 50,000 coins were held. When you see this name, you can create an emotional resonance with the community. It is the favorite inscription of young people and is a super meme with global attributes."
   btn_con: "Connect to AVAX"
 blog_1:
   title: "BUILD IT YOUR WAY"
@@ -29,10 +29,10 @@ faqs:
     answer: "$avav Is Available To Trade Here, Visit Sushi.com, Change Your Network From Ethereum To avav, and Import The avav Contract Address Found Here. Select Approve, execute the transaction, then complete the swap to $avav."
   faq_2:
     title: "Will $avav List On More CEXs?"
-    answer: "$avav will List On More CEXs."
+    answer: "Yes! Our Team Is Constantly Undergoing Prospective Listing Conversations With Meaningful Centralized Exchanges Pioneering Base."
   faq_3:
     title: "Is There A $avav Roadmap Available?"
-    answer: "Is There A $avav Roadmap Available?"
+    answer: "Yes, Our First Overview Roadmap Is Available On <a href=''>Medium</a>."
   faq_4:
     title: "What Are $avav?"
     answer: "What Are $avav?"

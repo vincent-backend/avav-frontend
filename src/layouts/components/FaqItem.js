@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { markdownify } from "@/lib/utils/textConverter";
 
 const FaqItem = ({ faq, active, handleToggle }) => {
   const { question, id, answer } = faq;
@@ -95,9 +96,9 @@ const FaqItem = ({ faq, active, handleToggle }) => {
         }`}
       >
         <div className="overflow-hidden">
-          <p className="pb-3 font-primary text-text text-[16px] leading-[24px]">
-            {answer}
-          </p>
+          <div className="pb-3">
+            {markdownify(answer, "h6", " font-primary text-text text-[16px] leading-[24px]")}
+          </div>
         </div>
       </div>
     </div>

@@ -36,7 +36,6 @@ export default function Home({ data }) {
     else setFaq(faqs.fen);
 
     const ctx = gsap.context(() => {
-
       const tl = gsap.timeline();
 
       tl.fromTo(
@@ -59,7 +58,7 @@ export default function Home({ data }) {
         .fromTo(
           ".top-graph",
           { y: 20, opacity: 0 },
-          { y: 0, opacity: 1, duration: 0.6,},
+          { y: 0, opacity: 1, duration: 0.6 },
           ">-0.2"
         );
     });
@@ -84,12 +83,11 @@ export default function Home({ data }) {
       {/*Left line*/}
       <div className="absolute w-[55%] h-[804px] md:w-[1000px] top-[1400px] md:top-[1689px] left-0 bg-contain bg-center bg-no-repeat bg-[url('/images/home/line.gif')] md:bg-[url('/images/home/md/line.gif')] -z-10" />
 
-      <div className="absolute w-[100%] h-[566px] md:w-[1000px] md:h-[800px] top-[2300px] md:top-[2617px] right-0 bg-contain bg-no-repeat bg-[url('/images/home/bg_Decoration_2.gif')] md:bg-[url('/images/home/md/bg_Decoration_2.gif')] -z-10" />
-      <div className="-z-10 absolute w-[234px] h-[430px] top-[3400px] md:top-[3686px] right-0 bg-[url('/images/home/bg_Decoration_3.png')]" />
-
-      <div className="container pt-[100px] md:pt-[254px]">
-        <section className="min-h-[120%] md:min-h-[1000px]">
-          {/* Banner */}
+      
+      
+      {/* Banner */}
+      <section className="min-h-[120%] md:min-h-[1000px] pt-[100px] md:pt-[254px]">
+        <div className="container">
           <div className="banner flex flex-col justify-start md:max-w-[670px]">
             <div className="banner-title">
               <h2 className="whitespace-nowrap">{banner.title}</h2>
@@ -114,7 +112,10 @@ export default function Home({ data }) {
           />
           {/* Site Link */}
           <div className="animate flex flex-wrap justify-center lg:justify-start max-w-[880px] gap-4 mt-[400px] md:mt-[60px]">
-            <Link href="https://avascriptions.com/market/token?tick=avav" className="site-link">
+            <Link
+              href="https://avascriptions.com/market/token?tick=avav"
+              className="site-link"
+            >
               <Image
                 alt="AVALANCHE"
                 src="/images/home/top_card_logo_1.svg"
@@ -168,7 +169,10 @@ export default function Home({ data }) {
                 className="h-[63.4%] w-auto"
               />
             </Link>
-            <Link href="https://download.4ezh6.com/?ref=EAW6SB&forward_url=1&page=1&channelCode=EAW6SB" className="site-link">
+            <Link
+              href="https://download.4ezh6.com/?ref=EAW6SB&forward_url=1&page=1&channelCode=EAW6SB"
+              className="site-link"
+            >
               <Image
                 alt="CoinMarketCap"
                 src="/images/home/top_card_logo_7.png"
@@ -179,10 +183,13 @@ export default function Home({ data }) {
             </Link>
             <div className="w-[140px] aspect-square lg:hidden" />
           </div>
-        </section>
-        <section className="animate ">
+        </div>
+      </section>
+
+      <section className="animate mt-[50px] md:mt-[200px] relative">
+        <div className="container">
           {/* BUILD IT YOUR WAY */}
-          <div className="flex flex-col justify-start md:flex-row mt-[50px] md:mt-[200px] md:gap-[80px] xl:gap-[106px] z-10">
+          <div className="flex flex-col justify-start md:flex-row md:gap-[80px] xl:gap-[106px] z-10">
             <Image
               alt="bg_coin"
               src="/images/home/logo_2.gif"
@@ -215,9 +222,12 @@ export default function Home({ data }) {
               <p className="description">{blog_2.description}</p>
             </div>
           </div>
-        </section>
-        {/* JOIN WEB3's MOST VIBRANT COMMUNITY */}
-        <section className="animate mt-12 md:mt-[212px]">
+        </div>
+      </section>
+      {/* JOIN WEB3's MOST VIBRANT COMMUNITY */}
+      <section className="animate mt-12 md:mt-[212px] relative">
+        <div className="absolute w-[100%] h-[566px] md:w-[1000px] md:h-[800px] top-0 right-0 bg-contain bg-no-repeat bg-[url('/images/home/bg_Decoration_2.gif')] md:bg-[url('/images/home/md/bg_Decoration_2.gif')] -z-10" />
+        <div className="container">
           <div className="flex flex-col mx-auto max-w-[890px]">
             <div className="flex justify-end">
               <div className="bd-blog bd-blog-right relative">
@@ -259,9 +269,12 @@ export default function Home({ data }) {
               </div>
             </div>
           </div>
-        </section>
-        {/* Connect To AVAX */}
-        <section className="animate mt-16 md:mt-20 lg:mt-40">
+        </div>
+      </section>
+      {/* Connect To AVAX, FAQ */}
+      <section className="animate mt-16 md:mt-20 lg:mt-40 relative">
+        <Image alt="Decoration_3" src="/images/home/bg_Decoration_3.png" width={234} height={430} className="absolute right-0 bottom-0 -z-10" />
+        <div className="container">
           <Link href="https://avascriptions.com/market/token?tick=avav">
             <div className="flex items-center justify-start w-full aspect-[4.6] md:aspect-[8] bg-contain bg-center bg-no-repeat bg-[url('/images/home/banner_bg.png')] md:bg-[url('/images/home/md/banner_bg.png')]">
               <h3 className="pl-4 md:pl-20 pr-1">{banner.btn_con}</h3>
@@ -290,8 +303,8 @@ export default function Home({ data }) {
               })}
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </Base>
   );
 }
