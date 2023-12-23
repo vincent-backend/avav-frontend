@@ -3,7 +3,7 @@
         {
             "id": 1,
             "question": "How Do I Buy and Sell $avav?",
-            "answer": "$avav Is Available To Trade Here, Visit Sushi.com, Change Your Network From Ethereum To avav, and Import The avav Contract Address Found Here. Select Approve, execute the transaction, then complete the swap to $avav."
+            "answer": "$avav can be traded here, visit <a href='https://avascriptions.com/market/token?tick=avav' style='color:white'>AVALANCHE</a> and use the wallet to access avax to buy."
         },
         {
             "id": 2,
@@ -25,7 +25,7 @@
         {
             "id": 1,
             "question": "我如何买卖$avav？",
-            "answer": "$avav 可在此处进行交易，访问 Sushi.com，将您的网络从以太坊更改为 avav，然后导入此处找到的 avav 合约地址。选择批准，执行交易，然后完成到 $avav 的交换。"
+            "answer": "$avav 可在此处进行交易，访问 <a href='https://avascriptions.com/market/token?tick=avav' style='color:white'>AVALANCHE</a>  ，使用钱包访问avax购买。"
         },
         {
             "id": 2,
