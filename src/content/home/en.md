@@ -4,7 +4,7 @@ nav:
   trade_now: "Trade Now"
 banner:
   title: "Welcome To"
-  content: "<b>A V</b>ery <b>A</b>mazing <b>V</b>ictory.<br>$AVAV was the first inscriptions meme of Avalanche Ecology to receive a diamond badge, with a trading volume of 500,000 AVAX in three days. The inscription takes more than 1 month from the beginning to the end of the inscription, and holds more than 50,000 coins"
+  content: "<b>A V</b>ery <b>A</b>mazing <b>V</b>ictory.<br>$AVAV is the first inscription meme in Avalanche Ecology to receive the diamond badge, with a three-day transaction volume reaching 500,000 AVAX (25.5M usd vol). It took more than a month from the beginning to the end of the inscription, and more than 50,000 coins were held. When you see this name, you can create an emotional resonance with the community. It is a super meme with global attributes."
   btn_con: "Connect to AVAX"
 blog_1:
   title: "BUILD IT YOUR WAY"

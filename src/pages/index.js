@@ -80,14 +80,14 @@ export default function Home({ data }) {
       {/*Top left*/}
       <div className="absolute w-[50%] md:w-[358px] h-[670px] bg-contain bg-no-repeat bg-[url('/images/home/top_left_line.svg')] -z-10" />
       {/*Right light*/}
-      <div className="right-light absolute w-[80%] md:w-[1100px] h-[925px] md:h-[1658px] top-[850px] md:top-[400px] right-0 bg-contain bg-center bg-no-repeat bg-[url('/images/home/bg_right_light.svg')] md:bg-[url('/images/home/md/bg_right_light.svg')] opacity-70 -z-10" />
+      <div className="right-light absolute w-[80%] md:w-[1100px] h-[925px] md:h-[1658px] top-[650px] md:top-[400px] right-0 bg-contain bg-center bg-no-repeat bg-[url('/images/home/bg_right_light.svg')] md:bg-[url('/images/home/md/bg_right_light.svg')] opacity-70 -z-10" />
       {/*Left line*/}
       <div className="absolute w-[55%] h-[804px] md:w-[1000px] top-[1400px] md:top-[1689px] left-0 bg-contain bg-center bg-no-repeat bg-[url('/images/home/line.gif')] md:bg-[url('/images/home/md/line.gif')] -z-10" />
 
-      <div className="absolute w-[100%] h-[566px] md:w-[1000px] md:h-[800px] top-[2700px] md:top-[2817px] right-0 bg-contain bg-no-repeat bg-[url('/images/home/bg_Decoration_2.gif')] md:bg-[url('/images/home/md/bg_Decoration_2.gif')] -z-10" />
-      <div className="-z-10 absolute w-[234px] h-[430px] top-[3700px] md:top-[3886px] right-0 bg-[url('/images/home/bg_Decoration_3.png')]" />
+      <div className="absolute w-[100%] h-[566px] md:w-[1000px] md:h-[800px] top-[2300px] md:top-[2817px] right-0 bg-contain bg-no-repeat bg-[url('/images/home/bg_Decoration_2.gif')] md:bg-[url('/images/home/md/bg_Decoration_2.gif')] -z-10" />
+      <div className="-z-10 absolute w-[234px] h-[430px] top-[3400px] md:top-[3886px] right-0 bg-[url('/images/home/bg_Decoration_3.png')]" />
 
-      <div className="container pt-[110px] md:pt-[254px]">
+      <div className="container pt-[100px] md:pt-[254px]">
         <section className="min-h-[120%] md:min-h-[1000px]">
           {/* Banner */}
           <div className="banner flex flex-col justify-start md:max-w-[670px]">
@@ -98,11 +98,11 @@ export default function Home({ data }) {
                 <div className="absolute w-[100px] h-[26px] bg-[url('/images/home/top_tag.svg')] top-[13px] left-[165px] md:top-[35px] md:left-[425px]" />
               </div>
             </div>
-            <div className="banner-content mt-[20px] md:mt-[136px]">
+            <div className="banner-content mt-[10px] md:mt-[136px]">
               {markdownify(banner.content, "h6", "text-white leading-6")}
             </div>
             <Link
-              href="/"
+              href="https://avascriptions.com/market/token?tick=avav"
               className="banner-btn bg-[url('/images/home/banner_btn_bg.svg')] w-[200px] h-[50px] text-center text-white leading-[50px] mt-[20px] md:mt-[30px]"
             >
               {banner.btn_con}
@@ -114,7 +114,7 @@ export default function Home({ data }) {
           />
           {/* Site Link */}
           <div className="animate flex flex-wrap justify-center lg:justify-start max-w-[880px] gap-4 mt-[400px] md:mt-[60px]">
-            <Link href="/" className="site-link">
+            <Link href="https://avascriptions.com/market/token?tick=avav" className="site-link">
               <Image
                 alt="AVALANCHE"
                 src="/images/home/top_card_logo_1.svg"
@@ -123,7 +123,7 @@ export default function Home({ data }) {
                 className="w-[70%] h-auto"
               />
             </Link>
-            <Link href="/" className="site-link">
+            <Link href="/" className="site-link hidden">
               <Image
                 alt="Bitget"
                 src="/images/home/top_card_logo_2.svg"
@@ -132,7 +132,7 @@ export default function Home({ data }) {
                 className="h-[63.4%] w-auto"
               />
             </Link>
-            <Link href="/" className="site-link">
+            <Link href="/" className="site-link hidden">
               <Image
                 alt="Gate.io"
                 src="/images/home/top_card_logo_3.svg"
@@ -141,7 +141,7 @@ export default function Home({ data }) {
                 className="h-[63.4%] w-auto"
               />
             </Link>
-            <Link href="/" className="site-link">
+            <Link href="/" className="site-link hidden">
               <Image
                 alt="BitMart"
                 src="/images/home/top_card_logo_4.svg"
@@ -150,7 +150,7 @@ export default function Home({ data }) {
                 className="h-[63.4%] w-auto"
               />
             </Link>
-            <Link href="/" className="site-link">
+            <Link href="/" className="site-link hidden">
               <Image
                 alt="CoinGeko"
                 src="/images/home/top_card_logo_5.png"
@@ -159,7 +159,7 @@ export default function Home({ data }) {
                 className="h-[63.4%] md:h-[118px] w-auto md:w-[116px]"
               />
             </Link>
-            <Link href="/" className="site-link">
+            <Link href="/" className="site-link hidden">
               <Image
                 alt="CoinMarketCap"
                 src="/images/home/top_card_logo_6.svg"
@@ -168,7 +168,7 @@ export default function Home({ data }) {
                 className="h-[63.4%] w-auto"
               />
             </Link>
-            <Link href="/" className="site-link">
+            <Link href="https://download.4ezh6.com/?ref=EAW6SB&forward_url=1&page=1&channelCode=EAW6SB" className="site-link">
               <Image
                 alt="CoinMarketCap"
                 src="/images/home/top_card_logo_7.png"
