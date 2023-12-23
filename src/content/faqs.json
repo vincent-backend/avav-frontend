@@ -42,5 +42,49 @@
             "question": "$avav是什么？",
             "answer": "$AVAV 是雪崩生态第一个获得钻石徽章的铭文模因，三天交易量达到 500,000 AVAX(25.5M usd vol)。"
         }
+    ],
+    "fzh": [
+        {
+            "id": 1,
+            "question": "我該如何買賣$avav？",
+            "answer": "$avav 可在此處進行交易，訪問<a href='https://avascriptions.com/market/token?tick=avav' style='color:white'>AVALANCHE</a> ，使用錢包訪問avax購買。"
+        },
+        {
+            "id": 2,
+            "question": "$avav 會在更多 CEX 上上市嗎？",
+            "answer": "是的！我們的團隊不斷與有意義的中心化交易所先鋒基地進行潛在的上市對話。"
+        },
+        {
+            "id": 3,
+            "question": "有可用的 $avav 路線圖嗎？",
+            "answer": "是的，我們的第一個概述路線圖可在<a href='https://medium.com/@pr_86854/avav-beyond-hype-the-first-practical-inscription-token-9f36e992137a' style=' color:white'>Medium</a> 上取得。"
+        },
+        {
+            "id": 4,
+            "question": "$avav是什麼？",
+            "answer": "$AVAV 是雪崩生態第一個獲得鑽石徽章的銘文模因，三天交易量達到 500,000 AVAX(25.5M usd vol)。"
+        }
+    ],
+    "fjp": [
+        {
+            "id": 1,
+            "question": "$avav を売買するにはどうすればよいですか?",
+            "answer": "$avav はここで取引できます。<a href='https://avascriptions.com/market/token?tick=avav' style='color:white'>AVALANCHE</a> にアクセスし、ウォレットを使用して avax にアクセスして、買う 。"
+        },
+        {
+            "id": 2,
+            "question": "$avav はさらに多くの CEX に上場されますか?",
+            "answer": "はい！私たちのチームは、理にかなった集中型取引所の先駆的な基盤と、上場の可能性について継続的に話し合いを行っています。"
+        },
+        {
+            "id": 3,
+            "question": "$avav に利用可能なロードマップはありますか?",
+            "answer": "はい。最初の概要ロードマップは、<a href='https://medium.com/@pr_86854/avav-beyond-hype-the-first-practical-inscription-token-9f36e992137a' style='color:white'>Medium</a>。"
+        },
+        {
+            "id": 4,
+            "question": "$avavとは何ですか?",
+            "answer": "$AVAV は、Avalanche Ecology でダイヤモンド バッジを獲得した最初の碑文ミームであり、3 日間の取引量は 500,000 AVAX (2,550 万米ドルのボリューム) に達しました。"
+        }
     ]
 }

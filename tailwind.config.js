@@ -32,8 +32,9 @@ module.exports = {
       },
       fontFamily: {
         primary: ['var(--font-pingfang)'],
-        secondary: ['var(--font-alimama)'],
-        third: ['var(--font-mont-bold)']
+        secondary: ['var(--font-alimama)', 'MS Gothic', 'Simsun'],
+        third: ['var(--font-mont-bold)'],
+        other: ['MS Gothic', 'Simsun']
       }
     },
   },

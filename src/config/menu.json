@@ -1,15 +1,5 @@
 {
-  "cn": [
-    {
-      "name": "Telegram",
-      "url": "https://t.me/AVAV_official"
-    },
-    {
-      "name": "Twitter",
-      "url": "https://x.com/avavcommunity"
-    }
-  ],
-  "en": [
+  "main": [
     {
       "name": "Telegram",
       "url": "https://t.me/AVAV_official"

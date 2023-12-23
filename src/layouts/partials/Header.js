@@ -12,8 +12,7 @@ const Header = () => {
   const { locale, setLocale } = useTranslation();
 
   // distructuring the main menu from menu object
-  const { en, cn } = menu;
-  const [c_menu, setMenu] = useState(locale === "en" ? en : cn);
+  const { main } = menu;
 
   // states declaration
   const [showMenu, setShowMenu] = useState(false);
@@ -42,11 +41,15 @@ const Header = () => {
 
     if (langParam === "cn") {
       setLocale("cn");
-      setMenu(cn);
+    }
+    else if (langParam === "zh") {
+      setLocale("zh");
+    }
+    else if (langParam == "jp") {
+      setLocale("jp");
     }
     else {
       setLocale("en");
-      setMenu(en);
     }
 
   }, [langParam]);
@@ -82,7 +85,7 @@ const Header = () => {
                   Home
                 </Link>
               </li>
-              {c_menu.map((menu, i) => (
+              {main.map((menu, i) => (
                 <React.Fragment key={`menu-${i}`}>
                   <li className="nav-item">
                     <Link
@@ -98,12 +101,12 @@ const Header = () => {
               ))}
               <li className="nav-item nav-dropdown group relative mt-[50%] md:mt-0">
                 <span className="nav-link inline-flex items-center">
-                  {locale == "en" ? "EN" : "中文"}
+                  {locale == "jp" ? "日本語" : locale == "cn" ? "中文" : locale == "zh" ? "中文（台灣）" : "EN" }
                   <svg className="h-4 w-4 fill-current ml-1" viewBox="0 0 20 20">
                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                   </svg>
                 </span>
-                <ul className="nav-dropdown-list hidden max-h-0 w-[150px] mx-auto overflow-hidden border border-border-secondary py-0 transition-all duration-500 group-hover:block group-hover:max-h-[106px] group-hover:py-1 md:invisible md:absolute md:left-1/2 md:block md:w-auto md:-translate-x-1/2 md:group-hover:visible md:group-hover:opacity-100">
+                <ul className="nav-dropdown-list hidden max-h-0 w-[150px] mx-auto overflow-hidden border border-border-secondary py-0 transition-all duration-500 group-hover:block group-hover:max-h-[126px] group-hover:py-1 md:invisible md:absolute md:left-1/2 md:block md:w-auto md:-translate-x-1/2 md:group-hover:visible md:group-hover:opacity-100">
                   <li className="nav-dropdown-item" key={`children-EN`}>
                     <Link
                       href=""
@@ -120,6 +123,24 @@ const Header = () => {
                       onClick={()=>setShowMenu(false)}
                     >
                       中文
+                    </Link>
+                  </li>
+                  <li className="nav-dropdown-item" key={`children-ZH`}>
+                    <Link
+                      href="/?lang=zh"
+                      className={clsx("nav-dropdown-link block transition-all", locale == "zh" && "active")}
+                      onClick={()=>setShowMenu(false)}
+                    >
+                      中文（台灣）
+                    </Link>
+                  </li>
+                  <li className="nav-dropdown-item" key={`children-JP`}>
+                    <Link
+                      href="/?lang=jp"
+                      className={clsx("nav-dropdown-link block transition-all", locale == "jp" && "active")}
+                      onClick={()=>setShowMenu(false)}
+                    >
+                      日本語
                     </Link>
                   </li>
                 </ul>

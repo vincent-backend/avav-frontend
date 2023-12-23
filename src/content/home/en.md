@@ -22,18 +22,4 @@ blog_4:
   title: "SOMETIMES RED IS ALSO GREEN"
   subtitle: "Technology that isn’t sustainable has no claim on the future."
   description: "When it comes to the energy required to run, no other blockchain comes close. According to the Crypto Carbon Ratings Institute, Avalanche consumes the same energy as only 46 US households each year."
-faqs:
-  title: "FAQS"
-  faq_1:
-    title: "How Do I Buy and Sell $avav?"
-    answer: "$avav Is Available To Trade Here, Visit Sushi.com, Change Your Network From Ethereum To avav, and Import The avav Contract Address Found Here. Select Approve, execute the transaction, then complete the swap to $avav."
-  faq_2:
-    title: "Will $avav List On More CEXs?"
-    answer: "Yes! Our Team Is Constantly Undergoing Prospective Listing Conversations With Meaningful Centralized Exchanges Pioneering Base."
-  faq_3:
-    title: "Is There A $avav Roadmap Available?"
-    answer: "Yes, Our First Overview Roadmap Is Available On <a href=''>Medium</a>."
-  faq_4:
-    title: "What Are $avav?"
-    answer: "What Are $avav?"
 ---

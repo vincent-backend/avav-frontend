@@ -9,12 +9,13 @@ import { useEffect, useState } from "react";
 import { getDataFromContent } from "@/lib/contentParser";
 import useTranslation from "@/hooks/useTranslation";
 import { markdownify } from "@/lib/utils/textConverter";
+import clsx from "clsx";
 
 export default function Home({ data }) {
   const { locale } = useTranslation();
   const [factive, setFActive] = useState(null);
 
-  const [c_faq, setFaq] = useState(locale === "cn" ? faqs.fcn : faqs.fen);
+  const [c_faq, setFaq] = useState(locale === "cn" ? faqs.fcn : locale == "zh" ? faqs.fzh : locale == "jp" ? faqs.fjp : faqs.fen);
   // static data
   let c_data = data.filter((dt) => dt.lang === locale)[0];
   const [frontmatter, setFrontmatter] = useState(c_data);
@@ -33,6 +34,8 @@ export default function Home({ data }) {
     //frontmatter
     setFrontmatter(data.filter((dt) => dt.lang === locale)[0]);
     if (locale === "cn") setFaq(faqs.fcn);
+    else if (locale === "zh") setFaq(faqs.fzh);
+    else if (locale === "jp") setFaq(faqs.fjp);
     else setFaq(faqs.fen);
 
     const ctx = gsap.context(() => {
@@ -198,7 +201,7 @@ export default function Home({ data }) {
               className="md:mt-[100px] -ml-3 lg:ml-12"
             />
             <div className="bd-blog">
-              <p className="title">{blog_1.title}</p>
+              <p className={clsx("title", locale == "cn" && "font-primary font-bold", locale == "en" && "font-secondary",  locale == "zh" && "font-primary font-bold", locale == "jp" && "font-primary font-bold")}>{blog_1.title}</p>
               <div className="underline"></div>
               <p className="subtitle">{blog_1.subtitle}</p>
               <p className="description">{blog_1.description}</p>
@@ -216,7 +219,7 @@ export default function Home({ data }) {
               />
             </div>
             <div className="bd-blog">
-              <p className="title">{blog_2.title}</p>
+            <p className={clsx("title", locale == "cn" && "font-primary font-bold", locale == "en" && "font-secondary",  locale == "zh" && "font-primary font-bold", locale == "jp" && "font-primary font-bold")}>{blog_2.title}</p>
               <div className="underline"></div>
               <p className="subtitle">{blog_2.subtitle}</p>
               <p className="description">{blog_2.description}</p>
@@ -238,7 +241,7 @@ export default function Home({ data }) {
                   height={280}
                   className="-z-10 hidden lg:block absolute -top-10 -right-32"
                 />
-                <p className="title">{blog_3.title}</p>
+                <p className={clsx("title", locale == "cn" && "font-primary font-bold", locale == "en" && "font-secondary",  locale == "zh" && "font-primary font-bold", locale == "jp" && "font-primary font-bold")}>{blog_3.title}</p>
                 <div className="underline"></div>
                 <p className="subtitle">{blog_3.subtitle}</p>
                 <p className="description">{blog_3.description}</p>
@@ -262,7 +265,7 @@ export default function Home({ data }) {
                   height={280}
                   className="-z-20 lg:hidden absolute -top-24 -right-5"
                 />
-                <p className="title">{blog_4.title}</p>
+                <p className={clsx("title", locale == "cn" && "font-primary font-bold", locale == "en" && "font-secondary",  locale == "zh" && "font-primary font-bold", locale == "jp" && "font-primary font-bold")}>{blog_4.title}</p>
                 <div className="underline"></div>
                 <p className="subtitle">{blog_4.subtitle}</p>
                 <p className="description">{blog_4.description}</p>
@@ -277,7 +280,7 @@ export default function Home({ data }) {
         <div className="container">
           <Link href="https://avascriptions.com/market/token?tick=avav">
             <div className="flex items-center justify-start w-full aspect-[4.6] md:aspect-[8] bg-contain bg-center bg-no-repeat bg-[url('/images/home/banner_bg.png')] md:bg-[url('/images/home/md/banner_bg.png')]">
-              <h3 className="pl-4 md:pl-20 pr-1">{banner.btn_con}</h3>
+              <h3 className={clsx("pl-4 md:pl-20 pr-1", locale == "cn" && "font-primary font-bold", locale == "en" && "font-secondary",  locale == "zh" && "font-primary font-bold", locale == "jp" && "font-primary font-bold")}>{banner.btn_con}</h3>
               <Image
                 alt="arrow"
                 src="/images/home/banner_ic_arrow.svg"

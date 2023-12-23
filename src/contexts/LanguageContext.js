@@ -1,7 +1,7 @@
 import { createContext, useEffect, useState } from 'react';
 
 export const defaultLocale = "en";
-export const locales = ["en", "cn"];
+export const locales = ["en", "cn", "zh", "jp"];
 export const LanguageContext = createContext([]);
 
 export function LanguageProvider({ children }) {
