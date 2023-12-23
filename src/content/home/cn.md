@@ -4,7 +4,7 @@ nav:
   trade_now: "立即交易"
 banner:
   title: "欢迎来到"
-  content: "<b>A V</b>ery <b>A</b>mazing <b>V</b>ictory. 这是一次非常惊人的胜利。<br>$AVAV 是雪崩生态第一个获得钻石徽章的铭文模因，三天交易量达到 500,000 AVAX(25.5M usd vol)。铭文从开始到铭文结束历时1个多月，持有币5万多。当你看到这个名字就能与社区产生情感共识是年轻人最喜欢的铭文具备全球化属性的超级meme。"
+  content: "<b>A V</b>ery <b>A</b>mazing <b>V</b>ictory. 这是一次非常惊人的胜利。<br>$AVAV 是雪崩生态第一个获得钻石徽章的铭文模因，三天交易量达到 500,000 AVAX(25.5M usd vol)。铭文从开始铸造到铭文结束历时1个多月，持有人数高达5万之多。当你看到这个名字就能与社区产生情感共识是年轻人最喜欢的铭文具备全球化属性的超级meme。"
   btn_con: "连接到 AVAX"
 blog_1:
   title: "按照您的方式构建"

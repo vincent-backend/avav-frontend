@@ -108,7 +108,7 @@ export default function Home({ data }) {
           </div>
           <Link
             href="/"
-            className="absolute md:hidden right-[20px] bottom-[50px] w-[50px] h-[50px] bg-contain bg-no-repeat bg-[url('/images/home/arrow.svg')] z-10"
+            className="hidden right-[20px] bottom-[50px] w-[50px] h-[50px] bg-contain bg-no-repeat bg-[url('/images/home/arrow.svg')] z-10"
           />
           {/* Site Link */}
           <div className="animate flex flex-wrap justify-center lg:justify-start max-w-[880px] gap-4 mt-[400px] md:mt-[60px]">
