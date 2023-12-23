@@ -50,7 +50,7 @@ export default function App({ Component, pageProps }) {
         />
       </Head>
       <LanguageProvider>
-        <NextNProgress color="#ffffff" options={{ showSpinner: false }} />
+        <NextNProgress color="#DE3D30" options={{ showSpinner: false }} />
         <Component {...pageProps} />
       </LanguageProvider>
     </main>
