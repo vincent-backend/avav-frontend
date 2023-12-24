@@ -17,9 +17,9 @@ const Footer = () => {
             <div className="flex-col">
               <h6>Socials</h6>
               <div className="flex flex-col">
-                <Link href="https://t.me/AVAV_official">Telegram</Link>
-                <Link href="https://x.com/avavcommunity">Twitter</Link>
-                <Link href="https://medium.com/@pr_86854/avav-beyond-hype-the-first-practical-inscription-token-9f36e992137a">Medium</Link>
+                <Link href="https://t.me/AVAV_official" target="_blank">Telegram</Link>
+                <Link href="https://x.com/avavcommunity" target="_">Twitter</Link>
+                <Link href="https://medium.com/@pr_86854/avav-beyond-hype-the-first-practical-inscription-token-9f36e992137a" target="_blank">Medium</Link>
               </div>
             </div>
           </div>

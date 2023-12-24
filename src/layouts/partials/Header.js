@@ -90,6 +90,7 @@ const Header = () => {
                   <li className="nav-item">
                     <Link
                       href={menu.url}
+                      target="_blank"
                       className={`nav-link block ${asPath.pathname === menu.url && "active"
                         }`}
                         onClick={()=>setShowMenu(false)}
@@ -147,7 +148,7 @@ const Header = () => {
               </li>
             </div>
             <div className="hidden items-center pl-8">
-              <Link className="nav-trade-btn" href={config.nav_button.link}>
+              <Link className="nav-trade-btn" href={config.nav_button.link} target="_blank">
                 {locale == "en" ? `Trade Now`:`立即交易`}
               </Link>
             </div>

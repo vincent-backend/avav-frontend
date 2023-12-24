@@ -103,7 +103,7 @@ export default function Home({ data }) {
               {markdownify(banner.content, "h6", "text-white leading-6")}
             </div>
             <Link
-              href="https://avascriptions.com/market/token?tick=avav"
+              href="https://avascriptions.com/market/token?tick=avav" target="_blank"
               className="banner-btn bg-[url('/images/home/banner_btn_bg.svg')] w-[200px] h-[50px] text-center text-white leading-[50px] mt-[20px] md:mt-[30px]"
             >
               {banner.btn_con}
@@ -116,7 +116,7 @@ export default function Home({ data }) {
           {/* Site Link */}
           <div className="animate flex flex-wrap justify-center lg:justify-start max-w-[880px] gap-4 mt-[400px] md:mt-[60px]">
             <Link
-              href="https://avascriptions.com/market/token?tick=avav"
+              href="https://avascriptions.com/market/token?tick=avav" target="_blank"
               className="site-link"
             >
               <Image
@@ -127,7 +127,7 @@ export default function Home({ data }) {
                 className="w-[70%] h-auto"
               />
             </Link>
-            <Link href="/" className="site-link hidden">
+            <Link href="/" target="_blank" className="site-link hidden">
               <Image
                 alt="Bitget"
                 src="/images/home/top_card_logo_2.svg"
@@ -136,7 +136,7 @@ export default function Home({ data }) {
                 className="h-[63.4%] w-auto"
               />
             </Link>
-            <Link href="/" className="site-link hidden">
+            <Link href="/" target="_blank" className="site-link hidden">
               <Image
                 alt="Gate.io"
                 src="/images/home/top_card_logo_3.svg"
@@ -145,7 +145,7 @@ export default function Home({ data }) {
                 className="h-[63.4%] w-auto"
               />
             </Link>
-            <Link href="/" className="site-link hidden">
+            <Link href="/" target="_blank" className="site-link hidden">
               <Image
                 alt="BitMart"
                 src="/images/home/top_card_logo_4.svg"
@@ -154,7 +154,7 @@ export default function Home({ data }) {
                 className="h-[63.4%] w-auto"
               />
             </Link>
-            <Link href="/" className="site-link hidden">
+            <Link href="/" target="_blank" className="site-link hidden">
               <Image
                 alt="CoinGeko"
                 src="/images/home/top_card_logo_5.png"
@@ -163,7 +163,7 @@ export default function Home({ data }) {
                 className="h-[63.4%] md:h-[118px] w-auto md:w-[116px]"
               />
             </Link>
-            <Link href="/" className="site-link hidden">
+            <Link href="/" target="_blank" className="site-link hidden">
               <Image
                 alt="CoinMarketCap"
                 src="/images/home/top_card_logo_6.svg"
@@ -173,7 +173,7 @@ export default function Home({ data }) {
               />
             </Link>
             <Link
-              href="https://h5.4ezh6.com/?ref=EAW6SB&forward_url=1&page=1&channelCode=EAW6SB"
+              href="https://h5.4ezh6.com/?ref=EAW6SB&forward_url=1&page=1&channelCode=EAW6SB" target="_blank"
               className="site-link"
             >
               <Image
@@ -276,9 +276,9 @@ export default function Home({ data }) {
       </section>
       {/* Connect To AVAX, FAQ */}
       <section className="animate mt-16 md:mt-20 lg:mt-40 relative">
-        <Image alt="Decoration_3" src="/images/home/bg_Decoration_3.png" width={234} height={430} className="absolute right-0 bottom-0 -z-10" />
+        <Image alt="Decoration_3" src="/images/home/bg_Decoration_3.png" width={234} height={430} className="absolute right-0 top-0 md:top-[260px] -z-10" />
         <div className="container">
-          <Link href="https://avascriptions.com/market/token?tick=avav">
+          <Link href="https://avascriptions.com/market/token?tick=avav" target="_blank">
             <div className="flex items-center justify-start w-full aspect-[4.6] md:aspect-[8] bg-contain bg-center bg-no-repeat bg-[url('/images/home/banner_bg.png')] md:bg-[url('/images/home/md/banner_bg.png')]">
               <h3 className={clsx("pl-4 md:pl-20 pr-1", locale == "cn" && "font-primary font-bold", locale == "en" && "font-secondary",  locale == "zh" && "font-primary font-bold", locale == "jp" && "font-primary font-bold")}>{banner.btn_con}</h3>
               <Image
