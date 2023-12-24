@@ -26,21 +26,10 @@ const secondaryFont = localFont({
   variable: "--font-alimama",
 });
 
-const thirdFont = localFont({
-  src: [
-    {
-      path: "../font/Mont-Bold.otf",
-      weight: "700",
-      style: "bold",
-    },
-  ],
-  variable: "--font-mont-bold",
-});
-
 export default function App({ Component, pageProps }) {
   return (
     <main
-      className={`${primaryFont.variable} ${secondaryFont.variable} ${thirdFont.variable}`}
+      className={`${primaryFont.variable} ${secondaryFont.variable}`}
     >
       <Head>
         {/* responsive meta */}
