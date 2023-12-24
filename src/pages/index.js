@@ -173,7 +173,7 @@ export default function Home({ data }) {
               />
             </Link>
             <Link
-              href="https://download.4ezh6.com/?ref=EAW6SB&forward_url=1&page=1&channelCode=EAW6SB"
+              href="https://h5.4ezh6.com/?ref=EAW6SB&forward_url=1&page=1&channelCode=EAW6SB"
               className="site-link"
             >
               <Image

@@ -131,7 +131,7 @@ const Header = () => {
                       className={clsx("nav-dropdown-link block transition-all", locale == "zh" && "active")}
                       onClick={()=>setShowMenu(false)}
                     >
-                      中文（台灣）
+                      中文（繁体）
                     </Link>
                   </li>
                   <li className="nav-dropdown-item" key={`children-JP`}>
