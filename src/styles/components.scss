@@ -38,7 +38,7 @@
 }
 
 .bd-blog {
-  @apply flex flex-col w-full md:max-w-[620px];
+  @apply flex flex-col w-full md:max-w-[570px];
 
   &-right {
     @apply justify-end items-end text-right;
