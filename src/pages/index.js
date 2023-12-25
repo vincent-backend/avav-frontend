@@ -234,7 +234,7 @@ export default function Home({ data }) {
       </section>*/}
       {/* FAQ */}
       <section className="animate mt-16 md:mt-20 lg:mt-40 relative">
-        <Image alt="Decoration_3" src="/images/home/bg_Decoration_3.png" width={234} height={430} className="absolute right-0 top-0 md:top-[260px] -z-10" />
+        <Image alt="Decoration_3" src="/images/home/bg_Decoration_3.png" width={234} height={430} className="absolute right-0 top-0 md:top-[50px] -z-10" />
         <div className="container">
           {/* FAQ */}
           <div className="my-16 md:my-20 lg:my-40">

@@ -10,6 +10,8 @@
     "deploy": "next build && node ./scripts/deploy.mjs"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@headlessui/tailwindcss": "^0.2.0",
     "clsx": "^2.0.0",
     "github-slugger": "^2.0.0",
     "glob": "^10.3.10",
