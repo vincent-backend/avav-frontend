@@ -126,12 +126,12 @@ export default function Home({ data }) {
         <div className="container">
           {/* BUILD IT YOUR WAY */}
           <div className="flex flex-col justify-start md:flex-row md:gap-[80px] xl:gap-[106px] z-10">
-            <Image
+          <Image
               alt="bg_coin"
-              src="/images/home/logo_2.gif"
+              src="/images/home/bg_coin.png"
               width={220}
               height={220}
-              className="md:mt-[100px] -ml-3 lg:ml-12"
+              className="bg-coin"
             />
             <div className="bd-blog">
               <p className={clsx("title", locale == "cn" && "font-primary font-bold", locale == "en" && "font-secondary",  locale == "zh" && "font-primary font-bold", locale == "jp" && "font-primary font-bold")}>{blog_1.title}</p>

@@ -33,6 +33,25 @@
   @apply bg-[url('/images/home/md/bg_top_pic.png')] bg-no-repeat bg-center max-w-fit h-auto;
 }
 
+.bg-coin {
+  @apply md:mt-[100px] -ml-3 lg:ml-12;
+  animation: ani-coin 3.5s ease-out infinite;
+
+  @keyframes ani-coin {
+    0%,
+    33.33%,
+    66.67%,
+    100% {
+      transform: translateY(0px);
+    }
+    16.67%,
+    50%,
+    83.33% {
+      transform: translateY(12px);
+    }
+  }
+}
+
 .site-link {
   @apply flex justify-center items-center min-w-[140px] md:w-[186px] aspect-square bg-contain bg-no-repeat bg-[url('/images/home/top_logo_bg_nor.svg')] active:bg-[url('/images/home/top_logo_bg_hover.svg')] hover:bg-[url('/images/home/top_logo_bg_hover.svg')];
 }
