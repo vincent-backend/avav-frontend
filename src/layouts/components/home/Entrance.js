@@ -11,7 +11,7 @@ export default function Entrance({text}) {
       >
         <Image
           alt="AVALANCHE"
-          src="/images/home/top_card_logo_1.png"
+          src="/images/home/top_card_logo_1.svg"
           width={132}
           height={118}
           className="w-[70%] h-auto"

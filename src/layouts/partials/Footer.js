@@ -13,19 +13,39 @@ const Footer = () => {
           <Logo />
         </div>
         <div className="w-full h-[1px] bg-[#1b1b1b]" />
-        <div className="flex flex-col md:flex-row justify-center pb-6 md:py-6 md:gap-20">
-          <div className="flex flex-row justify-center flex-grow-1 mt-4 md:mt-0 leading-8">
+        <div className="flex flex-col md:flex-row justify-center pb-6 md:py-6 md:gap-20 lg:px-20">
+          <div className="flex flex-row justify-between px-10 sm:px-16 md:px-20 mt-4 md:mt-0 leading-8 w-full">
             <div className="flex-col">
               <h6>Socials</h6>
               <div className="flex flex-col">
-                <Link href="https://t.me/AVAV_official" target="_blank">Telegram</Link>
-                <Link href="https://x.com/avavcommunity" target="_">Twitter</Link>
-                <Link href="https://medium.com/@pr_86854/avav-beyond-hype-the-first-practical-inscription-token-9f36e992137a" target="_blank">Medium</Link>
+                <Link href="https://t.me/AVAV_official" target="_blank">
+                  Telegram
+                </Link>
+                <Link href="https://x.com/avavcommunity" target="_blank">
+                  Twitter
+                </Link>
+                <Link
+                  href="https://medium.com/@pr_86854/avav-beyond-hype-the-first-practical-inscription-token-9f36e992137a"
+                  target="_blank"
+                >
+                  Medium
+                </Link>
+              </div>
+            </div>
+            <div className="flex-col">
+              <h6>More</h6>
+              <div className="flex flex-col">
+                <Link
+                  href="https://docs.avascriptions.com/developer-service/asc-20"
+                  target="_blank"
+                >
+                  API Doc
+                </Link>
               </div>
             </div>
           </div>
-          <div className="mt-4 md:mt-0 md:min-w-[350px] flex justify-center md:justify-end md:items-start">
-            <Image alt="AVAV" src="/images/footer/symbol.svg" width={66} height={12} />
+          <div className="mt-4 md:mt-0 md:min-w-[250px] flex justify-center md:justify-end md:items-start">
+            <h4 className="text-cred">▲▼▲▼</h4>
           </div>
         </div>
       </div>

@@ -100,7 +100,7 @@ const Header = () => {
                           <Link
                             href={child.url} target="_blank"
                             className={`nav-dropdown-link block transition-all ${
-                              asPath === child.url && "active"
+                              asPath.pathname === child.url && "active"
                             }`}
                           >
                             {child.name}
@@ -114,7 +114,7 @@ const Header = () => {
                     <Link
                       href={menu.url} target="_blank"
                       className={`nav-link block ${
-                        asPath === menu.url && "active"
+                        asPath.pathname === menu.url && "active"
                       }`}
                     >
                       {menu.name}

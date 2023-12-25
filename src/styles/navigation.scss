@@ -35,7 +35,7 @@
 }
 
 .nav-link {
-  @apply  p-3 text-[1rem] font-medium text-white transition hover:text-[#FB2C1F] lg:py-4;
+  @apply  px-3 py-[10px] text-[1rem] font-medium text-white transition hover:text-[#FB2C1F] lg:py-4;
 
   &.active {
     @apply text-[#FB2C1F];

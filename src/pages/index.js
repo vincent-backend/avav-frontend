@@ -77,7 +77,7 @@ export default function Home({ data }) {
     <Base>
       {/*background*/}
       <div className="absolute w-full h-[1602px] md:h-[1187px] top-0 left-0 overflow-x-hidden -z-10">
-        <div className="absolute w-full min-w-[400px] aspect-[0.592] md:aspect-auto md:w-[1920px] md:h-[1187px] top-0 sm:-left-0 md:left-auto md:right-[-350px] lg:right-[-300px] xl:right-0 bg-contain bg-center bg-no-repeat bg-[url('/images/home/bg_top_pic.png')] md:bg-[url('/images/home/md/bg_top_pic.png')] -z-30">
+        <div className="absolute w-full min-w-[400px] aspect-[0.592] md:aspect-auto md:w-[1920px] md:h-[1187px] top-0 sm:-left-0 md:left-auto md:right-[-350px] xl:right-[-200px] 2xl:right-0 bg-contain bg-center bg-no-repeat bg-[url('/images/home/bg_top_pic.png')] md:bg-[url('/images/home/md/bg_top_pic.png')] -z-30">
           {/* top graph */}
           <div className="top-graph absolute w-full min-w-[400px] aspect-square md:w-[750px] -bottom-[26.73%] right-0 md:top-[150px] md:right-[150px] bg-contain bg-center bg-no-repeat bg-[url('/images/home/top_graph.gif')] md:bg-[url('/images/home/md/top_graph.gif')] -z-10" />
         </div>

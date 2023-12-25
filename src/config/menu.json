@@ -50,15 +50,15 @@
       "hasChildren": true,
       "children": [
         {
-          "name": "Super Wallet",
+          "name": "OKX Wallet",
           "url": "/"
         },
         {
-          "name": "Uniset Wallet",
+          "name": "TP Wallet",
           "url": "/"
         },
         {
-          "name": "OKX TP Metamask",
+          "name": "Matamask Wallet",
           "url": "/"
         }
       ]
