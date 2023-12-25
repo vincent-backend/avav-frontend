@@ -51,15 +51,15 @@
       "children": [
         {
           "name": "OKX Wallet",
-          "url": "/"
+          "url": "https://www.okx.com/web3"
         },
         {
           "name": "TP Wallet",
-          "url": "/"
+          "url": "https://www.tokenpocket.pro/"
         },
         {
           "name": "Matamask Wallet",
-          "url": "/"
+          "url": "https://metamask.io/"
         }
       ]
     },
