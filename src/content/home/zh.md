@@ -22,4 +22,7 @@ blog_4:
   title: "有時紅色也是綠色"
   subtitle: "不可持續的技術就沒有未來。"
   description: "當談到運行所需的能量時，沒有其他區塊鏈可以與之相提並論。根據 Crypto Carbon Ratings Institute 的數據，Avalanche 每年消耗的能源相當於 46 個美國家庭的能源消耗。"
+home:
+  open_wallet: "打開錢包"
+  buy_tutorial: "購買教學課程"
 ---

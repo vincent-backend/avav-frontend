@@ -2,6 +2,7 @@ import Base from "@/layouts/Baseof";
 import FaqItem from "@/layouts/components/FaqItem";
 import faqs from "@/content/faqs.json";
 import Dashboard from "@/layouts/components/home/Dashboard";
+import Entrance from "@/layouts/components/home/Entrance";
 
 import dynamic from "next/dynamic";
 import { gsap } from "@/lib/gsap";
@@ -22,7 +23,7 @@ export default function Home({ data }) {
   let c_data = data.filter((dt) => dt.lang === locale)[0];
   const [frontmatter, setFrontmatter] = useState(c_data);
   //
-  let { banner, blog_1, blog_2, blog_3, blog_4 } = frontmatter;
+  let { banner, blog_1, blog_2, blog_3, blog_4, home } = frontmatter;
 
   const handleFaqToggle = (index) => {
     if (factive === index) {
@@ -116,77 +117,7 @@ export default function Home({ data }) {
             className="hidden right-[20px] bottom-[50px] w-[50px] h-[50px] bg-contain bg-no-repeat bg-[url('/images/home/arrow.svg')] z-10"
           />
           {/* Site Link */}
-          <div className="animate flex flex-wrap justify-center lg:justify-start max-w-[880px] gap-4 mt-[400px] md:mt-[60px]">
-            <Link
-              href="https://avascriptions.com/market/token?tick=avav" target="_blank"
-              className="site-link"
-            >
-              <Image
-                alt="AVALANCHE"
-                src="/images/home/top_card_logo_1.svg"
-                width={132}
-                height={118}
-                className="w-[70%] h-auto"
-              />
-            </Link>
-            <Link href="/" target="_blank" className="site-link hidden">
-              <Image
-                alt="Bitget"
-                src="/images/home/top_card_logo_2.svg"
-                width={82}
-                height={118}
-                className="h-[63.4%] w-auto"
-              />
-            </Link>
-            <Link href="/" target="_blank" className="site-link hidden">
-              <Image
-                alt="Gate.io"
-                src="/images/home/top_card_logo_3.svg"
-                width={98}
-                height={118}
-                className="h-[63.4%] w-auto"
-              />
-            </Link>
-            <Link href="/" target="_blank" className="site-link hidden">
-              <Image
-                alt="BitMart"
-                src="/images/home/top_card_logo_4.svg"
-                width={84}
-                height={118}
-                className="h-[63.4%] w-auto"
-              />
-            </Link>
-            <Link href="/" target="_blank" className="site-link hidden">
-              <Image
-                alt="CoinGeko"
-                src="/images/home/top_card_logo_5.png"
-                width={116}
-                height={118}
-                className="h-[63.4%] md:h-[118px] w-auto md:w-[116px]"
-              />
-            </Link>
-            <Link href="/" target="_blank" className="site-link hidden">
-              <Image
-                alt="CoinMarketCap"
-                src="/images/home/top_card_logo_6.svg"
-                width={138}
-                height={118}
-                className="h-[63.4%] w-auto"
-              />
-            </Link>
-            <Link
-              href="https://h5.4ezh6.com/?ref=EAW6SB&forward_url=1&page=1&channelCode=EAW6SB" target="_blank"
-              className="site-link"
-            >
-              <Image
-                alt="CoinMarketCap"
-                src="/images/home/top_card_logo_7.png"
-                width={118}
-                height={132}
-                className="h-[61.68%] w-auto"
-              />
-            </Link>
-          </div>
+          <Entrance text={home} />
         </div>
       </section>
       <Dashboard />
@@ -231,7 +162,7 @@ export default function Home({ data }) {
       </section>
       {/* JOIN WEB3's MOST VIBRANT COMMUNITY */}
       <section className="animate mt-12 md:mt-[212px] relative">
-        <div className="absolute w-[100%] h-[566px] md:w-[1000px] md:h-[800px] top-0 right-0 bg-contain bg-no-repeat bg-[url('/images/home/bg_Decoration_2.gif')] md:bg-[url('/images/home/md/bg_Decoration_2.gif')] -z-10" />
+        <div className="-z-20 absolute w-[100%] h-[566px] md:w-[1000px] md:h-[800px] top-0 right-0 bg-contain bg-no-repeat bg-[url('/images/home/bg_Decoration_2.gif')] md:bg-[url('/images/home/md/bg_Decoration_2.gif')]" />
         <div className="container">
           <div className="flex flex-col mx-auto max-w-[890px]">
             <div className="flex justify-end">

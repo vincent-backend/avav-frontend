@@ -22,4 +22,7 @@ blog_4:
   title: "時には赤も緑になる"
   subtitle: "持続可能ではないテクノロジーには未来に対する権利はありません。"
   description: "実行に必要なエネルギーに関しては、他のブロックチェーンに匹敵するものはありません。 Crypto Carbon Ratings Institute によると、Avalanche は毎年、米国のわずか 46 世帯と同じエネルギーを消費しています。"
+home:
+  open_wallet: "Open Wallet"
+  buy_tutorial: "Buy Tutorial"
 ---

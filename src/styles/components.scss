@@ -37,6 +37,10 @@
   @apply flex justify-center items-center min-w-[140px] md:w-[186px] aspect-square bg-contain bg-no-repeat bg-[url('/images/home/top_logo_bg_nor.svg')] active:bg-[url('/images/home/top_logo_bg_hover.svg')] hover:bg-[url('/images/home/top_logo_bg_hover.svg')];
 }
 
+.site-link-other {
+  @apply flex flex-col justify-center items-center min-w-[140px] md:w-[186px] aspect-square bg-contain bg-no-repeat bg-[url('/images/home/top_logo_bg_nor2.svg')] active:bg-[url('/images/home/top_logo_bg_hover2.svg')] hover:bg-[url('/images/home/top_logo_bg_hover2.svg')];
+}
+
 .bd-blog {
   @apply flex flex-col w-full md:max-w-[570px];
 

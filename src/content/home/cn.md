@@ -22,4 +22,7 @@ blog_4:
   title: "有时红色也是绿色"
   subtitle: "不可持续的技术就没有未来。"
   description: "当谈到运行所需的能量时，没有其他区块链可以与之相媲美。根据 Crypto Carbon Ratings Institute 的数据，Avalanche 每年消耗的能源相当于 46 个ø家庭的能源消耗。"
+home:
+  open_wallet: "打开钱包"
+  buy_tutorial: "购买教学课程"
 ---

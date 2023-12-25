@@ -22,4 +22,7 @@ blog_4:
   title: "SOMETIMES RED IS ALSO GREEN"
   subtitle: "Technology that isn’t sustainable has no claim on the future."
   description: "When it comes to the energy required to run, no other blockchain comes close. According to the Crypto Carbon Ratings Institute, Avalanche consumes the same energy as only 46 US households each year."
+home:
+  open_wallet: "Open Wallet"
+  buy_tutorial: "Buy Tutorial"
 ---
