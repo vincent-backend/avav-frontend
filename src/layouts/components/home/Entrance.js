@@ -47,7 +47,7 @@ export default function Entrance({text}) {
       <Link href="/" target="_blank" className="site-link">
         <Image
           alt="BitMart"
-          src="/images/home/top_card_logo_9.png"
+          src="/images/home/top_card_logo_9_1.png"
           width={98}
           height={118}
           className="h-[63.4%] w-auto"
@@ -78,7 +78,7 @@ export default function Entrance({text}) {
       >
         <Image
           alt="CoinMarketCap"
-          src="/images/home/top_card_logo_7_1.png"
+          src="/images/home/top_card_logo_7_2.png"
           width={118}
           height={132}
           className="h-[61.68%] w-auto"
