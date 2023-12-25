@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export default function Entrance({ text }) {
   return (
-    <div className="animate flex flex-wrap justify-center lg:justify-start gap-4 mt-[400px] md:mt-[60px]">
+    <div className="animate flex flex-wrap justify-center lg:justify-start gap-4 mt-[400px] md:mt-[60px] ">
       <Link
         href="https://avascriptions.com/market/token?tick=avav"
         target="_blank"
-        className="site-link"
+        className="site-link relative"
       >
         <Image
           alt="AVALANCHE"
@@ -16,8 +16,9 @@ export default function Entrance({ text }) {
           height={118}
           className="w-[70%] h-auto"
         />
+        <Image alt="trading" src="/images/home/logo_ic_Trading.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
       </Link>
-      <Link href="/" target="_blank" className="site-link hidden">
+      <Link href="/" target="_blank" className="site-link hidden relative">
         <Image
           alt="Bitget"
           src="/images/home/top_card_logo_2.svg"
@@ -25,8 +26,9 @@ export default function Entrance({ text }) {
           height={118}
           className="h-[63.4%] w-auto"
         />
+        <Image alt="trading" src="/images/home/logo_ic_Trading.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
       </Link>
-      <Link href="/" target="_blank" className="site-link hidden">
+      <Link href="/" target="_blank" className="site-link relative hidden">
         <Image
           alt="Gate.io"
           src="/images/home/top_card_logo_3.svg"
@@ -34,8 +36,9 @@ export default function Entrance({ text }) {
           height={118}
           className="h-[63.4%] w-auto"
         />
+        <Image alt="trading" src="/images/home/logo_ic_Trading.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
       </Link>
-      <Link href="/" target="_blank" className="site-link hidden">
+      <Link href="/" target="_blank" className="site-link relative hidden">
         <Image
           alt="BitMart"
           src="/images/home/top_card_logo_4.svg"
@@ -43,8 +46,9 @@ export default function Entrance({ text }) {
           height={118}
           className="h-[63.4%] w-auto"
         />
+        <Image alt="trading" src="/images/home/logo_ic_Trading.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
       </Link>
-      <Link href="/" target="_blank" className="site-link hidden">
+      <Link href="/" target="_blank" className="site-link relative hidden">
         <Image
           alt="CoinGeko"
           src="/images/home/top_card_logo_5.png"
@@ -52,8 +56,9 @@ export default function Entrance({ text }) {
           height={118}
           className="h-[63.4%] md:h-[118px] w-auto md:w-[116px]"
         />
+        <Image alt="trading" src="/images/home/logo_ic_Trading.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
       </Link>
-      <Link href="/" target="_blank" className="site-link hidden">
+      <Link href="/" target="_blank" className="site-link relative hidden">
         <Image
           alt="CoinMarketCap"
           src="/images/home/top_card_logo_6.svg"
@@ -61,11 +66,13 @@ export default function Entrance({ text }) {
           height={118}
           className="h-[63.4%] w-auto"
         />
+        <Image alt="trading" src="/images/home/logo_ic_Trading.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
       </Link>
+
       <Link
         href="https://h5.4ezh6.com/?ref=EAW6SB&forward_url=1&page=1&channelCode=EAW6SB"
         target="_blank"
-        className="site-link"
+        className="site-link relative"
       >
         <Image
           alt="CoinMarketCap"
@@ -74,10 +81,12 @@ export default function Entrance({ text }) {
           height={132}
           className="h-[61.68%] w-auto"
         />
+        <Image alt="trading" src="/images/home/logo_ic_Trading.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
       </Link>
 
       {/*TP Wallet*/}
-      <div className="group site-link md:site-link-other">
+      <div className="group site-link md:site-link-other relative">
+        <Image alt="trading" src="/images/home/logo_ic_purse.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
         <div className="flex items-center justify-center w-full h-full md:group-hover:-translate-y-full transition-transform duration-500 ease-out">
           <Image
             alt="TP Wallet"
@@ -106,7 +115,8 @@ export default function Entrance({ text }) {
       </div>
 
       {/*OKX Wallet*/}
-      <div className="group site-link md:site-link-other">
+      <div className="group site-link md:site-link-other relative">
+      <Image alt="trading" src="/images/home/logo_ic_purse.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
         <div className="flex items-center justify-center w-full h-full md:group-hover:-translate-y-full transition-transform duration-500 ease-out">
           <Image
             alt="OKX Wallet"
@@ -135,7 +145,8 @@ export default function Entrance({ text }) {
       </div>
 
       {/*Metamask Wallet*/}
-      <div className="group site-link md:site-link-other">
+      <div className="group site-link md:site-link-other relative">
+      <Image alt="trading" src="/images/home/logo_ic_purse.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
         <div className="flex items-center justify-center w-full h-full md:group-hover:-translate-y-full transition-transform duration-500 ease-out">
           <Image
             alt="Metamask Wallet"
