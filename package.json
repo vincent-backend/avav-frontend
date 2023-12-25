@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "next build && node ./scripts/deploy.mjs"
   },
   "dependencies": {
     "clsx": "^2.0.0",
@@ -17,6 +18,7 @@
     "marked": "^11.1.0",
     "next": "14.0.4",
     "nextjs-progressbar": "^0.0.16",
+    "path": "^0.12.7",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.12.0"
@@ -25,8 +27,10 @@
     "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.10",
     "autoprefixer": "^10.0.1",
+    "dotenv": "^16.3.1",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
+    "ftp-deploy": "^2.4.5",
     "postcss": "^8",
     "sass": "^1.69.5",
     "tailwind-bootstrap-grid": "^5.1.0",
