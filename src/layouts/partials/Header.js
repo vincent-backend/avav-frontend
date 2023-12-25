@@ -72,9 +72,9 @@ const Header = () => {
 
           <ul
             id="nav-menu"
-            className={clsx(!showMenu && "hidden", "navbar-nav order-2 w-full justify-center md:justify-end md:mr-[114px] md:w-auto md:space-x-2 md:order-1 md:flex")}
+            className={clsx(!showMenu && "hidden", "navbar-nav order-2 w-full justify-center md:justify-end md:w-auto md:order-1 md:flex")}
           >
-            <div className="w-full h-screen md:bg-none md:flex md:justify-end md:h-auto md:space-x-11">
+            <div className="w-full h-screen md:bg-none md:flex md:justify-end md:h-auto md:space-x-1 xl:space-x-3">
               <div className="h-10 md:hidden" />
               <li className="nav-item md:hidden">
                 <Link
@@ -86,20 +86,46 @@ const Header = () => {
                 </Link>
               </li>
               {main.map((menu, i) => (
-                <React.Fragment key={`menu-${i}`}>
+              <React.Fragment key={`menu-${i}`}>
+                {menu.hasChildren ? (
+                  <li className="nav-item nav-dropdown group relative">
+                    <span className="nav-link inline-flex items-center">
+                      {menu.name}
+                      <svg className="h-4 w-4 fill-current ml-1" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                      </svg>
+                    </span>
+                    <ul className="nav-dropdown-list hidden max-h-0 w-[180px] mx-auto overflow-hidden border border-border-secondary py-0 transition-all duration-500 group-hover:block group-hover:max-h-[246px] group-hover:py-1 md:invisible md:absolute md:left-1/2 md:block md:w-auto md:-translate-x-1/2 md:group-hover:visible md:group-hover:opacity-100">
+                      {menu.children.map((child, i) => (
+                        <li className="nav-dropdown-item" key={`children-${i}`}>
+                          <Link
+                            href={child.url} target="_blank"
+                            className={`nav-dropdown-link block transition-all ${
+                              asPath === child.url && "active"
+                            }`}
+                          >
+                            {child.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                ) : (
                   <li className="nav-item">
                     <Link
                       href={menu.url}
-                      target="_blank"
-                      className={`nav-link block ${asPath.pathname === menu.url && "active"
-                        }`}
-                        onClick={()=>setShowMenu(false)}
+                      className={`nav-link block ${
+                        asPath === menu.url && "active"
+                      }`}
                     >
                       {menu.name}
                     </Link>
                   </li>
-                </React.Fragment>
-              ))}
+                )}
+              </React.Fragment>
+            ))}
+
+              {/* Language support */}
               <li className="nav-item nav-dropdown group relative md:mt-0">
                 <span className="nav-link inline-flex items-center">
                   {locale == "jp" ? "日本語" : locale == "cn" ? "中文" : locale == "zh" ? "中文（繁体）" : "EN" }

@@ -31,7 +31,7 @@
 }
 
 .nav-item {
-  @apply text-center md:mx-3;
+  @apply text-center;
 }
 
 .nav-link {
@@ -43,7 +43,7 @@
 }
 
 .nav-dropdown {
-  @apply mr-0;
+  @apply mx-0;
 }
 
 .nav-dropdown-list {

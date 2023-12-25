@@ -7,6 +7,68 @@
     {
       "name": "Twitter",
       "url": "https://x.com/avavcommunity"
+    },
+    {
+      "name": "Support Wallets",
+      "url": "",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Super Wallet",
+          "url": "/"
+        },
+        {
+          "name": "Uniset Wallet",
+          "url": "/"
+        },
+        {
+          "name": "OKX Wallet",
+          "url": "/"
+        }
+      ]
+    },
+    {
+      "name": "Join Rats Community",
+      "url": "",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Rats Global Channel",
+          "url": "https://t.me/AVAV_official"
+        },
+        {
+          "name": "Rats Global Community",
+          "url": "https://t.me/avavglobal"
+        },
+        {
+          "name": "Rats Chinese Community",
+          "url": "https://t.me/AVAV_official"
+        },
+        {
+          "name": "Rats English Community",
+          "url": "https://t.me/avavenglish"
+        },
+        {
+          "name": "Rats Nigerian Community",
+          "url": "https://t.me/avavnigerian"
+        },
+        {
+          "name": "Rats Turkey Community",
+          "url": "https://t.me/avavturkey"
+        },
+        {
+          "name": "Rats Japan Community",
+          "url": "https://t.me/avavjapan"
+        }
+      ]
+    },
+    {
+      "name": "K Line Chart",
+      "url": "https://m.ave.ai/brc/inscription:6173632d32303a61766176-avalanche"
+    },
+    {
+      "name": "API DOC",
+      "url": "https://docs.avascriptions.com/developer-service/asc-20"
     }
   ]
 }
