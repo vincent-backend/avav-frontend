@@ -228,10 +228,10 @@ export default function Home({ data }) {
           </Link>
         </div>
       </section>
-      {/* HistoryTimeline */}
+      {/* HistoryTimeline 
       <section className="animate mt-16 md:mt-20">
         <HistoryTimeline />
-      </section>
+      </section>*/}
       {/* FAQ */}
       <section className="animate mt-16 md:mt-20 lg:mt-40 relative">
         <Image alt="Decoration_3" src="/images/home/bg_Decoration_3.png" width={234} height={430} className="absolute right-0 top-0 md:top-[260px] -z-10" />

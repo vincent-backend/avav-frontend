@@ -2,7 +2,43 @@
   "main": [
     {
       "name": "Telegram",
-      "url": "https://t.me/AVAV_official"
+      "url": "",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "AVAV Global Community",
+          "url": "https://t.me/avavglobal"
+        },
+        {
+          "name": "AVAV Chinese Community",
+          "url": "https://t.me/AVAV_official"
+        },
+        {
+          "name": "AVAV English Community",
+          "url": "https://t.me/avavenglish"
+        },
+        {
+          "name": "AVAV Nigerian Community",
+          "url": "https://t.me/avavnigerian"
+        },
+        {
+          "name": "AVAV Turkey Community",
+          "url": "https://t.me/avavturkey"
+        },
+        {
+          "name": "AVAV Japan Community",
+          "url": "https://t.me/avavjapan"
+        },
+        {
+          "name": "AVAV Korea Community",
+          "url": "https://t.me/avavkorea"
+        },
+        {
+          "name": "AVAV Vietnam Community",
+          "url": "https://t.me/avav_vietnami"
+        }
+
+      ]
     },
     {
       "name": "Twitter",
@@ -24,41 +60,6 @@
         {
           "name": "OKX Wallet",
           "url": "/"
-        }
-      ]
-    },
-    {
-      "name": "Join Rats Community",
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "Rats Global Channel",
-          "url": "https://t.me/AVAV_official"
-        },
-        {
-          "name": "Rats Global Community",
-          "url": "https://t.me/avavglobal"
-        },
-        {
-          "name": "Rats Chinese Community",
-          "url": "https://t.me/AVAV_official"
-        },
-        {
-          "name": "Rats English Community",
-          "url": "https://t.me/avavenglish"
-        },
-        {
-          "name": "Rats Nigerian Community",
-          "url": "https://t.me/avavnigerian"
-        },
-        {
-          "name": "Rats Turkey Community",
-          "url": "https://t.me/avavturkey"
-        },
-        {
-          "name": "Rats Japan Community",
-          "url": "https://t.me/avavjapan"
         }
       ]
     },

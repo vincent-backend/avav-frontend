@@ -75,7 +75,6 @@ const Header = () => {
             className={clsx(!showMenu && "hidden", "navbar-nav order-2 w-full justify-center md:justify-end md:w-auto md:order-1 md:flex")}
           >
             <div className="w-full h-screen md:bg-none md:flex md:justify-end md:h-auto md:space-x-1 xl:space-x-3">
-              <div className="h-10 md:hidden" />
               <li className="nav-item md:hidden">
                 <Link
                   href=""
@@ -95,7 +94,7 @@ const Header = () => {
                         <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                       </svg>
                     </span>
-                    <ul className="nav-dropdown-list hidden max-h-0 w-[180px] mx-auto overflow-hidden border border-border-secondary py-0 transition-all duration-500 group-hover:block group-hover:max-h-[246px] group-hover:py-1 md:invisible md:absolute md:left-1/2 md:block md:w-auto md:-translate-x-1/2 md:group-hover:visible md:group-hover:opacity-100">
+                    <ul className="nav-dropdown-list hidden max-h-0 w-[220px] mx-auto overflow-x-hidden border border-border-secondary py-0 transition-all duration-500 group-hover:block group-hover:max-h-[246px] group-hover:py-1 md:invisible md:absolute md:left-1/2 md:block md:w-auto md:-translate-x-1/2 md:group-hover:visible md:group-hover:opacity-100">
                       {menu.children.map((child, i) => (
                         <li className="nav-dropdown-item" key={`children-${i}`}>
                           <Link
