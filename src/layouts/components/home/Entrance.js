@@ -76,50 +76,91 @@ export default function Entrance({ text }) {
         />
       </Link>
 
-
+      {/*TP Wallet*/}
       <div className="group site-link md:site-link-other">
-        <div className="w-full h-full flex justify-center items-center md:group-hover:-translate-y-full transition-transform duration-500 ease-out">
+        <div className="flex items-center justify-center w-full h-full md:group-hover:-translate-y-full transition-transform duration-500 ease-out">
           <Image
-            alt="BitMart"
+            alt="TP Wallet"
             src="/images/home/top_card_logo_9_1.png"
             width={98}
             height={118}
             className="h-[63.4%] w-auto"
           />
         </div>
+        <div className="absolute w-full h-full top-0 left-0 hidden md:group-hover:block">
+          <div className="flex flex-col w-full h-full">
+            <Link href="https://www.tokenpocket.pro/" target="_blank" className="h-[50%]">
+              <div className="group/item flex flex-col h-full justify-center items-center text-white hover:text-cred">
+                <div className="w-[16px] h-[16px] bg-[url('/images/home/logo_bg_ic_arrow_nor.svg')] group-hover/item:bg-[url('/images/home/logo_bg_ic_arrow_hover.svg')]" />
+                {text.open_wallet}
+              </div>
+            </Link>
+            <Link href="/" className="h-[50%]">
+              <div className="group/item flex flex-col h-full justify-center items-center text-white hover:text-cred">
+                <div className="w-[16px] h-[16px] bg-[url('/images/home/logo_bg_ic_arrow_nor.svg')] group-hover/item:bg-[url('/images/home/logo_bg_ic_arrow_hover.svg')]" />
+                {text.buy_tutorial}
+              </div>
+            </Link>
+          </div>
+        </div>
       </div>
-      
-      <Link href="/" target="_blank" className="site-link md:site-link-other">
-        <Image
-          alt="CoinMarketCap"
-          src="/images/home/top_card_logo_8_1.png"
-          width={99}
-          height={118}
-          className="h-[63.4%] w-auto"
-        />
-      </Link>
-      <Link href="/" target="_blank" className="site-link-other">
-        <Image
-          alt="CoinMarketCap"
-          src="/images/home/top_card_logo_10.png"
-          width={98}
-          height={118}
-          className="h-[63.4%] w-auto"
-        />
-      </Link>
-      <div className="site-link-other hidden">
-        <Link href="/" target="_blank" className="h-[50%]">
-          <div className="group flex flex-col h-full justify-center items-center text-white hover:text-cred">
-            <div className="w-[16px] h-[16px] bg-[url('/images/home/logo_bg_ic_arrow_nor.svg')] group-hover:bg-[url('/images/home/logo_bg_ic_arrow_hover.svg')] group-active:bg-[url('/images/home/logo_bg_ic_arrow_hover.svg')]" />
-            {text.open_wallet}
+
+      {/*OKX Wallet*/}
+      <div className="group site-link md:site-link-other">
+        <div className="flex items-center justify-center w-full h-full md:group-hover:-translate-y-full transition-transform duration-500 ease-out">
+          <Image
+            alt="OKX Wallet"
+            src="/images/home/top_card_logo_8_1.png"
+            width={98}
+            height={118}
+            className="h-[63.4%] w-auto"
+          />
+        </div>
+        <div className="absolute w-full h-full top-0 left-0 hidden md:group-hover:block">
+          <div className="flex flex-col w-full h-full">
+            <Link href="https://www.okx.com/web3" target="_blank" className="h-[50%]">
+              <div className="group/item flex flex-col h-full justify-center items-center text-white hover:text-cred">
+                <div className="w-[16px] h-[16px] bg-[url('/images/home/logo_bg_ic_arrow_nor.svg')] group-hover/item:bg-[url('/images/home/logo_bg_ic_arrow_hover.svg')]" />
+                {text.open_wallet}
+              </div>
+            </Link>
+            <Link href="/" className="h-[50%]">
+              <div className="group/item flex flex-col h-full justify-center items-center text-white hover:text-cred">
+                <div className="w-[16px] h-[16px] bg-[url('/images/home/logo_bg_ic_arrow_nor.svg')] group-hover/item:bg-[url('/images/home/logo_bg_ic_arrow_hover.svg')]" />
+                {text.buy_tutorial}
+              </div>
+            </Link>
           </div>
-        </Link>
-        <Link href="/" className="h-[50%]">
-          <div className="group flex flex-col h-full justify-center items-center text-white hover:text-cred">
-            <div className="w-[16px] h-[16px] bg-[url('/images/home/logo_bg_ic_arrow_nor.svg')] group-hover:bg-[url('/images/home/logo_bg_ic_arrow_hover.svg')] group-active:bg-[url('/images/home/logo_bg_ic_arrow_hover.svg')]" />
-            {text.buy_tutorial}
+        </div>
+      </div>
+
+      {/*Metamask Wallet*/}
+      <div className="group site-link md:site-link-other">
+        <div className="flex items-center justify-center w-full h-full md:group-hover:-translate-y-full transition-transform duration-500 ease-out">
+          <Image
+            alt="Metamask Wallet"
+            src="/images/home/top_card_logo_10.png"
+            width={98}
+            height={118}
+            className="h-[63.4%] w-auto"
+          />
+        </div>
+        <div className="absolute w-full h-full top-0 left-0 hidden md:group-hover:block">
+          <div className="flex flex-col w-full h-full">
+            <Link href="https://metamask.io/" target="_blank" className="h-[50%]">
+              <div className="group/item flex flex-col h-full justify-center items-center text-white hover:text-cred">
+                <div className="w-[16px] h-[16px] bg-[url('/images/home/logo_bg_ic_arrow_nor.svg')] group-hover/item:bg-[url('/images/home/logo_bg_ic_arrow_hover.svg')]" />
+                {text.open_wallet}
+              </div>
+            </Link>
+            <Link href="/" className="h-[50%]">
+              <div className="group/item flex flex-col h-full justify-center items-center text-white hover:text-cred">
+                <div className="w-[16px] h-[16px] bg-[url('/images/home/logo_bg_ic_arrow_nor.svg')] group-hover/item:bg-[url('/images/home/logo_bg_ic_arrow_hover.svg')]" />
+                {text.buy_tutorial}
+              </div>
+            </Link>
           </div>
-        </Link>
+        </div>
       </div>
     </div>
   );
