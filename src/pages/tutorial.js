@@ -70,12 +70,12 @@ export default function Home({ data }) {
         src="/images/tutorial/bg_top_pic.svg"
         width={1921}
         height={1080}
-        className="absolute w-full h-full top-0 left-0"
+        className="-z-10 absolute w-full h-full top-0 left-0"
       ></Image>
       {/* Main content */}
       <section className="animate container mt-[90px] md:mt-[140px]">
         <h3 className="text-cred">{tutorial.title}</h3>
-        <p className="text-cred text-[14px]">AVAV = A Very Amazing Victory!</p>
+        <p className="text-cred text-[14px] md:text-[16px] font-secondary">AVAV = A Very Amazing Victory!</p>
         <div className="w-full h-[1px] bg-[#1B1B1B] my-5 md:my-10" />
         <div className="mb-[25px] md:mb-[50px]">
           <div className="flex flex-row gap-2">
