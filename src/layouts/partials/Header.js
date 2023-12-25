@@ -100,7 +100,7 @@ const Header = () => {
                   </li>
                 </React.Fragment>
               ))}
-              <li className="nav-item nav-dropdown group relative mt-[50%] md:mt-0">
+              <li className="nav-item nav-dropdown group relative md:mt-0">
                 <span className="nav-link inline-flex items-center">
                   {locale == "jp" ? "日本語" : locale == "cn" ? "中文" : locale == "zh" ? "中文（繁体）" : "EN" }
                   <svg className="h-4 w-4 fill-current ml-1" viewBox="0 0 20 20">

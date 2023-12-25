@@ -1,10 +1,12 @@
 import Base from "@/layouts/Baseof";
+import FaqItem from "@/layouts/components/FaqItem";
+import faqs from "@/content/faqs.json";
+import Dashboard from "@/layouts/components/home/Dashboard";
+
 import dynamic from "next/dynamic";
 import { gsap } from "@/lib/gsap";
 import Image from "next/image";
 import Link from "next/link";
-import FaqItem from "@/layouts/components/FaqItem";
-import faqs from "@/content/faqs.json";
 import { useEffect, useState } from "react";
 import { getDataFromContent } from "@/lib/contentParser";
 import useTranslation from "@/hooks/useTranslation";
@@ -184,10 +186,10 @@ export default function Home({ data }) {
                 className="h-[61.68%] w-auto"
               />
             </Link>
-            <div className="w-[140px] aspect-square lg:hidden" />
           </div>
         </div>
       </section>
+      <Dashboard />
 
       <section className="animate mt-[50px] md:mt-[200px] relative">
         <div className="container">
