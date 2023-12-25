@@ -105,13 +105,13 @@ export default function Entrance({text}) {
       <div className="site-link-other">
         <Link href="/" target="_blank" className="h-[50%]">
           <div className="group flex flex-col h-full justify-center items-center text-white hover:text-cred">
-            <div className="w-[16px] h-[16px] bg-[url('/images/home/logo_bg_ic_arrow_nor.svg')] group-hover:bg-[url('/images/home/logo_bg_ic_arrow_hover.svg')]" />
+            <div className="w-[16px] h-[16px] bg-[url('/images/home/logo_bg_ic_arrow_nor.svg')] group-hover:bg-[url('/images/home/logo_bg_ic_arrow_hover.svg')] group-active:bg-[url('/images/home/logo_bg_ic_arrow_hover.svg')]" />
             {text.open_wallet}
           </div>
         </Link>
         <Link href="/" className="h-[50%]">
           <div className="group flex flex-col h-full justify-center items-center text-white hover:text-cred">
-            <div className="w-[16px] h-[16px] bg-[url('/images/home/logo_bg_ic_arrow_nor.svg')] group-hover:bg-[url('/images/home/logo_bg_ic_arrow_hover.svg')]" />
+            <div className="w-[16px] h-[16px] bg-[url('/images/home/logo_bg_ic_arrow_nor.svg')] group-hover:bg-[url('/images/home/logo_bg_ic_arrow_hover.svg')] group-active:bg-[url('/images/home/logo_bg_ic_arrow_hover.svg')]" />
             {text.buy_tutorial}
           </div>
         </Link>

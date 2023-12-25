@@ -9,14 +9,16 @@ import { markdownify } from "@/lib/utils/textConverter";
 import clsx from "clsx";
 
 export default function Home({ data }) {
-  const { locale } = useTranslation();
-  const [factive, setFActive] = useState(null);
+  const { locale, setLocale } = useTranslation();
+
+  if (locale === "undefined") console.log("WOW");
 
   // static data
   let c_data = data.filter((dt) => dt.lang === locale)[0];
   const [frontmatter, setFrontmatter] = useState(c_data);
+
   //
-  let { banner, blog_1, blog_2, blog_3, blog_4, home } = frontmatter;
+  let { tutorial, tutorial1, tutorial2, tutorial3 } = frontmatter;
 
   const handleFaqToggle = (index) => {
     if (factive === index) {
@@ -72,7 +74,57 @@ export default function Home({ data }) {
       ></Image>
       {/* Main content */}
       <section className="animate container mt-[90px] md:mt-[140px]">
-        <h3 className="text-cred"></h3>
+        <h3 className="text-cred">{tutorial.title}</h3>
+        <p className="text-cred text-[14px]">AVAV = A Very Amazing Victory!</p>
+        <div className="w-full h-[1px] bg-[#1B1B1B] my-5 md:my-10" />
+        <div className="mb-[25px] md:mb-[50px]">
+          <div className="flex flex-row gap-2">
+            <Image
+              src="/images/tutorial/list_ic_recover.svg"
+              alt="icon"
+              width={18}
+              height={18}
+            />
+            <span className="text-[18px] md:text-[20px] text-white">
+              {tutorial1.title}
+            </span>
+          </div>
+          <div className="mt-2">
+            {markdownify(tutorial1.content, "h6", "text-text leading-6")}
+          </div>
+        </div>
+        <div className="mb-[25px] md:mb-[50px]">
+          <div className="flex flex-row gap-2">
+            <Image
+              src="/images/tutorial/list_ic_recover.svg"
+              alt="icon"
+              width={18}
+              height={18}
+            />
+            <span className="text-[18px] md:text-[20px] text-white">
+              {tutorial2.title}
+            </span>
+          </div>
+          <div className="mt-2">
+            {markdownify(tutorial2.content, "h6", "text-text leading-6")}
+          </div>
+        </div>
+        <div className="mb-[25px] md:mb-[50px]">
+          <div className="flex flex-row gap-2">
+            <Image
+              src="/images/tutorial/list_ic_recover.svg"
+              alt="icon"
+              width={18}
+              height={18}
+            />
+            <span className="text-[18px] md:text-[20px] text-white">
+              {tutorial3.title}
+            </span>
+          </div>
+          <div className="mt-2">
+            {markdownify(tutorial3.content, "h6", "text-text leading-6")}
+          </div>
+        </div>
       </section>
     </Base>
   );
@@ -80,7 +132,7 @@ export default function Home({ data }) {
 
 // for tutorial data
 export const getStaticProps = async () => {
-  const data = await getDataFromContent("./src/content/home");
+  const data = await getDataFromContent("./src/content/tutorial");
 
   return {
     props: {

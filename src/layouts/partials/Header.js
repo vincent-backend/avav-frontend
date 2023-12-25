@@ -52,6 +52,8 @@ const Header = () => {
       setLocale("en");
     }
 
+    console.log(locale);
+
   }, [langParam]);
 
   // logo source
@@ -67,7 +69,7 @@ const Header = () => {
         <nav className={clsx("navbar nav-container", showMenu && "bg-[url('/images/home/bg-menu.png')] bg-cover md:bg-none overscroll-y-none")}>
           {/* logo */}
           <div className="order-0"  onClick={()=>setShowMenu(false)}>
-            <Logo src={logo}/>
+            <Logo src={logo} lang={locale}/>
           </div>
 
           <ul
@@ -77,7 +79,7 @@ const Header = () => {
             <div className="w-full h-screen md:bg-none md:flex md:justify-end md:h-auto md:space-x-1 xl:space-x-3">
               <li className="nav-item md:hidden">
                 <Link
-                  href=""
+                  href="/"
                   className={clsx("nav-link block", asPath.pathname == "/" && "active")}
                   onClick={()=>setShowMenu(false)}
                 >
@@ -111,14 +113,29 @@ const Header = () => {
                   </li>
                 ) : (
                   <li className="nav-item">
-                    <Link
-                      href={menu.url} target="_blank"
+                    {menu.url === "/tutorial" ?
+                    (
+                      <Link
+                      href={menu.url + "?lang=" + locale} 
                       className={`nav-link block ${
                         asPath.pathname === menu.url && "active"
                       }`}
                     >
                       {menu.name}
                     </Link>
+                    ) : (
+                      <Link
+                      href={menu.url} 
+                      target="_blank"
+                      className={`nav-link block ${
+                        asPath.pathname === menu.url && "active"
+                      }`}
+                    >
+                      {menu.name}
+                    </Link>
+                    )
+                    }
+                    
                   </li>
                 )}
               </React.Fragment>
@@ -135,7 +152,7 @@ const Header = () => {
                 <ul className="nav-dropdown-list hidden max-h-0 w-[150px] mx-auto overflow-hidden border border-border-secondary py-0 transition-all duration-500 group-hover:block group-hover:max-h-[126px] group-hover:py-1 md:invisible md:absolute md:left-1/2 md:block md:w-auto md:-translate-x-1/2 md:group-hover:visible md:group-hover:opacity-100">
                   <li className="nav-dropdown-item" key={`children-EN`}>
                     <Link
-                      href=""
+                      href={`${asPath.pathname}`+"?lang=en"}
                       className={clsx("nav-dropdown-link block transition-all", locale == "en" && "active")}
                       onClick={()=>setShowMenu(false)}
                     >
@@ -144,7 +161,7 @@ const Header = () => {
                   </li>
                   <li className="nav-dropdown-item" key={`children-CN`}>
                     <Link
-                      href="/?lang=cn"
+                      href={`${asPath.pathname}`+"?lang=cn"}
                       className={clsx("nav-dropdown-link block transition-all", locale == "cn" && "active")}
                       onClick={()=>setShowMenu(false)}
                     >
@@ -153,7 +170,7 @@ const Header = () => {
                   </li>
                   <li className="nav-dropdown-item" key={`children-ZH`}>
                     <Link
-                      href="/?lang=zh"
+                      href={`${asPath.pathname}`+"?lang=zh"}
                       className={clsx("nav-dropdown-link block transition-all", locale == "zh" && "active")}
                       onClick={()=>setShowMenu(false)}
                     >
@@ -162,7 +179,7 @@ const Header = () => {
                   </li>
                   <li className="nav-dropdown-item" key={`children-JP`}>
                     <Link
-                      href="/?lang=jp"
+                      href={`${asPath.pathname}`+"?lang=jp"}
                       className={clsx("nav-dropdown-link block transition-all", locale == "jp" && "active")}
                       onClick={()=>setShowMenu(false)}
                     >

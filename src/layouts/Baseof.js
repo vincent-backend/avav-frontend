@@ -145,7 +145,7 @@ const Base = ({
           content={`${base_url}${meta_image}`}
         />
 
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:card" content={`${base_url}${meta_image}`} />
 
         {/* author from config.json */}
         <meta name="author" content={meta_author} />

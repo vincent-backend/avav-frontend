@@ -3,7 +3,6 @@ import json_dashboard from "@/content/dashboard.json";
 export default function Dashboard() {
     
     const {dashboard} = json_dashboard;
-    console.log(dashboard);
 
     return (
         <section className="animate container mt-10 md:mt-40">

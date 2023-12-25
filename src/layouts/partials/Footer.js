@@ -3,14 +3,17 @@ import menu from "@/config/menu.json";
 import Logo from "@/layouts/components/Logo";
 import Link from "next/link";
 import Image from "next/image";
+import useTranslation from "@/hooks/useTranslation";
 
 const Footer = () => {
   const { email } = config.contact_info;
+  const { locale, setLocale } = useTranslation();
+
   return (
     <footer className="bg-black">
       <div className="container">
         <div className="flex flex-col md:flex-row justify-start md:justify-between items-start md:items-center pt-4 md:pt-8">
-          <Logo />
+          <Logo lang={locale}/>
         </div>
         <div className="w-full h-[1px] bg-[#1b1b1b]" />
         <div className="flex flex-col md:flex-row justify-center pb-6 md:py-6 md:gap-20 lg:px-20">
