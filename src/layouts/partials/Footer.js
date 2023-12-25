@@ -27,6 +27,9 @@ const Footer = () => {
                 <Link href="https://x.com/avavcommunity" target="_blank">
                   Twitter
                 </Link>
+                <Link href="https://discord.gg/Rn7ArXbD" target="_blank">
+                  Discord
+                </Link>
                 <Link
                   href="https://medium.com/@pr_86854/avav-beyond-hype-the-first-practical-inscription-token-9f36e992137a"
                   target="_blank"

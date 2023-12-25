@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Entrance({text}) {
+export default function Entrance({ text }) {
   return (
     <div className="animate flex flex-wrap justify-center lg:justify-start gap-4 mt-[400px] md:mt-[60px]">
       <Link
@@ -44,15 +44,6 @@ export default function Entrance({text}) {
           className="h-[63.4%] w-auto"
         />
       </Link>
-      <Link href="/" target="_blank" className="site-link">
-        <Image
-          alt="BitMart"
-          src="/images/home/top_card_logo_9_1.png"
-          width={98}
-          height={118}
-          className="h-[63.4%] w-auto"
-        />
-      </Link>
       <Link href="/" target="_blank" className="site-link hidden">
         <Image
           alt="CoinGeko"
@@ -84,7 +75,21 @@ export default function Entrance({text}) {
           className="h-[61.68%] w-auto"
         />
       </Link>
-      <Link href="/" target="_blank" className="site-link">
+
+
+      <div className="group site-link md:site-link-other">
+        <div className="w-full h-full flex justify-center items-center md:group-hover:-translate-y-full transition-transform duration-500 ease-out">
+          <Image
+            alt="BitMart"
+            src="/images/home/top_card_logo_9_1.png"
+            width={98}
+            height={118}
+            className="h-[63.4%] w-auto"
+          />
+        </div>
+      </div>
+      
+      <Link href="/" target="_blank" className="site-link md:site-link-other">
         <Image
           alt="CoinMarketCap"
           src="/images/home/top_card_logo_8_1.png"
@@ -93,7 +98,7 @@ export default function Entrance({text}) {
           className="h-[63.4%] w-auto"
         />
       </Link>
-      <Link href="/" target="_blank" className="site-link">
+      <Link href="/" target="_blank" className="site-link-other">
         <Image
           alt="CoinMarketCap"
           src="/images/home/top_card_logo_10.png"
@@ -102,7 +107,7 @@ export default function Entrance({text}) {
           className="h-[63.4%] w-auto"
         />
       </Link>
-      <div className="site-link-other">
+      <div className="site-link-other hidden">
         <Link href="/" target="_blank" className="h-[50%]">
           <div className="group flex flex-col h-full justify-center items-center text-white hover:text-cred">
             <div className="w-[16px] h-[16px] bg-[url('/images/home/logo_bg_ic_arrow_nor.svg')] group-hover:bg-[url('/images/home/logo_bg_ic_arrow_hover.svg')] group-active:bg-[url('/images/home/logo_bg_ic_arrow_hover.svg')]" />
@@ -116,7 +121,6 @@ export default function Entrance({text}) {
           </div>
         </Link>
       </div>
-      
     </div>
   );
 }
