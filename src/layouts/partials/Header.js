@@ -113,7 +113,7 @@ const Header = () => {
                 ) : (
                   <li className="nav-item">
                     <Link
-                      href={menu.url}
+                      href={menu.url} target="_blank"
                       className={`nav-link block ${
                         asPath === menu.url && "active"
                       }`}
