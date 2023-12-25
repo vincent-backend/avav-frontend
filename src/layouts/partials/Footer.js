@@ -2,6 +2,7 @@ import config from "@/config/config.json";
 import menu from "@/config/menu.json";
 import Logo from "@/layouts/components/Logo";
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
   const { email } = config.contact_info;
@@ -23,10 +24,8 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="mt-4 md:mt-0 md:min-w-[350px]">
-            <h4 className="font-secondary text-center lg:text-right">
-              AVAV
-            </h4>
+          <div className="mt-4 md:mt-0 md:min-w-[350px] flex justify-center md:justify-end md:items-start">
+            <Image alt="AVAV" src="/images/footer/symbol.svg" width={66} height={12} />
           </div>
         </div>
       </div>
