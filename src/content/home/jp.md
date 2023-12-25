@@ -4,7 +4,8 @@ nav:
   trade_now: "今すぐ取引する"
 banner:
   title: "Welcome To"
-  content: "<b>A V</b>ery <b>A</b>mazing <b>V</b>ictory.<br>かなり素晴らしい勝利でした。 <br>$AVAV は、Avalanche Ecology でダイヤモンド バッジを獲得した最初の碑文ミームであり、3 日間の取引量は 500,000 AVAX (2,550 万米ドルのボリューム) に達しました。碑文の鋳造開始から終了まで 1 か月以上かかりましたが、AVAV という名前を見ると、コミュニティとの強い感情的な一致が得られます。人生を愛し、完璧なグローバル属性を備えています。スーパー ミーム。"
+  subtitle: "A Very Amazing Victory. A very amazing victory"
+  content: "かなり素晴らしい勝利でした。 <br>$AVAV は、Avalanche Ecology でダイヤモンド バッジを獲得した最初の碑文ミームであり、3 日間の取引量は 500,000 AVAX (2,550 万米ドルのボリューム) に達しました。碑文の鋳造開始から終了まで 1 か月以上かかりましたが、AVAV という名前を見ると、コミュニティとの強い感情的な一致が得られます。人生を愛し、完璧なグローバル属性を備えています。スーパー ミーム。"
   btn_con: "AVAXに接続する"
 blog_1:
   title: "自分のやり方で構築しましょう"

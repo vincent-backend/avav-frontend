@@ -13,6 +13,7 @@ import { getDataFromContent } from "@/lib/contentParser";
 import useTranslation from "@/hooks/useTranslation";
 import { markdownify } from "@/lib/utils/textConverter";
 import clsx from "clsx";
+import HistoryTimeline from "@/layouts/components/home/HistoryTimeline";
 
 export default function Home({ data }) {
   const { locale } = useTranslation();
@@ -89,10 +90,8 @@ export default function Home({ data }) {
       {/*Left line*/}
       <div className="absolute w-[55%] h-[804px] md:w-[1000px] top-[1400px] md:top-[1689px] left-0 bg-contain bg-center bg-no-repeat bg-[url('/images/home/line.gif')] md:bg-[url('/images/home/md/line.gif')] -z-10" />
 
-      
-      
       {/* Banner */}
-      <section className="min-h-[120%] md:min-h-[1000px] pt-[100px] md:pt-[254px]">
+      <section className="min-h-[120%] md:min-h-[1000px] pt-[90px] md:pt-[254px]">
         <div className="container">
           <div className="banner flex flex-col justify-start md:max-w-[670px]">
             <div className="banner-title">
@@ -102,7 +101,9 @@ export default function Home({ data }) {
                 <div className="absolute w-[100px] h-[26px] bg-[url('/images/home/top_tag.svg')] top-[13px] left-[165px] md:top-[35px] md:left-[425px]" />
               </div>
             </div>
-            <div className="banner-content mt-[10px] md:mt-[136px]">
+            
+            <div className="banner-content mt-[16px] md:mt-[136px]">
+              <p className="text-[20px] md:text-[28px] leading-6 md:leading-10 text-cred font-secondary">{banner.subtitle}</p>
               {markdownify(banner.content, "h6", "text-white leading-6")}
             </div>
             <Link
@@ -120,8 +121,11 @@ export default function Home({ data }) {
           <Entrance text={home} />
         </div>
       </section>
+
+      {/* Dashboard */}
       <Dashboard />
 
+      {/*Blog 1*/}
       <section className="animate mt-[50px] md:mt-[200px] relative">
         <div className="container">
           {/* BUILD IT YOUR WAY */}
@@ -207,11 +211,10 @@ export default function Home({ data }) {
           </div>
         </div>
       </section>
-      {/* Connect To AVAX, FAQ */}
-      <section className="animate mt-16 md:mt-20 lg:mt-40 relative">
-        <Image alt="Decoration_3" src="/images/home/bg_Decoration_3.png" width={234} height={430} className="absolute right-0 top-0 md:top-[260px] -z-10" />
+      {/* Connect To AVAX */}
+      <section className="animate mt-16 md:mt-20 lg:mt-40">
         <div className="container">
-          <Link href="https://avascriptions.com/market/token?tick=avav" target="_blank">
+        <Link href="https://avascriptions.com/market/token?tick=avav" target="_blank">
             <div className="flex items-center justify-start w-full aspect-[4.6] md:aspect-[8] bg-contain bg-center bg-no-repeat bg-[url('/images/home/banner_bg.png')] md:bg-[url('/images/home/md/banner_bg.png')]">
               <h3 className={clsx("pl-4 md:pl-20 pr-1", locale == "cn" && "font-primary font-bold", locale == "en" && "font-secondary",  locale == "zh" && "font-primary font-bold", locale == "jp" && "font-primary font-bold")}>{banner.btn_con}</h3>
               <Image
@@ -223,6 +226,16 @@ export default function Home({ data }) {
               />
             </div>
           </Link>
+        </div>
+      </section>
+      {/* HistoryTimeline */}
+      <section className="animate mt-16 md:mt-20">
+        <HistoryTimeline />
+      </section>
+      {/* FAQ */}
+      <section className="animate mt-16 md:mt-20 lg:mt-40 relative">
+        <Image alt="Decoration_3" src="/images/home/bg_Decoration_3.png" width={234} height={430} className="absolute right-0 top-0 md:top-[260px] -z-10" />
+        <div className="container">
           {/* FAQ */}
           <div className="my-16 md:my-20 lg:my-40">
             <h3 className="text-[25px] md:text-[40px] text-cred">FAQS</h3>
@@ -241,6 +254,7 @@ export default function Home({ data }) {
           </div>
         </div>
       </section>
+      
     </Base>
   );
 }
