@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Pause@2x</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="视频" transform="translate(-1045.000000, -491.000000)">
+            <g transform="translate(780.000000, 213.000000)" id="On备份">
+                <g transform="translate(265.000000, 278.000000)">
+                    <path d="M40,0 C17.9088472,0 0,17.9108479 0,40.0044688 C0,62.0980896 17.9088472,80 40,80 C62.0911528,80 80,62.0891521 80,39.9955312 C80,17.9019104 62.0822163,0 40,0 Z" id="形状" fill="#0F0F0F" fill-rule="nonzero"></path>
+                    <rect id="矩形" fill="#FD2C2F" x="30" y="26" width="5" height="26"></rect>
+                    <rect id="矩形" fill="#FD2C2F" x="45" y="26" width="5" height="26"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
