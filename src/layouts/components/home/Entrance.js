@@ -78,7 +78,7 @@ export default function Entrance({text}) {
       >
         <Image
           alt="CoinMarketCap"
-          src="/images/home/top_card_logo_7.png"
+          src="/images/home/top_card_logo_7_1.png"
           width={118}
           height={132}
           className="h-[61.68%] w-auto"
@@ -87,7 +87,7 @@ export default function Entrance({text}) {
       <Link href="/" target="_blank" className="site-link">
         <Image
           alt="CoinMarketCap"
-          src="/images/home/top_card_logo_8.png"
+          src="/images/home/top_card_logo_8_1.png"
           width={99}
           height={118}
           className="h-[63.4%] w-auto"
