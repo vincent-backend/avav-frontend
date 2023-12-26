@@ -14,14 +14,14 @@ export default function HistoryTimeline() {
   },[locale]);
 
   return (
-    <section className="container mt-10 md:mt-20">
+    <div className="container mt-10 md:mt-20">
       <div className="timeline">
         {items.map((bloc, index) => {
           direction = direction === "left" ? "right" : "left";
           return <TimeLineBloc data={bloc} direction={direction} key={index} />;
         })}
       </div>
-    </section>
+    </div>
   );
 }
 
@@ -29,8 +29,8 @@ function TimeLineBloc({ data, direction }) {
   return (
     <div className={`timeline-container ${direction}`}>
       <article className="content">
-        <h4>{data.date}</h4>
-        <p>{data.content}</p>
+        <h4 className="font-primary font-bold">{data.date}</h4>
+        <p className="font-primary">{data.content}</p>
       </article>
     </div>
   );

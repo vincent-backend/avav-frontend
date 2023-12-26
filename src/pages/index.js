@@ -71,7 +71,7 @@ export default function Home({ data }) {
       setThumbWidth(360);
       setThumbHeight(640);
       setThumbAlt("How to buy AVAV on TP Wallet");
-      setVideo("/videos/IMG_7922.mp4");
+      setVideo("videos/IMG_7922.mp4");
       setVideoWidth(360);
       setVideoHeight(640);
       setVideoShow(true);
@@ -81,7 +81,7 @@ export default function Home({ data }) {
       setThumbWidth(296);
       setThumbHeight(640);
       setThumbAlt("How to buy AVAV on OKX Wallet");
-      setVideo("/videos/IMG_7923.mp4");
+      setVideo("videos/IMG_7923.mp4");
       setVideoWidth(296);
       setVideoHeight(640);
       setVideoShow(true);
@@ -91,7 +91,7 @@ export default function Home({ data }) {
       setThumbWidth(288);
       setThumbHeight(636);
       setThumbAlt("How to buy AVAV on Metamask Wallet");
-      setVideo("/videos/IMG_7952.mp4");
+      setVideo("videos/IMG_7952.mp4");
       setVideoWidth(288);
       setVideoHeight(636);
       setVideoShow(true);
@@ -227,16 +227,16 @@ export default function Home({ data }) {
       <Dashboard />
 
       {/*Blog 1*/}
-      <section className="animate mt-[50px] md:mt-[200px] relative">
+      <section className="animate mt-[0] md:mt-[180px] relative">
         <div className="container">
           {/* BUILD IT YOUR WAY */}
-          <div className="flex flex-col justify-start md:flex-row md:gap-[80px] xl:gap-[106px] z-10">
+          <div className="flex flex-col justify-start items-end md:flex-row md:gap-[80px] xl:gap-[106px] z-10">
             <Image
               alt="bg_coin"
               src="/images/home/bg_coin.png"
               width={220}
               height={220}
-              className="bg-coin"
+              className="bg-coin w-[120px] h-[120px] md:w-[220px] md:h-[220px]"
             />
             <div className="bd-blog">
               <p
