@@ -421,7 +421,7 @@ export default function Home({ data }) {
       <div className="md:hidden z-10 fixed top-0 left-0 w-full h-full transition-all duration-500 ease-out">
         <div className="flex justify-center items-center bg-[#000000] bg-opacity-70 w-full h-full">
           <div className="flex flex-col justify-ceter items-center w-full mx-10 h-[91px] bg-[#2e3137] text-white ">
-          <Link href={curOpenWalletUrl} className= "h-full leading-10">{home.open_wallet}</Link>
+          <Link href={curOpenWalletUrl} target="_blank" className= "h-full leading-10">{home.open_wallet}</Link>
           <div className="w-[80%] min-h-[1px] bg-[#41444a]" />
           <button className="h-full leading-10" onClick={() => onEntranceVideoClick(curSelWallet)}>{home.buy_tutorial}</button>
           </div>
