@@ -72,7 +72,7 @@ export default function Entrance({ text, handleClick, handleIconClick }) {
       <Link
         href="https://h5.4ezh6.com/?ref=EAW6SB&forward_url=1&page=1&channelCode=EAW6SB"
         target="_blank"
-        className="site-link relative"
+        className="site-link relative hidden"
       >
         <Image
           alt="CoinMarketCap"
