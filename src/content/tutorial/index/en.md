@@ -4,7 +4,7 @@ tutorial:
   title: "Inscription Community Guide"
 
 tutorial1:
-  title: "How to buy AVAV inscriptions? And some preparatory work?"
+  title: "How to buy AVAV inscriptions? And some preparatory work"
   content: "First, you need an EVM-compatible Web3 wallet. In order to make the process simple and smooth, it is recommended to use OKX wallet, which can be done in one stop. Experienced friends can choose MetaMask or Avalanche chain official Core, etc. Make sure to back up and protect your mnemonics after creating your new wallet!! If someone sees your mnemonic, or you lose your help."
 
 tutorial2:

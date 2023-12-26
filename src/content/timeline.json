@@ -1,6 +1,10 @@
 {
     "en": [
         {
+            "date": "December 26, 2023",
+            "content": "XT Exchange announced that it will launch the AVAV/USDT trading pair on December 27"
+        },
+        {
             "date": "December 24, 2023",
             "content": "4e Exchange announces the upcoming listing of the AVAV/USDT trading pair"
         },
@@ -34,6 +38,10 @@
         }
     ],
     "cn": [
+        {
+            "date": "2023年12月26日",
+            "content": "XT交易所公告将于12月27日上线AVAV/USDT交易对"
+        },
         {
             "date": "2023年12月24日",
             "content": "4e交易所公告将上线AVAV/USDT交易对"
@@ -69,70 +77,78 @@
     ],
     "zh": [
         {
-            "date": "2023年12月24日",
-            "content": "4e交易所公告将上线AVAV/USDT交易对"
+            "date": "2023年12月26日",
+            "content": "XT交易所公告將於12月27日上線AVAV/USDT交易對"
         },
         {
             "date": "2023年12月24日",
-            "content": "抹茶在AVAV社区的坚决抵制下宣布取消假AVAV上所,这是惊人的舆论战胜了可恶的资本"
+            "content": "4e交易所公告將上線AVAV/USDT交易對"
+        },
+        {
+            "date": "2023年12月24日",
+            "content": "抹茶在AVAV社區的堅決抵制下宣布取消假AVAV上所,這是驚人的輿論戰勝了可惡的資本"
         },
         {
             "date": "2023年12月23日",
-            "content": "由社区建设的 avav.meme 官网上线"
+            "content": "由社區建造的 avav.meme 官網上線"
         },
         {
             "date": "2023年12月23日",
-            "content": "抹茶公告假币AVAV1上所"
+            "content": "抹茶公告假幣AVAV1上所"
         },
         {
             "date": "2023年12月22日",
-            "content": "泷泽萝拉站台同频共振AVAV社区，雪崩链最热铭文完成跨界"
+            "content": "瀧澤蘿拉月台同頻共振AVAV社區，雪崩鏈最熱銘文完成跨界"
         },
         {
             "date": "2023年12月21日",
-            "content": "AVAV成为首个应用落地铭文，在Umate平台支持支付功能"
+            "content": "AVAV成為首個應用程式落地銘文，在Umate平台支援支付功能"
         },
         {
             "date": "2023年12月20日",
-            "content": "达成雪崩链首个钻石徽章成就"
+            "content": "達成雪崩鏈首個鑽石徽章成就"
         },
         {
             "date": "2023年12月17日",
-            "content": "AVAV铸造完成，持币人数超50000"
+            "content": "AVAV鑄造完成，持幣人數超50000"
         }
     ],
     "jp": [
         {
-            "date": "2023年12月24日",
-            "content": "4e交易所公告将上线AVAV/USDT交易对"
+            "date": "2023年12月26日",
+            "content": "XT Exchangeは、AVAV/USDT取引ペアを12月27日に開始すると発表した"
         },
         {
             "date": "2023年12月24日",
-            "content": "抹茶在AVAV社区的坚决抵制下宣布取消假AVAV上所,这是惊人的舆论战胜了可恶的资本"
+            "content": "4e ExchangeがAVAV/USDT取引ペアを上場すると発表"
+        },
+        {
+            "date": "2023年12月24日",
+            "content": "AVAV コミュニティの断固たる抵抗を受けて、Matcha は偽 AVAV リストの取り消しを発表しましたが、これはヘイト資本に対する驚くべき世論の勝利です。"
         },
         {
             "date": "2023年12月23日",
-            "content": "由社区建设的 avav.meme 官网上线"
+            "content": "コミュニティによって構築された avav.meme の公式 Web サイトがオンラインになっています"
         },
         {
             "date": "2023年12月23日",
-            "content": "抹茶公告假币AVAV1上所"
+            "content": "抹茶のお知らせ：偽造通貨AVAV1が取引所に上場"
         },
         {
             "date": "2023年12月22日",
-            "content": "泷泽萝拉站台同频共振AVAV社区，雪崩链最热铭文完成跨界"
+            "content": "滝沢ローラのプラットフォームは AVAV コミュニティと同じ周波数で共鳴し、雪崩チェーンの中で最も熱い碑文がクロスオーバーを完成させます"
         },
         {
             "date": "2023年12月21日",
-            "content": "AVAV成为首个应用落地铭文，在Umate平台支持支付功能"
+            "content": "AVAV は、Umate プラットフォームでの支払い機能をサポートする最初の登録アプリケーションになります"
         },
         {
             "date": "2023年12月20日",
-            "content": "达成雪崩链首个钻石徽章成就"
+            "content": "アバランチチェーンで初めてダイヤモンドバッジの実績を達成した"
         },
         {
             "date": "2023年12月17日",
-            "content": "AVAV铸造完成，持币人数超50000"
+            "content": "AVAVの鋳造が完了し、通貨保有者数が5万人を突破"
         }
     ]
 }
