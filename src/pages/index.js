@@ -71,7 +71,7 @@ export default function Home({ data }) {
       setThumbWidth(360);
       setThumbHeight(640);
       setThumbAlt("How to buy AVAV on TP Wallet");
-      setVideo("https://avav.meme/videos/IMG_7922.mp4");
+      setVideo("https://avav.meme/videos/IMG_7922.MP4");
       setVideoWidth(360);
       setVideoHeight(640);
       setVideoShow(true);
@@ -81,7 +81,7 @@ export default function Home({ data }) {
       setThumbWidth(296);
       setThumbHeight(640);
       setThumbAlt("How to buy AVAV on OKX Wallet");
-      setVideo("https://avav.meme/videos/IMG_7923.mp4");
+      setVideo("https://avav.meme/videos/IMG_7923.MP4");
       setVideoWidth(296);
       setVideoHeight(640);
       setVideoShow(true);
@@ -91,7 +91,7 @@ export default function Home({ data }) {
       setThumbWidth(288);
       setThumbHeight(636);
       setThumbAlt("How to buy AVAV on Metamask Wallet");
-      setVideo("https://avav.meme/videos/IMG_7952.mp4");
+      setVideo("https://avav.meme/videos/IMG_7952.MP4");
       setVideoWidth(288);
       setVideoHeight(636);
       setVideoShow(true);

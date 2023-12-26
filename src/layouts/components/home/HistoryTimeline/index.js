@@ -34,7 +34,7 @@ function TimeLineBloc({ data, direction }) {
         <div className="relative w-full">
           <p className="text-[16px] text-white font-primary text-left md:text-right bg-[#1A1C1F] rounded-md p-5 ml-[40px] md:ml-0 md:mr-[28px]">{data.content}</p>
           <div className="absolute w-[11px] h-[20px] left-[31px] md:left-auto md:right-[19px] top-[calc(50%-10px)] bg-no-repeat bg-[url('/images/home/about_card_ic_arrow_left.svg')] md:bg-[url('/images/home/about_card_ic_arrow_right.svg')] " />
-          <div className="bg-cred w-[14px] h-[14px] rounded-full absolute left-[13px] right-auto md:left-auto md:right-[-18px] top-[calc(50%-7px)]" />
+          <div className="bg-cred w-[14px] h-[14px] rounded-full absolute left-[13px] right-auto md:left-auto md:right-[-17px] top-[calc(50%-7px)]" />
         </div>
       </div>
     );
