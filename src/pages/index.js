@@ -384,7 +384,10 @@ export default function Home({ data }) {
       </section>
       {/* HistoryTimeline */}
       <section className="animate mt-16 md:mt-20">
+        <div className="container">
+        <h3 className={clsx("text-cred", locale=="en" && "font-secondary", locale != "en" && "font-primary font-bold") }>{home.dev_course}</h3>
         <HistoryTimeline />
+        </div>
       </section>
       {/* FAQ */}
       <section className="animate mt-16 md:mt-20 lg:mt-40 relative">
