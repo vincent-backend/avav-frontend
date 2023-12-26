@@ -21,7 +21,11 @@ const Header = () => {
   const [direction, setDirection] = useState(null);
 
   const asPath = useRouter();
-  const langParam = asPath.query.lang;
+
+  const onChangeLocale = (l) => {
+    setLocale(l);
+    setShowMenu(false);
+  }
 
   //sticky header
   useEffect(() => {
@@ -39,20 +43,7 @@ const Header = () => {
       }
     });
 
-    if (langParam === "cn") {
-      setLocale("cn");
-    }
-    else if (langParam === "zh") {
-      setLocale("zh");
-    }
-    else if (langParam == "jp") {
-      setLocale("jp");
-    }
-    else {
-      setLocale("en");
-    }
-
-  }, [langParam]);
+  }, [locale]);
 
   // logo source
   const { logo } = config.site;
@@ -114,7 +105,7 @@ const Header = () => {
                     {menu.url === "/tutorial" ?
                     (
                       <Link
-                      href={menu.url + "?lang=" + locale} 
+                      href={menu.url} 
                       className={`nav-link block ${
                         asPath.pathname === menu.url && "active"
                       }`}
@@ -148,41 +139,37 @@ const Header = () => {
                   </svg>
                 </span>
                 <ul className="nav-dropdown-list hidden max-h-0 w-[150px] mx-auto overflow-hidden border border-border-secondary py-0 transition-all duration-500 group-hover:block group-hover:max-h-[126px] group-hover:py-1 md:invisible md:absolute md:left-1/2 md:block md:w-auto md:-translate-x-1/2 md:group-hover:visible md:group-hover:opacity-100">
-                  <li className="nav-dropdown-item" key={`children-EN`}>
-                    <Link
-                      href={`${asPath.pathname}`+"?lang=en"}
-                      className={clsx("nav-dropdown-link block transition-all", locale == "en" && "active")}
-                      onClick={()=>setShowMenu(false)}
+                  <li className="nav-dropdown-item" key={`en`}>
+                    <button
+                      className={clsx("nav-dropdown-link block transition-all w-full", locale == "en" && "active")}
+                      onClick={()=>onChangeLocale("en")}
                     >
                       EN
-                    </Link>
+                    </button>
                   </li>
-                  <li className="nav-dropdown-item" key={`children-CN`}>
-                    <Link
-                      href={`${asPath.pathname}`+"?lang=cn"}
-                      className={clsx("nav-dropdown-link block transition-all", locale == "cn" && "active")}
-                      onClick={()=>setShowMenu(false)}
+                  <li className="nav-dropdown-item" key={`cn`}>
+                    <button
+                      className={clsx("nav-dropdown-link block transition-all w-full", locale == "cn" && "active")}
+                      onClick={()=>onChangeLocale("cn")}
                     >
                       中文
-                    </Link>
+                    </button>
                   </li>
-                  <li className="nav-dropdown-item" key={`children-ZH`}>
-                    <Link
-                      href={`${asPath.pathname}`+"?lang=zh"}
-                      className={clsx("nav-dropdown-link block transition-all", locale == "zh" && "active")}
-                      onClick={()=>setShowMenu(false)}
+                  <li className="nav-dropdown-item" key={`zh`}>
+                    <button
+                      className={clsx("nav-dropdown-link block transition-all w-full", locale == "zh" && "active")}
+                      onClick={()=>onChangeLocale("zh")}
                     >
                       繁体
-                    </Link>
+                    </button>
                   </li>
-                  <li className="nav-dropdown-item" key={`children-JP`}>
-                    <Link
-                      href={`${asPath.pathname}`+"?lang=jp"}
-                      className={clsx("nav-dropdown-link block transition-all", locale == "jp" && "active")}
-                      onClick={()=>setShowMenu(false)}
+                  <li className="nav-dropdown-item" key={`jp`}>
+                    <button
+                      className={clsx("nav-dropdown-link block transition-all w-full", locale == "jp" && "active")}
+                      onClick={()=>onChangeLocale("jp")}
                     >
                       日本語
-                    </Link>
+                    </button>
                   </li>
                 </ul>
               </li>

@@ -7,7 +7,7 @@ const Logo = ({ src, lang }) => {
   const { logo, width, height, title } = config.site;
 
   return (
-    <Link href={`/?lang=${lang}`} className="navbar-brand block">
+    <Link href={`/`} className="navbar-brand block">
       <div className="flex flex-row items-center h-[60px]">
         <ImageFallback
           width={width.replace("px", "")}
