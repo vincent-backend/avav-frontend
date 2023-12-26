@@ -52,8 +52,6 @@ const Header = () => {
       setLocale("en");
     }
 
-    console.log(locale);
-
   }, [langParam]);
 
   // logo source
