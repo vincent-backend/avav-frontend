@@ -21,47 +21,9 @@ export default function Home({ data }) {
   //
   let { tutorial, tutorial1, tutorial2, tutorial3 } = frontmatter;
 
-  const handleFaqToggle = (index) => {
-    if (factive === index) {
-      setFActive(null);
-    } else {
-      setFActive(index);
-    }
-  };
-
   useEffect(() => {
     //frontmatter
     setFrontmatter(data.filter((dt) => dt.lang === locale)[0]);
-
-    const ctx = gsap.context(() => {
-      const tl = gsap.timeline();
-
-      tl.fromTo(
-        ".banner-title",
-        { y: 20, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.5, delay: 0.6 }
-      )
-        .fromTo(
-          ".banner-content",
-          { y: 20, opacity: 0 },
-          { y: 0, opacity: 1, duration: 0.3 },
-          ">-0.4"
-        )
-        .fromTo(
-          ".banner-btn",
-          { y: 20, opacity: 0 },
-          { y: 0, opacity: 1, duration: 0.5 },
-          ">-0.3"
-        )
-        .fromTo(
-          ".top-graph",
-          { y: 20, opacity: 0 },
-          { y: 0, opacity: 1, duration: 0.6 },
-          ">-0.2"
-        );
-    });
-
-    return () => ctx.revert();
   }, [locale, data]);
 
   return (

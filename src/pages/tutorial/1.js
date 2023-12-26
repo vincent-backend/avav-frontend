@@ -21,47 +21,9 @@ export default function Home({ data }) {
   //
   let { tutorial } = frontmatter;
 
-  const handleFaqToggle = (index) => {
-    if (factive === index) {
-      setFActive(null);
-    } else {
-      setFActive(index);
-    }
-  };
-
   useEffect(() => {
     //frontmatter
     setFrontmatter(data.filter((dt) => dt.lang === locale)[0]);
-
-    const ctx = gsap.context(() => {
-      const tl = gsap.timeline();
-
-      tl.fromTo(
-        ".banner-title",
-        { y: 20, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.5, delay: 0.6 }
-      )
-        .fromTo(
-          ".banner-content",
-          { y: 20, opacity: 0 },
-          { y: 0, opacity: 1, duration: 0.3 },
-          ">-0.4"
-        )
-        .fromTo(
-          ".banner-btn",
-          { y: 20, opacity: 0 },
-          { y: 0, opacity: 1, duration: 0.5 },
-          ">-0.3"
-        )
-        .fromTo(
-          ".top-graph",
-          { y: 20, opacity: 0 },
-          { y: 0, opacity: 1, duration: 0.6 },
-          ">-0.2"
-        );
-    });
-
-    return () => ctx.revert();
   }, [locale, data]);
 
   return (
@@ -74,11 +36,45 @@ export default function Home({ data }) {
         className="-z-10 absolute w-full h-full top-0 left-0"
       ></Image>
       {/* Main content */}
-      <section className="animate container mt-[90px] md:mt-[140px]">
-        <h3 className="text-cred">{tutorial.title}</h3>
+      <section className="animate container mt-[90px] md:mt-[140px] mb-[60px] md:mb-[100px]">
+        <h3 className="banner-title text-cred">{tutorial.title}</h3>
         <div className="w-full h-[1px] bg-[#1B1B1B] my-5 md:my-10" />
+        {markdownify(tutorial.description, "h6", "banner-content text-[14px] text-text leading-6")}
        
-        
+        <div className="animate mt-[30px]">
+          <div className="text-[14px] text-white">{markdownify(tutorial.step1, "", "")}</div>
+          <Image alt="Step 1" src="/images/tutorial/1/details_pic_1.png" width={284} height={584} className="mt-[20px]" />
+        </div>
+
+        <div className="animate mt-[30px]">
+          <p className="text-[14px] text-white">{markdownify(tutorial.step2, "", "")}</p>
+          <Image alt="Step 2" src="/images/tutorial/1/details_pic_2.png" width={284} height={564} className="mt-[20px]" />
+        </div>
+
+        <div className="animate mt-[30px]">
+          <p className="text-[14px] text-white">{markdownify(tutorial.step3, "", "")}</p>
+          <Image alt="Step 3" src="/images/tutorial/1/details_pic_3.png" width={284} height={310} className="mt-[20px]" />
+        </div>
+
+        <div className="animate mt-[30px]">
+          <p className="text-[14px] text-white">{markdownify(tutorial.step4, "", "")}</p>
+          <Image alt="Step 4" src="/images/tutorial/1/details_pic_4.png" width={284} height={560} className="mt-[20px]" />
+        </div>
+
+        <div className="animate mt-[30px]">
+          <p className="text-[14px] text-white">{markdownify(tutorial.step5, "", "")}</p>
+          <Image alt="Step 5" src="/images/tutorial/1/details_pic_5.png" width={284} height={568} className="mt-[20px]" />
+        </div>
+
+        <div className="animate mt-[30px]">
+          <p className="text-[14px] text-white">{markdownify(tutorial.step6, "", "")}</p>
+          <Image alt="Step 6" src="/images/tutorial/1/details_pic_6.png" width={284} height={176} className="mt-[20px]" />
+        </div>
+
+        <div className="animate mt-[30px]">
+          <p className="text-[14px] text-white">{markdownify(tutorial.step7, "", "")}</p>
+        </div>
+
       </section>
     </Base>
   );
