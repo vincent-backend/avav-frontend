@@ -1,7 +1,7 @@
 {
   "main": [
     {
-      "name": "Telegram",
+      "name": {"en":"Telegram", "cn":"Telegram", "zh":"Telegram", "jp":"Telegram"},
       "url": "",
       "hasChildren": true,
       "children": [
@@ -41,38 +41,38 @@
       ]
     },
     {
-      "name": "Twitter",
+      "name": {"en":"Twitter", "cn":"Twitter", "zh":"Twitter", "jp":"Twitter"},
       "url": "https://x.com/avavcommunity"
     },
     {
-      "name": "Support Wallets",
+      "name": {"en":"Support Wallets", "cn":"支持钱包", "zh":"支持錢包", "jp":"サポートウォレット"},
       "url": "",
       "hasChildren": true,
       "children": [
         {
-          "name": "OKX Wallet",
+          "name": "OKX",
           "url": "https://www.okx.com/web3"
         },
         {
-          "name": "TP Wallet",
+          "name": "Token Pocket",
           "url": "https://www.tokenpocket.pro/"
         },
         {
-          "name": "Matamask Wallet",
+          "name": "Matamask",
           "url": "https://metamask.io/"
         }
       ]
     },
     {
-      "name": "Buy Tutorial",
+      "name": {"en":"Buy Tutorial", "cn":"购买教程", "zh":"購買教學課程", "jp":"Buy Tutorial"},
       "url": "/tutorial"
     },
     {
-      "name": "K Line Chart",
+      "name": {"en":"K Line Chart", "cn":"k 线图", "zh":"k 線圖", "jp":"k 折れ線グラフ"},
       "url": "https://m.ave.ai/brc/inscription:6173632d32303a61766176-avalanche"
     },
     {
-      "name": "Discord",
+      "name": {"en":"Discord", "cn":"Discord", "zh":"Discord", "jp":"Discord"},
       "url": "https://discord.gg/Rn7ArXbD"
     }
   ]
