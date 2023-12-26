@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Entrance({ text, handleClick }) {
+export default function Entrance({ text, handleClick, handleIconClick }) {
   return (
     <div className="animate flex flex-wrap justify-center lg:justify-start gap-4 mt-[400px] md:mt-[60px] ">
       <Link
@@ -94,7 +94,7 @@ export default function Entrance({ text, handleClick }) {
             width={98}
             height={118}
             className="h-[63.4%] w-auto"
-            onClick={()=>handleClick("TP")}
+            onClick={()=>handleIconClick("TP")}
           />
         </div>
         <div className="absolute w-full h-full top-0 left-0 hidden md:group-hover:block">
@@ -125,7 +125,7 @@ export default function Entrance({ text, handleClick }) {
             width={98}
             height={118}
             className="h-[63.4%] w-auto"
-            onClick={()=>handleClick("OKX")}
+            onClick={()=>handleIconClick("OKX")}
           />
         </div>
         <div className="absolute w-full h-full top-0 left-0 hidden md:group-hover:block">
@@ -156,7 +156,7 @@ export default function Entrance({ text, handleClick }) {
             width={98}
             height={118}
             className="h-[63.4%] w-auto"
-            onClick={()=>handleClick("Metamask")}
+            onClick={()=>handleIconClick("Metamask")}
           />
         </div>
         <div className="absolute w-full h-full top-0 left-0 hidden md:group-hover:block">
