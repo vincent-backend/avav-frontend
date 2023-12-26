@@ -11,10 +11,10 @@ export default function Entrance({ text, handleClick, handleIconClick }) {
       >
         <Image
           alt="AVALANCHE"
-          src="/images/home/top_card_logo_1.svg"
+          src="/images/home/top_card_logo_1_1.png"
           width={132}
           height={118}
-          className="w-[70%] h-auto"
+          className="w-[71%] h-auto"
         />
         <Image alt="trading" src="/images/home/logo_ic_Trading.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
       </Link>
