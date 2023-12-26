@@ -14,7 +14,7 @@ export default function HistoryTimeline() {
   },[locale]);
 
   return (
-    <div className="container mt-10 md:mt-20">
+    <div className="mt-5 md:mt-10">
       <div className="timeline">
         {items.map((bloc, index) => {
           direction = direction === "left" ? "right" : "left";

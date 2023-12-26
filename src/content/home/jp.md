@@ -26,4 +26,5 @@ blog_4:
 home:
   open_wallet: "Open Wallet"
   buy_tutorial: "Buy Tutorial"
+  dev_course: "開発コース"
 ---

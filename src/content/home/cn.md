@@ -26,4 +26,5 @@ blog_4:
 home:
   open_wallet: "打开钱包"
   buy_tutorial: "购买教程"
+  dev_course: "发展历程"
 ---
