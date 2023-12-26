@@ -171,9 +171,6 @@ export default function Home({ data }) {
     if (!container_option.current?.contains(e.target)) setVideoShow(false);
   };
 
-
-
-
   return (
     <Base>
       {/*background*/}
@@ -385,10 +382,10 @@ export default function Home({ data }) {
           </Link>
         </div>
       </section>
-      {/* HistoryTimeline 
+      {/* HistoryTimeline */}
       <section className="animate mt-16 md:mt-20">
         <HistoryTimeline />
-      </section>*/}
+      </section>
       {/* FAQ */}
       <section className="animate mt-16 md:mt-20 lg:mt-40 relative">
         <Image

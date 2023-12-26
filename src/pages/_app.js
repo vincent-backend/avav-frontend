@@ -1,4 +1,5 @@
 import "@/styles/style.scss";
+import "@/styles/timeline.css";
 
 import Head from "next/head";
 import { LanguageProvider } from "@/contexts/LanguageContext";
