@@ -7,7 +7,6 @@ export default function HistoryTimeline() {
   const {locale, setLocale} = useTranslation();
   
   const [items, setItems] = useState(data[locale]);
-  console.log(items)
 
   useEffect(()=>{
     setItems(data[locale]);
@@ -15,7 +14,7 @@ export default function HistoryTimeline() {
 
   return (
     <div className="mt-5 md:mt-10">
-      <div className="timeline">
+      <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:border-2 before:border-cred before:border-dashed before:w-0.5">
         {items.map((bloc, index) => {
           direction = direction === "left" ? "right" : "left";
           return <TimeLineBloc data={bloc} direction={direction} key={index} />;
