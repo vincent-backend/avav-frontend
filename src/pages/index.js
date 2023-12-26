@@ -8,7 +8,7 @@ import dynamic from "next/dynamic";
 import { gsap } from "@/lib/gsap";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { getDataFromContent } from "@/lib/contentParser";
 import useTranslation from "@/hooks/useTranslation";
 import { markdownify } from "@/lib/utils/textConverter";
@@ -118,12 +118,16 @@ export default function Home({ data }) {
     else if (locale === "jp") setFaq(faqs.fjp);
     else setFaq(faqs.fen);
 
+    // If Escape keyboard is clicked
     const onKeyPress = (e) => {
-      if (e.key === "Escape") {setVideoShow(false); setLinkOpShow(false);}
+      if (e.key === "Escape") {setVideoShow(false); setLinkOpShow(false); return;}
     };
     window.addEventListener("keydown", onKeyPress);
-    
 
+    // If mouse click outside,
+
+    
+    // animate
     const ctx = gsap.context(() => {
       const tl = gsap.timeline();
 
@@ -154,6 +158,21 @@ export default function Home({ data }) {
 
     return () => ctx.revert();
   }, [locale, data]);
+
+  /// Overlay click
+  // Video player
+  const container_video = useRef(null);
+  const onVideoOverlayClick = (e) => {
+    if (!container_video.current?.contains(e.target)) setVideoShow(false);
+  };
+  // Option dialog
+  const container_option = useRef(null);
+  const onOptionOverlayClick = (e) => {
+    if (!container_option.current?.contains(e.target)) setVideoShow(false);
+  };
+
+
+
 
   return (
     <Base>
@@ -401,7 +420,8 @@ export default function Home({ data }) {
 
       {/* Video show */}
       {isVideoShow && (
-        <div className="z-20 fixed top-0 left-0 w-full h-full bg-[#000000] bg-opacity-20 transition-all duration-500 ease-out">
+        <div className="z-20 fixed top-0 left-0 w-full h-full bg-[#000000] bg-opacity-20 transition-all duration-500 ease-out"
+         ref={container_video} onClick={onVideoOverlayClick}>
           <div className="flex justify-center items-center w-full h-full">
             <ModalVideo
               thumb={thumb}
@@ -419,7 +439,7 @@ export default function Home({ data }) {
       {/* Link Option */}
       {isLinkOptionShow &&
       <div className="md:hidden z-10 fixed top-0 left-0 w-full h-full transition-all duration-500 ease-out">
-        <div className="flex justify-center items-center bg-[#000000] bg-opacity-70 w-full h-full">
+        <div className="flex justify-center items-center bg-[#000000] bg-opacity-70 w-full h-full" ref={container_option} onClick={onOptionOverlayClick}>
           <div className="flex flex-col justify-ceter items-center w-full mx-10 h-[91px] bg-[#2e3137] text-white ">
           <Link href={curOpenWalletUrl} target="_blank" className= "h-full leading-10">{home.open_wallet}</Link>
           <div className="w-[80%] min-h-[1px] bg-[#41444a]" />

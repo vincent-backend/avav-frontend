@@ -83,7 +83,7 @@ const Header = () => {
                   className={clsx("nav-link block", asPath.pathname == "/" && "active")}
                   onClick={()=>setShowMenu(false)}
                 >
-                  Home
+                  {locale=="jp" ? "ホームページ" : locale=="cn" ? "主页" : locale == "zh" ? "首頁" : "Home"}
                 </Link>
               </li>
               {main.map((menu, i) => (
