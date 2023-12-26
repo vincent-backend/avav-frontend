@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Entrance({ text }) {
+export default function Entrance({ text, handleClick }) {
   return (
     <div className="animate flex flex-wrap justify-center lg:justify-start gap-4 mt-[400px] md:mt-[60px] ">
       <Link
@@ -94,6 +94,7 @@ export default function Entrance({ text }) {
             width={98}
             height={118}
             className="h-[63.4%] w-auto"
+            onClick={()=>handleClick("TP")}
           />
         </div>
         <div className="absolute w-full h-full top-0 left-0 hidden md:group-hover:block">
@@ -104,12 +105,12 @@ export default function Entrance({ text }) {
                 {text.open_wallet}
               </div>
             </Link>
-            <Link href="/" className="h-[50%]">
+            <div className="h-[50%] cursor-pointer" onClick={()=>handleClick("TP")}>
               <div className="group/item flex flex-col h-full justify-center items-center text-white hover:text-cred">
                 <div className="w-[16px] h-[16px] bg-[url('/images/home/logo_bg_ic_arrow_nor.svg')] group-hover/item:bg-[url('/images/home/logo_bg_ic_arrow_hover.svg')]" />
                 {text.buy_tutorial}
               </div>
-            </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -124,6 +125,7 @@ export default function Entrance({ text }) {
             width={98}
             height={118}
             className="h-[63.4%] w-auto"
+            onClick={()=>handleClick("OKX")}
           />
         </div>
         <div className="absolute w-full h-full top-0 left-0 hidden md:group-hover:block">
@@ -134,12 +136,12 @@ export default function Entrance({ text }) {
                 {text.open_wallet}
               </div>
             </Link>
-            <Link href="/" className="h-[50%]">
+            <div className="h-[50%] cursor-pointer" onClick={()=>handleClick("OKX")}>
               <div className="group/item flex flex-col h-full justify-center items-center text-white hover:text-cred">
                 <div className="w-[16px] h-[16px] bg-[url('/images/home/logo_bg_ic_arrow_nor.svg')] group-hover/item:bg-[url('/images/home/logo_bg_ic_arrow_hover.svg')]" />
                 {text.buy_tutorial}
               </div>
-            </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -154,6 +156,7 @@ export default function Entrance({ text }) {
             width={98}
             height={118}
             className="h-[63.4%] w-auto"
+            onClick={()=>handleClick("Metamask")}
           />
         </div>
         <div className="absolute w-full h-full top-0 left-0 hidden md:group-hover:block">
@@ -164,12 +167,12 @@ export default function Entrance({ text }) {
                 {text.open_wallet}
               </div>
             </Link>
-            <Link href="/" className="h-[50%]">
+            <div className="h-[50%] cursor-pointer" onClick={()=>handleClick("Metamask")}>
               <div className="group/item flex flex-col h-full justify-center items-center text-white hover:text-cred">
                 <div className="w-[16px] h-[16px] bg-[url('/images/home/logo_bg_ic_arrow_nor.svg')] group-hover/item:bg-[url('/images/home/logo_bg_ic_arrow_hover.svg')]" />
                 {text.buy_tutorial}
               </div>
-            </Link>
+            </div>
           </div>
         </div>
       </div>

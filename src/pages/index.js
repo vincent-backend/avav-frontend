@@ -14,18 +14,75 @@ import useTranslation from "@/hooks/useTranslation";
 import { markdownify } from "@/lib/utils/textConverter";
 import clsx from "clsx";
 import HistoryTimeline from "@/layouts/components/home/HistoryTimeline";
+import ModalVideo from "@/layouts/components/home/ModalVideo";
 
 export default function Home({ data }) {
   const { locale } = useTranslation();
   const [factive, setFActive] = useState(null);
 
-  const [c_faq, setFaq] = useState(locale === "cn" ? faqs.fcn : locale == "zh" ? faqs.fzh : locale == "jp" ? faqs.fjp : faqs.fen);
+  const [c_faq, setFaq] = useState(
+    locale === "cn"
+      ? faqs.fcn
+      : locale == "zh"
+      ? faqs.fzh
+      : locale == "jp"
+      ? faqs.fjp
+      : faqs.fen
+  );
   // static data
   let c_data = data.filter((dt) => dt.lang === locale)[0];
   const [frontmatter, setFrontmatter] = useState(c_data);
   //
   let { banner, blog_1, blog_2, blog_3, blog_4, home } = frontmatter;
 
+  // video player
+  const [isVideoShow, setVideoShow] = useState(false);
+  const [thumb, setThumb] = useState("/images/tutorial/IMG_7922.png");
+  const [thumbWidth, setThumbWidth] = useState(360);
+  const [thumbHeight, setThumbHeight] = useState(640);
+  const [thumbAlt, setThumbAlt] = useState("How to buy AVAV on TP Wallet");
+  const [video, setVideo] = useState("/videos/IMG_7922.mp4");
+  const [videoWidth, setVideoWidth] = useState(360);
+  const [videoHeight, setVideoHeight] = useState(640);
+  
+  const onEntrancClick = (m) => {
+    console.log(m);
+    if (m === "TP") {
+      setThumb("/images/tutorial/IMG_7922.png");
+      setThumbWidth(360);
+      setThumbHeight(640);
+      setThumbAlt("How to buy AVAV on TP Wallet");
+      setVideo("/videos/IMG_7922.mp4");
+      setVideoWidth(360);
+      setVideoHeight(640);
+      setVideoShow(true);
+    }
+    else if(m === "OKX") {
+      setThumb("/images/tutorial/IMG_7923.png");
+      setThumbWidth(296);
+      setThumbHeight(640);
+      setThumbAlt("How to buy AVAV on OKX Wallet");
+      setVideo("/videos/IMG_7923.mp4");
+      setVideoWidth(296);
+      setVideoHeight(640);
+      setVideoShow(true);
+    }
+    else if(m === "Metamask") {
+      setThumb("/images/tutorial/IMG_7952.png");
+      setThumbWidth(288);
+      setThumbHeight(636);
+      setThumbAlt("How to buy AVAV on Metamask Wallet");
+      setVideo("/videos/IMG_7952.mp4");
+      setVideoWidth(288);
+      setVideoHeight(636);
+      setVideoShow(true);
+    }
+    else {
+      setVideoShow(false);
+    }
+  }
+
+  // Faq
   const handleFaqToggle = (index) => {
     if (factive === index) {
       setFActive(null);
@@ -41,6 +98,13 @@ export default function Home({ data }) {
     else if (locale === "zh") setFaq(faqs.fzh);
     else if (locale === "jp") setFaq(faqs.fjp);
     else setFaq(faqs.fen);
+
+    const onKeyPress = (e) => {
+      console.log(e.key);
+      if (e.key === "Escape") setVideoShow(false);
+    };
+    window.addEventListener("keydown", onKeyPress);
+    
 
     const ctx = gsap.context(() => {
       const tl = gsap.timeline();
@@ -101,13 +165,16 @@ export default function Home({ data }) {
                 <div className="absolute w-[100px] h-[26px] bg-[url('/images/home/top_tag.svg')] top-[13px] left-[165px] md:top-[35px] md:left-[425px]" />
               </div>
             </div>
-            
+
             <div className="banner-content mt-[16px] md:mt-[136px]">
-              <p className="text-[20px] md:text-[28px] leading-6 md:leading-10 text-cred font-secondary">{banner.subtitle}</p>
+              <p className="text-[20px] md:text-[28px] leading-6 md:leading-10 text-cred font-secondary">
+                {banner.subtitle}
+              </p>
               {markdownify(banner.content, "h6", "text-white leading-6")}
             </div>
             <Link
-              href="https://avascriptions.com/market/token?tick=avav" target="_blank"
+              href="https://avascriptions.com/market/token?tick=avav"
+              target="_blank"
               className="banner-btn bg-[url('/images/home/banner_btn_bg.svg')] w-[200px] h-[50px] text-center text-white leading-[50px] mt-[20px] md:mt-[30px]"
             >
               {banner.btn_con}
@@ -118,7 +185,7 @@ export default function Home({ data }) {
             className="hidden right-[20px] bottom-[50px] w-[50px] h-[50px] bg-contain bg-no-repeat bg-[url('/images/home/arrow.svg')] z-10"
           />
           {/* Site Link */}
-          <Entrance text={home} />
+          <Entrance text={home} handleClick = {onEntrancClick} />
         </div>
       </section>
 
@@ -130,7 +197,7 @@ export default function Home({ data }) {
         <div className="container">
           {/* BUILD IT YOUR WAY */}
           <div className="flex flex-col justify-start md:flex-row md:gap-[80px] xl:gap-[106px] z-10">
-          <Image
+            <Image
               alt="bg_coin"
               src="/images/home/bg_coin.png"
               width={220}
@@ -138,7 +205,17 @@ export default function Home({ data }) {
               className="bg-coin"
             />
             <div className="bd-blog">
-              <p className={clsx("title", locale == "cn" && "font-primary font-bold", locale == "en" && "font-secondary",  locale == "zh" && "font-primary font-bold", locale == "jp" && "font-primary font-bold")}>{blog_1.title}</p>
+              <p
+                className={clsx(
+                  "title",
+                  locale == "cn" && "font-primary font-bold",
+                  locale == "en" && "font-secondary",
+                  locale == "zh" && "font-primary font-bold",
+                  locale == "jp" && "font-primary font-bold"
+                )}
+              >
+                {blog_1.title}
+              </p>
               <div className="underline"></div>
               <p className="subtitle">{blog_1.subtitle}</p>
               <p className="description">{blog_1.description}</p>
@@ -156,7 +233,17 @@ export default function Home({ data }) {
               />
             </div>
             <div className="bd-blog">
-            <p className={clsx("title", locale == "cn" && "font-primary font-bold", locale == "en" && "font-secondary",  locale == "zh" && "font-primary font-bold", locale == "jp" && "font-primary font-bold")}>{blog_2.title}</p>
+              <p
+                className={clsx(
+                  "title",
+                  locale == "cn" && "font-primary font-bold",
+                  locale == "en" && "font-secondary",
+                  locale == "zh" && "font-primary font-bold",
+                  locale == "jp" && "font-primary font-bold"
+                )}
+              >
+                {blog_2.title}
+              </p>
               <div className="underline"></div>
               <p className="subtitle">{blog_2.subtitle}</p>
               <p className="description">{blog_2.description}</p>
@@ -178,7 +265,17 @@ export default function Home({ data }) {
                   height={280}
                   className="-z-10 hidden lg:block absolute -top-10 -right-32"
                 />
-                <p className={clsx("title", locale == "cn" && "font-primary font-bold", locale == "en" && "font-secondary",  locale == "zh" && "font-primary font-bold", locale == "jp" && "font-primary font-bold")}>{blog_3.title}</p>
+                <p
+                  className={clsx(
+                    "title",
+                    locale == "cn" && "font-primary font-bold",
+                    locale == "en" && "font-secondary",
+                    locale == "zh" && "font-primary font-bold",
+                    locale == "jp" && "font-primary font-bold"
+                  )}
+                >
+                  {blog_3.title}
+                </p>
                 <div className="underline"></div>
                 <p className="subtitle">{blog_3.subtitle}</p>
                 <p className="description">{blog_3.description}</p>
@@ -202,7 +299,17 @@ export default function Home({ data }) {
                   height={280}
                   className="-z-20 lg:hidden absolute -top-24 -right-5"
                 />
-                <p className={clsx("title", locale == "cn" && "font-primary font-bold", locale == "en" && "font-secondary",  locale == "zh" && "font-primary font-bold", locale == "jp" && "font-primary font-bold")}>{blog_4.title}</p>
+                <p
+                  className={clsx(
+                    "title",
+                    locale == "cn" && "font-primary font-bold",
+                    locale == "en" && "font-secondary",
+                    locale == "zh" && "font-primary font-bold",
+                    locale == "jp" && "font-primary font-bold"
+                  )}
+                >
+                  {blog_4.title}
+                </p>
                 <div className="underline"></div>
                 <p className="subtitle">{blog_4.subtitle}</p>
                 <p className="description">{blog_4.description}</p>
@@ -214,9 +321,22 @@ export default function Home({ data }) {
       {/* Connect To AVAX */}
       <section className="animate mt-16 md:mt-20 lg:mt-40">
         <div className="container">
-        <Link href="https://avascriptions.com/market/token?tick=avav" target="_blank">
+          <Link
+            href="https://avascriptions.com/market/token?tick=avav"
+            target="_blank"
+          >
             <div className="flex items-center justify-start w-full aspect-[4.6] md:aspect-[8] bg-contain bg-center bg-no-repeat bg-[url('/images/home/banner_bg.png')] md:bg-[url('/images/home/md/banner_bg.png')]">
-              <h3 className={clsx("pl-4 md:pl-20 pr-1", locale == "cn" && "font-primary font-bold", locale == "en" && "font-secondary",  locale == "zh" && "font-primary font-bold", locale == "jp" && "font-primary font-bold")}>{banner.btn_con}</h3>
+              <h3
+                className={clsx(
+                  "pl-4 md:pl-20 pr-1",
+                  locale == "cn" && "font-primary font-bold",
+                  locale == "en" && "font-secondary",
+                  locale == "zh" && "font-primary font-bold",
+                  locale == "jp" && "font-primary font-bold"
+                )}
+              >
+                {banner.btn_con}
+              </h3>
               <Image
                 alt="arrow"
                 src="/images/home/banner_ic_arrow.svg"
@@ -234,7 +354,13 @@ export default function Home({ data }) {
       </section>*/}
       {/* FAQ */}
       <section className="animate mt-16 md:mt-20 lg:mt-40 relative">
-        <Image alt="Decoration_3" src="/images/home/bg_Decoration_3.png" width={234} height={430} className="absolute right-0 top-0 md:top-[50px] -z-10" />
+        <Image
+          alt="Decoration_3"
+          src="/images/home/bg_Decoration_3.png"
+          width={234}
+          height={430}
+          className="absolute right-0 top-0 md:top-[50px] -z-10"
+        />
         <div className="container">
           {/* FAQ */}
           <div className="my-16 md:my-20 lg:my-40">
@@ -254,7 +380,23 @@ export default function Home({ data }) {
           </div>
         </div>
       </section>
-      
+
+      {/* Video show */}
+      {isVideoShow && (
+        <div className="z-10 fixed top-0 left-0 w-full h-full bg-[#000000] bg-opacity-20 transition-all duration-500 ease-out">
+          <div className="flex justify-center items-center w-full h-full">
+            <ModalVideo
+              thumb={thumb}
+              thumbWidth={thumbWidth}
+              thumbHeight={thumbHeight}
+              thumbAlt={thumbAlt}
+              video={video}
+              videoWidth={videoWidth}
+              videoHeight={videoHeight}
+            />
+          </div>
+        </div>
+      )}
     </Base>
   );
 }
