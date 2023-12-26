@@ -1,0 +1,3 @@
+.timeline {
+    @apply space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:border-l-[2px] before:border-cred before:border-dashed before:w-0.5;
+}
