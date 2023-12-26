@@ -83,7 +83,7 @@ const Header = () => {
                   className={clsx("nav-link block", asPath.pathname == "/" && "active")}
                   onClick={()=>setShowMenu(false)}
                 >
-                  Home
+                  {locale=="jp" ? "ホームページ" : locale=="cn" ? "主页" : locale == "zh" ? "首頁" : "Home"}
                 </Link>
               </li>
               {main.map((menu, i) => (
@@ -91,7 +91,7 @@ const Header = () => {
                 {menu.hasChildren ? (
                   <li className="nav-item nav-dropdown group relative">
                     <span className="nav-link inline-flex items-center">
-                      {menu.name}
+                      {menu.name[locale]}
                       <svg className="h-4 w-4 fill-current ml-1" viewBox="0 0 20 20">
                         <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                       </svg>
@@ -121,7 +121,7 @@ const Header = () => {
                         asPath.pathname === menu.url && "active"
                       }`}
                     >
-                      {menu.name}
+                      {menu.name[locale]}
                     </Link>
                     ) : (
                       <Link
@@ -131,7 +131,7 @@ const Header = () => {
                         asPath.pathname === menu.url && "active"
                       }`}
                     >
-                      {menu.name}
+                      {menu.name[locale]}
                     </Link>
                     )
                     }
@@ -144,7 +144,7 @@ const Header = () => {
               {/* Language support */}
               <li className="nav-item nav-dropdown group relative md:mt-0">
                 <span className="nav-link inline-flex items-center">
-                  {locale == "jp" ? "日本語" : locale == "cn" ? "中文" : locale == "zh" ? "中文（繁体）" : "EN" }
+                  {locale == "jp" ? "日本語" : locale == "cn" ? "中文" : locale == "zh" ? "繁体" : "EN" }
                   <svg className="h-4 w-4 fill-current ml-1" viewBox="0 0 20 20">
                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                   </svg>
@@ -174,7 +174,7 @@ const Header = () => {
                       className={clsx("nav-dropdown-link block transition-all", locale == "zh" && "active")}
                       onClick={()=>setShowMenu(false)}
                     >
-                      中文（繁体）
+                      繁体
                     </Link>
                   </li>
                   <li className="nav-dropdown-item" key={`children-JP`}>
