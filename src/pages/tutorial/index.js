@@ -37,7 +37,7 @@ export default function Home({ data }) {
       ></Image>
       {/* Main content */}
       <section className="animate container mt-[90px] md:mt-[140px]">
-        <h3 className="text-cred">{tutorial.title}</h3>
+        <h3 className={clsx("text-cred", locale=="en" && "font-secondary", locale != "en" && "font-primary font-bold")}>{tutorial.title}</h3>
         <p className="text-cred text-[14px] md:text-[16px] font-secondary">AVAV = A Very Amazing Victory!</p>
         <div className="w-full h-[1px] bg-[#1B1B1B] my-5 md:my-10" />
         <div className="mb-[25px] md:mb-[50px]">

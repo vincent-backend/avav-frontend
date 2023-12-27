@@ -11,6 +11,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { getDataFromContent } from "@/lib/contentParser";
 import useTranslation from "@/hooks/useTranslation";
+import useOutsideAlerter from "@/hooks/useOutsideAlterter";
 import { markdownify } from "@/lib/utils/textConverter";
 import clsx from "clsx";
 import HistoryTimeline from "@/layouts/components/home/HistoryTimeline";
@@ -110,6 +111,16 @@ export default function Home({ data }) {
     }
   };
 
+  /// Overlay click
+  // Video player
+  const container_video = useRef(null);
+  const onVideoOverlayClick = (e) => {
+    if (!container_video.current?.contains(e.target)) setVideoShow(false);
+  };
+  // Option dialog
+  const container_option = useRef(null);
+  useOutsideAlerter(container_option, setLinkOpShow);
+  
   useEffect(() => {
     //frontmatter
     setFrontmatter(data.filter((dt) => dt.lang === locale)[0]);
@@ -158,18 +169,6 @@ export default function Home({ data }) {
 
     return () => ctx.revert();
   }, [locale, data]);
-
-  /// Overlay click
-  // Video player
-  const container_video = useRef(null);
-  const onVideoOverlayClick = (e) => {
-    if (!container_video.current?.contains(e.target)) setVideoShow(false);
-  };
-  // Option dialog
-  const container_option = useRef(null);
-  const onOptionOverlayClick = (e) => {
-    if (!container_option.current?.contains(e.target)) setVideoShow(false);
-  };
 
   return (
     <Base>
@@ -420,8 +419,7 @@ export default function Home({ data }) {
 
       {/* Video show */}
       {isVideoShow && (
-        <div className="z-20 fixed top-0 left-0 w-full h-full bg-[#000000] bg-opacity-20 transition-all duration-500 ease-out"
-         ref={container_video} onClick={onVideoOverlayClick}>
+        <div className="z-20 fixed top-0 left-0 w-full h-full bg-[#000000] bg-opacity-20 transition-all duration-500 ease-out">
           <div className="flex justify-center items-center w-full h-full">
             <ModalVideo
               thumb={thumb}
@@ -431,6 +429,7 @@ export default function Home({ data }) {
               video={video}
               videoWidth={videoWidth}
               videoHeight={videoHeight}
+              setVideoShow = {setVideoShow}
             />
           </div>
         </div>
@@ -439,9 +438,9 @@ export default function Home({ data }) {
       {/* Link Option */}
       {isLinkOptionShow &&
       <div className="md:hidden z-10 fixed top-0 left-0 w-full h-full transition-all duration-500 ease-out">
-        <div className="flex justify-center items-center bg-[#000000] bg-opacity-70 w-full h-full" ref={container_option} onClick={onOptionOverlayClick}>
-          <div className="flex flex-col justify-ceter items-center w-full mx-10 h-[91px] bg-[#2e3137] text-white ">
-          <Link href={curOpenWalletUrl} target="_blank" className= "h-full leading-10">{home.open_wallet}</Link>
+        <div className="flex justify-center items-center bg-[#000000] bg-opacity-70 w-full h-full">
+          <div className="flex flex-col justify-ceter items-center w-full mx-10 h-[91px] bg-[#2e3137] text-white " ref={container_option}>
+          <Link href={curOpenWalletUrl} target="_blank" className= "h-full leading-10" onClick={()=>setLinkOpShow(false)}>{home.open_wallet}</Link>
           <div className="w-[80%] min-h-[1px] bg-[#41444a]" />
           <button className="h-full leading-10" onClick={() => onEntranceVideoClick(curSelWallet)}>{home.buy_tutorial}</button>
           </div>

@@ -1,6 +1,7 @@
 import { useState, useRef, Fragment } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import Image from 'next/image'
+import useOutsideAlerter from '@/hooks/useOutsideAlterter'
 
 export default function ModalVideo({
   thumb,
@@ -10,9 +11,11 @@ export default function ModalVideo({
   video,
   videoWidth,
   videoHeight,
+  setVideoShow
 }) {
-  const [modalOpen, setModalOpen] = useState(false)
-  const videoRef = useRef(null)
+  const [modalOpen, setModalOpen] = useState(false);
+  const videoRef = useRef(null);
+  useOutsideAlerter(videoRef, setVideoShow);
 
   return (
     <div className="flex justify-center">
