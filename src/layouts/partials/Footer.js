@@ -4,10 +4,15 @@ import Logo from "@/layouts/components/Logo";
 import Link from "next/link";
 import Image from "next/image";
 import useTranslation from "@/hooks/useTranslation";
+import { useRef, useState } from "react";
+import useOutsideAlerter from "@/hooks/useOutsideAlterter";
 
 const Footer = () => {
-  const { email } = config.contact_info;
   const { locale, setLocale } = useTranslation();
+  const { footer } = menu;
+  const [isTMenu, setTMenu] = useState(false);
+  const menuRef = useRef(null);
+  useOutsideAlerter(menuRef, setTMenu);
 
   return (
     <footer className="bg-black">
@@ -21,9 +26,18 @@ const Footer = () => {
             <div className="flex-col">
               <h6>Socials</h6>
               <div className="flex flex-col">
-                <Link href="https://t.me/AVAV_official" target="_blank" className="hover:text-white">
-                  Telegram
-                </Link>
+                <div className="relative inline-block">
+                  <button className="border-none" onClick={()=>setTMenu(!isTMenu)}>Telegram</button>
+                  {isTMenu &&
+                  <div className="absolute bottom-[30px] bg-[#0f0f0f] min-w-[230px] min-h-[200px] rounded-lg border-[#2f2f2f] border-2 px-4 text-[16px]" ref={menuRef}>
+                  {footer.telegram.map((item, index) =>{
+                    return(<Link key={index} href={item.url} target="_blank" className="block hover:text-white">
+                    {item.name}
+                  </Link>)
+                  })}
+                </div>
+                  }
+                </div>
                 <Link href="https://x.com/avavcommunity" target="_blank" className="hover:text-white">
                   Twitter
                 </Link>
