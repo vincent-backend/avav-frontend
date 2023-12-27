@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "$AVAV",
-    "base_url": "/",
+    "base_url": "https://avav.meme/",
     "favicon": "/favicon.ico",
     "logo": "/logo.svg",
     "width": "82",

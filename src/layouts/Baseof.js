@@ -116,7 +116,7 @@ const Base = ({
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content={`${base_url}/${router.asPath.replace("/", "")}`}
+          content={`${base_url}${router.asPath.replace("/", "")}`}
         />
 
         {/* twitter-title */}
