@@ -66,7 +66,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="mt-4 md:mt-0 md:min-w-[250px] flex justify-center md:justify-end md:items-start">
-            <h4 className="text-cred">▲▼▲▼</h4>
+            <Link href="/" className="text-[18px] md:text-h4 text-cred">▲▼▲▼</Link>
           </div>
         </div>
       </div>
