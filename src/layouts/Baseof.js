@@ -142,10 +142,10 @@ const Base = ({
         {/* twitter-image */}
         <meta
           name="twitter:image"
-          content={`${base_url}${meta_image}`}
+          content={`https://avav.meme/images/bg_coin.png`}
         />
 
-        <meta name="twitter:card" content={`${base_url}${meta_image}`} />
+        <meta name="twitter:card" content={`summary_large_image`} />
 
         {/* author from config.json */}
         <meta name="author" content={meta_author} />

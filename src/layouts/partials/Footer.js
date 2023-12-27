@@ -21,18 +21,19 @@ const Footer = () => {
             <div className="flex-col">
               <h6>Socials</h6>
               <div className="flex flex-col">
-                <Link href="https://t.me/AVAV_official" target="_blank">
+                <Link href="https://t.me/AVAV_official" target="_blank" className="hover:text-white">
                   Telegram
                 </Link>
-                <Link href="https://x.com/avavcommunity" target="_blank">
+                <Link href="https://x.com/avavcommunity" target="_blank" className="hover:text-white">
                   Twitter
                 </Link>
-                <Link href="https://discord.gg/Rn7ArXbD" target="_blank">
+                <Link href="https://discord.gg/Rn7ArXbD" target="_blank" className="hover:text-white">
                   Discord
                 </Link>
                 <Link
                   href="https://medium.com/@pr_86854/avav-beyond-hype-the-first-practical-inscription-token-9f36e992137a"
                   target="_blank"
+                  className="hover:text-white"
                 >
                   Medium
                 </Link>
@@ -43,7 +44,7 @@ const Footer = () => {
               <div className="flex flex-col">
                 <Link
                   href="https://docs.avascriptions.com/developer-service/asc-20"
-                  target="_blank"
+                  target="_blank"  className="hover:text-white"
                 >
                   API Doc
                 </Link>
