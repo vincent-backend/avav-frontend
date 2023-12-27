@@ -1,6 +1,10 @@
 {
     "en": [
         {
+            "date": "December 27, 2023",
+            "content": "BitMart Exchange announced that it will launch the AVAV/USDT trading pair and will be pushed simultaneously by Golden Finance"
+        },
+        {
             "date": "December 26, 2023",
             "content": "XT Exchange announced that it will launch the AVAV/USDT trading pair on December 27"
         },
@@ -38,6 +42,10 @@
         }
     ],
     "cn": [
+        {
+            "date": "2023年12月27日",
+            "content": "BitMart交易所公告将上线AVAV/USDT交易对并金色财经同步推送"
+        },
         {
             "date": "2023年12月26日",
             "content": "XT交易所公告将于12月27日上线AVAV/USDT交易对"
@@ -78,6 +86,10 @@
     "zh": [
         {
             "date": "2023年12月26日",
+            "content": "BitMart交易所公告將上線AVAV/USDT交易對並金色財經同步推播"
+        },
+        {
+            "date": "2023年12月26日",
             "content": "XT交易所公告將於12月27日上線AVAV/USDT交易對"
         },
         {
@@ -114,6 +126,10 @@
         }
     ],
     "jp": [
+        {
+            "date": "2023年12月27日",
+            "content": "BitMart Exchangeは、AVAV/USDT取引ペアを開始し、同時にGolden Financeによって推進されることを発表しました"
+        },
         {
             "date": "2023年12月26日",
             "content": "XT Exchangeは、AVAV/USDT取引ペアを12月27日に開始すると発表した"
