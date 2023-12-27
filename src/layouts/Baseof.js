@@ -145,7 +145,7 @@ const Base = ({
           content={`https://avav.meme/images/bg_coin.png`}
         />
 
-        <meta name="twitter:card" content={`summary_large_image`} />
+        <meta name="twitter:card" content={`summary`} />
 
         {/* author from config.json */}
         <meta name="author" content={meta_author} />
