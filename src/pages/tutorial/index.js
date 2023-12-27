@@ -73,7 +73,7 @@ export default function Home({ data }) {
           </div>
         </div>
         <div className="mb-[25px] md:mb-[50px]">
-          <div className="flex flex-row gap-2">
+          <div className="flex flex-row gap-2 items-center">
             <Image
               src="/images/tutorial/list_ic_recover.svg"
               alt="icon"

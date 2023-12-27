@@ -68,7 +68,7 @@
       ]
     },
     {
-      "name": {"en":"Buy Tutorial", "cn":"购买教程", "zh":"購買教學課程", "jp":"Buy Tutorial"},
+      "name": {"en":"Buy Tutorial", "cn":"购买教程", "zh":"購買教學課程", "jp":"チュートリアル"},
       "url": "/tutorial"
     },
     {
