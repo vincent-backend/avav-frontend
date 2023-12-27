@@ -87,14 +87,13 @@ export default function Entrance({ text, handleClick, handleIconClick }) {
       {/*TP Wallet*/}
       <div className="group site-link md:site-link-other relative">
         <Image alt="trading" src="/images/home/logo_ic_purse.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
-        <div className="flex items-center justify-center w-full h-full md:group-hover:-translate-y-full transition-transform duration-500 ease-out">
+        <div className="flex items-center justify-center w-full h-full md:group-hover:-translate-y-full transition-transform duration-500 ease-out" onClick={()=>handleIconClick("TP")}>
           <Image
             alt="TP Wallet"
             src="/images/home/top_card_logo_9_1.png"
             width={98}
             height={118}
             className="h-[63.4%] w-auto"
-            onClick={()=>handleIconClick("TP")}
           />
         </div>
         <div className="absolute w-full h-full top-0 left-0 hidden md:group-hover:block">
@@ -118,14 +117,13 @@ export default function Entrance({ text, handleClick, handleIconClick }) {
       {/*OKX Wallet*/}
       <div className="group site-link md:site-link-other relative">
       <Image alt="trading" src="/images/home/logo_ic_purse.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
-        <div className="flex items-center justify-center w-full h-full md:group-hover:-translate-y-full transition-transform duration-500 ease-out">
+        <div className="flex items-center justify-center w-full h-full md:group-hover:-translate-y-full transition-transform duration-500 ease-out" onClick={()=>handleIconClick("OKX")}>
           <Image
             alt="OKX Wallet"
             src="/images/home/top_card_logo_8_1.png"
             width={98}
             height={118}
             className="h-[63.4%] w-auto"
-            onClick={()=>handleIconClick("OKX")}
           />
         </div>
         <div className="absolute w-full h-full top-0 left-0 hidden md:group-hover:block">
@@ -149,14 +147,13 @@ export default function Entrance({ text, handleClick, handleIconClick }) {
       {/*Metamask Wallet*/}
       <div className="group site-link md:site-link-other relative">
       <Image alt="trading" src="/images/home/logo_ic_purse.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
-        <div className="flex items-center justify-center w-full h-full md:group-hover:-translate-y-full transition-transform duration-500 ease-out">
+        <div className="flex items-center justify-center w-full h-full md:group-hover:-translate-y-full transition-transform duration-500 ease-out"  onClick={()=>handleIconClick("Metamask")}>
           <Image
             alt="Metamask Wallet"
             src="/images/home/top_card_logo_10.png"
             width={98}
             height={118}
             className="h-[63.4%] w-auto"
-            onClick={()=>handleIconClick("Metamask")}
           />
         </div>
         <div className="absolute w-full h-full top-0 left-0 hidden md:group-hover:block">
