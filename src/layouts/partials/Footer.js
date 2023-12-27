@@ -27,11 +27,11 @@ const Footer = () => {
               <h6>Socials</h6>
               <div className="flex flex-col">
                 <div className="relative inline-block">
-                  <button className="border-none hover:text-white" onClick={()=>setTMenu(!isTMenu)}>Telegram</button>
+                  <button className="border-none hover:text-white" onClick={()=>setTMenu(true)}>Telegram</button>
                   {isTMenu &&
-                  <div className="absolute bottom-[30px] bg-[#0f0f0f] min-w-[230px] min-h-[200px] rounded-lg border-[#2f2f2f] border-2 px-4 text-[16px]" ref={menuRef}>
+                  <div className="absolute bottom-[30px] bg-[#0f0f0f] min-w-[230px] min-h-[200px] rounded-lg border-[#2f2f2f] border-2 px-[14px] py-1 text-[16px]" ref={menuRef}>
                   {footer.telegram.map((item, index) =>{
-                    return(<Link key={index} href={item.url} target="_blank" className="block hover:text-white">
+                    return(<Link key={index} href={item.url} target="_blank" className="block hover:text-white active:text-white leading-8">
                     {item.name}
                   </Link>)
                   })}
