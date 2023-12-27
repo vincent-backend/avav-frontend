@@ -420,7 +420,7 @@ export default function Home({ data }) {
       {/* Video show */}
       {isVideoShow && (
         <div className="z-20 fixed top-0 left-0 w-full h-full bg-[#000000] bg-opacity-20 transition-all duration-500 ease-out">
-          <div className="flex justify-center items-center w-full h-full">
+          <div className="flex justify-center items-center h-full">
             <ModalVideo
               thumb={thumb}
               thumbWidth={thumbWidth}
