@@ -38,7 +38,7 @@ const Footer = () => {
             <div className="relative">
             <Image alt="Copy URL" title="Copy URL" src="/images/footer/copy_nor.svg" width={16} height={16} className="ml-2 cursor-pointer" 
                   onClick={() => handleCopy()}/>
-            <div className={clsx("absolute opacity-0 min-w-[100px] h-[40px] text-white text-center leading-[40px] bg-[#1E2126] rounded-lg left-[20px] md:left-auto md:right-[0] bottom-10 transition-all duration-200 ease-linear",
+            <div className={clsx("absolute opacity-0 min-w-[100px] h-[40px] text-white text-center leading-[40px] bg-[#1E2126] rounded-lg left-[-30px] md:left-auto md:right-[0] 2xl:right-[-40px] bottom-10 transition-all duration-200 ease-linear",
                                   isShowTooltip && "opacity-100")}>
             Copied!
             </div>           
