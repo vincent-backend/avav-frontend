@@ -24,10 +24,14 @@ const Footer = () => {
       <div className="container">
         <div className="flex flex-col md:flex-row justify-start md:justify-between items-start md:items-center pt-4 md:pt-8">
           <Logo lang={locale} />
+          <div className="flex flex-row">
+            <h6>https://avav.meme</h6>
+            <Image alt="Copy URL" title="Copy URL" src="/images/footer/copy_nor.svg" width={16} height={16} className="ml-2 cursor-pointer"/>
+          </div>
         </div>
         <div className="w-full h-[1px] bg-[#1b1b1b]" />
-        <div className="relative md:flex flex-col md:flex-row justify-center pb-6 md:py-6 md:gap-20 lg:px-20">
-          <div className="flex flex-col md:flex-row justicy-center px-0 sm:px-10 md:px-20 mt-4 md:mt-0 leading-8 w-full">
+        <div className="relative md:flex flex-col md:flex-row justify-center pb-6 md:py-6 md:gap-20">
+          <div className="flex flex-col md:flex-row justicy-center mr-0 sm:mr-10 md:mr-20 lg:mr-40 xl:mr-48 mt-4 md:mt-0 leading-8 w-full">
             <div className="flex flex-col justify-center md:justify-start items-center md:items-start w-full">
               <h6>More</h6>
               <div className="flex flex-col">
