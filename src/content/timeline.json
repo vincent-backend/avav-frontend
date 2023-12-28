@@ -1,6 +1,10 @@
 {
     "en": [
         {
+            "date": "December 28, 2023",
+            "content": "Coinmarketcap includes AVAV"
+        },
+        {
             "date": "December 27, 2023",
             "content": "BitMart Exchange announced that it will launch the AVAV/USDT trading pair and will be pushed simultaneously by Golden Finance"
         },
@@ -42,6 +46,10 @@
         }
     ],
     "cn": [
+        {
+            "date": "2023年12月28日",
+            "content": "Coinmarketcap收录AVAV"
+        },
         {
             "date": "2023年12月27日",
             "content": "BitMart交易所公告将上线AVAV/USDT交易对并金色财经同步推送"
@@ -85,6 +93,10 @@
     ],
     "zh": [
         {
+            "date": "2023年12月28日",
+            "content": "Coinmarketcap 已收錄 AVAV"
+        },
+        {
             "date": "2023年12月26日",
             "content": "BitMart交易所公告將上線AVAV/USDT交易對並金色財經同步推播"
         },
@@ -126,6 +138,10 @@
         }
     ],
     "jp": [
+        {
+            "date": "2023年12月28日",
+            "content": "CoinmarketcapにはAVAVが含まれます"
+        },
         {
             "date": "2023年12月27日",
             "content": "BitMart Exchangeは、AVAV/USDT取引ペアを開始し、同時にGolden Financeによって推進されることを発表しました"
