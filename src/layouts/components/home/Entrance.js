@@ -38,7 +38,7 @@ export default function Entrance({ text, handleClick, handleIconClick }) {
         />
         <Image alt="trading" src="/images/home/logo_ic_Trading.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
       </Link>
-      <Link href="/" target="_blank" className="site-link relative hidden">
+      <Link href="https://www.bitmart.com/trade/en-US?symbol=AVAV_USDT" target="_blank" className="site-link relative">
         <Image
           alt="BitMart"
           src="/images/home/top_card_logo_4.svg"
