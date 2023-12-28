@@ -17,31 +17,39 @@ const Footer = () => {
   useOutsideAlerter(menuRef, setTMenu);
 
   const [isShowTooltip, setShowTooltip] = useState(false);
-  
+
   const handleCopy = () => {
     CopyToClipboard("https://avav.meme", locale);
     setShowTooltip(true);
-  }
+  };
 
-  useEffect(()=>{
+  useEffect(() => {
     if (isShowTooltip)
-      setTimeout(()=> {setShowTooltip(false)}, 3000);
-  },[isShowTooltip]);
+      setTimeout(() => {
+        setShowTooltip(false);
+      }, 3000);
+  }, [isShowTooltip]);
 
   return (
     <footer className="bg-black">
       <div className="container">
         <div className="flex flex-col md:flex-row justify-start md:justify-between items-start md:items-center pt-4 md:pt-8">
           <Logo lang={locale} />
-          <div className="flex flex-row">
-            <h6>https://avav.meme</h6>
+          <div
+            className="group hidden md:flex flex-row items-center cursor-pointer"
+            onClick={() => handleCopy()}
+          >
+            <h6 className="group-hover:text-cred">https://avav.meme</h6>
             <div className="relative">
-            <Image alt="Copy URL" title="Copy URL" src="/images/footer/copy_nor.svg" width={16} height={16} className="ml-2 cursor-pointer" 
-                  onClick={() => handleCopy()}/>
-            <div className={clsx("absolute opacity-0 min-w-[100px] h-[40px] text-white text-center leading-[40px] bg-[#1E2126] rounded-lg left-[-30px] md:left-auto md:right-[0] 2xl:right-[-40px] bottom-10 transition-all duration-200 ease-linear",
-                                  isShowTooltip && "opacity-100")}>
-            Copied!
-            </div>           
+              <div className="ml-2 w-[16px] h-[16px] bg-[url('/images/footer/copy_nor.svg')] group-hover:bg-[url('/images/footer/copy_red.svg')]"></div>
+              <div
+                className={clsx(
+                  "absolute opacity-0 min-w-[100px] h-[40px] text-white text-center leading-[40px] bg-[#1E2126] rounded-lg left-[-30px] md:left-auto md:right-[0] 2xl:right-[-40px] bottom-10 transition-all duration-200 ease-linear",
+                  isShowTooltip && "opacity-100"
+                )}
+              >
+                Copied!
+              </div>
             </div>
           </div>
         </div>
@@ -65,7 +73,24 @@ const Footer = () => {
                 })}
               </div>
             </div>
-            <div className="flex flex-col mt-5 md:mt-0 w-full">
+            <div
+              className="group flex md:hidden flex-row justify-center items-center cursor-pointer mt-3"
+              onClick={() => handleCopy()}
+            >
+              <h6 className="group-hover:text-cred">https://avav.meme</h6>
+              <div className="relative">
+                <div className="ml-2 w-[16px] h-[16px] bg-[url('/images/footer/copy_nor.svg')] group-hover:bg-[url('/images/footer/copy_red.svg')]"></div>
+                <div
+                  className={clsx(
+                    "absolute opacity-0 min-w-[100px] h-[40px] text-white text-center leading-[40px] bg-[#1E2126] rounded-lg left-[-30px] md:left-auto md:right-[0] 2xl:right-[-40px] bottom-10 transition-all duration-200 ease-linear",
+                    isShowTooltip && "opacity-100"
+                  )}
+                >
+                  Copied!
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col mt-3 md:mt-0 w-full">
               <h6 className="w-full text-center">Socials</h6>
               <div className="flex flex-row items-end justify-center gap-4 mt-2">
                 <div className="md:relative w-[28px] h-[28px]">
@@ -74,23 +99,25 @@ const Footer = () => {
                     onClick={() => setTMenu(true)}
                   ></div>
                   <div
-                      className={clsx("absolute overflow-y-hidden opacity-0 bg-[#1E2126] w-full md:w-[230px] h-0 rounded-lg border-[#2f2f2f] border-2 px-[14px] py-1 text-[12px] bottom-[10px] md:bottom-[35px] left-0 md:left-[-100px] transition-all duration-200 ease-linear",
-                                      isTMenu && "opacity-100 h-[340px]")}
-                      ref={menuRef}
-                    >
-                      {footer.telegram.map((item, index) => {
-                        return (
-                          <Link
-                            key={index}
-                            href={item.url}
-                            target="_blank"
-                            className="block text-white hover:text-cred active:text-cred py-1 border-b-[1px] border-b-[#ffffff] border-opacity-10"
-                          >
-                            {item.name}
-                          </Link>
-                        );
-                      })}
-                    </div>
+                    className={clsx(
+                      "absolute overflow-y-hidden opacity-0 bg-[#1E2126] w-full md:w-[230px] h-0 rounded-lg border-[#2f2f2f] border-2 px-[14px] py-1 text-[12px] bottom-[10px] md:bottom-[35px] left-0 md:left-[-100px] transition-all duration-200 ease-linear",
+                      isTMenu && "opacity-100 h-[340px]"
+                    )}
+                    ref={menuRef}
+                  >
+                    {footer.telegram.map((item, index) => {
+                      return (
+                        <Link
+                          key={index}
+                          href={item.url}
+                          target="_blank"
+                          className="block text-white hover:text-cred active:text-cred py-1 border-b-[1px] border-b-[#ffffff] border-opacity-10"
+                        >
+                          {item.name}
+                        </Link>
+                      );
+                    })}
+                  </div>
                 </div>
                 <Link
                   href="https://x.com/avavcommunity"
@@ -111,9 +138,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="mt-4 md:mt-0 flex justify-center md:justify-end md:items-start">
-            <h4 className="text-[18px] md:text-h4 text-cred">
-              ▲▼▲▼
-            </h4>
+            <h4 className="text-[18px] md:text-h4 text-cred">▲▼▲▼</h4>
           </div>
         </div>
       </div>
