@@ -110,6 +110,16 @@
         "name": "AVAV Vietnam Community",
         "url": "https://t.me/avav_vietnami"
       }
+    ],
+    "more": [
+      {
+        "name": {"en":"API Doc", "cn":"API文档", "zh":"API文件", "jp":"APIドキュメント"},
+        "url": "https://docs.avascriptions.com/developer-service/asc-20"
+      },
+      {
+        "name": {"en":"Buy Tutorial", "cn":"购买教程", "zh":"購買教學課程", "jp":"チュートリアル"},
+        "url": "/tutorial"
+      }
     ]
   }
 }
