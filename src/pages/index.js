@@ -384,7 +384,7 @@ export default function Home({ data }) {
       {/* HistoryTimeline */}
       <section className="animate mt-16 md:mt-20">
         <div className="container">
-        <h3 className={clsx("text-cred", locale=="en" && "font-secondary", locale != "en" && "font-primary font-bold") }>{home.dev_course}</h3>
+        <h3 className={clsx("text-[25px] md:text-[40px] text-cred", locale=="en" && "font-secondary", locale != "en" && "font-primary font-bold") }>{home.dev_course}</h3>
         <HistoryTimeline />
         </div>
       </section>
