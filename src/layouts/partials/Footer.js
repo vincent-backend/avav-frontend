@@ -27,7 +27,7 @@ const Footer = () => {
     if (isShowTooltip)
       setTimeout(() => {
         setShowTooltip(false);
-      }, 3000);
+      }, 2000);
   }, [isShowTooltip]);
 
   return (
