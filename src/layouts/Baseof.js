@@ -142,11 +142,19 @@ const Base = ({
         {/* twitter-image */}
         <meta
           name="twitter:image"
-          content={`https://avav.meme/images/bg_coin.png`}
+          content={`https://avav.meme/twitter-image.png`}
+        />
+        <meta
+          property="twitter:image"
+          content={`https://avav.meme/twitter-image.png`}
         />
 
-        <meta name="twitter:card" content={`summary`} />
-
+        <meta name="twitter:image:type" content="image/png" />
+        <meta name="twitter:image:width" content="144" />
+        <meta name="twitter:image:height" content="144" />
+        <meta property="twitter:image:alt" content="A V A V" />
+        <meta name="twitter:card" content="summary" />
+        
         {/* author from config.json */}
         <meta name="author" content={meta_author} />
       </Head>
