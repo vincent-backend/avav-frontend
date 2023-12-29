@@ -66,7 +66,7 @@ export default function Entrance({ text, handleClick, handleIconClick }) {
           height={118}
           className="h-[63.4%] w-auto"
         />
-        <Image alt="trading" src="/images/home/logo_ic_Trading.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
+        <Image alt="trading" src="/images/home/logo_ic_marketplace.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
       </Link>
 
       <Link
@@ -87,7 +87,7 @@ export default function Entrance({ text, handleClick, handleIconClick }) {
       {/*TP Wallet*/}
       <div className="group site-link md:site-link-other relative">
         <Image alt="trading" src="/images/home/logo_ic_purse.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
-        <div className="flex items-center justify-center w-full h-full md:group-hover:-translate-y-full transition-transform duration-500 ease-out" onClick={()=>handleIconClick("TP")}>
+        <div className="flex items-center justify-center w-full h-full opacity-100 md:group-hover:opacity-0 transition-all duration-150 ease-linear" onClick={()=>handleIconClick("TP")}>
           <Image
             alt="TP Wallet"
             src="/images/home/top_card_logo_9_1.png"
@@ -117,7 +117,7 @@ export default function Entrance({ text, handleClick, handleIconClick }) {
       {/*OKX Wallet*/}
       <div className="group site-link md:site-link-other relative">
       <Image alt="trading" src="/images/home/logo_ic_purse.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
-        <div className="flex items-center justify-center w-full h-full md:group-hover:-translate-y-full transition-transform duration-500 ease-out" onClick={()=>handleIconClick("OKX")}>
+        <div className="flex items-center justify-center w-full h-full opacity-100 md:group-hover:opacity-0 transition-all duration-150 ease-linear" onClick={()=>handleIconClick("OKX")}>
           <Image
             alt="OKX Wallet"
             src="/images/home/top_card_logo_8_1.png"
@@ -147,7 +147,7 @@ export default function Entrance({ text, handleClick, handleIconClick }) {
       {/*Metamask Wallet*/}
       <div className="group site-link md:site-link-other relative">
       <Image alt="trading" src="/images/home/logo_ic_purse.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
-        <div className="flex items-center justify-center w-full h-full md:group-hover:-translate-y-full transition-transform duration-500 ease-out"  onClick={()=>handleIconClick("Metamask")}>
+        <div className="flex items-center justify-center w-full h-full opacity-100 md:group-hover:opacity-0 transition-all duration-150 ease-linear"  onClick={()=>handleIconClick("Metamask")}>
           <Image
             alt="Metamask Wallet"
             src="/images/home/top_card_logo_10.png"

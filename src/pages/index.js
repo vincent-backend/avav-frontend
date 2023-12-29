@@ -181,7 +181,8 @@ export default function Home({ data }) {
       </div>
 
       {/*Top left*/}
-      <div className="absolute w-[50%] md:w-[358px] h-[670px] bg-contain bg-no-repeat bg-[url('/images/home/top_left_line.svg')] -z-10" />
+      <div className="absolute w-[70%] md:w-[869px] h-[1011px] bg-contain bg-no-repeat bg-[url('/images/home/bg_top_left_light.png')] -z-10" />
+      <div className="absolute w-[70%] md:w-[358px] h-[670px] bg-contain bg-no-repeat bg-[url('/images/home/top_left_line.svg')] -z-10" />
       {/*Right light*/}
       <div className="right-light absolute w-[80%] md:w-[1100px] h-[925px] md:h-[1658px] top-[650px] md:top-[400px] right-0 bg-contain bg-center bg-no-repeat bg-[url('/images/home/bg_right_light.svg')] md:bg-[url('/images/home/md/bg_right_light.svg')] opacity-70 -z-10" />
       {/*Left line*/}
