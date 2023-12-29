@@ -190,6 +190,7 @@ export default function Home({ data }) {
       <section className="min-h-[120%] md:min-h-[1000px] pt-[90px] md:pt-[254px]">
         <div className="container">
           <div className="banner flex flex-col justify-start md:max-w-[680px]">
+            {/* Banner title */}
             <div className="banner-title">
               <h2 className="whitespace-nowrap">{banner.title}</h2>
               <div className="relative">
@@ -197,13 +198,14 @@ export default function Home({ data }) {
                 <div className="absolute w-[100px] h-[26px] bg-[url('/images/home/top_tag.svg')] top-[13px] left-[165px] md:top-[35px] md:left-[425px]" />
               </div>
             </div>
-
+            {/* Banner subtitle */}
             <div className="banner-content mt-[16px] md:mt-[84px]">
               <p className="text-[20px] md:text-[28px] leading-6 md:leading-10 text-cred font-secondary">
                 {banner.subtitle}
               </p>
               {markdownify(banner.content, "h6", "text-white leading-6 mt-2")}
             </div>
+            {/* Banner link button */}
             <Link
               href="https://avascriptions.com/market/token?tick=avav"
               target="_blank"
@@ -215,9 +217,9 @@ export default function Home({ data }) {
                   src="/images/home/banner_btn_bg.svg"
                   width={200}
                   height={50}
-                  className="absolute -z-10 left-0 -top-[5px] opacity-100 w-[200px] h-[50px] group-hover:w-[240px] group-hover:h-[60px] group-hover:opacity-70 transition-all duration-200 ease-linear"
+                  className="absolute -z-10 left-0 -top-[5px] opacity-100 w-[200px] h-[50px] group-hover:w-[240px] group-hover:h-[60px] group-hover:opacity-70 group-active:w-[240px] group-active:h-[60px] group-active:opacity-70 transition-all duration-200 ease-linear"
                 />
-                <p className="text-center text-white w-[200px] leading-[40px] group-hover:w-[220px] group-hover:leading-[50px] transition-all duration-200 ease-linear">{banner.btn_con}</p>
+                <p className="text-center text-white w-[200px] leading-[40px] group-hover:w-[220px] group-hover:leading-[50px] group-active:w-[220px] group-active:leading-[50px] transition-all duration-200 ease-linear">{banner.btn_con}</p>
               </div>
             </Link>
           </div>
