@@ -155,7 +155,7 @@ export default function Home({ data }) {
 
 // for tutorial data
 export const getStaticProps = async () => {
-  const data = await getDataFromContent("./src/content/tutorial/2");
+  const data = await getDataFromContent("./src/content/tutorial/1");
 
   return {
     props: {
