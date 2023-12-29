@@ -1,30 +1,30 @@
 ---
 lang: "vt"
 nav:
-  trade_now: "Trade Now"
+  trade_now: "Giao dịch ngay"
 banner:
   title: "Welcome To"
   subtitle: "A Very Amazing Victory. A very amazing victory"
-  content: "$AVAV is the first inscription meme in Avalanche Ecology to receive the diamond badge, with a three-day transaction volume reaching 500,000 AVAX (25.5M usd vol). It took more than a month from the beginning to the end of the casting of the inscription, and the number of holders was as high as 50,000. When you see this name, you can create an emotional resonance with the community. It is the favorite inscription of young people and is a super meme with global attributes."
-  btn_con: "Connect to AVAX"
+  content: "$AVAV là meme ghi dòng chữ đầu tiên trong Hệ sinh thái Avalanche nhận được huy hiệu kim cương, với khối lượng giao dịch trong ba ngày đạt 500.000 AVAX (25,5 triệu usd vol). Từ khi bắt đầu đến khi kết thúc quá trình đúc chữ khắc phải mất hơn một tháng, số lượng người nắm giữ lên tới 50.000 người. Khi nhìn thấy cái tên này, bạn có thể tạo được sự cộng hưởng cảm xúc với cộng đồng. Đó là dòng chữ yêu thích của giới trẻ và là một siêu meme có tính chất toàn cầu."
+  btn_con: "Kết nối với AVAX"
 blog_1:
-  title: "BUILD IT YOUR WAY"
-  subtitle: "Avalanche has the advanced tooling you need to accelerate from idea to launch."
-  description: "Don’t miss out because it took too long to deploy on Mainnet. Take advantage of the low-code tooling and configurability that makes it easy to launch your Web3 innovation in less than 60 seconds."
+  title: "XÂY DỰNG NÓ THEO CÁCH CỦA BẠN"
+  subtitle: "Avalanche có công cụ nâng cao mà bạn cần để tăng tốc từ ý tưởng đến triển khai."
+  description: "Đừng bỏ lỡ vì mất quá nhiều thời gian để triển khai trên Mainnet. Tận dụng công cụ mã hóa ngắn và khả năng cấu hình giúp bạn dễ dàng khởi chạy cải tiến Web3 trong vòng chưa đầy 60 giây."
 blog_2:
-  title: "THE BLOCKCHAIN BUILT TO SCALE"
-  subtitle: "Subnets set a new bar for scalability, without sacrificing speed, reliability, and security."
-  description: "Users hate waiting. Scaling at the cost of performance or security is not an option. Avalanche’s novel architecture allows for a universe of independent, but interconnected, blockchains that are all validated and kept secure by dynamic subsets of validators."
+  title: "BLOCKCHAIN ​​ĐƯỢC XÂY DỰNG ĐỂ QUY MÔ"
+  subtitle: "Mạng con đặt ra tiêu chuẩn mới về khả năng mở rộng mà không làm giảm tốc độ, độ tin cậy và bảo mật."
+  description: "Người dùng ghét phải chờ đợi. Mở rộng quy mô với chi phí hiệu suất hoặc bảo mật không phải là một lựa chọn. Kiến trúc mới của Avalanche cho phép tạo ra một thế giới các chuỗi khối độc lập nhưng được kết nối với nhau, tất cả đều được xác thực và giữ an toàn bởi các tập hợp con động của trình xác thực."
 blog_3:
-  title: "JOIN WEB3's MOST VIBRANT COMMUNITY"
-  subtitle: "Find the answers, connections, and info you need to accelerate your Web3 aspirations."
-  description: "Over the last year, tens of thousands of people came together at Avalanche events worldwide. As one of the industry’s most diverse and supportive communities, Avalanche boasts members from all walks of life, with over 18 languages supported across the 1M+ strong online community."
+  title: "THAM GIA CỘNG ĐỒNG SỐNG ĐỘNG NHẤT CỦA WEB3"
+  subtitle: "Tìm câu trả lời, kết nối và thông tin bạn cần để đẩy nhanh khát vọng Web3 của mình."
+  description: "Trong năm qua, hàng chục nghìn người đã cùng nhau tham dự các sự kiện Avalanche trên toàn thế giới. Là một trong những cộng đồng đa dạng và hỗ trợ nhất trong ngành, Avalanche tự hào có các thành viên từ mọi tầng lớp xã hội, với hơn 18 ngôn ngữ được hỗ trợ trên cộng đồng trực tuyến mạnh mẽ hơn 1 triệu người."
 blog_4:
-  title: "SOMETIMES RED IS ALSO GREEN"
-  subtitle: "Technology that isn’t sustainable has no claim on the future."
-  description: "When it comes to the energy required to run, no other blockchain comes close. According to the Crypto Carbon Ratings Institute, Avalanche consumes the same energy as only 46 US households each year."
+  title: "ĐÔI KHI ĐỎ CŨNG LÀ XANH"
+  subtitle: "Công nghệ không bền vững sẽ không có tương lai."
+  description: "Khi nói đến năng lượng cần thiết để chạy, không có blockchain nào sánh kịp. Theo Viện xếp hạng carbon tiền điện tử, Avalanche tiêu thụ năng lượng tương đương với chỉ 46 hộ gia đình ở Mỹ mỗi năm."
 home:
-  open_wallet: "Open Wallet"
-  buy_tutorial: "Buy Tutorial"
-  dev_course: "Development Course"
+  open_wallet: "Mở ví"
+  buy_tutorial: "Mua hướng dẫn"
+  dev_course: "Khóa học phát triển"
 ---

@@ -121,5 +121,12 @@
         "url": "/tutorial"
       }
     ]
+  },
+  "home" : {
+    "name": {"en":"HOME", "cn":"主页", "zh": "首頁", "jp": "ホームページ", "kr":"HOME", "vt":"Trang chủ"},
+    "url": "https://avav.meme"
+  },
+  "language": {
+    "name": {"en":"EN", "cn":"中文", "zh": "繁体", "jp": "日本語", "kr":"KOREAN", "vt":"Tiếng Việt"}
   }
 }

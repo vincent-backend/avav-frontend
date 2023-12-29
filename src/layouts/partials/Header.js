@@ -12,7 +12,7 @@ const Header = () => {
   const { locale, setLocale } = useTranslation();
 
   // distructuring the main menu from menu object
-  const { main } = menu;
+  const { main, home, language } = menu;
 
   // states declaration
   const [showMenu, setShowMenu] = useState(false);
@@ -72,7 +72,7 @@ const Header = () => {
                   className={clsx("nav-link block", asPath.pathname == "/" && "active")}
                   onClick={()=>setShowMenu(false)}
                 >
-                  {locale=="jp" ? "ホームページ" : locale=="cn" ? "主页" : locale == "zh" ? "首頁" : "Home"}
+                  {home.name[locale]}
                 </Link>
               </li>
               {main.map((menu, i) => (
@@ -133,7 +133,7 @@ const Header = () => {
               {/* Language support */}
               <li className="nav-item nav-dropdown group relative md:mt-0">
                 <span className="nav-link inline-flex items-center">
-                  {locale == "jp" ? "日本語" : locale == "cn" ? "中文" : locale == "zh" ? "繁体" : "EN" }
+                  {language.name[locale]}
                   <svg className="h-4 w-4 fill-current ml-1" viewBox="0 0 20 20">
                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                   </svg>

@@ -1,13 +1,13 @@
 ---
 lang: "vt"
 tutorial:
-  title: "如何购买AVAV铭文？以及一些准备工作"
-  description: "首先，您需要一个兼容 EVM 的 Web3 钱包。 <br>为了让过程简单流畅，建议使用OKX钱包，可以一站式完成。<br>有经验的朋友可以选择MetaMask或者雪崩链官方Core等。一定要备份创建新钱包后保护您的助记词！如果别人看到你的助记词，或者你丢失助记词，你将失去所有资产！<br>如无法下载、网站打不开等，请找熟悉上网的老朋友帮忙.<br>在解释如何购买之前，先解释一下概念。 AVAV铭文附加在Avalanche chain（雪崩链）上，并不是单独的硬币。整个交易大厅Avascriptions（也称为去中心化交易所）是一个运行在AVAX-C链（Avalanche EVM兼容链）上的程序。交易只能使用 AVAX 代币进行，这意味着要购买 AVAV 铭文，您必须首先持有 AVAX 代币。代币购买方式也很简单，只需选择大型交易所（OKX、Binance）即可。购买后，您需要将 AVAX 代币提取到您的 Web3 钱包中。这里注意：提现会让你选择提哪个链，如果有AVAX-C就选择这个。如果没有，请选择 AVAX 链。确保您选择正确的！<br>此时您的钱包中应该有一些 AVAX 代币！你已经很接近了！<br>以下是如何购买 AVAV 铭文。"
-  step1: "第 1 步：确保您的 Web3 钱包中有足够的 AVAX 代币"
-  step2: "步骤2：点击“发现”右下角下拉找到Avascriptions Avalanche铭文市场"
-  step3: "第三步：点击“三横线”，点击最下面的那条线，然后就会有很多种铭文，我们要选择AVAV"
-  step4: "第四步：这是选择购买哪个订单的时候了。这些订单由其他交易者投放到市场上，价格从低到高排列。如果你的网络条件很好，或者在海外，你可以尝试抢第一排便宜的订单，但如果抢不到，你会损失一些gas费（即交易费），通常不多， 0.05 至 1 美元之间。为了保险起见，以后可以选择稍微贵一点的订单，以保证能买到。订单的价格信息如图所示。"
-  step5: "第五步：当钱包弹出该窗口时，点击“确定”，即表示您授权钱包进行此交易。 （这里有个小提醒，无论连接钱包做什么操作，即使你成长为老手，这一步也要注意，如果你连接的是假交易所，骗子的钓鱼网站，并且没有看到上面将要授权的操作信息，点击确定可能会丢失钱包中的所有代币！）”
-  step6:》第六步：如果弹出勾号，提示“购买成功”，则您购买成功！<br>如果是红十字，则说明交易失败，不用担心，您可以截图发到社区群请教大佬怎么解决~"
-  step7: "至此，您的第一个AVAV铭文购买完成，恭喜您成为AVAV家族的一员！"
+  title: "Làm thế nào để mua dòng chữ AVAV? và một số công việc chuẩn bị"
+  description: "Trước tiên, bạn cần có ví Web3 tương thích với EVM. <br>Để quá trình diễn ra đơn giản và suôn sẻ, bạn nên sử dụng ví OKX, có thể hoàn tất chỉ trong một lần dừng. <br>Những người bạn có kinh nghiệm có thể chọn Core chính thức của MetaMask hoặc Avalanche Chain, v.v. Hãy nhớ sao lưu cụm từ ghi nhớ của bạn sau khi tạo ví mới! Nếu người khác nhìn thấy ghi nhớ của bạn, hoặc bạn làm mất nó, bạn sẽ mất tất cả tài sản của mình! <br>Nếu bạn không thể tải xuống, không thể mở trang web, v.v., vui lòng nhờ một người bạn cũ quen thuộc với Internet để được trợ giúp.<br>Trước khi giải thích cách mua hàng, trước tiên hãy để tôi giải thích khái niệm này. Dòng chữ AVAV được gắn vào chuỗi Avalanche và không phải là một đồng xu riêng biệt. Toàn bộ sàn giao dịch Avascriptions (hay còn gọi là sàn giao dịch phi tập trung) là một chương trình chạy trên chuỗi AVAX-C (chuỗi tương thích Avalanche EVM). Giao dịch chỉ có thể được thực hiện bằng cách sử dụng mã thông báo AVAX, có nghĩa là để mua Dòng chữ AVAV, trước tiên bạn phải nắm giữ mã thông báo AVAX. Cách mua token cũng rất đơn giản, chỉ cần chọn sàn lớn (OKX, Binance). Sau khi mua, bạn sẽ cần rút mã thông báo AVAX về ví Web3 của mình. Lưu ý ở đây: Rút sẽ yêu cầu bạn chọn chuỗi nào cần rút, nếu bạn có AVAX-C thì chọn chuỗi này. Nếu không, hãy chọn chuỗi AVAX. Hãy chắc chắn rằng bạn chọn đúng! <br>Bạn nên có một số token AVAX trong ví của mình vào thời điểm này! Bạn đang ở rất gần! <br>Đây là cách mua Dòng chữ AVAV."
+  step1: "Bước 1: Đảm bảo bạn có đủ mã thông báo AVAX trong ví Web3 của mình"
+  step2: "Bước 2: Bấm vào “Khám phá” ở góc dưới bên phải để tìm Chợ ghi Avascriptions Avalanche"
+  step3: "Bước 3: Click vào “Ba đường ngang”, click vào dòng dưới cùng, sau đó sẽ có nhiều loại chữ khắc, chúng ta muốn chọn AVAV"
+  step4: "Bước 4: Đây là lúc bạn chọn đơn hàng cần mua. Các lệnh này được đặt trên thị trường bởi các nhà giao dịch khác và được đặt theo mức giá từ thấp nhất đến cao nhất. Nếu điều kiện mạng của bạn rất tốt hoặc bạn ở nước ngoài, bạn có thể cố gắng giành lấy hàng giá rẻ đầu tiên, nhưng nếu không lấy được, bạn sẽ mất một số phí gas (tức là phí giao dịch), thường không nhiều, từ 0,05 đến 1 đô la Mỹ. Để đảm bảo an toàn, sau này bạn có thể chọn đơn hàng đắt hơn một chút để đảm bảo có thể mua được. Thông tin giá của đơn hàng được thể hiện trong hình."
+  step5: "Bước 5: Khi ví hiện ra cửa sổ này các bạn nhấn “OK”, nghĩa là bạn đã ủy quyền cho ví thực hiện giao dịch này (Đây là một lời nhắc nhở nhỏ, dù bạn thực hiện thao tác nào để kết nối ví, ngay cả khi bạn đã phát triển thành một ví) Là cựu chiến binh, bạn nên chú ý đến bước này, nếu bạn kết nối với một sàn giao dịch giả mạo, trang web lừa đảo của kẻ lừa đảo và không thấy thông tin hoạt động được ủy quyền ở trên, hãy nhấp vào OK và bạn có thể mất tất cả token trong ví của mình! )"
+  step6: "Bước 6: Nếu hiện lên dấu tích và thông báo &quot;Mua hàng thành công&quot; nghĩa là bạn đã mua hàng thành công! <br>Nếu là chữ thập đỏ nghĩa là giao dịch không thành công, bạn đừng lo, bạn có thể chụp ảnh màn hình gửi lên nhóm cộng đồng để hỏi sếp cách giải quyết nhé~"
+  step7: "Tại thời điểm này, giao dịch mua bản khắc AVAV đầu tiên của bạn đã hoàn tất. Chúc mừng bạn đã trở thành thành viên của gia đình AVAV!"
 ---

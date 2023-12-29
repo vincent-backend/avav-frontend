@@ -1,17 +1,17 @@
 ---
 lang: "vt"
 tutorial:
-  title: "铭文社区指南"
+  title: "Hướng dẫn cộng đồng ghi chú"
 
 tutorial1:
-  title: "如何购买AVAV铭文？还有一些准备工作？"
-  content: "首先，您需要一个兼容 EVM 的 Web3 钱包。为了让流程简单流畅，推荐使用OKX钱包，可以一站式完成。有经验的朋友可以选择MetaMask或者Avalanche链官方Core等。创建新钱包后一定要备份并保护好你的助记词！！如果有人看到你的助记词，或者你失去了帮助。"
+  title: "Làm thế nào để mua dòng chữ AVAV? Còn có sự chuẩn bị nào nữa không?"
+  content: "Trước tiên, bạn cần có ví Web3 tương thích với EVM. Để quá trình diễn ra đơn giản và suôn sẻ, bạn nên sử dụng ví OKX, có thể hoàn tất chỉ trong một lần dừng. Những người bạn có kinh nghiệm có thể chọn Core chính thức của chuỗi MetaMask hoặc Avalanche, v.v. Hãy nhớ sao lưu và bảo vệ cụm từ ghi nhớ của bạn sau khi tạo ví mới! ! Hãy giúp đỡ nếu ai đó nhìn thấy cụm từ ghi nhớ của bạn hoặc bạn làm mất cụm từ đó."
 
 tutorial2:
-  title: "如何查看和转移我的 AVAV 铭文？"
-  content: "之前看到社区里很多朋友询问如何查看自己的铭文，如何提出。这里有一个误区，即铭文跟随您的 AVAX Web3 本地钱包，并且已经在您的钱包中，而不是在交易所中。 Avascriptions是去中心化交易所（DEX），只有冷钱包授权交易时，才不需要垫付资金。"
+  title: "Làm cách nào để xem và chuyển các dòng chữ AVAV của tôi?"
+  content: "Tôi đã thấy nhiều bạn bè trong cộng đồng hỏi cách xem các bài viết của chính họ và cách gửi chúng. Ở đây có một quan niệm sai lầm rằng dòng chữ này tuân theo ví gốc AVAX Web3 của bạn và đã có trong ví của bạn chứ không phải trên sàn giao dịch. Avascriptions là một sàn giao dịch phi tập trung (DEX) không yêu cầu tiền tạm ứng chỉ khi ví lạnh cho phép giao dịch."
 
 
 tutorial3:
-  title: "我如何出售我的 AVAV 铭文？"
-  content: "接下来说说如何出售你的AVAV铭文，希望通过这一步大家都有别墅看海哈~首先进入我的铭文页面，点击<list>。这时候开始创建你的挂单，首先确定价格，点击红色的<How many AVAX>将底价填到价格栏，然后慢慢修改第一个框里的价格，中间箭头指向。"
+  title: "Làm cách nào để bán dòng chữ AVAV của tôi?"
+  content: "Tiếp theo, hãy nói về cách bán chữ khắc AVAV của bạn, tôi hy vọng rằng qua bước này, mọi người sẽ có một biệt thự nhìn ra biển. Đầu tiên, hãy vào trang chữ khắc của tôi và nhấp vào <danh sách>. Tại thời điểm này, hãy bắt đầu tạo lệnh chờ xử lý của bạn. Trước tiên, hãy xác định giá, nhấp vào <Có bao nhiêu AVAX> màu đỏ và điền giá dưới cùng vào cột giá, sau đó từ từ sửa đổi giá trong hộp đầu tiên, với mũi tên trong hộp chỉ giữa."
