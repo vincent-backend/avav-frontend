@@ -21,15 +21,6 @@ export default function Home({ data }) {
   const { locale } = useTranslation();
   const [factive, setFActive] = useState(null);
 
-  const [c_faq, setFaq] = useState(
-    locale === "cn"
-      ? faqs.fcn
-      : locale == "zh"
-      ? faqs.fzh
-      : locale == "jp"
-      ? faqs.fjp
-      : faqs.fen
-  );
   // static data
   let c_data = data.filter((dt) => dt.lang === locale)[0];
   const [frontmatter, setFrontmatter] = useState(c_data);
@@ -119,10 +110,6 @@ export default function Home({ data }) {
   useEffect(() => {
     //frontmatter
     setFrontmatter(data.filter((dt) => dt.lang === locale)[0]);
-    if (locale === "cn") setFaq(faqs.fcn);
-    else if (locale === "zh") setFaq(faqs.fzh);
-    else if (locale === "jp") setFaq(faqs.fjp);
-    else setFaq(faqs.fen);
 
     // If Escape keyboard is clicked
     const onKeyPress = (e) => {
@@ -424,7 +411,7 @@ export default function Home({ data }) {
           <div className="my-16 md:my-20 lg:my-40">
             <h3 className="text-[25px] md:text-[40px] text-cred">FAQS</h3>
             <div className="divide-y divide-[#1B1B1B] mt-2 md:mt-4">
-              {c_faq.map((faq, index) => {
+              {faqs[locale].map((faq, index) => {
                 return (
                   <FaqItem
                     key={index}
