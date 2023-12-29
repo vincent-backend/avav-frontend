@@ -238,7 +238,7 @@ export default function Home({ data }) {
       <Dashboard />
 
       {/*Blog 1*/}
-      <section className="animate mt-[0] md:mt-[180px] relative">
+      <section className="animate mt-[0] md:mt-[120px] relative">
         <div className="container">
           {/* BUILD IT YOUR WAY */}
           <div className="flex flex-col justify-start items-end md:flex-row md:gap-[80px] xl:gap-[106px] z-10">
@@ -394,7 +394,7 @@ export default function Home({ data }) {
         </div>
       </section>
       {/* HistoryTimeline */}
-      <section className="animate mt-16 md:mt-20">
+      <section className="animate mt-20 md:mt-40">
         <div className="container">
           <h3
             className={clsx(
@@ -409,7 +409,7 @@ export default function Home({ data }) {
         </div>
       </section>
       {/* FAQ */}
-      <section className="animate mt-16 md:mt-20 lg:mt-40 relative">
+      <section className="animate mt-12 md:mt-16 lg:mt-36 relative">
         <Image
           alt="Decoration_3"
           src="/images/home/bg_Decoration_3.png"
