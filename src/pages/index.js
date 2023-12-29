@@ -44,16 +44,14 @@ export default function Home({ data }) {
     setCurWallet(m);
     if (m === "TP") {
       setOpenWalletUrl("https://www.tokenpocket.pro/");
-    }
-    else if (m === "OKX") {
+    } else if (m === "OKX") {
       setOpenWalletUrl("https://www.okx.com/web3");
-    }
-    else if (m === "Metamask") {
+    } else if (m === "Metamask") {
       setOpenWalletUrl("https://metamask.io/");
     }
-    
+
     setLinkOpShow(true);
-  }
+  };
 
   // video player
   const [isVideoShow, setVideoShow] = useState(false);
@@ -64,7 +62,7 @@ export default function Home({ data }) {
   const [video, setVideo] = useState("/videos/IMG_7922.mp4");
   const [videoWidth, setVideoWidth] = useState(360);
   const [videoHeight, setVideoHeight] = useState(640);
-  
+
   const onEntranceVideoClick = (m) => {
     setLinkOpShow(false);
     if (m === "TP") {
@@ -76,8 +74,7 @@ export default function Home({ data }) {
       setVideoWidth(360);
       setVideoHeight(640);
       setVideoShow(true);
-    }
-    else if(m === "OKX") {
+    } else if (m === "OKX") {
       setThumb("/images/tutorial/IMG_7923.png");
       setThumbWidth(296);
       setThumbHeight(640);
@@ -86,8 +83,7 @@ export default function Home({ data }) {
       setVideoWidth(296);
       setVideoHeight(640);
       setVideoShow(true);
-    }
-    else if(m === "Metamask") {
+    } else if (m === "Metamask") {
       setThumb("/images/tutorial/IMG_7952.png");
       setThumbWidth(288);
       setThumbHeight(636);
@@ -96,11 +92,10 @@ export default function Home({ data }) {
       setVideoWidth(288);
       setVideoHeight(636);
       setVideoShow(true);
-    }
-    else {
+    } else {
       setVideoShow(false);
     }
-  }
+  };
 
   // Faq
   const handleFaqToggle = (index) => {
@@ -120,7 +115,7 @@ export default function Home({ data }) {
   // Option dialog
   const container_option = useRef(null);
   useOutsideAlerter(container_option, setLinkOpShow);
-  
+
   useEffect(() => {
     //frontmatter
     setFrontmatter(data.filter((dt) => dt.lang === locale)[0]);
@@ -131,13 +126,16 @@ export default function Home({ data }) {
 
     // If Escape keyboard is clicked
     const onKeyPress = (e) => {
-      if (e.key === "Escape") {setVideoShow(false); setLinkOpShow(false); return;}
+      if (e.key === "Escape") {
+        setVideoShow(false);
+        setLinkOpShow(false);
+        return;
+      }
     };
     window.addEventListener("keydown", onKeyPress);
 
     // If mouse click outside,
 
-    
     // animate
     const ctx = gsap.context(() => {
       const tl = gsap.timeline();
@@ -191,7 +189,7 @@ export default function Home({ data }) {
       {/* Banner */}
       <section className="min-h-[120%] md:min-h-[1000px] pt-[90px] md:pt-[254px]">
         <div className="container">
-          <div className="banner flex flex-col justify-start md:max-w-[670px]">
+          <div className="banner flex flex-col justify-start md:max-w-[680px]">
             <div className="banner-title">
               <h2 className="whitespace-nowrap">{banner.title}</h2>
               <div className="relative">
@@ -200,18 +198,27 @@ export default function Home({ data }) {
               </div>
             </div>
 
-            <div className="banner-content mt-[16px] md:mt-[136px]">
+            <div className="banner-content mt-[16px] md:mt-[84px]">
               <p className="text-[20px] md:text-[28px] leading-6 md:leading-10 text-cred font-secondary">
                 {banner.subtitle}
               </p>
-              {markdownify(banner.content, "h6", "text-white leading-6")}
+              {markdownify(banner.content, "h6", "text-white leading-6 mt-2")}
             </div>
             <Link
               href="https://avascriptions.com/market/token?tick=avav"
               target="_blank"
-              className="banner-btn bg-[url('/images/home/banner_btn_bg.svg')] w-[200px] h-[50px] text-center text-white leading-[50px] mt-[20px] md:mt-[30px]"
+              className="mt-[20px] md:mt-[30px] mr-auto"
             >
-              {banner.btn_con}
+              <div className="group relative banner-btn w-[240px] h-[60px]">
+                <Image
+                  alt="connect"
+                  src="/images/home/banner_btn_bg.svg"
+                  width={200}
+                  height={50}
+                  className="absolute -z-10 left-0 -top-[5px] opacity-100 w-[200px] h-[50px] group-hover:w-[240px] group-hover:h-[60px] group-hover:opacity-70 transition-all duration-200 ease-linear"
+                />
+                <p className="text-center text-white w-[200px] leading-[40px] group-hover:w-[220px] group-hover:leading-[50px] transition-all duration-200 ease-linear">{banner.btn_con}</p>
+              </div>
             </Link>
           </div>
           <Link
@@ -219,7 +226,11 @@ export default function Home({ data }) {
             className="hidden right-[20px] bottom-[50px] w-[50px] h-[50px] bg-contain bg-no-repeat bg-[url('/images/home/arrow.svg')] z-10"
           />
           {/* Site Link */}
-          <Entrance text={home} handleClick = {onEntranceVideoClick} handleIconClick = {onOpenWalletClick} />
+          <Entrance
+            text={home}
+            handleClick={onEntranceVideoClick}
+            handleIconClick={onOpenWalletClick}
+          />
         </div>
       </section>
 
@@ -385,8 +396,16 @@ export default function Home({ data }) {
       {/* HistoryTimeline */}
       <section className="animate mt-16 md:mt-20">
         <div className="container">
-        <h3 className={clsx("text-[25px] md:text-[40px] text-cred", locale=="en" && "font-secondary", locale != "en" && "font-primary font-bold") }>{home.dev_course}</h3>
-        <HistoryTimeline />
+          <h3
+            className={clsx(
+              "text-[25px] md:text-[40px] text-cred",
+              locale == "en" && "font-secondary",
+              locale != "en" && "font-primary font-bold"
+            )}
+          >
+            {home.dev_course}
+          </h3>
+          <HistoryTimeline />
         </div>
       </section>
       {/* FAQ */}
@@ -402,7 +421,7 @@ export default function Home({ data }) {
           {/* FAQ */}
           <div className="my-16 md:my-20 lg:my-40">
             <h3 className="text-[25px] md:text-[40px] text-cred">FAQS</h3>
-            <div className="divide-y divide-[#1B1B1B]">
+            <div className="divide-y divide-[#1B1B1B] mt-2 md:mt-4">
               {c_faq.map((faq, index) => {
                 return (
                   <FaqItem
@@ -430,25 +449,39 @@ export default function Home({ data }) {
               video={video}
               videoWidth={videoWidth}
               videoHeight={videoHeight}
-              setVideoShow = {setVideoShow}
+              setVideoShow={setVideoShow}
             />
           </div>
         </div>
       )}
 
       {/* Link Option */}
-      {isLinkOptionShow &&
-      <div className="md:hidden z-10 fixed top-0 left-0 w-full h-full transition-all duration-500 ease-out">
-        <div className="flex justify-center items-center bg-[#000000] bg-opacity-70 w-full h-full">
-          <div className="flex flex-col justify-ceter items-center w-full mx-10 h-[91px] bg-[#2e3137] text-white " ref={container_option}>
-          <Link href={curOpenWalletUrl} target="_blank" className= "h-full leading-10" onClick={()=>setLinkOpShow(false)}>{home.open_wallet}</Link>
-          <div className="w-[80%] min-h-[1px] bg-[#41444a]" />
-          <button className="h-full leading-10" onClick={() => onEntranceVideoClick(curSelWallet)}>{home.buy_tutorial}</button>
+      {isLinkOptionShow && (
+        <div className="md:hidden z-10 fixed top-0 left-0 w-full h-full transition-all duration-500 ease-out">
+          <div className="flex justify-center items-center bg-[#000000] bg-opacity-70 w-full h-full">
+            <div
+              className="flex flex-col justify-ceter items-center w-full mx-10 h-[91px] bg-[#2e3137] text-white "
+              ref={container_option}
+            >
+              <Link
+                href={curOpenWalletUrl}
+                target="_blank"
+                className="h-full leading-10"
+                onClick={() => setLinkOpShow(false)}
+              >
+                {home.open_wallet}
+              </Link>
+              <div className="w-[80%] min-h-[1px] bg-[#41444a]" />
+              <button
+                className="h-full leading-10"
+                onClick={() => onEntranceVideoClick(curSelWallet)}
+              >
+                {home.buy_tutorial}
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-      }
-
+      )}
     </Base>
   );
 }

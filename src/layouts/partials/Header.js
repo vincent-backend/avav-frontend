@@ -85,7 +85,7 @@ const Header = () => {
                         <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                       </svg>
                     </span>
-                    <ul className="nav-dropdown-list hidden max-h-0 w-[220px] mx-auto overflow-hidden border border-border-secondary bg-opacity-20 py-0 transition-all duration-500 group-hover:block group-hover:max-h-[246px] group-hover:py-1 md:invisible md:absolute md:left-1/2 md:block md:w-auto md:-translate-x-1/2 md:group-hover:visible md:group-hover:opacity-100">
+                    <ul className="nav-dropdown-list hidden max-h-0 w-[220px] mx-auto overflow-hidden border border-[#979797] border-opacity-20 py-0 transition-all duration-500 group-hover:block group-hover:max-h-[246px] group-hover:py-1 md:invisible md:absolute md:left-1/2 md:block md:w-auto md:-translate-x-1/2 md:group-hover:visible md:group-hover:opacity-100">
                       {menu.children.map((child, i) => (
                         <li className="nav-dropdown-item" key={`children-${i}`}>
                           <Link
@@ -138,7 +138,7 @@ const Header = () => {
                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                   </svg>
                 </span>
-                <ul className="nav-dropdown-list hidden max-h-0 w-[150px] mx-auto overflow-hidden border border-border-secondary py-0 transition-all duration-500 group-hover:block group-hover:max-h-[126px] group-hover:py-1 md:invisible md:absolute md:left-1/2 md:block md:w-auto md:-translate-x-1/2 md:group-hover:visible md:group-hover:opacity-100">
+                <ul className="nav-dropdown-list hidden max-h-0 w-[150px] mx-auto overflow-hidden border border-[#979797] border-opacity-20 py-0 transition-all duration-500 group-hover:block group-hover:max-h-[126px] group-hover:py-1 md:invisible md:absolute md:left-1/2 md:block md:w-auto md:-translate-x-1/2 md:group-hover:visible md:group-hover:opacity-100">
                   <li className="nav-dropdown-item" key={`en`}>
                     <button
                       className={clsx("nav-dropdown-link block transition-all w-full", locale == "en" && "active")}

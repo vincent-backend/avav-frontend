@@ -71,7 +71,7 @@
     @apply text-[30px] md:text-[50px]  text-white leading-8 md:leading-[60px];
   }
   .underline {
-    @apply h-[1px] w-[90%] md:w-[80%] lg:w-[426px] bg-white;
+    @apply h-[1px] w-[90%] md:w-[80%] lg:w-[426px] bg-white mt-[5px] md:mt-[10px];
   }
   .subtitle {
     @apply text-[18px] md:text-[20px] text-white font-primary w-[90%] md:w-[80%] lg:w-[426px] pt-2 leading-6;
