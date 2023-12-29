@@ -14,4 +14,4 @@ tutorial2:
 
 tutorial3:
   title: "Làm cách nào để bán dòng chữ AVAV của tôi?"
-  content: "Tiếp theo, hãy nói về cách bán chữ khắc AVAV của bạn, tôi hy vọng rằng qua bước này, mọi người sẽ có một biệt thự nhìn ra biển. Đầu tiên, hãy vào trang chữ khắc của tôi và nhấp vào <danh sách>. Tại thời điểm này, hãy bắt đầu tạo lệnh chờ xử lý của bạn. Trước tiên, hãy xác định giá, nhấp vào <Có bao nhiêu AVAX> màu đỏ và điền giá dưới cùng vào cột giá, sau đó từ từ sửa đổi giá trong hộp đầu tiên, với mũi tên trong hộp chỉ giữa."
+  content: "Tiếp theo, hãy nói về cách bán chữ khắc AVAV của bạn, tôi hy vọng rằng qua bước này, mọi người sẽ có một biệt thự nhìn ra biển. Đầu tiên, hãy vào trang chữ khắc của tôi và nhấp vào &quot;danh sách&quot;. Tại thời điểm này, hãy bắt đầu tạo lệnh chờ xử lý của bạn. Trước tiên, hãy xác định giá, nhấp vào &quot;Có bao nhiêu AVAX&quot; màu đỏ và điền giá dưới cùng vào cột giá, sau đó từ từ sửa đổi giá trong hộp đầu tiên, với mũi tên trong hộp chỉ giữa."
