@@ -1,5 +1,5 @@
 {
-    "fen": [
+    "en": [
         {
             "id": 1,
             "question": "How Do I Buy and Sell $avav?",
@@ -21,7 +21,7 @@
             "answer": "$AVAV Are the First Inscription Meme in Avalanche Ecology to Receive the Diamond Badge, with a Three-day Transaction Volume Reaching 500,000 AVAX (25.5M usd vol). "
         }
     ],
-    "fcn": [
+    "cn": [
         {
             "id": 1,
             "question": "我如何买卖$avav？",
@@ -43,7 +43,7 @@
             "answer": "$AVAV 是雪崩生态第一个获得钻石徽章的铭文模因，三天交易量达到 500,000 AVAX(25.5M usd vol)。"
         }
     ],
-    "fzh": [
+    "zh": [
         {
             "id": 1,
             "question": "我該如何買賣$avav？",
@@ -65,7 +65,7 @@
             "answer": "$AVAV 是雪崩生態第一個獲得鑽石徽章的銘文模因，三天交易量達到 500,000 AVAX(25.5M usd vol)。"
         }
     ],
-    "fjp": [
+    "jp": [
         {
             "id": 1,
             "question": "$avav を売買するにはどうすればよいですか?",
@@ -85,6 +85,50 @@
             "id": 4,
             "question": "$avavとは何ですか?",
             "answer": "$AVAV は、Avalanche Ecology でダイヤモンド バッジを獲得した最初の碑文ミームであり、3 日間の取引量は 500,000 AVAX (2,550 万米ドルのボリューム) に達しました。"
+        }
+    ],
+    "vt": [
+        {
+            "id": 1,
+            "question": "Làm cách nào để mua và bán $avav?",
+            "answer": "$avav có thể được giao dịch tại đây, hãy truy cập <a href='https://avascriptions.com/market/token?tick=avav' style='color:white'>Avascriptions</a> và sử dụng ví để truy cập avax vào mua."
+        },
+        {
+            "id": 2,
+            "question": "$avav sẽ liệt kê trên nhiều CEX hơn?",
+            "answer": "Đúng! Cộng đồng của chúng tôi liên tục trò chuyện với các sàn giao dịch tập trung có ý nghĩa đối với các danh sách tiềm năng."
+        },
+        {
+            "id": 3,
+            "question": "Có sẵn lộ trình $avav không?",
+            "answer": "Có, Lộ trình tổng quan đầu tiên của chúng tôi có sẵn trên <a href='https://medium.com/@pr_86854/avav-beyond-hype-the-first-practical-inscription-token-9f36e992137a' style='color:white' >Trung bình</a>."
+        },
+        {
+            "id": 4,
+            "question": "$avav là gì?",
+            "answer": "$AVAV là Meme dòng chữ đầu tiên trong Hệ sinh thái Avalanche nhận được Huy hiệu Kim cương, với Khối lượng giao dịch trong ba ngày đạt 500.000 AVAX (25,5 triệu usd vol)."
+        }
+    ],
+    "kr": [
+        {
+            "id": 1,
+            "question": "How Do I Buy and Sell $avav?",
+            "answer": "$avav can be traded here, visit <a href='https://avascriptions.com/market/token?tick=avav' style='color:white'>Avascriptions</a> and use the wallet to access avax to buy."
+        },
+        {
+            "id": 2,
+            "question": "Will $avav List On More CEXs?",
+            "answer": "Yes! Our Community Is Constantly Having Conversations With Centralized Exchanges That Make Sense for Potential Listings."
+        },
+        {
+            "id": 3,
+            "question": "Is There A $avav Roadmap Available?",
+            "answer": "Yes, Our First Overview Roadmap Is Available On <a href='https://medium.com/@pr_86854/avav-beyond-hype-the-first-practical-inscription-token-9f36e992137a' style='color:white'>Medium</a>."
+        },
+        {
+            "id": 4,
+            "question": "What Are $avav?",
+            "answer": "$AVAV Are the First Inscription Meme in Avalanche Ecology to Receive the Diamond Badge, with a Three-day Transaction Volume Reaching 500,000 AVAX (25.5M usd vol). "
         }
     ]
 }
