@@ -49,7 +49,7 @@
       "url": "https://discord.gg/Rn7ArXbD"
     },
     {
-      "name": {"en":"Support Wallets", "cn":"支持钱包", "zh":"支持錢包", "jp":"サポートウォレット", "kr":"Support Wallets", "vt":"Ví hỗ trợ"},
+      "name": {"en":"Support Wallets", "cn":"支持钱包", "zh":"支持錢包", "jp":"サポートウォレット", "kr":"지원 지갑", "vt":"Ví hỗ trợ"},
       "url": "",
       "hasChildren": true,
       "children": [
@@ -68,7 +68,7 @@
       ]
     },
     {
-      "name": {"en":"Buy Tutorial", "cn":"购买教程", "zh":"購買教學課程", "jp":"チュートリアル", "kr":"Buy Tutorial", "vt":"Hướng dẫn"},
+      "name": {"en":"Buy Tutorial", "cn":"购买教程", "zh":"購買教學課程", "jp":"チュートリアル", "kr":"튜토리얼 구입", "vt":"Hướng dẫn"},
       "url": "/tutorial"
     },
     {
@@ -113,17 +113,17 @@
     ],
     "more": [
       {
-        "name": {"en":"API Doc", "cn":"API文档", "zh":"API文件", "jp":"APIドキュメント", "kr":"API Doc", "vt":"Tài liệu API"},
+        "name": {"en":"API Doc", "cn":"API文档", "zh":"API文件", "jp":"APIドキュメント", "kr":"API 문서", "vt":"Tài liệu API"},
         "url": "https://docs.avascriptions.com/developer-service/asc-20"
       },
       {
-        "name": {"en":"Buy Tutorial", "cn":"购买教程", "zh":"購買教學課程", "jp":"チュートリアル", "kr":"Buy Tutorial", "vt":"Hướng dẫn"},
+        "name": {"en":"Buy Tutorial", "cn":"购买教程", "zh":"購買教學課程", "jp":"チュートリアル", "kr":"튜토리얼 구입", "vt":"Hướng dẫn"},
         "url": "/tutorial"
       }
     ]
   },
   "home" : {
-    "name": {"en":"HOME", "cn":"主页", "zh": "首頁", "jp": "ホームページ", "kr":"HOME", "vt":"Trang chủ"},
+    "name": {"en":"HOME", "cn":"主页", "zh": "首頁", "jp": "ホームページ", "kr":"홈페이지", "vt":"Trang chủ"},
     "url": "https://avav.meme"
   },
   "language": {
