@@ -74,6 +74,10 @@
     {
       "name": {"en":"K Line Chart", "cn":"k 线图", "zh":"k 線圖", "jp":"k 折れ線グラフ", "kr":"K Line Chart", "vt":"Biểu đồ đường K"},
       "url": "https://m.ave.ai/brc/inscription:6173632d32303a61766176-avalanche"
+    },
+    {
+      "name": {"en":"AVAV Art", "cn":"AVAV Art", "zh":"AVAV Art", "jp":"AVAV Art", "kr":"AVAV Art", "vt":"AVAV Art"},
+      "url": "/art"
     }
   ],
   "footer": {

@@ -4,7 +4,6 @@ import faqs from "@/content/faqs.json";
 import Dashboard from "@/layouts/components/home/Dashboard";
 import Entrance from "@/layouts/components/home/Entrance";
 
-import dynamic from "next/dynamic";
 import { gsap } from "@/lib/gsap";
 import Image from "next/image";
 import Link from "next/link";

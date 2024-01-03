@@ -11,9 +11,7 @@ import "react-medium-image-zoom/dist/styles.css";
 
 export default function Home({ data }) {
   const { locale } = useTranslation();
-
-  if (locale === "undefined") console.log("WOW");
-
+  
   // static data
   let c_data = data.filter((dt) => dt.lang === locale)[0];
   const [frontmatter, setFrontmatter] = useState(c_data);
