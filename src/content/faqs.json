@@ -112,23 +112,23 @@
     "kr": [
         {
             "id": 1,
-            "question": "How Do I Buy and Sell $avav?",
-            "answer": "$avav can be traded here, visit <a href='https://avascriptions.com/market/token?tick=avav' style='color:white'>Avascriptions</a> and use the wallet to access avax to buy."
+            "question": "$avav를 어떻게 사고 팔 수 있나요?",
+            "answer": "$avav는 여기에서 거래할 수 있습니다. 방문하세요. <a href='https://avascriptions.com/market/token?tick=avav' style='color:white'>Avascriptions</a> and use the wallet to access avax to buy."
         },
         {
             "id": 2,
-            "question": "Will $avav List On More CEXs?",
-            "answer": "Yes! Our Community Is Constantly Having Conversations With Centralized Exchanges That Make Sense for Potential Listings."
+            "question": "더 많은 CEX에 $avav 상장 예정?",
+            "answer": "예! 우리 커뮤니티는 잠재적인 목록에 적합한 중앙화된 거래소와 지속적으로 대화를 나누고 있습니다."
         },
         {
             "id": 3,
-            "question": "Is There A $avav Roadmap Available?",
-            "answer": "Yes, Our First Overview Roadmap Is Available On <a href='https://medium.com/@pr_86854/avav-beyond-hype-the-first-practical-inscription-token-9f36e992137a' style='color:white'>Medium</a>."
+            "question": "$avav 로드맵이 있나요?",
+            "answer": "예, 첫 번째 개요 로드맵은 다음에서 제공됩니다. <a href='https://medium.com/@pr_86854/avav-beyond-hype-the-first-practical-inscription-token-9f36e992137a' style='color:white'>Medium</a>."
         },
         {
             "id": 4,
-            "question": "What Are $avav?",
-            "answer": "$AVAV Are the First Inscription Meme in Avalanche Ecology to Receive the Diamond Badge, with a Three-day Transaction Volume Reaching 500,000 AVAX (25.5M usd vol). "
+            "question": "$avav가 무엇인가요?",
+            "answer": "$AVAV는 Avalanche 생태학에서 다이아몬드 배지를 받은 최초의 비문 밈으로, 3일 거래량이 500,000 AVAX(2,550만 usd vol)에 도달했습니다. "
         }
     ]
 }
