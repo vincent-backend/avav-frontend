@@ -100,4 +100,8 @@
   @apply space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full md:before:pb-[50px] before:border-l-[2px] before:border-cred before:border-dashed before:w-0.5;
 }
 
+.art-element {
+  @apply flex flex-col justify-center items-center min-w-[calc(50vw-36px)] md:min-w-[226px] max-w-[226px] aspect-[1.34] md:aspect-[1.614] bg-contain bg-no-repeat bg-[url('/images/art/card_bg_nor.svg')] active:bg-[url('/images/art/card_bg_press.svg')] md:bg-[url('/images/art/md/card_bg_nor.svg')] md:active:bg-[url('/images/art/md/card_bg_hover.svg')] md:hover:bg-[url('/images/art/md/card_bg_hover.svg')] transition-all duration-100;
+}
+
 

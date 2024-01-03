@@ -33,7 +33,7 @@ const Footer = () => {
   return (
     <footer className="bg-black">
       <div className="container">
-        <div className="flex flex-col md:flex-row justify-start md:justify-between items-start md:items-center pt-4 md:pt-8">
+        <div className="flex flex-col w-full md:flex-row justify-center md:justify-between items-center pt-4 md:pt-8">
           <Logo lang={locale} />
           <div
             className="group hidden md:flex flex-row items-center cursor-pointer"

@@ -102,7 +102,7 @@ const Header = () => {
                   </li>
                 ) : (
                   <li className="nav-item">
-                    {menu.url === "/tutorial" ?
+                    {menu.url === "/tutorial" || menu.url === "/art" ?
                     (
                       <Link
                       href={menu.url} 
