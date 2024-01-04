@@ -17,6 +17,10 @@
     "copyright": "Admin@Avav.com"
   },
 
+  "general": {
+    "api_root": "http://localhost/art_votes/"
+  },
+
   "contact_info": {
     "phone": "+887887998",
     "email": "Admin@Avav.com",

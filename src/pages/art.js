@@ -1,5 +1,5 @@
 import Base from "@/layouts/Baseof";
-
+import config from "@/config/config.json";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { getDataFromContent } from "@/lib/contentParser";
@@ -12,6 +12,10 @@ import {ArtElement} from "@/layouts/components/art/ArtElement";
 export default function Home({ data }) {
   const { locale } = useTranslation();
 
+  // votes
+  const {api_root} = config.general;
+  const [votes, setVotes] = useState({art: 0, music:0, access_right:0, game_props: 0, physical_goods: 0, standing: 0, web_2_database: 0});
+
   // static data
   let c_data = data.filter((dt) => dt.lang === locale)[0];
   const [frontmatter, setFrontmatter] = useState(c_data);
@@ -20,6 +24,19 @@ export default function Home({ data }) {
   let { tutorial} = frontmatter;
 
   useEffect(() => {
+    async function fetchData() {
+      const response = await fetch(api_root);
+      const vote_data = await response.json();
+      setVotes(vote_data);
+      //console.log(vote_data);
+    }
+    try {
+      fetchData();
+    }
+    catch {
+      console.log("API Server connection failed.");
+    }
+    
     //frontmatter
     setFrontmatter(data.filter((dt) => dt.lang === locale)[0]);
   }, [locale, data]);
@@ -37,13 +54,13 @@ export default function Home({ data }) {
       <section className="animate container mt-[90px] md:mt-[140px] mb-[50px] md:mb-[112px]">
         <h3 className={clsx("text-cred", locale=="en" && "font-secondary", locale != "en" && "font-primary font-bold")}>AVAV Art</h3>
         <div className="mt-[60px] mb-[25px] md:mt-[80px] md:mb-[50px] flex flex-wrap justify-start gap-x-3 md:gap-x-4 gap-y-[54px] md:gap-y-16">
-          <ArtElement img="pic_1" caption="ART" link_url="" />
-          <ArtElement img="pic_2" caption="MUSIC" link_url="" />
-          <ArtElement img="pic_3" caption="Access Right" link_url="/art/access-right" />
-          <ArtElement img="pic_4" caption="Game Props" link_url="" />
-          <ArtElement img="pic_5" caption="Physical Goods" link_url="" />
-          <ArtElement img="pic_6" caption="Standing" link_url="" />
-          <ArtElement img="pic_7" caption="Web 2 Database" link_url="" />
+          <ArtElement img="pic_1" vote="art" votes = {votes} caption="ART" link_url="" />
+          <ArtElement img="pic_2" vote="music" votes = {votes} caption="MUSIC" link_url="" />
+          <ArtElement img="pic_3" vote="access_right" votes = {votes} caption="Access Right" link_url="/art/access-right" />
+          <ArtElement img="pic_4" vote="game_props" votes = {votes} caption="Game Props" link_url="" />
+          <ArtElement img="pic_5" vote="physical_goods" votes = {votes} caption="Physical Goods" link_url="" />
+          <ArtElement img="pic_6" vote="standing" votes = {votes} caption="Standing" link_url="" />
+          <ArtElement img="pic_7" vote="web_2_database" votes = {votes} caption="Web 2 Database" link_url="" />
         </div>
       </section>
     </Base>
