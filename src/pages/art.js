@@ -25,17 +25,17 @@ export default function Home({ data }) {
 
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch(api_root);
-      const vote_data = await response.json();
-      setVotes(vote_data);
-      //console.log(vote_data);
+      try {
+        const response = await fetch(api_root);
+        const vote_data = await response.json();
+        setVotes(vote_data);
+      }
+      catch {
+        console.log("API Server connection failed.");
+      }
     }
-    try {
-      fetchData();
-    }
-    catch {
-      console.log("API Server connection failed.");
-    }
+
+    fetchData();
     
     //frontmatter
     setFrontmatter(data.filter((dt) => dt.lang === locale)[0]);
