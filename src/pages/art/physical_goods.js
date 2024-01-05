@@ -1,13 +1,16 @@
 import Base from "@/layouts/Baseof";
+
+import Image from "next/image";
+import { useEffect, useState } from "react";
+import clsx from "clsx";
+import Link from "next/link";
+import Zoom from "react-medium-image-zoom";
+
 import { getDataFromContent } from "@/lib/contentParser";
 import useTranslation from "@/hooks/useTranslation";
 import { markdownify } from "@/lib/utils/textConverter";
-import imagelist from "@/content/art/access_right.json";
-
-import Image from "next/image";
-import Zoom from "react-medium-image-zoom";
-import clsx from "clsx";
-import { useEffect, useState } from "react";
+import {AccessRightCard} from "@/layouts/components/art/ArtElement";
+import imagelist from "@/content/art/physical_goods.json";
 
 export default function Home({ data }) {
   const { locale } = useTranslation();
@@ -35,24 +38,16 @@ export default function Home({ data }) {
       ></Image>
       {/* Main content */}
       <section className="animate container mt-[90px] md:mt-[140px] mb-[50px] md:mb-[112px]">
-        <h3
-          className={clsx(
-            "text-cred",
-            locale == "en" && "font-secondary",
-            locale != "en" && "font-primary font-bold"
-          )}
-        >
-          Access Right
-        </h3>
+        <h3 className={clsx("text-cred", locale=="en" && "font-secondary", locale != "en" && "font-primary font-bold")}>Physical Goods</h3>
         <div className="mt-[25px] mb-[25px] md:mt-[50px] md:mb-[50px] flex flex-wrap gap-x-[12px] md:gap-x-4 gap-y-2 md:gap-y-4">
-          {imagelist.map((image) => (
-            <Zoom key={image.name} zoomMargin={0}>
+        {imagelist.map((image, index) => (
+            <Zoom key={index} zoomMargin={0}>
               <Image
                 alt={image.name}
-                src={`/images/art/access_right/${image.filename}`}
-                width={226}
-                height={300}
-                className="max-w-[calc(50vw-28px)] aspect-[0.7533] md:aspect-auto md:w-[226px] md:h-[300px]"
+                src={`/images/art/physical_goods/${image.filename}`}
+                width={256}
+                height={256}
+                className="max-w-[calc(50vw-28px)] aspect-square md:w-[256px] md:h-[256px]"
               />
             </Zoom>
           ))}

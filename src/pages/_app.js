@@ -1,4 +1,5 @@
 import "@/styles/style.scss";
+import "react-medium-image-zoom/dist/styles.css";
 
 import Head from "next/head";
 import { LanguageProvider } from "@/contexts/LanguageContext";
