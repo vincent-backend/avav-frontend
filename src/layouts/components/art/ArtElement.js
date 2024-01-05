@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useState } from "react";
 import config from "@/config/config.json";
 
+import Zoom from "react-medium-image-zoom";
+
 function ArtElement({img, vote, votes, caption, link_url}) {
 
     const {api_root} = config.general;
@@ -43,13 +45,4 @@ function ArtElement({img, vote, votes, caption, link_url}) {
     );
 }
 
-function ArtImageCard({img, caption, link_url}) {
-    return(
-        <Link href={link_url} className="max-w-[calc(50vw-28px)] aspect-[0.7533] md:aspect-auto md:w-[226px] md:h-[300px]">
-            <Image alt={caption} title={caption} src={`/images/art/access_right/${img}.png`} width={226} height={300} className="w-full" />
-        </Link>
-    );
-}
-
-
-export {ArtElement, ArtImageCard};
+export {ArtElement};

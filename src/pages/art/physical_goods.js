@@ -2,12 +2,15 @@ import Base from "@/layouts/Baseof";
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import clsx from "clsx";
+import Link from "next/link";
+import Zoom from "react-medium-image-zoom";
+
 import { getDataFromContent } from "@/lib/contentParser";
 import useTranslation from "@/hooks/useTranslation";
 import { markdownify } from "@/lib/utils/textConverter";
-import clsx from "clsx";
-import Link from "next/link";
-import {ArtImageCard} from "@/layouts/components/art/ArtElement";
+import {AccessRightCard} from "@/layouts/components/art/ArtElement";
+import imagelist from "@/content/art/physical_goods.json";
 
 export default function Home({ data }) {
   const { locale } = useTranslation();
@@ -37,14 +40,17 @@ export default function Home({ data }) {
       <section className="animate container mt-[90px] md:mt-[140px] mb-[50px] md:mb-[112px]">
         <h3 className={clsx("text-cred", locale=="en" && "font-secondary", locale != "en" && "font-primary font-bold")}>Physical Goods</h3>
         <div className="mt-[25px] mb-[25px] md:mt-[50px] md:mb-[50px] flex flex-wrap gap-x-[12px] md:gap-x-4 gap-y-2 md:gap-y-4">
-          <ArtImageCard img="pic_1" caption="Access Right" link_url="" />
-          <ArtImageCard img="pic_2" caption="Access Right" link_url="" />
-          <ArtImageCard img="pic_3" caption="Access Right" link_url="" />
-          <ArtImageCard img="pic_4" caption="Access Right" link_url="" />
-          <ArtImageCard img="pic_5" caption="Access Right" link_url="" />
-          <ArtImageCard img="pic_6" caption="Access Right" link_url="" />
-          <ArtImageCard img="pic_7" caption="Access Right" link_url="" />
-          <ArtImageCard img="pic_8" caption="Access Right" link_url="" />
+        {imagelist.map((image, index) => (
+            <Zoom key={index} zoomMargin={0}>
+              <Image
+                alt={image.name}
+                src={`/images/art/physical_goods/${image.filename}`}
+                width={256}
+                height={256}
+                className="max-w-[calc(50vw-28px)] aspect-square md:w-[256px] md:h-[256px]"
+              />
+            </Zoom>
+          ))}
         </div>
       </section>
     </Base>
