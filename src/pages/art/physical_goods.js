@@ -47,7 +47,7 @@ export default function Home({ data }) {
                 src={`/images/art/physical_goods/${image.filename}`}
                 width={256}
                 height={256}
-                className="max-w-[calc(50vw-28px)] aspect-square md:w-[256px] md:h-[256px]"
+                className="max-w-[calc(50vw-28px)] aspect-auto md:w-[256px] md:h-[256px]"
               />
             </Zoom>
           ))}
