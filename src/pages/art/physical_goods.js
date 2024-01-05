@@ -35,7 +35,7 @@ export default function Home({ data }) {
       ></Image>
       {/* Main content */}
       <section className="animate container mt-[90px] md:mt-[140px] mb-[50px] md:mb-[112px]">
-        <h3 className={clsx("text-cred", locale=="en" && "font-secondary", locale != "en" && "font-primary font-bold")}>Access Right</h3>
+        <h3 className={clsx("text-cred", locale=="en" && "font-secondary", locale != "en" && "font-primary font-bold")}>Physical Goods</h3>
         <div className="mt-[25px] mb-[25px] md:mt-[50px] md:mb-[50px] flex flex-wrap gap-x-[12px] md:gap-x-4 gap-y-2 md:gap-y-4">
           <ArtImageCard img="pic_1" caption="Access Right" link_url="" />
           <ArtImageCard img="pic_2" caption="Access Right" link_url="" />

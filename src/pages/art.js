@@ -58,7 +58,7 @@ export default function Home({ data }) {
           <ArtElement img="pic_2" vote="music" votes = {votes} caption="MUSIC" link_url="" />
           <ArtElement img="pic_3" vote="access_right" votes = {votes} caption="Access Right" link_url="/art/access-right" />
           <ArtElement img="pic_4" vote="game_props" votes = {votes} caption="Game Props" link_url="" />
-          <ArtElement img="pic_5" vote="physical_goods" votes = {votes} caption="Physical Goods" link_url="" />
+          <ArtElement img="pic_5" vote="physical_goods" votes = {votes} caption="Physical Goods" link_url="/art/physical_goods" />
           <ArtElement img="pic_6" vote="standing" votes = {votes} caption="Standing" link_url="" />
           <ArtElement img="pic_7" vote="web_2_database" votes = {votes} caption="Web 2 Database" link_url="" />
         </div>

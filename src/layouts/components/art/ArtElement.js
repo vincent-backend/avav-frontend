@@ -43,7 +43,7 @@ function ArtElement({img, vote, votes, caption, link_url}) {
     );
 }
 
-function AccessRightElement({img, caption, link_url}) {
+function ArtImageCard({img, caption, link_url}) {
     return(
         <Link href={link_url} className="max-w-[calc(50vw-28px)] aspect-[0.7533] md:aspect-auto md:w-[226px] md:h-[300px]">
             <Image alt={caption} title={caption} src={`/images/art/access_right/${img}.png`} width={226} height={300} className="w-full" />
@@ -52,4 +52,4 @@ function AccessRightElement({img, caption, link_url}) {
 }
 
 
-export {ArtElement, AccessRightElement};
+export {ArtElement, ArtImageCard};
