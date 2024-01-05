@@ -1,6 +1,10 @@
 {
     "en": [
         {
+            "date": "January 5, 2024",
+            "content": "The Avascriptions indexer is fully open source, and the transaction contract is fully open source."
+        },
+        {
             "date": "December 28, 2023",
             "content": "Coinmarketcap includes AVAV"
         },
@@ -46,6 +50,10 @@
         }
     ],
     "cn": [
+        {
+            "date": "2024年1月5日",
+            "content": "Avascriptions索引器已完全开源，交易合约已完全开源。"
+        },
         {
             "date": "2023年12月28日",
             "content": "Coinmarketcap收录AVAV"
@@ -93,6 +101,10 @@
     ],
     "zh": [
         {
+            "date": "2024年1月5日",
+            "content": "Avascriptions 索引器已完全註冊，開源協定已完全註冊。"
+        },
+        {
             "date": "2023年12月28日",
             "content": "Coinmarketcap 已收錄 AVAV"
         },
@@ -139,20 +151,24 @@
     ],
     "jp": [
         {
+            "date": "2024年1月5日",
+            "content": "Avascriptions インデックスは完全に提供されており、取引はほぼ完全に提供されています。"
+        },
+        {
             "date": "2023年12月28日",
-            "content": "CoinmarketcapにはAVAVが含まれます"
+            "content": "CoinmarketcapにはAVAVが含まれます。"
         },
         {
             "date": "2023年12月27日",
-            "content": "BitMart Exchangeは、AVAV/USDT取引ペアを開始し、同時にGolden Financeによって推進されることを発表しました"
+            "content": "BitMart Exchangeは、AVAV/USDT取引ペアを開始し、同時にGolden Financeによって推進されることを発表しました。"
         },
         {
             "date": "2023年12月26日",
-            "content": "XT Exchangeは、AVAV/USDT取引ペアを12月27日に開始すると発表した"
+            "content": "XT Exchangeは、AVAV/USDT取引ペアを12月27日に開始すると発表した。"
         },
         {
             "date": "2023年12月24日",
-            "content": "4e ExchangeがAVAV/USDT取引ペアを上場すると発表"
+            "content": "4e ExchangeがAVAV/USDT取引ペアを上場すると発表。"
         },
         {
             "date": "2023年12月24日",
@@ -160,30 +176,34 @@
         },
         {
             "date": "2023年12月23日",
-            "content": "コミュニティによって構築された avav.meme の公式 Web サイトがオンラインになっています"
+            "content": "コミュニティによって構築された avav.meme の公式 Web サイトがオンラインになっています。"
         },
         {
             "date": "2023年12月23日",
-            "content": "抹茶のお知らせ：偽造通貨AVAV1が取引所に上場"
+            "content": "抹茶のお知らせ：偽造通貨AVAV1が取引所に上場。"
         },
         {
             "date": "2023年12月22日",
-            "content": "滝沢ローラのプラットフォームは AVAV コミュニティと同じ周波数で共鳴し、雪崩チェーンの中で最も熱い碑文がクロスオーバーを完成させます"
+            "content": "滝沢ローラのプラットフォームは AVAV コミュニティと同じ周波数で共鳴し、雪崩チェーンの中で最も熱い碑文がクロスオーバーを完成させます。"
         },
         {
             "date": "2023年12月21日",
-            "content": "AVAV は、Umate プラットフォームでの支払い機能をサポートする最初の登録アプリケーションになります"
+            "content": "AVAV は、Umate プラットフォームでの支払い機能をサポートする最初の登録アプリケーションになります。"
         },
         {
             "date": "2023年12月20日",
-            "content": "アバランチチェーンで初めてダイヤモンドバッジの実績を達成した"
+            "content": "アバランチチェーンで初めてダイヤモンドバッジの実績を達成した。"
         },
         {
             "date": "2023年12月17日",
-            "content": "AVAVの鋳造が完了し、通貨保有者数が5万人を突破"
+            "content": "AVAVの鋳造が完了し、通貨保有者数が5万人を突破。"
         }
     ],
     "kr": [
+        {
+            "date": "2024年1月5日",
+            "content": "Avascriptions索引器已完全开源，交易合约已完全开源。"
+        },
         {
             "date": "2023년 12월 28일",
             "content": "코인마켓캡 AVAV 기록"
@@ -231,20 +251,24 @@
     ],
     "vt": [
         {
+            "date": "Ngày 5 tháng 1 năm 2024",
+            "content": "Trình lập chỉ mục Avascriptions hoàn toàn là nguồn mở và hợp đồng giao dịch hoàn toàn là nguồn mở."
+        },
+        {
             "date": "Ngày 28 tháng 12 năm 2023",
-            "content": "Coinmarketcap bao gồm AVAV"
+            "content": "Coinmarketcap bao gồm AVAV."
         },
         {
             "date": "Ngày 27 tháng 12 năm 2023",
-            "content": "Sàn BitMart thông báo sẽ ra mắt cặp giao dịch AVAV/USDT và sẽ được Golden Finance đẩy mạnh đồng thời"
+            "content": "Sàn BitMart thông báo sẽ ra mắt cặp giao dịch AVAV/USDT và sẽ được Golden Finance đẩy mạnh đồng thời."
         },
         {
             "date": "Ngày 26 tháng 12 năm 2023",
-            "content": "XT Exchange thông báo sẽ ra mắt cặp giao dịch AVAV/USDT vào ngày 27 tháng 12"
+            "content": "XT Exchange thông báo sẽ ra mắt cặp giao dịch AVAV/USDT vào ngày 27 tháng 12."
         },
         {
             "date": "Ngày 24 tháng 12 năm 2023",
-            "content": "4e Exchange thông báo sẽ niêm yết cặp giao dịch AVAV/USDT"
+            "content": "4e Exchange thông báo sẽ niêm yết cặp giao dịch AVAV/USDT."
         },
         {
             "date": "Ngày 24 tháng 12 năm 2023",
@@ -252,11 +276,11 @@
         },
         {
             "date": "Ngày 23 tháng 12 năm 2023",
-            "content": "Trang web chính thức của avav.meme do cộng đồng xây dựng đang trực tuyến"
+            "content": "Trang web chính thức của avav.meme do cộng đồng xây dựng đang trực tuyến."
         },
         {
             "date": "Ngày 23 tháng 12 năm 2023",
-            "content": "Thông báo Matcha: Tiền giả AVAV1 được niêm yết trên sàn giao dịch"
+            "content": "Thông báo Matcha: Tiền giả AVAV1 được niêm yết trên sàn giao dịch."
         },
         {
             "date": "Ngày 22 tháng 12 năm 2023",
