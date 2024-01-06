@@ -11,10 +11,12 @@ import { useEffect, useRef, useState } from "react";
 import { getDataFromContent } from "@/lib/contentParser";
 import useTranslation from "@/hooks/useTranslation";
 import useOutsideAlerter from "@/hooks/useOutsideAlterter";
+import CopyToClipboard from "@/hooks/useClipboard";
 import { markdownify } from "@/lib/utils/textConverter";
 import clsx from "clsx";
 import HistoryTimeline from "@/layouts/components/home/HistoryTimeline";
 import ModalVideo from "@/layouts/components/home/ModalVideo";
+
 
 export default function Home({ data }) {
   const { locale } = useTranslation();
@@ -96,6 +98,13 @@ export default function Home({ data }) {
     }
   };
 
+  // copy address
+  const [isCopyShow, setCopyShow] = useState(false);
+  const handleAddrCopy = () => {
+    CopyToClipboard("0xc1dC3221756F4dd55074E9d1c04a4C929a641145", locale);
+    setCopyShow(true);
+  }
+
   /// Overlay click
   // Video player
   const container_video = useRef(null);
@@ -120,7 +129,11 @@ export default function Home({ data }) {
     };
     window.addEventListener("keydown", onKeyPress);
 
-    // If mouse click outside,
+    // address copy
+    if (isCopyShow)
+      setTimeout(() => {
+        setCopyShow(false);
+      }, 2000);
 
     // animate
     const ctx = gsap.context(() => {
@@ -152,7 +165,7 @@ export default function Home({ data }) {
     });
 
     return () => ctx.revert();
-  }, [locale, data]);
+  }, [locale, data, isCopyShow]);
 
   return (
     <Base>
@@ -406,7 +419,6 @@ export default function Home({ data }) {
           className="absolute right-0 top-0 md:top-[50px] -z-10"
         />
         <div className="container">
-          {/* FAQ */}
           <div className="my-16 md:my-20 lg:my-40">
             <h3 className="text-[25px] md:text-[40px] text-cred">FAQS</h3>
             <div className="divide-y divide-[#1B1B1B] mt-2 md:mt-4">
@@ -423,6 +435,28 @@ export default function Home({ data }) {
             </div>
           </div>
         </div>
+      </section>
+      
+      {/* AVAV Address */}
+      <section className="animate container mx-auto my-12 md:my-16 lg:my-36 max-w-[720px]">
+          <p className="text-cred font-primary font-bold text-center text-[18px] md:text-[26px]">{home.how_do_i_buy}</p>
+          <div className="mt-7 md:mt-12 flex flex-col md:flex-row items-center">
+            <button className="border-none text-white text-[14px] font-primary min-w-[157px] md:h-[70px] md:bg-[#1A1C1F]">TC Address
+              <Image src="/images/nav/nav_ic_arrow_unfold.svg" alt="dropdown" width={10} height={10} className="inline-block ml-1" />
+            </button>
+            <div className="hidden md:block w-[10px] h-[70px] text-[30px] leading-[60px] text-[#292929] bg-[#1A1C1F]">|</div>
+            <div className="relative flex flex-row items-center justify-between h-[60px] md:h-[70px] bg-[#1A1C1F] w-full mt-4 md:mt-0">
+              <p className="text-white font-primary text-[14px] px-[10px] md:px-[20px] break-all">0xc1dC3221756F4dd55074E9d1c04a4C929a641145</p>
+              <button className="bg-cred min-w-[60px] md:w-[70px] h-full pl-[18px] md:pl-[22px]" onClick={()=>handleAddrCopy()}>
+                <Image alt="copy" src="/images/footer/copy_nor.svg" width={22} height={22} />
+                <div 
+                  className={clsx(
+                    "absolute opacity-0 min-w-[100px] h-[40px] text-white text-center leading-[40px] bg-[#1E2126] rounded-lg right-0 bottom-16 md:bottom-20 transition-all duration-200 ease-linear",
+                    isCopyShow && "opacity-100"
+                  )}>Copied!</div>
+              </button>
+            </div>
+          </div>
       </section>
 
       {/* Video show */}
