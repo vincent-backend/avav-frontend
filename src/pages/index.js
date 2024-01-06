@@ -457,6 +457,7 @@ export default function Home({ data }) {
               </button>
             </div>
           </div>
+          <p className="text-center mt-5 md:mt-[26px]">Community donations are mainly used for community building.<br></br>The management team is primarily managed by early contributors to the community.</p>
       </section>
 
       {/* Video show */}

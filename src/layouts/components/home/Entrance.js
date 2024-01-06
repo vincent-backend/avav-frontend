@@ -70,9 +70,9 @@ export default function Entrance({ text, handleClick, handleIconClick }) {
       </Link>
 
       <Link
-        href="https://h5.4ezh6.com/?ref=EAW6SB&forward_url=1&page=1&channelCode=EAW6SB"
+        href="https://h5.4ezh6.com/trade-quotes?spots_symbol_id=1143&ref=EAW6SB&forward_url=1&page=1&channelCode=EAW6SB"
         target="_blank"
-        className="site-link relative hidden"
+        className="site-link relative"
       >
         <Image
           alt="CoinMarketCap"
