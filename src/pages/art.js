@@ -53,7 +53,7 @@ export default function Home({ data }) {
       {/* Main content */}
       <section className="animate container mt-[90px] md:mt-[140px] mb-[50px] md:mb-[112px]">
         <h3 className={clsx("text-cred", locale=="en" && "font-secondary", locale != "en" && "font-primary font-bold")}>AVAV Art</h3>
-        <div className="mt-[60px] mb-[25px] md:mt-[80px] md:mb-[50px] flex flex-wrap justify-start gap-x-3 md:gap-x-4 gap-y-[54px] md:gap-y-16">
+        <div className="mt-[60px] mb-[25px] md:mt-[80px] md:mb-[50px] flex flex-wrap justify-center gap-x-3 md:gap-x-4 gap-y-[54px] md:gap-y-16">
           <ArtElement img="pic_1" vote="art" votes = {votes} caption="ART" link_url="" />
           <ArtElement img="pic_2" vote="music" votes = {votes} caption="MUSIC" link_url="" />
           <ArtElement img="pic_3" vote="access_right" votes = {votes} caption="Access Right" link_url="/art/access-right" />

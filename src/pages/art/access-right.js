@@ -4,6 +4,7 @@ import useTranslation from "@/hooks/useTranslation";
 import { markdownify } from "@/lib/utils/textConverter";
 import imagelist from "@/content/art/access_right.json";
 
+import Link from "next/link";
 import Image from "next/image";
 import Zoom from "react-medium-image-zoom";
 import clsx from "clsx";
@@ -35,16 +36,19 @@ export default function Home({ data }) {
       ></Image>
       {/* Main content */}
       <section className="animate container mt-[90px] md:mt-[140px] mb-[50px] md:mb-[112px]">
-        <h3
-          className={clsx(
-            "text-cred",
-            locale == "en" && "font-secondary",
-            locale != "en" && "font-primary font-bold"
-          )}
-        >
-          Access Right
-        </h3>
-        <div className="mt-[25px] mb-[25px] md:mt-[50px] md:mb-[50px] flex flex-wrap gap-x-[12px] md:gap-x-4 gap-y-2 md:gap-y-4">
+        <div className="flex flex-row justify-start items-center">
+          <Link href="/art" className="me-1">
+            <Image alt="back" src="/images/nav/home_nav_ic_back.svg" width={40} height={40} className="md:w-[50px] md:h-[50px]"/>
+          </Link>
+          <h3  className={clsx("text-cred",
+              locale == "en" && "font-secondary",
+              locale != "en" && "font-primary font-bold"
+            )}>
+            Access Right
+          </h3>
+        </div>
+        
+        <div className="mt-[25px] mb-[25px] md:mt-[50px] md:mb-[50px] flex flex-wrap justify-center gap-x-[12px] md:gap-x-4 gap-y-2 md:gap-y-4">
           {imagelist.map((image) => (
             <Zoom key={image.name} zoomMargin={0}>
               <Image
