@@ -27,4 +27,5 @@ home:
   open_wallet: "Mở ví"
   buy_tutorial: "Mua hướng dẫn"
   dev_course: "Khóa học phát triển"
+  how_do_i_buy: "How Do I Buy and Sell $avav"
 ---

@@ -27,4 +27,5 @@ home:
   open_wallet: "打開錢包"
   buy_tutorial: "購買教學課程"
   dev_course: "發展歷程"
+  how_do_i_buy: "我如何購買和出售 $avav"
 ---

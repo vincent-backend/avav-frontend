@@ -27,4 +27,5 @@ home:
   open_wallet: "Open Wallet"
   buy_tutorial: "Buy Tutorial"
   dev_course: "開発コース"
+  how_do_i_buy: "$avav を売買するにはどうすればよいですか"
 ---
