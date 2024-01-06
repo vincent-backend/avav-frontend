@@ -439,9 +439,9 @@ export default function Home({ data }) {
       
       {/* AVAV Address */}
       <section className="animate container mx-auto my-12 md:my-16 lg:my-36 max-w-[720px]">
-          <p className="text-cred font-primary font-bold text-center text-[18px] md:text-[26px]">{home.how_do_i_buy}</p>
+          <p className="text-cred font-primary font-bold text-center text-[18px] md:text-[26px]">{home.donation}</p>
           <div className="mt-7 md:mt-12 flex flex-col md:flex-row items-center">
-            <button className="border-none text-white text-[14px] font-primary min-w-[157px] md:h-[70px] md:bg-[#1A1C1F]">TC Address
+            <button className="border-none text-white text-[14px] font-primary min-w-[157px] md:h-[70px] md:bg-[#1A1C1F]">AVAV Address
               <Image src="/images/nav/nav_ic_arrow_unfold.svg" alt="dropdown" width={10} height={10} className="inline-block ml-1" />
             </button>
             <div className="hidden md:block w-[10px] h-[70px] text-[30px] leading-[60px] text-[#292929] bg-[#1A1C1F]">|</div>
@@ -457,7 +457,9 @@ export default function Home({ data }) {
               </button>
             </div>
           </div>
-          <p className="text-center mt-5 md:mt-[26px]">Community donations are mainly used for community building.<br></br>The management team is primarily managed by early contributors to the community.</p>
+          <div className="text-center mt-5 md:mt-[26px]">
+            {markdownify(home.donation_description, "", "")}
+          </div>
       </section>
 
       {/* Video show */}

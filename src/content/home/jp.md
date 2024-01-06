@@ -27,5 +27,6 @@ home:
   open_wallet: "Open Wallet"
   buy_tutorial: "Buy Tutorial"
   dev_course: "開発コース"
-  how_do_i_buy: "$avav を売買するにはどうすればよいですか"
+  donation: "$AVAV コミュニティが構築した寄付アドレス"
+  donation_description: "コミュニティの寄付は主にコミュニティ構築に使用されます。<br>管理チームは主にコミュニティへの初期の貢献者によって管理されます。"
 ---

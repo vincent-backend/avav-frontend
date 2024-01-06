@@ -27,5 +27,6 @@ home:
   open_wallet: "Open Wallet"
   buy_tutorial: "Buy Tutorial"
   dev_course: "Development Course"
-  how_do_i_buy: "How Do I Buy and Sell $avav"
+  donation: "$AVAV community built donation address"
+  donation_description: "Community donations are mainly used for community building.<br>The management team is primarily managed by early contributors to the community."
 ---
