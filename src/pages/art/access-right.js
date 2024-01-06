@@ -48,7 +48,7 @@ export default function Home({ data }) {
           </h3>
         </div>
         
-        <div className="mt-[25px] mb-[25px] md:mt-[50px] md:mb-[50px] flex flex-wrap justify-center gap-x-[12px] md:gap-x-4 gap-y-2 md:gap-y-4">
+        <div className="mt-[25px] mb-[25px] md:mt-[50px] md:mb-[50px] flex flex-wrap justify-center md:justify-normal gap-x-[12px] md:gap-x-4 gap-y-2 md:gap-y-4">
           {imagelist.map((image) => (
             <Zoom key={image.name} zoomMargin={0}>
               <Image

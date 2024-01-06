@@ -27,5 +27,6 @@ home:
   open_wallet: "打開錢包"
   buy_tutorial: "購買教學課程"
   dev_course: "發展歷程"
-  how_do_i_buy: "我如何購買和出售 $avav"
+  donation: "$AVAV社群自建捐款地址"
+  donation_description: "社區捐款主要用於社區建設。<br>管理團隊主要由社區早期貢獻者管理。"
 ---

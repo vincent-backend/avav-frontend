@@ -27,5 +27,6 @@ home:
   open_wallet: "Mở ví"
   buy_tutorial: "Mua hướng dẫn"
   dev_course: "Khóa học phát triển"
-  how_do_i_buy: "How Do I Buy and Sell $avav"
+  donation: "Địa chỉ quyên góp do cộng đồng $AVAV xây dựng"
+  donation_description: "Sự đóng góp của cộng đồng chủ yếu được sử dụng để xây dựng cộng đồng.<br>Nhóm quản lý chủ yếu được quản lý bởi những người đóng góp sớm cho cộng đồng."
 ---
