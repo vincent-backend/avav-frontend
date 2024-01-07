@@ -9,7 +9,7 @@ import { markdownify } from "@/lib/utils/textConverter";
 import clsx from "clsx";
 import Link from "next/link";
 
-export default function Home({ data }) {
+export default function Tutorial({ data }) {
   const { locale, setLocale } = useTranslation();
 
   // static data
@@ -46,7 +46,7 @@ export default function Home({ data }) {
               width={18}
               height={18}
             />
-            <Link href="/tutorial/how-to-buy-avav-inscriptions" className="text-[18px] md:text-[20px] text-white hover:text-cred active:text-cred">
+            <Link href="/tutorials/how-to-buy-avav-inscriptions" className="text-[18px] md:text-[20px] text-white hover:text-cred active:text-cred">
               {tutorial1.title}
             </Link>
           </div>
@@ -62,7 +62,7 @@ export default function Home({ data }) {
               width={18}
               height={18}
             />
-            <Link href="/tutorial/how-can-i-view-and-transfer-my-avav-inscriptions" className="text-[18px] md:text-[20px] text-white hover:text-cred active:text-cred">
+            <Link href="/tutorials/how-can-i-view-and-transfer-my-avav-inscriptions" className="text-[18px] md:text-[20px] text-white hover:text-cred active:text-cred">
               {tutorial2.title}
             </Link>
           </div>
@@ -78,7 +78,7 @@ export default function Home({ data }) {
               width={18}
               height={18}
             />
-            <Link href="/tutorial/how-can-i-sell-my-avav-inscriptions" className="text-[18px] md:text-[20px] text-white hover:text-cred active:text-cred">
+            <Link href="/tutorials/how-can-i-sell-my-avav-inscriptions" className="text-[18px] md:text-[20px] text-white hover:text-cred active:text-cred">
               {tutorial3.title}
             </Link>
           </div>
