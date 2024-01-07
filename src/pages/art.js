@@ -7,9 +7,10 @@ import useTranslation from "@/hooks/useTranslation";
 import { markdownify } from "@/lib/utils/textConverter";
 import clsx from "clsx";
 import Link from "next/link";
-import {ArtElement} from "@/layouts/components/art/ArtElement";
+import {ArtCategoryElement} from "@/layouts/components/art/ArtCategoryElement";
+import artcategory from "@/config/art_category.json";
 
-export default function Home({ data }) {
+export default function Art({ data }) {
   const { locale } = useTranslation();
 
   // votes
@@ -21,7 +22,7 @@ export default function Home({ data }) {
   const [frontmatter, setFrontmatter] = useState(c_data);
 
   //
-  let { tutorial} = frontmatter;
+  let { page } = frontmatter;
 
   useEffect(() => {
     async function fetchData() {
@@ -52,15 +53,11 @@ export default function Home({ data }) {
       ></Image>
       {/* Main content */}
       <section className="animate container mt-[90px] md:mt-[140px] mb-[50px] md:mb-[112px]">
-        <h3 className={clsx("text-cred", locale=="en" && "font-secondary", locale != "en" && "font-primary font-bold")}>AVAV Art</h3>
+        <h3 className={clsx("text-cred", locale=="en" && "font-secondary", locale != "en" && "font-primary font-bold")}>{page.title}</h3>
         <div className="mt-[60px] mb-[25px] md:mt-[80px] md:mb-[50px] flex flex-wrap justify-center md:justify-normal gap-x-3 md:gap-x-4 gap-y-[54px] md:gap-y-16">
-          <ArtElement img="pic_1" vote="art" votes = {votes} caption="ART" link_url="" />
-          <ArtElement img="pic_2" vote="music" votes = {votes} caption="MUSIC" link_url="" />
-          <ArtElement img="pic_3" vote="access_right" votes = {votes} caption="Access Right" link_url="/art/access-right" />
-          <ArtElement img="pic_4" vote="game_props" votes = {votes} caption="Game Props" link_url="" />
-          <ArtElement img="pic_5" vote="physical_goods" votes = {votes} caption="Physical Goods" link_url="/art/physical_goods" />
-          <ArtElement img="pic_6" vote="standing" votes = {votes} caption="Standing" link_url="" />
-          <ArtElement img="pic_7" vote="web_2_database" votes = {votes} caption="Web 2 Database" link_url="" />
+          {artcategory.map((category, index)=>(
+            <ArtCategoryElement key={index} category={category} votes = {votes} />
+          ))}
         </div>
       </section>
     </Base>
@@ -69,7 +66,7 @@ export default function Home({ data }) {
 
 // for tutorial data
 export const getStaticProps = async () => {
-  const data = await getDataFromContent("./src/content/tutorial/index");
+  const data = await getDataFromContent("./src/content/art");
 
   return {
     props: {
