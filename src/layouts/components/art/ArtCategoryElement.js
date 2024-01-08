@@ -1,7 +1,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Zoom from "react-medium-image-zoom";
 
 import config from "@/config/config.json";
@@ -11,16 +11,22 @@ function ArtCategoryElement({category, votes}) {
     const { locale } = useTranslation();
     const { api_root } = config.general;
 
-    const c_vote = votes[0] < 1000 ? votes[0] : "999+";
+    const [vote, setVote] = useState(votes[`vote_` + category.id] === undefined ? 0 : votes[`vote_` + category.id] >= 1000 ? "999+" : votes[`vote_` + category.id]);
+
+    useEffect(() => {
+        setVote(votes[`vote_` + category.id] === undefined ? 0 : votes[`vote_` + category.id] >= 1000 ? "999+" : votes[`vote_` + category.id]);
+      }, [votes]);
 
     const addVote = async () => {
         try {
-            const response = await fetch(api_root + vote, { 
+            const response = await fetch(api_root + category.id, { 
                 method: 'PUT', 
                 headers: { 
                   'Content-type': 'application/json'
                 }
               });
+            const data = await response.json();
+            setVote(data[`vote_` + category.id] === undefined ? 0 : data[`vote_` + category.id] >= 1000 ? "999+" : data[`vote_` + category.id]);
         }
         catch {
             console.log("API Server Connection Failed.");
@@ -43,7 +49,7 @@ function ArtCategoryElement({category, votes}) {
                     onClick={()=>addVote()}>
                 <div className="flex flex-row w-full h-full items-center justify-center gap-1">
                     <Image alt="thumb" src="/images/art/pic_hover_ic_vote.svg" width={16} height={16} />
-                    <p className="font-primary text-[14px] text-white">{`Vote (${c_vote})`}</p>
+                    <p className="font-primary text-[14px] text-white">{`Vote (${vote})`}</p>
                 </div>
             </div>
         </div>
