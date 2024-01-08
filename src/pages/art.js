@@ -10,12 +10,12 @@ import Link from "next/link";
 import {ArtCategoryElement} from "@/layouts/components/art/ArtCategoryElement";
 import artcategory from "@/config/art_category.json";
 
-export default function Art({ data }) {
+export default function Art({ data, init_vdata }) {
   const { locale } = useTranslation();
 
   // votes
   const {api_root} = config.general;
-  const [votes, setVotes] = useState({art: 0, music:0, access_right:0, game_props: 0, physical_goods: 0, standing: 0, web_2_database: 0});
+  const [votes, setVotes] = useState(init_vdata);
 
   // static data
   let c_data = data.filter((dt) => dt.lang === locale)[0];
@@ -29,6 +29,7 @@ export default function Art({ data }) {
       try {
         const response = await fetch(api_root);
         const vote_data = await response.json();
+
         setVotes(vote_data);
       }
       catch {
@@ -37,9 +38,10 @@ export default function Art({ data }) {
     }
 
     fetchData();
-    
+
     //frontmatter
     setFrontmatter(data.filter((dt) => dt.lang === locale)[0]);
+
   }, [locale, data]);
 
   return (
@@ -67,10 +69,12 @@ export default function Art({ data }) {
 // for tutorial data
 export const getStaticProps = async () => {
   const data = await getDataFromContent("./src/content/art");
+  var init_vdata = {};
 
   return {
     props: {
       data,
+      init_vdata
     },
   };
 };

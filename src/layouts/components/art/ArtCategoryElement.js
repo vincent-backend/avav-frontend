@@ -1,9 +1,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
-import Zoom from "react-medium-image-zoom";
-
+import { useEffect, useState } from "react";
+import clsx from "clsx";
 import config from "@/config/config.json";
 import useTranslation from "@/hooks/useTranslation";
 
@@ -11,16 +10,22 @@ function ArtCategoryElement({category, votes}) {
     const { locale } = useTranslation();
     const { api_root } = config.general;
 
-    const c_vote = votes[0] < 1000 ? votes[0] : "999+";
+    const [vote, setVote] = useState(votes[`vote_` + category.id] === undefined ? 0 : votes[`vote_` + category.id] >= 1000 ? "999+" : votes[`vote_` + category.id]);
+
+    useEffect(() => {
+        setVote(votes[`vote_` + category.id] === undefined ? 0 : votes[`vote_` + category.id] >= 1000 ? "999+" : votes[`vote_` + category.id]);
+      }, [votes]);
 
     const addVote = async () => {
         try {
-            const response = await fetch(api_root + vote, { 
+            const response = await fetch(api_root + category.id, { 
                 method: 'PUT', 
                 headers: { 
                   'Content-type': 'application/json'
                 }
               });
+            const data = await response.json();
+            setVote(data[`vote_` + category.id] === undefined ? 0 : data[`vote_` + category.id] >= 1000 ? "999+" : data[`vote_` + category.id]);
         }
         catch {
             console.log("API Server Connection Failed.");
@@ -41,9 +46,11 @@ function ArtCategoryElement({category, votes}) {
             <p className="text-white font-primary text-[14px] md:text-[18px] group-hover:text-cred group-active:text-cred break-all">{category.name[locale]}</p>
             <div className="absolute w-full md:w-4/5 h-[38px] bottom-0 md:bottom-6 bg-[#FD2C2F] text-white cursor-pointer md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-100 ease-linear"
                     onClick={()=>addVote()}>
-                <div className="flex flex-row w-full h-full items-center justify-center gap-1">
-                    <Image alt="thumb" src="/images/art/pic_hover_ic_vote.svg" width={16} height={16} />
-                    <p className="font-primary text-[14px] text-white">{`Vote (${c_vote})`}</p>
+                <div className="w-full h-full relative">
+                    <p className="absolute w-full top-0 font-primary text-[14px] leading-[38px] text-white text-center">
+                        <Image alt="thumb" src="/images/art/pic_hover_ic_vote.svg" width={16} height={16} className={clsx("inline-block me-1")} />
+                        {`Vote (${vote})`}
+                    </p>
                 </div>
             </div>
         </div>
