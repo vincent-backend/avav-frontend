@@ -64,7 +64,7 @@ const Footer = () => {
                     <Link
                       key={index}
                       href={item.url}
-                      target={item.url != "/tutorial" ? "_blank" : "_self"}
+                      target={item.url != "/tutorial/" ? "_blank" : "_self"}
                       className="hover:text-white text-center md:text-left"
                     >
                       {item.name[locale]}
