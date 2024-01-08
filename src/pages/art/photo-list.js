@@ -1,12 +1,15 @@
 import Base from "@/layouts/Baseof";
 import useTranslation from "@/hooks/useTranslation";
 import artcategory from "@/config/art_category.json";
+import PhotoListElement from "@/layouts/components/art/PhotoListElement";
 
 import clsx from "clsx";
 import Link from "next/link";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 import { useEffect, useState } from "react";
+import Router from 'next/router';
 import Zoom from "react-medium-image-zoom";
 
 export default function PhotoList() {
@@ -42,20 +45,10 @@ export default function PhotoList() {
             }
           </h3>
         </div>
-        
         <div className="mt-[25px] mb-[25px] md:mt-[50px] md:mb-[50px] flex flex-wrap justify-center md:justify-normal gap-x-[12px] md:gap-x-4 gap-y-2 md:gap-y-4">
-          
           {category && 
           filelist.map((f, index)=>(
-            <Zoom key={index} zoomMargin={0}>
-              <Image
-                alt={category.name[locale]}
-                src={`/images/art/category/${id}/pic_${f}.png`}
-                width={256}
-                height={256}
-                className="max-w-[calc(50vw-28px)] aspect-auto md:w-[256px] md:h-[256px]"
-              />
-            </Zoom>
+            <PhotoListElement key={index} name={category.name[locale]} src={`/images/art/category/${id}/pic_${f}.png`} />
           ))
           }
         </div>
@@ -63,3 +56,4 @@ export default function PhotoList() {
     </Base>
   );
 }
+
