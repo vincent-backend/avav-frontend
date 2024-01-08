@@ -22,7 +22,6 @@
                         <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
                         <path stroke="url(#linearGradient-1)" stroke-width="2" d="M297.267471,1 L331,40.4549237 L331,247 L1,247 L1,1 L297.267471,1 Z" stroke-linejoin="square"></path>
                     </g>
-                    <path d="M302,30 L302,45 L299,45 L299.01,35.099 L283.110606,51 L281,48.8893937 L296.9,32.989 L287,33 L287,30 L302,30 Z" id="形状结合" fill="#FD2C2F"></path>
                 </g>
             </g>
         </g>

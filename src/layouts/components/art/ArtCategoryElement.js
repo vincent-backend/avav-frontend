@@ -33,6 +33,9 @@ function ArtCategoryElement({category, votes}) {
             <Link href={`/arts/photo-list?category=${category.id}`}>
                 <Image alt={category.name[locale]} title={category.name[locale]} src={`/images/art/category/${category.id}/thumb.png`} width={86} height={86} className="absolute bottom-0 left-[calc(50%-43px)] rounded-full" />
             </Link>
+            <Link href={`/arts/photo-list?category=${category.id}`}>
+                <div className="w-[16px] h-[16px] absolute right-3 top-3 md:right-4 md:top-4 bg-[url('/images/home/logo_bg_ic_arrow_nor.svg')] group-hover:bg-[url('/images/home/logo_bg_ic_arrow_hover.svg')]" />
+            </Link>
         </div>
         <div className="w-full h-3/5 flex justify-center md:pt-6 relative">
             <p className="text-white font-primary text-[14px] md:text-[18px] group-hover:text-cred group-active:text-cred break-all">{category.name[locale]}</p>
