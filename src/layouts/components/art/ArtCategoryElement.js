@@ -11,6 +11,7 @@ function ArtCategoryElement({category, votes}) {
     const { api_root } = config.general;
 
     const [vote, setVote] = useState(votes[`vote_` + category.id] === undefined ? 0 : votes[`vote_` + category.id] >= 1000 ? "999+" : votes[`vote_` + category.id]);
+    const [isVoted, setVoted] = useState(false);
 
     useEffect(() => {
         setVote(votes[`vote_` + category.id] === undefined ? 0 : votes[`vote_` + category.id] >= 1000 ? "999+" : votes[`vote_` + category.id]);
@@ -26,6 +27,9 @@ function ArtCategoryElement({category, votes}) {
               });
             const data = await response.json();
             setVote(data[`vote_` + category.id] === undefined ? 0 : data[`vote_` + category.id] >= 1000 ? "999+" : data[`vote_` + category.id]);
+            setVoted(true);
+            setTimeout(()=>{setVoted(false);}, 700);
+
         }
         catch {
             console.log("API Server Connection Failed.");
@@ -48,7 +52,7 @@ function ArtCategoryElement({category, votes}) {
                     onClick={()=>addVote()}>
                 <div className="w-full h-full relative">
                     <p className="absolute w-full top-0 font-primary text-[14px] leading-[38px] text-white text-center">
-                        <Image alt="thumb" src="/images/art/pic_hover_ic_vote.svg" width={16} height={16} className={clsx("inline-block me-1")} />
+                        <Image alt="thumb" src="/images/art/pic_hover_ic_vote.svg" width={16} height={16} className={clsx("inline-block me-1", !isVoted && "group-hover:animate-bounce ", isVoted && "animate-ping")} />
                         {`Vote (${vote})`}
                     </p>
                 </div>
