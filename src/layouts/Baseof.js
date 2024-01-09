@@ -157,7 +157,6 @@ const Base = ({
         
         {/* author from config.json */}
         <meta name="author" content={meta_author} />
-        <link rel="preload" href="/images/art/loading.svg" as="image" />
       </Head>
       <Header />
       {/* main site */}

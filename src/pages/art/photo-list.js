@@ -31,7 +31,7 @@ export default function PhotoList() {
         className="-z-10 absolute w-full h-full top-0 left-0"
       ></Image>
       {/* Main content */}
-      <section className="animate container mt-[90px] md:mt-[140px] mb-[50px] md:mb-[112px] md:min-h-[calc(100vh-480px)]">
+      <section className="container mt-[90px] md:mt-[140px] mb-[50px] md:mb-[112px] md:min-h-[calc(100vh-480px)]">
         <div className="flex flex-row justify-start items-center">
           <Link href="/art" className="me-1">
             <Image alt="back" src="/images/nav/home_nav_ic_back.svg" width={40} height={40} className="md:w-[50px] md:h-[50px]"/>
@@ -45,7 +45,7 @@ export default function PhotoList() {
             }
           </h3>
         </div>
-        <div className="mt-[25px] mb-[25px] md:mt-[50px] md:mb-[50px] flex flex-wrap justify-center md:justify-normal gap-x-[12px] md:gap-x-4 gap-y-2 md:gap-y-4">
+        <div className="mt-[25px] mb-[25px] md:mt-[50px] md:mb-[50px] flex flex-wrap justify-between md:justify-normal gap-x-[12px] md:gap-x-4 gap-y-2 md:gap-y-4">
           {category && 
           filelist.map((f, index)=>(
             <PhotoListElement key={index} name={category.name[locale]} src={`/images/art/category/${id}/pic_${f}.png`} />

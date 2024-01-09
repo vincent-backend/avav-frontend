@@ -14,13 +14,13 @@ export default function PhotoListElement({ name, src }) {
     <>
       <div
         className={clsx(
-          "max-w-[calc(50vw-28px)] aspect-auto md:w-[256px] md:h-[256px] flex items-center justify-center",
+          "w-[calc(50vw-30px)] aspect-square md:w-[256px] md:h-[256px] flex items-center justify-center bg-white bg-opacity-5",
           !loading && "hidden"
         )}
       >
         <Image
           alt="Loading..."
-          src="/images/art/loading.svg"
+          src="/images/art/photo-logo.svg"
           width={100}
           height={100}
         />
@@ -35,7 +35,7 @@ export default function PhotoListElement({ name, src }) {
           priority
           style={{ display: loading ? "none" : "block" }}
           className={clsx(
-            "max-w-[calc(50vw-28px)] aspect-auto md:w-[256px] md:h-[256px]",
+            "max-w-[calc(50vw-30px)] aspect-auto md:h-[256px]",
             loading && "hidden"
           )}
         />

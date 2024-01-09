@@ -54,7 +54,7 @@ export default function Art({ data, init_vdata }) {
         className="-z-10 absolute w-full h-full top-0 left-0"
       ></Image>
       {/* Main content */}
-      <section className="animate container mt-[90px] md:mt-[140px] mb-[50px] md:mb-[112px]">
+      <section className="container mt-[90px] md:mt-[140px] mb-[50px] md:mb-[112px]">
         <h3 className={clsx("text-cred", locale=="en" && "font-secondary", locale != "en" && "font-primary font-bold")}>{page.title}</h3>
         <div className="mt-[60px] mb-[25px] md:mt-[80px] md:mb-[50px] flex flex-wrap justify-center md:justify-normal gap-x-3 md:gap-x-4 gap-y-[54px] md:gap-y-16">
           {artcategory.map((category, index)=>(
