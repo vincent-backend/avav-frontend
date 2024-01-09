@@ -157,6 +157,7 @@ const Base = ({
         
         {/* author from config.json */}
         <meta name="author" content={meta_author} />
+        <link rel="prefetch" href="/images/art/photo-logo.svg" />
       </Head>
       <Header />
       {/* main site */}
