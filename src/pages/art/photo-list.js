@@ -7,9 +7,7 @@ import clsx from "clsx";
 import Link from "next/link";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
-import { Suspense } from "react";
 import { useEffect, useState } from "react";
-import Router from 'next/router';
 import Zoom from "react-medium-image-zoom";
 
 export default function PhotoList() {
@@ -48,7 +46,9 @@ export default function PhotoList() {
         <div className="mt-[25px] mb-[25px] md:mt-[50px] md:mb-[50px] flex flex-wrap justify-between md:justify-normal gap-x-[12px] md:gap-x-4 gap-y-2 md:gap-y-4">
           {category && 
           filelist.map((f, index)=>(
-            <PhotoListElement key={index} name={category.name[locale]} src={`/images/art/category/${id}/pic_${f}.png`} />
+            <div key={index} className="cursor-pointer">
+              <PhotoListElement name={category.name[locale]} src={`/images/art/category/${id}/pic_${f}.png`} />
+            </div>
           ))
           }
         </div>

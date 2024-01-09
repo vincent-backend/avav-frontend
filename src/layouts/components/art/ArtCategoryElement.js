@@ -17,6 +17,7 @@ function ArtCategoryElement({category, votes}) {
         setVote(votes[`vote_` + category.id] === undefined ? 0 : votes[`vote_` + category.id] >= 1000 ? "999+" : votes[`vote_` + category.id]);
       }, [votes]);
 
+    let code = 0;
     const addVote = async () => {
         try {
             const response = await fetch(api_root + category.id, { 
@@ -26,13 +27,14 @@ function ArtCategoryElement({category, votes}) {
                 }
               });
             const data = await response.json();
+            code = response.status;
             setVote(data[`vote_` + category.id] === undefined ? 0 : data[`vote_` + category.id] >= 1000 ? "999+" : data[`vote_` + category.id]);
             setVoted(true);
             setTimeout(()=>{setVoted(false);}, 700);
 
         }
         catch {
-            console.log("API Server Connection Failed.");
+            console.log("API Server Connection Failed with Code " + code);
         }
     }
 
