@@ -1,10 +1,12 @@
 import "@/styles/style.scss";
 import "react-medium-image-zoom/dist/styles.css";
+import "react-notifications-component/dist/theme.css";
 
 import Head from "next/head";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import NextNProgress from "nextjs-progressbar";
 import localFont from "next/font/local";
+import { ReactNotifications } from "react-notifications-component";
 
 const primaryFont = localFont({
   src: [
@@ -41,6 +43,7 @@ export default function App({ Component, pageProps }) {
       </Head>
       <LanguageProvider>
         <NextNProgress color="#DE3D30" options={{ showSpinner: false }} />
+        <ReactNotifications />
         <Component {...pageProps} />
       </LanguageProvider>
     </main>

@@ -42,7 +42,18 @@
     },
     {
       "name": {"en":"Twitter", "cn":"Twitter", "zh":"Twitter", "jp":"Twitter", "kr":"Twitter", "vt":"Twitter"},
-      "url": "https://x.com/avavcommunity"
+      "url": "",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "AVAV Global Community",
+          "url": "https://x.com/avav_global"
+        },
+        {
+          "name": "AVAV Chinese Community",
+          "url": "https://x.com/avavcommunity"
+        }
+      ]
     },
     {
       "name": {"en":"Discord", "cn":"Discord", "zh":"Discord", "jp":"Discord"},
@@ -113,6 +124,16 @@
       {
         "name": "AVAV Vietnam Community",
         "url": "https://t.me/avav_vietnami"
+      }
+    ],
+    "twitter":[
+      {
+        "name": "AVAV Global Community",
+        "url": "https://x.com/avav_global"
+      },
+      {
+        "name": "AVAV Chinese Community",
+        "url": "https://x.com/avavcommunity"
       }
     ],
     "more": [
