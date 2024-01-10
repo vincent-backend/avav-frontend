@@ -18,7 +18,7 @@
   },
 
   "general": {
-    "api_root": "http://localhost:8000/art_votes/"
+    "api_root": "https://avav.meme/art_votes/"
   },
 
   "contact_info": {

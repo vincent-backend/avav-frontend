@@ -14,7 +14,7 @@ export default function Entrance({ text, handleClick, handleIconClick }) {
           src="/images/home/entrance/avascriptions-logo.png"
           width={132}
           height={118}
-          className="w-[71%] h-auto"
+          className="w-[71%] h-auto md:h-[118px] md:w-auto"
         />
         <Image alt="trading" src="/images/home/entrance/logo_ic_Trading.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
       </Link>
@@ -24,7 +24,7 @@ export default function Entrance({ text, handleClick, handleIconClick }) {
           src="/images/home/entrance/bitget-logo.svg"
           width={82}
           height={118}
-          className="h-[63.4%] w-auto"
+          className="h-[63.4%] w-auto md:h-[118px]"
         />
         <Image alt="trading" src="/images/home/entrance/logo_ic_Trading.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
       </Link>
@@ -44,7 +44,7 @@ export default function Entrance({ text, handleClick, handleIconClick }) {
           src="/images/home/entrance/top_card_logo_4.svg"
           width={84}
           height={118}
-          className="h-[63.4%] w-auto"
+          className="h-[63.4%] w-auto md:h-[118px]"
         />
         <Image alt="trading" src="/images/home/entrance/logo_ic_Trading.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
       </Link>
@@ -54,17 +54,18 @@ export default function Entrance({ text, handleClick, handleIconClick }) {
           src="/images/home/entrance/coingecko-logo.png"
           width={116}
           height={118}
-          className="h-[63.4%] md:h-[118px] w-auto md:w-[116px]"
+          className="h-[63.4%] w-auto md:h-[118px]"
         />
         <Image alt="trading" src="/images/home/entrance/logo_ic_Trading.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
       </Link>
+
       <Link href="https://coinmarketcap.com/currencies/avascriptions/" target="_blank" className="site-link relative">
         <Image
           alt="CoinMarketCap"
           src="/images/home/entrance/top_card_logo_6.svg"
           width={138}
           height={118}
-          className="h-[63.4%] w-auto"
+          className="h-[63.4%] w-auto md:h-[118px]"
         />
         <Image alt="trading" src="/images/home/entrance/logo_ic_marketplace.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
       </Link>
@@ -79,7 +80,7 @@ export default function Entrance({ text, handleClick, handleIconClick }) {
           src="/images/home/entrance/4e-logo.png"
           width={118}
           height={132}
-          className="h-[61.68%] w-auto"
+          className="h-[61.68%] w-auto md:h-[118px]"
         />
         <Image alt="trading" src="/images/home/entrance/logo_ic_Trading.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
       </Link>
@@ -93,7 +94,7 @@ export default function Entrance({ text, handleClick, handleIconClick }) {
             src="/images/home/entrance/tpwallet-logo.png"
             width={98}
             height={118}
-            className="h-[63.4%] w-auto"
+            className="h-[63.4%] w-auto md:h-[118px]"
           />
         </div>
         <div className="absolute w-full h-full top-0 left-0 hidden md:group-hover:block">
@@ -123,7 +124,7 @@ export default function Entrance({ text, handleClick, handleIconClick }) {
             src="/images/home/entrance/okx-logo.png"
             width={98}
             height={118}
-            className="h-[63.4%] w-auto"
+            className="h-[63.4%] w-auto md:h-[118px]"
           />
         </div>
         <div className="absolute w-full h-full top-0 left-0 hidden md:group-hover:block">
@@ -153,7 +154,7 @@ export default function Entrance({ text, handleClick, handleIconClick }) {
             src="/images/home/entrance/metamask-logo.png"
             width={98}
             height={118}
-            className="h-[63.4%] w-auto"
+            className="h-[63.4%] w-auto md:h-[118px]"
           />
         </div>
         <div className="absolute w-full h-full top-0 left-0 hidden md:group-hover:block">
@@ -185,7 +186,7 @@ export default function Entrance({ text, handleClick, handleIconClick }) {
           src="/images/home/entrance/xt.com-logo.png"
           width={132}
           height={118}
-          className="h-[63.4%] w-auto"
+          className="h-[63.4%] w-auto md:h-[118px]"
         />
         <Image alt="trading" src="/images/home/entrance/logo_ic_Trading.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
       </Link>
@@ -201,7 +202,7 @@ export default function Entrance({ text, handleClick, handleIconClick }) {
           src="/images/home/entrance/orangex-logo.png"
           width={132}
           height={118}
-          className="h-[63.4%] w-auto"
+          className="h-[63.4%] w-auto md:h-[118px]"
         />
         <Image alt="trading" src="/images/home/entrance/logo_ic_Trading.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
       </Link>
@@ -217,7 +218,7 @@ export default function Entrance({ text, handleClick, handleIconClick }) {
           src="/images/home/entrance/ascendex-logo.png"
           width={132}
           height={118}
-          className="h-[63.4%] w-auto"
+          className="h-[63.4%] w-auto md:h-[118px]"
         />
         <Image alt="trading" src="/images/home/entrance/logo_ic_Trading.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
       </Link>
@@ -233,7 +234,7 @@ export default function Entrance({ text, handleClick, handleIconClick }) {
           src="/images/home/entrance/lbank-logo.png"
           width={132}
           height={118}
-          className="h-[63.4%] w-auto"
+          className="h-[63.4%] w-auto md:h-[118px]"
         />
         <Image alt="trading" src="/images/home/entrance/logo_ic_Trading.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
       </Link>
