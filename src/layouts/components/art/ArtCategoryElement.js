@@ -14,7 +14,7 @@ function ArtCategoryElement({ category, c_vote }) {
   const [vote, setVote] = useState(c_vote);
   const [isVoted, setVoted] = useState(false);
   const [isAlreadyVoted, setAlreadyVoted] = useState(true);
-  const [storeVal, setStoreVal] = useLocalStorage("vote_" + category.id, false);
+  const [storeVal, setStoreVal] = useLocalStorage("avav_art_vote_" + category.id, false);
 
   const saveToLocalStorage = (val) => {
     //    e.preventDefault();
@@ -61,6 +61,7 @@ function ArtCategoryElement({ category, c_vote }) {
 
   useEffect(() => {
     if (vote === undefined) setVote(c_vote);
+    if (vote === undefined) setVote(0);
     setAlreadyVoted(storeVal);
   }, [c_vote, vote, storeVal]);
 
