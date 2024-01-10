@@ -89,6 +89,10 @@
     {
       "name": {"en":"AVAV Art", "cn":"AVAV Art", "zh":"AVAV Art", "jp":"AVAV Art", "kr":"AVAV Art", "vt":"AVAV Art"},
       "url": "/art"
+    },
+    {
+      "name": {"en":"AVAV Foundation", "cn":"AVAV基金会", "zh":"AVAV基金會", "jp":"AVAV財団", "kr":"AVAV基金会", "vt":"Quỹ AVAV"},
+      "url": "https://reurl.cc/mrZMgG"
     }
   ],
   "footer": {

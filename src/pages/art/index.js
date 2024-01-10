@@ -9,6 +9,7 @@ import clsx from "clsx";
 import Link from "next/link";
 import {ArtCategoryElement} from "@/layouts/components/art/ArtCategoryElement";
 import artcategory from "@/config/art_category.json";
+import { Store } from "react-notifications-component";
 
 export default function Art({ data, init_vdata }) {
   const { locale } = useTranslation();

@@ -1,3 +1,4 @@
+import config from "@/config/config.json";
 import Base from "@/layouts/Baseof";
 import FaqItem from "@/layouts/components/FaqItem";
 import faqs from "@/content/faqs.json";
@@ -16,6 +17,7 @@ import { markdownify } from "@/lib/utils/textConverter";
 import clsx from "clsx";
 import HistoryTimeline from "@/layouts/components/home/HistoryTimeline";
 import ModalVideo from "@/layouts/components/home/ModalVideo";
+import { Store } from "react-notifications-component";
 
 
 export default function Home({ data }) {
@@ -27,6 +29,7 @@ export default function Home({ data }) {
   const [frontmatter, setFrontmatter] = useState(c_data);
   //
   let { banner, blog_1, blog_2, blog_3, blog_4, home } = frontmatter;
+  const { general } = config;
 
   // entrance link option
   const [isLinkOptionShow, setLinkOpShow] = useState(false);
@@ -99,10 +102,35 @@ export default function Home({ data }) {
   };
 
   // copy address
-  const [isCopyShow, setCopyShow] = useState(false);
   const handleAddrCopy = () => {
-    CopyToClipboard("0xc1dC3221756F4dd55074E9d1c04a4C929a641145", locale);
-    setCopyShow(true);
+    if (CopyToClipboard(general.donate_addr, locale)) {
+      Store.addNotification({
+        message: "AVAV donation address has been copied.",
+        type: "success",
+        insert: "top",
+        container: "top-right",
+        animationIn: ["animate__animated", "animate__fadeIn"],
+        animationOut: ["animate__animated", "animate__fadeOut"],
+        dismiss: {
+          duration: 2000,
+          onScreen: true
+        }
+    });
+    }
+    else {
+      Store.addNotification({
+        message: "AVAV donation address copy failed. Your web browser does not support copy functionality.",
+        type: "danger",
+        insert: "top",
+        container: "top-right",
+        animationIn: ["animate__animated", "animate__fadeIn"],
+        animationOut: ["animate__animated", "animate__fadeOut"],
+        dismiss: {
+          duration: 3000,
+          onScreen: true
+        }
+    });
+    }
   }
 
   /// Overlay click
@@ -128,12 +156,6 @@ export default function Home({ data }) {
       }
     };
     window.addEventListener("keydown", onKeyPress);
-
-    // address copy
-    if (isCopyShow)
-      setTimeout(() => {
-        setCopyShow(false);
-      }, 2000);
 
     // animate
     const ctx = gsap.context(() => {
@@ -165,7 +187,7 @@ export default function Home({ data }) {
     });
 
     return () => ctx.revert();
-  }, [locale, data, isCopyShow]);
+  }, [locale, data]);
 
   return (
     <Base>
@@ -446,14 +468,9 @@ export default function Home({ data }) {
             </button>
             <div className="hidden md:block w-[10px] h-[70px] text-[30px] leading-[60px] text-[#292929] bg-[#1A1C1F]">|</div>
             <div className="relative flex flex-row items-center justify-between h-[60px] md:h-[70px] bg-[#1A1C1F] w-full mt-4 md:mt-0">
-              <p className="text-white font-primary text-[14px] px-[10px] md:px-[20px] break-all">0xc1dC3221756F4dd55074E9d1c04a4C929a641145</p>
+              <p className="text-white font-primary text-[14px] px-[10px] md:px-[20px] break-all">{general.donate_addr}</p>
               <button className="bg-cred min-w-[60px] md:w-[70px] h-full pl-[18px] md:pl-[22px]" onClick={()=>handleAddrCopy()}>
                 <Image alt="copy" src="/images/footer/copy_nor.svg" width={22} height={22} />
-                <div 
-                  className={clsx(
-                    "absolute opacity-0 min-w-[100px] h-[40px] text-white text-center leading-[40px] bg-[#1E2126] rounded-lg right-0 bottom-16 md:bottom-20 transition-all duration-200 ease-linear",
-                    isCopyShow && "opacity-100"
-                  )}>Copied!</div>
               </button>
             </div>
           </div>
