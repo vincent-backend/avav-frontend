@@ -55,7 +55,7 @@ function ArtCategoryElement({ category, c_vote }) {
               duration: 2000,
               onScreen: true
             }
-          });
+        });
     }
   };
 

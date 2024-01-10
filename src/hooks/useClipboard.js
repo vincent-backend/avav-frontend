@@ -12,8 +12,10 @@ const CopyToClipboard = (text, locale) => {
       }
     });
     document.body.removeChild(input);
+    return true;
   } catch (err) {
     console.log(err);
+    return false;
   }
 };
 
