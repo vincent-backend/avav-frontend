@@ -103,7 +103,7 @@ function ArtCategoryElement({ category, c_vote }) {
                   isVoted && "animate-ping"
                 )}
               />
-              {isAlreadyVoted ? `Voted (${vote >= 1000 ? "+999" : vote})` : `Vote (${vote >= 1000 ? "+999" : vote})`}
+              {isAlreadyVoted ? `Voted (${vote >= 1000 ? "999+" : vote})` : `Vote (${vote >= 1000 ? "999+" : vote})`}
             </p>
           </div>
         </div>
