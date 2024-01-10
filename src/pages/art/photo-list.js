@@ -32,7 +32,7 @@ export default function PhotoList() {
       <section className="container mt-[90px] md:mt-[140px] mb-[50px] md:mb-[112px] md:min-h-[calc(100vh-480px)]">
         <div className="flex flex-row justify-start items-center">
           <Link href="/art" className="me-1">
-            <Image alt="back" src="/images/nav/home_nav_ic_back.svg" width={40} height={40} className="md:w-[50px] md:h-[50px]"/>
+            <Image alt="back" src="/images/nav/home_nav_ic_back.svg" width={40} height={40} priority className="md:w-[50px] md:h-[50px]"/>
           </Link>
           <h3  className={clsx("text-cred",
               locale == "en" && "font-secondary",
