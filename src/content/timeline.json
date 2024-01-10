@@ -1,6 +1,10 @@
 {
     "en": [
         {
+            "date": "January 10, 2024",
+            "content": "Lbank Exchange announced that it will launch the AVAV/USDT trading pair on January 10th."
+        },
+        {
             "date": "January 5, 2024",
             "content": "The Avascriptions indexer is fully open source, and the transaction contract is fully open source."
         },
@@ -50,6 +54,10 @@
         }
     ],
     "cn": [
+        {
+            "date": "2024年1月10日",
+            "content": "Lbank交易所公告将于1月10日上线AVAV/USDT交易对。"
+        },
         {
             "date": "2024年1月5日",
             "content": "Avascriptions索引器已完全开源，交易合约已完全开源。"
@@ -101,6 +109,10 @@
     ],
     "zh": [
         {
+            "date": "2024年1月10日",
+            "content": "Lbank交易所公告將於1月10日上線AVAV/USDT交易對"
+        },
+        {
             "date": "2024年1月5日",
             "content": "Avascriptions 索引器已完全註冊，開源協定已完全註冊。"
         },
@@ -150,6 +162,10 @@
         }
     ],
     "jp": [
+        {
+            "date": "2024年1月10日",
+            "content": "Lbank取引所公告1月10日上線上AVAV/USDT取引易对。"
+        },
         {
             "date": "2024年1月5日",
             "content": "Avascriptions インデックスは完全に提供されており、取引はほぼ完全に提供されています。"
@@ -201,6 +217,10 @@
     ],
     "kr": [
         {
+            "date": "2024年1月10日",
+            "content": "Lbank交易所公告将于1月10日上线AVAV/USDT交易对。"
+        },
+        {
             "date": "2024年1月5日",
             "content": "Avascriptions索引器已完全开源，交易合约已完全开源。"
         },
@@ -250,6 +270,10 @@
         }
     ],
     "vt": [
+        {
+            "date": "Ngày 510 tháng 1 năm 2024",
+            "content": "Sàn giao dịch Lbank thông báo sẽ ra mắt cặp giao dịch AVAV/USDT vào ngày 10 tháng 1."
+        },
         {
             "date": "Ngày 5 tháng 1 năm 2024",
             "content": "Trình lập chỉ mục Avascriptions hoàn toàn là nguồn mở và hợp đồng giao dịch hoàn toàn là nguồn mở."
