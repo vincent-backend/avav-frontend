@@ -11,7 +11,7 @@ import { Store } from "react-notifications-component";
 function ArtCategoryElement({ category, c_vote }) {
   const { locale } = useTranslation();
   const { api_root } = config.general;
-  const [vote, setVote] = useState(c_vote);
+  const [voteCount, setVoteCount] = useState(c_vote);
   const [isVoted, setVoted] = useState(false);
   const [isAlreadyVoted, setAlreadyVoted] = useState(true);
   const [storeVal, setStoreVal] = useLocalStorage("avav_art_vote_" + category.id, false);
@@ -35,9 +35,9 @@ function ArtCategoryElement({ category, c_vote }) {
             code = response.status;
             setVoted(true);
             saveToLocalStorage(true);
-            setVote(data[`vote_` + category.id]);
+            setVoteCount(data[`vote_` + category.id]);
             setTimeout(() => {
-              setVoted(false);
+                setVoted(false);
             }, 700);
           } catch {
             console.log("API Server Connection Failed with Code " + code);
@@ -60,10 +60,9 @@ function ArtCategoryElement({ category, c_vote }) {
   };
 
   useEffect(() => {
-    if (vote === undefined) setVote(c_vote);
-    if (vote === undefined) setVote(0);
+    if (voteCount === undefined) setVoteCount(c_vote);
     setAlreadyVoted(storeVal);
-  }, [c_vote, vote, storeVal]);
+  }, [c_vote, storeVal]);
 
   return (
     <div className="group art-element">
@@ -103,7 +102,7 @@ function ArtCategoryElement({ category, c_vote }) {
                   isVoted && "animate-ping"
                 )}
               />
-              {isAlreadyVoted ? `Voted (${vote >= 1000 ? "999+" : vote})` : `Vote (${vote >= 1000 ? "999+" : vote})`}
+              {`Vote (${voteCount >= 1000 ? "999+" : voteCount})`}
             </p>
           </div>
         </div>
