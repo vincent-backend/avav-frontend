@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1921px" height="1080px" viewBox="0 0 1921 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>bg_top_pic@2x</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#0F0F0F" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#0F0F0F" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-48.0%" y="-48.0%" width="196.1%" height="196.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="148.623398" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-78.9%" y="-78.9%" width="257.8%" height="257.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="148.623398" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bg_top_pic" transform="translate(-300.000000, -363.000000)">
+            <g id="bg_top_left_light" opacity="0.704219273">
+                <path d="M464,0 C720.259776,0 928,207.740224 928,464 C928,720.259776 720.259776,928 464,928 C207.740224,928 0,720.259776 0,464 C0,207.740224 207.740224,0 464,0 C464,0 464,0 464,0 Z" id="Ellipse-22" fill="#770002" opacity="0.244394212" filter="url(#filter-2)"></path>
+                <path d="M463.5,181 C619.52023,181 746,307.47977 746,463.5 C746,619.52023 619.52023,746 463.5,746 C307.47977,746 181,619.52023 181,463.5 C181,307.47977 307.47977,181 463.5,181 C463.5,181 463.5,181 463.5,181 Z" id="Ellipse-22" fill="#C20003" opacity="0.244394212" filter="url(#filter-3)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

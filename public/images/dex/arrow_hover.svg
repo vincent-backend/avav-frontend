@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>arrow_hover@2x</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DEX" transform="translate(-1285.000000, -318.000000)">
+            <g id="card" transform="translate(720.000000, 190.000000)">
+                <g id="arrow" transform="translate(565.000000, 128.000000)">
+                    <circle id="椭圆形" stroke="#242424" stroke-width="2" fill="#1A1C1F" cx="21" cy="21" r="20"></circle>
+                    <path d="M28.0710678,12 L28.0710678,22 L26.0710678,22 L26.071,15.413 L15.4142136,26.0710678 L14,24.6568542 L24.656,14 L18.0710678,14 L18.0710678,12 L28.0710678,12 Z" id="形状结合" fill="#FD2C2F" transform="translate(21.035534, 19.035534) rotate(-225.000000) translate(-21.035534, -19.035534) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
