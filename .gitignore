@@ -38,5 +38,5 @@ yarn-error.log*
 next-env.d.ts
 
 #config.json
-src/config/config.json
+/src/config/config.json
 
