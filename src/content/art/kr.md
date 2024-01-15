@@ -1,5 +1,5 @@
 ---
 lang: "kr"
 page:
-  title: "AVAV Art"
+  title: "AVAV 아트"
   vote: "Vote"

@@ -27,5 +27,5 @@ home:
   open_wallet: "오픈월렛"
   buy_tutorial: "튜토리얼 구매"
   dev_course: "개발 코스"
-  donation: "$AVAV community built donation address"
-  donation_description: "Community donations are mainly used for community building.<br>The management team is primarily managed by early contributors to the community."
+  donation: "AVAV 커뮤니티에서 기부 주소를 구축했습니다."
+  donation_description: "커뮤니티 기부금은 주로 커뮤니티 구축에 사용됩니다.<br>관리팀은 주로 커뮤니티 초기 기여자들에 의해 관리됩니다."
