@@ -1,6 +1,10 @@
 {
     "en": [
         {
+            "date": "January 15, 2024",
+            "content": "Bitget Exchange announced that it will list the AVAV/USDT trading pair on January 15th."
+        },
+        {
             "date": "January 10, 2024",
             "content": "Lbank Exchange announced that it will launch the AVAV/USDT trading pair on January 10th."
         },
@@ -54,6 +58,10 @@
         }
     ],
     "cn": [
+        {
+            "date": "2024年1月15日",
+            "content": "Bitget交易所公告将于1月15日上线AVAV/USDT交易对。"
+        },
         {
             "date": "2024年1月10日",
             "content": "Lbank交易所公告将于1月10日上线AVAV/USDT交易对。"
@@ -109,6 +117,10 @@
     ],
     "zh": [
         {
+            "date": "2024年1月15日",
+            "content": "Bitget交易所公告將於1月15日上線AVAV/USDT交易對。"
+        },
+        {
             "date": "2024年1月10日",
             "content": "Lbank交易所公告將於1月10日上線AVAV/USDT交易對"
         },
@@ -162,6 +174,10 @@
         }
     ],
     "jp": [
+        {
+            "date": "2024年1月15日",
+            "content": "Bitget Exchange は、AVAV/USDT 取引ペアを 1 月 15 日に上場すると発表しました。"
+        },
         {
             "date": "2024年1月10日",
             "content": "Lbank取引所公告1月10日上線上AVAV/USDT取引易对。"
@@ -218,6 +234,10 @@
     "kr": [
         {
             "date": "2024年1月10日",
+            "content": "Bitget交易所公告将于1月15日上线AVAV/USDT交易对。"
+        },
+        {
+            "date": "2024年1月10日",
             "content": "Lbank交易所公告将于1月10日上线AVAV/USDT交易对。"
         },
         {
@@ -271,7 +291,11 @@
     ],
     "vt": [
         {
-            "date": "Ngày 510 tháng 1 năm 2024",
+            "date": "Ngày 15 tháng 1 năm 2024",
+            "content": "Bitget Exchange thông báo rằng họ sẽ niêm yết cặp giao dịch AVAV/USDT vào ngày 15 tháng 1."
+        },
+        {
+            "date": "Ngày 10 tháng 1 năm 2024",
             "content": "Sàn giao dịch Lbank thông báo sẽ ra mắt cặp giao dịch AVAV/USDT vào ngày 10 tháng 1."
         },
         {
