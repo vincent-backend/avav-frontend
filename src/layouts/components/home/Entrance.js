@@ -4,6 +4,18 @@ import Image from "next/image";
 export default function Entrance({ text, handleClick, handleIconClick }) {
   return (
     <div className="animate flex flex-wrap justify-center lg:justify-start gap-4 mt-[400px] md:mt-[60px] ">
+      {/* Bitget */}
+      <Link href="https://www.bitget.com/spot/AVAVUSDT" target="_blank" className="site-link relative">
+        <Image
+          alt="Bitget"
+          src="/images/home/entrance/bitget-logo.svg"
+          width={82}
+          height={118}
+          className="h-[63.4%] w-auto md:h-[118px]"
+        />
+        <Image alt="trading" src="/images/home/entrance/logo_ic_Trading.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
+      </Link>
+
       <Link
         href="https://avascriptions.com/market/token?tick=avav"
         target="_blank"
@@ -15,16 +27,6 @@ export default function Entrance({ text, handleClick, handleIconClick }) {
           width={132}
           height={118}
           className="w-[71%] h-auto md:h-[118px] md:w-auto"
-        />
-        <Image alt="trading" src="/images/home/entrance/logo_ic_Trading.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
-      </Link>
-      <Link href="/" target="_blank" className="site-link hidden relative">
-        <Image
-          alt="Bitget"
-          src="/images/home/entrance/bitget-logo.svg"
-          width={82}
-          height={118}
-          className="h-[63.4%] w-auto md:h-[118px]"
         />
         <Image alt="trading" src="/images/home/entrance/logo_ic_Trading.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
       </Link>
