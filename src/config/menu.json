@@ -92,7 +92,18 @@
     },
     {
       "name": {"en":"AVAV Foundation", "cn":"AVAV基金会", "zh":"AVAV基金會", "jp":"AVAV財団", "kr":"AVAV 재단", "vt":"Quỹ AVAV"},
-      "url": "https://reurl.cc/mrZMgG"
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "AVAV Community Foundation",
+          "url": "https://reurl.cc/mrZMgG"
+        },
+        {
+          "name": "AVAV Relief Foundation",
+          "url": "/foundation"
+        }
+      ],
+      "url": ""
     }
   ],
   "footer": {

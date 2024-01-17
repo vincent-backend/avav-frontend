@@ -8,7 +8,7 @@ import { markdownify } from "@/lib/utils/textConverter";
 import clsx from "clsx";
 import Link from "next/link";
 import {ArtCategoryElement} from "@/layouts/components/art/ArtCategoryElement";
-import artcategory from "@/config/art_category.json";
+import artcategory from "@/content/art_category.json";
 
 export default function Art({ data, init_vdata }) {
   const { locale } = useTranslation();

@@ -1,6 +1,6 @@
 import Base from "@/layouts/Baseof";
 import useTranslation from "@/hooks/useTranslation";
-import artcategory from "@/config/art_category.json";
+import artcategory from "@/content/art_category.json";
 import PhotoListElement from "@/layouts/components/art/PhotoListElement";
 
 import clsx from "clsx";
