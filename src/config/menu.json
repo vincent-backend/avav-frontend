@@ -95,15 +95,15 @@
       "hasChildren": true,
       "children": [
         {
-          "name": "AVAV Community Foundation",
+          "name": {"en":"AVAV Community Foundation", "cn":"AVAV 社区基金会", "zh":"AVAV 社區基金會", "jp":"AVAV コミュニティ財団", "kr":"AVAV Relief Foundation", "vt":"Quỹ cộng đồng AVAV"},
           "url": "https://reurl.cc/mrZMgG"
         },
         {
-          "name": "AVAV Relief Foundation",
-          "url": "/foundation"
+          "name": {"en":"AVAV Relief Foundation", "cn":"AVAV 救济基金会", "zh":"AVAV 救濟基金會", "jp":"AVAV救済財団", "kr":"AVAV Relief Foundation", "vt":"Quỹ cứu trợ AVAV"},
+          "url": "https://verbose-heron-cfc.notion.site/AVAV-AV-a4d349a8c33b4d2d835e6db77de5d2db"
         }
       ],
-      "url": ""
+      "url": "/foundation"
     }
   ],
   "footer": {

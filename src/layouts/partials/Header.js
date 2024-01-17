@@ -88,7 +88,7 @@ const Header = () => {
                     <ul className="nav-dropdown-list hidden max-h-0 w-[240px] mx-auto overflow-hidden border border-[#979797] border-opacity-20 px-2 py-0 transition-all duration-500 group-hover:block group-hover:max-h-[246px] group-hover:py-1 md:invisible md:absolute md:left-1/2 md:block md:w-auto md:-translate-x-1/2 md:group-hover:visible md:group-hover:opacity-100">
                       {menu.children.map((child, i) => (
                         <li className="nav-dropdown-item" key={`children-${i}`}>
-                          {child.url == "/foundation" ? (
+                          {menu.url == "/foundation" ? (
                             <Link
                             href={child.url}
                             className={`nav-dropdown-link block transition-all ${
