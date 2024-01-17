@@ -90,7 +90,7 @@ const Header = () => {
                         <li className="nav-dropdown-item" key={`children-${i}`}>
                           {menu.url == "/foundation" ? (
                             <Link
-                            href={child.url}
+                            href={child.url} target="_blank"
                             className={`nav-dropdown-link block transition-all ${
                               asPath.pathname === child.url && "active"
                             }`}
