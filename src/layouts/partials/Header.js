@@ -94,6 +94,7 @@ const Header = () => {
                             className={`nav-dropdown-link block transition-all ${
                               asPath.pathname === child.url && "active"
                             }`}
+                            onClick={()=>setShowMenu(false)}
                           >
                             {child.name[locale]}
                           </Link>
@@ -103,6 +104,7 @@ const Header = () => {
                             className={`nav-dropdown-link block transition-all ${
                               asPath.pathname === child.url && "active"
                             }`}
+                            onClick={()=>setShowMenu(false)}
                           >
                             {child.name}
                           </Link>
@@ -120,6 +122,7 @@ const Header = () => {
                       className={`nav-link block ${
                         asPath.pathname === menu.url && "active"
                       }`}
+                      onClick={()=>setShowMenu(false)}
                     >
                       {menu.name[locale]}
                     </Link>
@@ -130,6 +133,7 @@ const Header = () => {
                       className={`nav-link block ${
                         asPath.pathname === menu.url && "active"
                       }`}
+                      onClick={()=>setShowMenu(false)}
                     >
                       {menu.name[locale]}
                     </Link>
@@ -202,7 +206,7 @@ const Header = () => {
               </li>
             </div>
             <div className="hidden items-center pl-8">
-              <Link className="nav-trade-btn" href={config.nav_button.link} target="_blank">
+              <Link className="nav-trade-btn" href={config.nav_button.link} target="_blank" onClick={()=>setShowMenu(false)}>
                 {locale == "en" ? `Trade Now`:`立即交易`}
               </Link>
             </div>
