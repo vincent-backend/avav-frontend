@@ -46,7 +46,7 @@ export default function PhotoList() {
         src="/images/tutorial/bg_top_pic.svg"
         width={1921}
         height={1080}
-        className="-z-10 absolute w-full h-full top-0 left-0"
+        className="-z-10 absolute top-0 left-0"
       ></Image>
       {/* Main content */}
       {loading ? (
