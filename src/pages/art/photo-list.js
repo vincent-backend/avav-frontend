@@ -2,22 +2,42 @@ import Base from "@/layouts/Baseof";
 import useTranslation from "@/hooks/useTranslation";
 import artcategory from "@/content/art_category.json";
 import PhotoListElement from "@/layouts/components/art/PhotoListElement";
+import Loading from "@/layouts/components/Loading";
 
 import clsx from "clsx";
 import Link from "next/link";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 import Zoom from "react-medium-image-zoom";
 
 export default function PhotoList() {
   const { locale } = useTranslation();
+
+  const [loading, setLoading] = useState(false);
+  const router = useRouter();
 
   const searchParams = useSearchParams();
   const id = searchParams.get("category");
   const category = artcategory[id-1];
   const filecount = category ? category.filecount : 0;
   const filelist = Array.from({length: filecount}, (_, i) => i + 1);
+
+  useEffect(()=>{
+    const handleStart = (url) => url !== router.asPath && setLoading(true);
+    const handleComplete = (url) => url === router.asPath && setLoading(false);
+
+    router.events.on("routeChangeStart", handleStart);
+    router.events.on("routeChangeComplete", handleComplete);
+    router.events.on("routeChangeError", handleComplete);
+
+    return () => {
+      router.events.off("routeChangeStart", handleStart);
+      router.events.off("routeChangeComplete", handleComplete);
+      router.events.off("routeChangeError", handleComplete);
+    };
+  });
 
   return (
     <Base>
@@ -29,7 +49,10 @@ export default function PhotoList() {
         className="-z-10 absolute w-full h-full top-0 left-0"
       ></Image>
       {/* Main content */}
-      <section className="container mt-[90px] md:mt-[140px] mb-[50px] md:mb-[112px] md:min-h-[calc(100vh-480px)]">
+      {loading ? (
+        <Loading />
+      ) : (
+        <section className="container mt-[90px] md:mt-[140px] mb-[50px] md:mb-[112px] md:min-h-[calc(100vh-480px)]">
         <div className="flex flex-row justify-start items-center">
           <Link href="/art" className="me-1">
             <Image alt="back" src="/images/nav/home_nav_ic_back.svg" width={40} height={40} priority className="md:w-[50px] md:h-[50px]"/>
@@ -53,6 +76,8 @@ export default function PhotoList() {
           }
         </div>
       </section>
+      )}
+      
     </Base>
   );
 }
