@@ -33,6 +33,7 @@ export default function Foundation({ data }) {
         height={1080}
         className="-z-10 absolute w-full h-full top-0 left-0"
       ></Image>
+      <Image alt="bg-2" src="/images/bg/bg_foundation.png" width={1334} height={788} className="-z-10 absolute w-full md:w-[1334px] aspect-auto top-0 right-0 md:right-[120px]" />
       {/* Main content */}
       <section className="animate container mt-[90px] md:mt-[140px]">
         <h3
@@ -45,7 +46,7 @@ export default function Foundation({ data }) {
           {page.title}
         </h3>
         <div className="mt-[60px] mb-[25px] md:mt-[80px] md:mb-[50px]">
-          <div className="text-white text-primary text-[14px] leading-[20px]">
+          <div className="text-white font-primary text-[14px] leading-[20px]">
             {markdownify(page.description, "", "")}
           </div>
         </div>
