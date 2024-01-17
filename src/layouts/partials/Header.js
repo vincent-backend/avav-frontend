@@ -187,7 +187,7 @@ const Header = () => {
                       className={clsx("nav-dropdown-link block transition-all w-full", locale == "kr" && "active")}
                       onClick={()=>onChangeLocale("kr")}
                     >
-                      한국어
+                      Korean
                     </button>
                   </li>
                   <li className="nav-dropdown-item" key={`vt`}>

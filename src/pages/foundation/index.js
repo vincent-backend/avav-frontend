@@ -45,9 +45,9 @@ export default function Foundation({ data }) {
           {page.title}
         </h3>
         <div className="mt-[60px] mb-[25px] md:mt-[80px] md:mb-[50px]">
-          <p className="text-white text-[16px]">
+          <div className="text-white text-primary text-[14px] leading-[20px]">
             {markdownify(page.description, "", "")}
-          </p>
+          </div>
         </div>
       </section>
       <section className="animate container my-[60px] md:my-[110px]">
