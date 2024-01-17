@@ -99,7 +99,7 @@
           "url": "https://reurl.cc/mrZMgG"
         },
         {
-          "name": "AVAV Relief Foundation",
+          "name": {"en":"AVAV Relief Foundation", "cn":"AVAV 救济基金会", "zh":"AVAV 救濟基金會", "jp":"AVAV救済財団", "kr":"AVAV Relief Foundation", "vt":"Quỹ cứu trợ AVAV"},
           "url": "/foundation"
         }
       ],

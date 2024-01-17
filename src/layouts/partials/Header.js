@@ -95,7 +95,7 @@ const Header = () => {
                               asPath.pathname === child.url && "active"
                             }`}
                           >
-                            {child.name}
+                            {child.name[locale]}
                           </Link>
                           ) : (
                             <Link
