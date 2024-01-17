@@ -240,6 +240,22 @@ export default function Entrance({ text, handleClick, handleIconClick }) {
         />
         <Image alt="trading" src="/images/home/entrance/logo_ic_Trading.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
       </Link>
+
+      {/* CoinW */}
+      <Link
+        href="https://www.coinw.com/frontSpot/h5/trading?symbol=1660"
+        target="_blank"
+        className="site-link relative"
+      >
+        <Image
+          alt="coinw.com"
+          src="/images/home/entrance/coinw-logo.png"
+          width={125}
+          height={118}
+          className="h-[63.4%] w-auto md:h-[118px]"
+        />
+        <Image alt="trading" src="/images/home/entrance/logo_ic_Trading.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
+      </Link>
     </div>
   );
 }
