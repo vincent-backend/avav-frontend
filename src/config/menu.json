@@ -6,31 +6,31 @@
       "hasChildren": true,
       "children": [
         {
-          "name": "AVAV Global Community",
+          "name": {"en":"AVAV Global Community", "cn":"AVAV Global Community", "zh":"AVAV Global Community", "jp":"AVAV Global Community", "kr":"AVAV Global Community", "vt":"AVAV Global Community"},
           "url": "https://t.me/avavglobal"
         },
         {
-          "name": "AVAV Chinese Community",
+          "name": {"en":"AVAV Chinese Community", "cn":"AVAV Chinese Community", "zh":"AVAV Chinese Community", "jp":"AVAV Chinese Community", "kr":"AVAV Chinese Community", "vt":"AVAV Chinese Community"},
           "url": "https://t.me/AVAV_official"
         },
         {
-          "name": "AVAV English Community",
+          "name": {"en":"AVAV English Community", "cn":"AVAV English Community", "zh":"AVAV English Community", "jp":"AVAV English Community", "kr":"AVAV English Community", "vt":"AVAV English Community"},
           "url": "https://t.me/AVAV_English"
         },
         {
-          "name": "AVAV Nigerian Community",
+          "name": {"en":"AVAV Nigerian Community", "cn":"AVAV Nigerian Community", "zh":"AVAV Nigerian Community", "jp":"AVAV Nigerian Community", "kr":"AVAV Nigerian Community", "vt":"AVAV Nigerian Community"},
           "url": "https://t.me/avavnigerian"
         },
         {
-          "name": "AVAV Turkey Community",
+          "name": {"en":"AVAV Turkey Community", "cn":"AVAV Turkey Community", "zh":"AVAV Turkey Community", "jp":"AVAV Turkey Community", "kr":"AVAV Turkey Community", "vt":"AVAV Turkey Community"},
           "url": "https://t.me/avavturkey"
         },
         {
-          "name": "AVAV Japan Community",
+          "name": {"en":"AVAV Japan Community", "cn":"AVAV Japan Community", "zh":"AVAV Japan Community", "jp":"AVAV Japan Community", "kr":"AVAV Japan Community", "vt":"AVAV Japan Community"},
           "url": "https://t.me/avavjapan"
         },
         {
-          "name": "AVAV Korea Community",
+          "name": {"en":"AVAV Korea Community", "cn":"AVAV Korea Community", "zh":"AVAV Korea Community", "jp":"AVAV Korea Community", "kr":"AVAV Korea Community", "vt":"AVAV Korea Community"},
           "url": "https://t.me/avavkorea"
         },
         {
@@ -46,11 +46,11 @@
       "hasChildren": true,
       "children": [
         {
-          "name": "AVAV Global Community",
+          "name": {"en":"AVAV Global Community", "cn":"AVAV Global Community", "zh":"AVAV Global Community", "jp":"AVAV Global Community", "kr":"AVAV Global Community", "vt":"AVAV Global Community"},
           "url": "https://x.com/avav_global"
         },
         {
-          "name": "AVAV Chinese Community",
+          "name": {"en":"AVAV Chinese Community", "cn":"AVAV Chinese Community", "zh":"AVAV Chinese Community", "jp":"AVAV Chinese Community", "kr":"AVAV Chinese Community", "vt":"AVAV Chinese Community"},
           "url": "https://x.com/avavcommunity"
         }
       ]
@@ -65,15 +65,15 @@
       "hasChildren": true,
       "children": [
         {
-          "name": "OKX",
+          "name": {"en":"OKX", "cn":"OKX", "zh":"OKX", "jp":"OKX", "kr":"OKX", "vt":"OKX"},
           "url": "https://www.okx.com/web3"
         },
         {
-          "name": "Token Pocket",
+          "name": {"en":"Token Pocket", "cn":"Token Pocket", "zh":"Token Pocket", "jp":"Token Pocket", "kr":"Token Pocket", "vt":"Token Pocket"},
           "url": "https://www.tokenpocket.pro/"
         },
         {
-          "name": "Metamask",
+          "name": {"en":"Metamask", "cn":"Metamask", "zh":"Metamask", "jp":"Metamask", "kr":"Metamask", "vt":"Metamask"},
           "url": "https://metamask.io/"
         }
       ]
@@ -100,10 +100,10 @@
         },
         {
           "name": {"en":"AVAV Relief Foundation", "cn":"AVAV 救济基金会", "zh":"AVAV 救濟基金會", "jp":"AVAV救済財団", "kr":"AVAV 구호 재단", "vt":"Quỹ cứu trợ AVAV"},
-          "url": "https://verbose-heron-cfc.notion.site/AVAV-AV-a4d349a8c33b4d2d835e6db77de5d2db"
+          "url": "/foundation"
         }
       ],
-      "url": "/foundation"
+      "url": ""
     }
   ],
   "footer": {
