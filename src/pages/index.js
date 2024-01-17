@@ -4,11 +4,13 @@ import FaqItem from "@/layouts/components/FaqItem";
 import faqs from "@/content/faqs.json";
 import Dashboard from "@/layouts/components/home/Dashboard";
 import Entrance from "@/layouts/components/home/Entrance";
+import Loading from "@/layouts/components/Loading";
 
 import { gsap } from "@/lib/gsap";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/router";
 import { getDataFromContent } from "@/lib/contentParser";
 import useTranslation from "@/hooks/useTranslation";
 import useOutsideAlerter from "@/hooks/useOutsideAlterter";
@@ -23,6 +25,9 @@ import { Store } from "react-notifications-component";
 export default function Home({ data }) {
   const { locale } = useTranslation();
   const [factive, setFActive] = useState(null);
+
+  const [loading, setLoading] = useState(false);
+  const router = useRouter();
 
   // static data
   let c_data = data.filter((dt) => dt.lang === locale)[0];
@@ -180,27 +185,45 @@ export default function Home({ data }) {
         )
         .fromTo(
           ".top-graph",
-          { y: 20, opacity: 0 },
+          { y: 0, opacity: 0 },
           { y: 0, opacity: 1, duration: 0.6 },
           ">-0.2"
         );
     });
 
-    return () => ctx.revert();
+    const handleStart = (url) => url !== router.asPath && setLoading(true);
+    const handleComplete = (url) => url === router.asPath && setLoading(false);
+
+    router.events.on("routeChangeStart", handleStart);
+    router.events.on("routeChangeComplete", handleComplete);
+    router.events.on("routeChangeError", handleComplete);
+
+    return () => {
+      router.events.off("routeChangeStart", handleStart);
+      router.events.off("routeChangeComplete", handleComplete);
+      router.events.off("routeChangeError", handleComplete);
+      ctx.revert();
+      window.removeEventListener("keydown", onKeyPress);
+    };
+
   }, [locale, data]);
 
   return (
     <Base>
-      {/*background*/}
-      <div className="absolute w-full h-[1602px] md:h-[1187px] top-0 left-0 overflow-x-hidden -z-10">
-        <div className="absolute w-full min-w-[400px] aspect-[0.592] md:aspect-auto md:w-[1920px] md:h-[1187px] top-0 sm:-left-0 md:left-auto md:right-[-350px] xl:right-[-200px] 2xl:right-0 bg-contain bg-center bg-no-repeat bg-[url('/images/home/bg_top_pic.png')] md:bg-[url('/images/home/md/bg_top_pic.png')] -z-30">
+      <div className="absolute w-[70%] md:w-[869px] h-[1011px] bg-contain bg-no-repeat bg-[url('/images/home/bg_top_left_light.png')] -z-10" />
+
+      {loading ? (
+        <Loading />
+      ) : (
+        <>
+        {/*background*/}
+      <div className="absolute w-full h-[1602px] md:h-[1187px] top-0 left-0 overflow-x-hidden -z-20">
+        <div className="absolute w-full min-w-[400px] aspect-[0.592] md:aspect-auto md:w-[1920px] md:h-[1187px] top-0 sm:-left-0 md:left-auto md:right-[-350px] xl:right-[-200px] 2xl:right-0 bg-contain bg-center bg-no-repeat bg-[url('/images/home/bg_top_pic.png')] md:bg-[url('/images/home/md/bg_top_pic.png')] -z-40">
           {/* top graph */}
-          <div className="top-graph absolute w-full min-w-[400px] aspect-square md:w-[750px] -bottom-[15%] right-0 md:top-[150px] md:right-[150px] bg-contain bg-center bg-no-repeat bg-[url('/images/home/top_graph-2.gif')] md:bg-[url('/images/home/md/top_graph-2.gif')] -z-10" />
+          <div className="top-graph opacity-0 absolute w-full min-w-[400px] aspect-square md:w-[750px] -bottom-[15%] right-0 md:top-[150px] md:right-[150px] bg-contain bg-center bg-no-repeat bg-[url('/images/home/top_graph-2.gif')] md:bg-[url('/images/home/md/top_graph-2.gif')] -z-10" />
         </div>
       </div>
-
-      {/*Top left*/}
-      <div className="absolute w-[70%] md:w-[869px] h-[1011px] bg-contain bg-no-repeat bg-[url('/images/home/bg_top_left_light.png')] -z-10" />
+        {/*Top left*/}
       <div className="absolute w-[70%] md:w-[358px] h-[670px] bg-contain bg-no-repeat bg-[url('/images/home/top_left_line.svg')] -z-10" />
       {/*Right light*/}
       <div className="right-light absolute w-[80%] md:w-[1100px] h-[925px] md:h-[1658px] top-[650px] md:top-[400px] right-0 bg-contain bg-center bg-no-repeat bg-[url('/images/home/bg_right_light.svg')] md:bg-[url('/images/home/md/bg_right_light.svg')] opacity-70 -z-10" />
@@ -212,7 +235,7 @@ export default function Home({ data }) {
         <div className="container">
           <div className="banner flex flex-col justify-start md:max-w-[680px]">
             {/* Banner title */}
-            <div className="banner-title">
+            <div className="banner-title opacity-0">
               <h2 className="whitespace-nowrap">{banner.title}</h2>
               <div className="relative">
                 <h1 className="text-cred">$AVAV</h1>
@@ -220,7 +243,7 @@ export default function Home({ data }) {
               </div>
             </div>
             {/* Banner subtitle */}
-            <div className="banner-content mt-[16px] md:mt-[84px]">
+            <div className="banner-content opacity-0 mt-[16px] md:mt-[84px]">
               <p className="text-[20px] md:text-[28px] leading-6 md:leading-10 text-cred font-secondary">
                 {banner.subtitle}
               </p>
@@ -232,7 +255,7 @@ export default function Home({ data }) {
               target="_blank"
               className="mt-[20px] md:mt-[30px] mr-auto"
             >
-              <div className="group relative banner-btn w-[240px] h-[60px]">
+              <div className="group relative banner-btn opacity-0 w-[240px] h-[60px]">
                 <Image
                   alt="connect"
                   src="/images/home/banner_btn_bg.svg"
@@ -524,6 +547,10 @@ export default function Home({ data }) {
           </div>
         </div>
       )}
+        </>
+      )}
+
+      
     </Base>
   );
 }

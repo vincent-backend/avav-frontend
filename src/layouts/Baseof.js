@@ -20,6 +20,7 @@ const Base = ({
   const main = useRef();
   const router = useRouter();
 
+
   //gsap fade animation
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -75,8 +76,8 @@ const Base = ({
       });
     }, main);
 
-    return () => ctx.revert();
-  }, []);
+    return()=>ctx.revert();
+  }, [router.events]);
 
   return (
     <>
@@ -84,7 +85,7 @@ const Base = ({
         {/* title */}
         <title>
           {plainify(
-            meta_title ? meta_title : title ? title : config.site.title,
+            meta_title ? meta_title : title ? title : config.site.title
           )}
         </title>
 
@@ -134,10 +135,7 @@ const Base = ({
         />
 
         {/* og-image */}
-        <meta
-          property="og:image"
-          content={`${base_url}${meta_image}`}
-        />
+        <meta property="og:image" content={`${base_url}${meta_image}`} />
 
         {/* twitter-image */}
         <meta
@@ -154,7 +152,7 @@ const Base = ({
         <meta name="twitter:image:height" content="144" />
         <meta property="twitter:image:alt" content="A V A V" />
         <meta name="twitter:card" content="summary" />
-        
+
         {/* author from config.json */}
         <meta name="author" content={meta_author} />
         <link rel="prefetch" href="/images/art/photo-logo.svg" />

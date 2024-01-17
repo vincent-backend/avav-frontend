@@ -1,7 +1,8 @@
 import Base from "@/layouts/Baseof";
-
+import Loading from "@/layouts/components/Loading";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 import { getDataFromContent } from "@/lib/contentParser";
 import useTranslation from "@/hooks/useTranslation";
 import { markdownify } from "@/lib/utils/textConverter";
@@ -10,6 +11,9 @@ import Zoom from "react-medium-image-zoom";
 
 export default function Home({ data }) {
   const { locale } = useTranslation();
+
+  const [loading, setLoading] = useState(false);
+  const router = useRouter();
 
   // static data
   let c_data = data.filter((dt) => dt.lang === locale)[0];
@@ -21,6 +25,19 @@ export default function Home({ data }) {
   useEffect(() => {
     //frontmatter
     setFrontmatter(data.filter((dt) => dt.lang === locale)[0]);
+
+    const handleStart = (url) => url !== router.asPath && setLoading(true);
+    const handleComplete = (url) => url === router.asPath && setLoading(false);
+
+    router.events.on("routeChangeStart", handleStart);
+    router.events.on("routeChangeComplete", handleComplete);
+    router.events.on("routeChangeError", handleComplete);
+
+    return () => {
+      router.events.off("routeChangeStart", handleStart);
+      router.events.off("routeChangeComplete", handleComplete);
+      router.events.off("routeChangeError", handleComplete);
+    };
   }, [locale, data]);
 
   return (
@@ -33,119 +50,123 @@ export default function Home({ data }) {
         className="-z-10 absolute w-full h-full top-0 left-0"
       ></Image>
       {/* Main content */}
-      <section className="animate container mt-[90px] md:mt-[140px] mb-[60px] md:mb-[100px]">
-        <h3
-          className={clsx(
-            "text-cred",
-            locale == "en" && "font-secondary",
-            locale != "en" && "font-primary font-bold"
+      {loading ? (
+        <Loading />
+      ) : (
+        <section className="animate container mt-[90px] md:mt-[140px] mb-[60px] md:mb-[100px]">
+          <h3
+            className={clsx(
+              "text-cred",
+              locale == "en" && "font-secondary",
+              locale != "en" && "font-primary font-bold"
+            )}
+          >
+            {tutorial.title}
+          </h3>
+          <div className="w-full h-[1px] bg-[#1B1B1B] my-5 md:my-10" />
+          {markdownify(
+            tutorial.description,
+            "h6",
+            "banner-content text-[15px] text-text leading-6"
           )}
-        >
-          {tutorial.title}
-        </h3>
-        <div className="w-full h-[1px] bg-[#1B1B1B] my-5 md:my-10" />
-        {markdownify(
-          tutorial.description,
-          "h6",
-          "banner-content text-[15px] text-text leading-6"
-        )}
 
-        <div className="animate mt-[30px]">
-          <div className="text-[15px] text-white">
-            {markdownify(tutorial.step1, "", "")}
+          <div className="animate mt-[30px]">
+            <div className="text-[15px] text-white">
+              {markdownify(tutorial.step1, "", "")}
+            </div>
+            <Zoom zoomMargin={0}>
+              <Image
+                alt="Step 1"
+                src="/images/tutorial/1/details_pic_1.png"
+                width={284}
+                height={584}
+                className="mt-[20px] w-full aspect-auto md:w-[284px] md:h-[584px]"
+              />
+            </Zoom>
           </div>
-          <Zoom zoomMargin={0}>
-            <Image
-              alt="Step 1"
-              src="/images/tutorial/1/details_pic_1.png"
-              width={284}
-              height={584}
-              className="mt-[20px] w-full aspect-auto md:w-[284px] md:h-[584px]"
-            />
-          </Zoom>
-        </div>
 
-        <div className="animate mt-[30px]">
-          <p className="text-[15px] text-white">
-            {markdownify(tutorial.step2, "", "")}
-          </p>
-          <Zoom zoomMargin={0}>
-            <Image
-              alt="Step 2"
-              src="/images/tutorial/1/details_pic_2.png"
-              width={284}
-              height={564}
-              className="mt-[20px] w-full aspect-auto md:w-[284px] md:h-[564px]"
-            />
-          </Zoom>
-        </div>
+          <div className="animate mt-[30px]">
+            <p className="text-[15px] text-white">
+              {markdownify(tutorial.step2, "", "")}
+            </p>
+            <Zoom zoomMargin={0}>
+              <Image
+                alt="Step 2"
+                src="/images/tutorial/1/details_pic_2.png"
+                width={284}
+                height={564}
+                className="mt-[20px] w-full aspect-auto md:w-[284px] md:h-[564px]"
+              />
+            </Zoom>
+          </div>
 
-        <div className="animate mt-[30px]">
-          <p className="text-[15px] text-white">
-            {markdownify(tutorial.step3, "", "")}
-          </p>
-          <Zoom zoomMargin={0}>
-            <Image
-              alt="Step 3"
-              src="/images/tutorial/1/details_pic_3.png"
-              width={284}
-              height={310}
-              className="mt-[20px] w-full aspect-auto md:w-[284px] md:h-[310px]"
-            />
-          </Zoom>
-        </div>
+          <div className="animate mt-[30px]">
+            <p className="text-[15px] text-white">
+              {markdownify(tutorial.step3, "", "")}
+            </p>
+            <Zoom zoomMargin={0}>
+              <Image
+                alt="Step 3"
+                src="/images/tutorial/1/details_pic_3.png"
+                width={284}
+                height={310}
+                className="mt-[20px] w-full aspect-auto md:w-[284px] md:h-[310px]"
+              />
+            </Zoom>
+          </div>
 
-        <div className="animate mt-[30px]">
-          <p className="text-[15px] text-white">
-            {markdownify(tutorial.step4, "", "")}
-          </p>
-          <Zoom zoomMargin={0}>
-            <Image
-              alt="Step 4"
-              src="/images/tutorial/1/details_pic_4.png"
-              width={284}
-              height={560}
-              className="mt-[20px] w-full aspect-auto md:w-[284px] md:h-[560px]"
-            />
-          </Zoom>
-        </div>
+          <div className="animate mt-[30px]">
+            <p className="text-[15px] text-white">
+              {markdownify(tutorial.step4, "", "")}
+            </p>
+            <Zoom zoomMargin={0}>
+              <Image
+                alt="Step 4"
+                src="/images/tutorial/1/details_pic_4.png"
+                width={284}
+                height={560}
+                className="mt-[20px] w-full aspect-auto md:w-[284px] md:h-[560px]"
+              />
+            </Zoom>
+          </div>
 
-        <div className="animate mt-[30px]">
-          <p className="text-[15px] text-white">
-            {markdownify(tutorial.step5, "", "")}
-          </p>
-          <Zoom zoomMargin={0}>
-            <Image
-              alt="Step 5"
-              src="/images/tutorial/1/details_pic_5.png"
-              width={284}
-              height={568}
-              className="mt-[20px] w-full aspect-auto md:w-[284px] md:h-[568px]"
-            />
-          </Zoom>
-        </div>
+          <div className="animate mt-[30px]">
+            <p className="text-[15px] text-white">
+              {markdownify(tutorial.step5, "", "")}
+            </p>
+            <Zoom zoomMargin={0}>
+              <Image
+                alt="Step 5"
+                src="/images/tutorial/1/details_pic_5.png"
+                width={284}
+                height={568}
+                className="mt-[20px] w-full aspect-auto md:w-[284px] md:h-[568px]"
+              />
+            </Zoom>
+          </div>
 
-        <div className="animate mt-[30px]">
-          <p className="text-[15px] text-white">
-            {markdownify(tutorial.step6, "", "")}
-          </p>
-          <Zoom zoomMargin={0}>
-            <Image
-              alt="Step 6"
-              src="/images/tutorial/1/details_pic_6.png"
-              width={284}
-              height={176}
-              className="mt-[20px] w-full aspect-auto md:w-[284px] md:h-[176px]"
-            />
-          </Zoom>
-        </div>
+          <div className="animate mt-[30px]">
+            <p className="text-[15px] text-white">
+              {markdownify(tutorial.step6, "", "")}
+            </p>
+            <Zoom zoomMargin={0}>
+              <Image
+                alt="Step 6"
+                src="/images/tutorial/1/details_pic_6.png"
+                width={284}
+                height={176}
+                className="mt-[20px] w-full aspect-auto md:w-[284px] md:h-[176px]"
+              />
+            </Zoom>
+          </div>
 
-        <div className="animate mt-[30px]">
-          <p className="text-[15px] text-white">
-            {markdownify(tutorial.step7, "", "")}
-          </p>
-        </div>
-      </section>
+          <div className="animate mt-[30px]">
+            <p className="text-[15px] text-white">
+              {markdownify(tutorial.step7, "", "")}
+            </p>
+          </div>
+        </section>
+      )}
     </Base>
   );
 }
