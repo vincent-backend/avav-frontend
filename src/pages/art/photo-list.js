@@ -25,7 +25,7 @@ export default function PhotoList() {
   const filelist = Array.from({length: filecount}, (_, i) => i + 1);
 
   useEffect(()=>{
-    const handleStart = (url) => url !== router.asPath && setLoading(true);
+    const handleStart = (url) => {url !== router.asPath && setLoading(true); window.scrollTo({top: 0, behavior: 'smooth'});}
     const handleComplete = (url) => url === router.asPath && setLoading(false);
 
     router.events.on("routeChangeStart", handleStart);

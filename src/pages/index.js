@@ -191,7 +191,7 @@ export default function Home({ data }) {
         );
     });
 
-    const handleStart = (url) => url !== router.asPath && setLoading(true);
+    const handleStart = (url) => {url !== router.asPath && setLoading(true); window.scrollTo({top: 0, behavior: 'smooth'});}
     const handleComplete = (url) => url === router.asPath && setLoading(false);
 
     router.events.on("routeChangeStart", handleStart);
