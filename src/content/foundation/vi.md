@@ -22,4 +22,4 @@ Nữ diễn viên AV bị đối xử và bóc lột bất công. Sau khi quỹ 
 &nbsp;&nbsp;&#9900; Cộng đồng AVAV tổ chức sự kiện gây quỹ cho nữ diễn viên bị nạn<br>
 <b>Thông tin liên hệ</b><br>
 Nếu bạn quan tâm đến việc giải cứu các nữ diễn viên AV có hoàn cảnh khó khăn hoặc muốn góp phần bảo vệ quyền phụ nữ, vui lòng tham gia cộng đồng AVAV <a href='https://t.me/AVAV_official' target='_blank' class='text-cred '>https://t.me/AVAV_official</a> hoặc <a href='https://t.me/AVAV_Global' target='_blank' class='text-cred'>https://t . me/AVAV_Global</a>, Quỹ cứu trợ nữ diễn viên AV có hoàn cảnh khó khăn cũng sẽ thành lập một cộng đồng và Twitter chuyên dụng trong thời gian thích hợp để cập nhật tiến độ."
-  resident_star: "ngôi sao thường trú"
+  resident_star: "Đại sứ từ thiện"

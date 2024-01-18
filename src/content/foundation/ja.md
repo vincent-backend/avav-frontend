@@ -19,4 +19,4 @@ AVAV コミュニティは公的寄付と企業スポンサーを集めて公平
 &nbsp;&nbsp;&#9900; AVAV コミュニティは、被害を受けた女優のために募金イベントを開催します<br>
 <b>連絡先情報</b><br>
 恵まれない AV 女優の救済に興味がある場合、または女性の権利保護に貢献したい場合は、AVAV コミュニティへの参加を歓迎します <a href='https://t.me/AVAV_official' target='_blank' class='text-cred '>https://t.me/AVAV_official</a> または <a href='https://t.me/AVAV_Global' target='_blank' class='text-cred'>https://t 。 me/AVAV_Global</a> 、恵まれない AV 女優救済基金も、進捗状況を更新するために、やがて専用の Twitter とコミュニティを設立する予定です。"
-  resident_star: "Resident star"
+  resident_star: "チャリティーアンバサダー"
