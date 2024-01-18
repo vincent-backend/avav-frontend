@@ -226,10 +226,8 @@ export default function Home({ data }) {
         {/*Top left*/}
       <div className="absolute w-[70%] md:w-[358px] h-[670px] bg-contain bg-no-repeat bg-[url('/images/home/top_left_line.svg')] -z-10" />
       {/*Right light*/}
-      <div className="right-light absolute w-[80%] md:w-[1100px] h-[925px] md:h-[1658px] top-[650px] md:top-[400px] right-0 bg-contain bg-center bg-no-repeat bg-[url('/images/home/bg_right_light.svg')] md:bg-[url('/images/home/md/bg_right_light.svg')] opacity-70 -z-10" />
-      {/*Left line*/}
-      <div className="absolute w-[55%] h-[804px] md:w-[1000px] top-[1400px] md:top-[1689px] left-0 bg-contain bg-center bg-no-repeat bg-[url('/images/home/line.gif')] md:bg-[url('/images/home/md/line.gif')] -z-10" />
-
+      <div className="right-light absolute w-[80%] md:w-[1100px] h-[925px] md:h-[1658px] top-[450px] md:top-[260px] right-0 bg-contain bg-center bg-no-repeat bg-[url('/images/home/bg_right_light.svg')] md:bg-[url('/images/home/md/bg_right_light.svg')] opacity-70 -z-10" />
+      
       {/* Banner */}
       <section className="min-h-[120%] md:min-h-[1000px] pt-[90px] md:pt-[254px]">
         <div className="container">
@@ -284,7 +282,9 @@ export default function Home({ data }) {
       <Dashboard />
 
       {/*Blog 1*/}
-      <section className="animate mt-[0] md:mt-[120px] relative">
+      <section className="animate mt-[60px] md:mt-[120px] relative">
+        {/*Left line*/}
+        <div className="absolute w-[55%] h-[804px] md:w-[1000px] -top-24 md:top-0 left-0 bg-contain bg-center bg-no-repeat bg-[url('/images/home/line.gif')] md:bg-[url('/images/home/md/line.gif')] -z-10" />
         <div className="container">
           {/* BUILD IT YOUR WAY */}
           <div className="flex flex-col justify-start items-end md:flex-row md:gap-[80px] xl:gap-[106px] z-10">
@@ -314,13 +314,13 @@ export default function Home({ data }) {
           </div>
           {/* THE BLOCKCHAIN BUILT TO SCALE */}
           <div className="flex flex-col mx-auto max-w-[890px]">
-            <div className="relative w-full h-[400px] sm:h-[450px] md:h-[155px] ">
+            <div className="relative w-full h-[80vw] md:h-[155px] ">
               <Image
                 alt="pic_1"
                 src="/images/home/pic_1.png"
                 width={390}
                 height={512}
-                className="absolute right-0 bottom-0 md:top-0 -z-10"
+                className="absolute right-0 bottom-0 md:top-0 w-[80%] md:w-[390px] h-auto -z-10"
               />
             </div>
             <div className="bd-blog">

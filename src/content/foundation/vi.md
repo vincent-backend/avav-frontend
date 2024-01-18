@@ -12,7 +12,7 @@ Ngành công nghiệp AV đầy rẫy sự tàn ác và bất công. Nhiều n�
 &quot;Quỹ cứu trợ các nữ diễn viên AV dễ bị tổn thương&quot; do cộng đồng AVAV khởi xướng nhằm mục đích tập hợp sức mạnh của người dùng và người thực hành blockchain để chống phân biệt giới tính và bóc lột bạo lực trong ngành AV, bảo vệ quyền và lợi ích của phụ nữ, đồng thời duy trì công bằng xã hội. <br>
 Cộng đồng AVAV sẽ thu thập sự quyên góp của công chúng và tài trợ của doanh nghiệp để thành lập một quỹ công bằng và minh bạch nhằm giúp đỡ nạn nhân của những nữ diễn viên dễ bị tổn thương, cung cấp trợ giúp pháp lý, tư vấn tâm lý, truyền thông và các hỗ trợ khác, đồng thời tài trợ cho quá trình chuyển đổi nghề nghiệp và nhu cầu cuộc sống của các nữ diễn viên nạn nhân. . <br>
 Địa chỉ quyên góp (chuỗi AVAX-C, địa chỉ nhiều chữ ký):<br>
-<p class='text-center text-cred'>0xA4f68b10EA7cA139215A2549af384147dB2951e7</p><br>
+<p class='text-center break-all text-cred'>0xA4f68b10EA7cA139215A2549af384147dB2951e7</p><br>
 Cứu hộ đồ vật<br>
 Nữ diễn viên AV bị đối xử và bóc lột bất công. Sau khi quỹ giải cứu được thành lập, những nữ diễn viên dễ bị tổn thương và dễ bị tổn thương là nạn nhân sẽ có thể nộp đơn xin giải cứu và danh sách giải cứu sẽ được sàng lọc bởi đại diện Nhật Bản của cộng đồng AVAV, truyền thông địa phương và các chuyên gia pháp lý. <br>
 <b>Điều khoản giải cứu</b><br>
