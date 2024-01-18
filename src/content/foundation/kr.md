@@ -22,4 +22,4 @@ AVAV 커뮤니티는 공공 기부금과 기업 후원을 모아 취약한 여�
 &nbsp;&nbsp;&#9900; AVAV 커뮤니티는 피해를 입은 여배우를 위한 모금 행사를 조직합니다<br>
 <b>연락처 정보</b><br>
 소외된 AV 여배우 구출에 관심이 있거나 여성인권 보호에 기여하고 싶다면 AVAV 커뮤니티 <a href='https://t.me/AVAV_official' target='_blank' class='text-cred 가입을 환영합니다. '>https://t.me/AVAV_official</a> 또는 <a href='https://t.me/AVAV_Global' target='_blank' class='text-cred'>https://t . me/AVAV_Global</a>, 불우한 AV 여배우 구호 기금은 진행 상황을 업데이트하기 위해 적절한 시기에 전용 트위터와 커뮤니티도 설립할 예정입니다."
-  resident_star: "레지던트 스타"
+  resident_star: "자선대사"
