@@ -1,5 +1,5 @@
 ---
-lang: "vt"
+lang: "vi"
 page:
   title: "Quỹ cứu trợ ngôi sao AVAV"
   description: "Nữ diễn viên AV có thể có vẻ quyến rũ, nhưng họ vốn là một nghề rất có liên quan. Nhật Bản hiện sản xuất khoảng 4.000 phim mỗi năm, nhưng xét đến số lượng diễn viên AV đang hoạt động ở Nhật Bản là khoảng 20.000, không bao gồm những ngôi sao có lượng truy cập hàng đầu đã sản xuất số lượng lớn phim, hầu hết các nữ diễn viên có thể không có một bộ phim mỗi năm. . Hơn nữa, do đài P và các nền tảng video trực tuyến khác lấy đi khách hàng DVD, cộng với làn sóng các cô gái trẻ liên tục gia nhập ngành này, cơ hội việc làm của hầu hết các nữ diễn viên AV ngày nay đã giảm mạnh, họ không còn là những nghề được trả lương cao trong 20 năm qua. trước đây và thu nhập trung bình chỉ cao hơn mức trung bình của những người có thu nhập cao hơn một chút.

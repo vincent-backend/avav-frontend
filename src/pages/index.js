@@ -299,10 +299,10 @@ export default function Home({ data }) {
               <p
                 className={clsx(
                   "title",
-                  locale == "cn" && "font-primary font-bold",
+                  locale == "zh-CN" && "font-primary font-bold",
                   locale == "en" && "font-secondary",
                   locale == "zh" && "font-primary font-bold",
-                  locale == "jp" && "font-primary font-bold"
+                  locale == "ja" && "font-primary font-bold"
                 )}
               >
                 {blog_1.title}
@@ -327,10 +327,10 @@ export default function Home({ data }) {
               <p
                 className={clsx(
                   "title",
-                  locale == "cn" && "font-primary font-bold",
+                  locale == "zh-CN" && "font-primary font-bold",
                   locale == "en" && "font-secondary",
                   locale == "zh" && "font-primary font-bold",
-                  locale == "jp" && "font-primary font-bold"
+                  locale == "ja" && "font-primary font-bold"
                 )}
               >
                 {blog_2.title}
@@ -359,10 +359,10 @@ export default function Home({ data }) {
                 <p
                   className={clsx(
                     "title",
-                    locale == "cn" && "font-primary font-bold",
+                    locale == "zh-CN" && "font-primary font-bold",
                     locale == "en" && "font-secondary",
                     locale == "zh" && "font-primary font-bold",
-                    locale == "jp" && "font-primary font-bold"
+                    locale == "ja" && "font-primary font-bold"
                   )}
                 >
                   {blog_3.title}
@@ -393,10 +393,10 @@ export default function Home({ data }) {
                 <p
                   className={clsx(
                     "title",
-                    locale == "cn" && "font-primary font-bold",
+                    locale == "zh-CN" && "font-primary font-bold",
                     locale == "en" && "font-secondary",
                     locale == "zh" && "font-primary font-bold",
-                    locale == "jp" && "font-primary font-bold"
+                    locale == "ja" && "font-primary font-bold"
                   )}
                 >
                   {blog_4.title}
@@ -420,10 +420,10 @@ export default function Home({ data }) {
               <h3
                 className={clsx(
                   "pl-4 md:pl-20 pr-1",
-                  locale == "cn" && "font-primary font-bold",
+                  locale == "zh-CN" && "font-primary font-bold",
                   locale == "en" && "font-secondary",
                   locale == "zh" && "font-primary font-bold",
-                  locale == "jp" && "font-primary font-bold"
+                  locale == "ja" && "font-primary font-bold"
                 )}
               >
                 {banner.btn_con}

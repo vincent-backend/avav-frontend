@@ -1,5 +1,5 @@
 ---
-lang: "jp"
+lang: "ja"
 tutorial:
   title: "碑文コミュニティガイド"
 

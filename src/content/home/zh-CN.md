@@ -1,5 +1,5 @@
 ---
-lang: "cn"
+lang: "zh-CN"
 nav:
   trade_now: "立即交易"
 banner:
