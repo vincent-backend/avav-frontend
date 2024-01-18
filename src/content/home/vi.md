@@ -1,5 +1,5 @@
 ---
-lang: "vt"
+lang: "vi"
 nav:
   trade_now: "Giao dịch ngay"
 banner:

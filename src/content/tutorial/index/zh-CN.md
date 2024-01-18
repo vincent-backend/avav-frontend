@@ -1,5 +1,5 @@
 ---
-lang: "cn"
+lang: "zh-CN"
 tutorial:
   title: "铭文社区指南"
 

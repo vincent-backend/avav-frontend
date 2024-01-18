@@ -1,5 +1,5 @@
 ---
-lang: "kr"
+lang: "ko"
 tutorial:
   title: "비문 커뮤니티 가이드"
 

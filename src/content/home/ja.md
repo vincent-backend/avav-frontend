@@ -1,5 +1,5 @@
 ---
-lang: "jp"
+lang: "ja"
 nav:
   trade_now: "今すぐ取引する"
 banner:

@@ -32,6 +32,7 @@ const Header = () => {
     const header = headerRef.current;
     const headerHeight = header.clientHeight + 60;
     let prevScroll = 0;
+
     window.addEventListener("scroll", () => {
       const scrollY = window.scrollY;
       scrollY > 0 ? setSticky(true) : setSticky(false);
@@ -164,8 +165,8 @@ const Header = () => {
                   </li>
                   <li className="nav-dropdown-item" key={`cn`}>
                     <button
-                      className={clsx("nav-dropdown-link block transition-all w-full", locale == "cn" && "active")}
-                      onClick={()=>onChangeLocale("cn")}
+                      className={clsx("nav-dropdown-link block transition-all w-full", locale == "zh-CN" && "active")}
+                      onClick={()=>onChangeLocale("zh-CN")}
                     >
                       中文
                     </button>
@@ -180,24 +181,24 @@ const Header = () => {
                   </li>
                   <li className="nav-dropdown-item" key={`jp`}>
                     <button
-                      className={clsx("nav-dropdown-link block transition-all w-full", locale == "jp" && "active")}
-                      onClick={()=>onChangeLocale("jp")}
+                      className={clsx("nav-dropdown-link block transition-all w-full", locale == "ja" && "active")}
+                      onClick={()=>onChangeLocale("ja")}
                     >
                       日本語
                     </button>
                   </li>
                   <li className="nav-dropdown-item" key={`kr`}>
                     <button
-                      className={clsx("nav-dropdown-link block transition-all w-full", locale == "kr" && "active")}
-                      onClick={()=>onChangeLocale("kr")}
+                      className={clsx("nav-dropdown-link block transition-all w-full", locale == "ko" && "active")}
+                      onClick={()=>onChangeLocale("ko")}
                     >
                       Korean
                     </button>
                   </li>
                   <li className="nav-dropdown-item" key={`vt`}>
                     <button
-                      className={clsx("nav-dropdown-link block transition-all w-full", locale == "vt" && "active")}
-                      onClick={()=>onChangeLocale("vt")}
+                      className={clsx("nav-dropdown-link block transition-all w-full", locale == "vi" && "active")}
+                      onClick={()=>onChangeLocale("vi")}
                     >
                       Tiếng Việt
                     </button>

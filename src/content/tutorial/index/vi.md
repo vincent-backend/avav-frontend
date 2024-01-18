@@ -1,5 +1,5 @@
 ---
-lang: "vt"
+lang: "vi"
 tutorial:
   title: "Hướng dẫn cộng đồng ghi chú"
 

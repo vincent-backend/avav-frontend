@@ -1,5 +1,5 @@
 ---
-lang: "kr"
+lang: "ko"
 nav:
   trade_now: "Trade Now"
 banner:
