@@ -22,4 +22,4 @@ AVAV社区将收集公众捐款和企业的赞助，设立一个公正透明的�
 &nbsp;&nbsp;&#9900;  AVAV社区为受害女优组织募捐活动<br>
 <b>联系方式</b><br>
 如果你对救助弱势AV女优感兴趣、或者想为保护女性权益贡献自己的力量，欢迎加入AVAV社区 <a href='https://t.me/AVAV_official' target='_blank' class='text-cred'>https://t.me/AVAV_official</a> 或 <a href='https://t.me/AVAV_Global' target='_blank' class='text-cred'>https://t.me/AVAV_Global</a>，弱势AV女优救助基金也会适时设立专门推特和社区，更新进展。"
-  resident_star: "常驻明星"
+  resident_star: "公益大使"
