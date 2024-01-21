@@ -1,26 +1,21 @@
 ---
 lang: "zh-CN"
 page:
-  title: "AVAV明星救济基金会"
-  description: "AV女优看似风光，早已经是一个非常内卷的职业。日本当前年出片量在4000部左右，但是考虑到日本现役AV演员的数量大致在2万人的数量，排除大量出片的头部流量明星，大部分女优，可能一年一部作品都没有。而且由于P站等网络视频平台抢走DVD客源，再加上不断有年轻女孩涌入行业，今天绝大多数AV女优工作机会骤减，早已不是20年前的高薪职业，平均收入仅仅比一般工薪族高一点。
-AV女演员中流传着一条普遍的共识**——给的越多越可怕。**因为高薪酬就代表捆绑、穿刺、责打等过激的拍摄菜单。某女优演员曾经说过，&quot;拿到20万元（¥10000）那天，我还以为自己要死在那儿了。”也曾有女演员因为真空紧缚窒息等特殊操作，失去了生命。<br>
-女优的工资八成都会被经纪公司抽走，而且这些经纪公司一般会诱导、胁迫下女优签订了各种合同，违反就要付高额违约金，很多AV女优只能任由经纪公司或黑社会摆布。
-大部分女优干个几年就会过气，钱挣的少不说，还会被要求拍一些重口味的片子，最后把身体也该坏了，而且基本已经社死。除了少数成功转型的，比如苍井空老师，90%以上的女优在退役后是无法在社会上正常就业，只能去居酒屋之类的地方或者做妓女。<br>
-AV行业充满了残酷和不公。许多AV女优在业界承受着巨大的压力，她们的权益常常被侵犯。<br>
-为了更好地支持和帮助这些受害AV女优，AVAV基金会倡议成立&quot;弱势AV女优救助基金&quot;，维护AV从业者正当权益。我们希望通过这个基金会的运作，为受害者提供必要的法律援助，职业培训，心理咨询，就业支持等。我们也希望通过公众教育和政策倡导，改变社会对她们的偏见和歧视，提高社会对她们困境的理解和同情，同时推动政府出台措施和制定法律来规范AV行业、改善从业者的就业环境。<br>
-<b>设立弱势AV女优救助基金</b><br>
-AVAV社区倡议成立的“弱势AV女优救助基金”，旨在汇聚区块链用户和从业者的力量，对抗AV行业普遍存在的性别歧视和暴力剥削，保护女性权益、伸张社会正义。<br>
-AVAV社区将收集公众捐款和企业的赞助，设立一个公正透明的基金，帮助弱势女优受害者，提供法律援助、心理咨询、媒体等方面的援助，同时资助受害女优的职业转型和生活需求。<br>
-捐赠地址（AVAX-C链，多签地址）：<br>
-<p class='text-center break-all text-cred'>0xA4f68b10EA7cA139215A2549af384147dB2951e7</p><br>
-救助对象<br>
-遭受不公待遇和剥削的AV女优。救助基金成立后，接受受害的弱势女优申请救助，救助名单由AVAV社区日本代表与当地媒体、法律人士共同筛选。<br>
-<b>救助条款</b><br>
-&nbsp;&nbsp;&#9900; 每一位申请通过的女优将获得1000 USDT的资助，来帮助受害的弱势女优度过当前困境。资助的款项将及时向AVAV社区和全社会公开，接受监督<br>
-&nbsp;&nbsp;&#9900;  邀请专业人士为受害的弱势女优提供法律援助，心理咨询，职业规划等方面的智力支援<br>
-&nbsp;&nbsp;&#9900;  AVAV社区将联络日本当地媒体、社会公益团体，为受害女优发声、维护正当权益<br>
-&nbsp;&nbsp;&#9900;  AVAV社区为受害女优组织募捐活动<br>
-<b>联系方式</b><br>
-如果你对救助弱势AV女优感兴趣、或者想为保护女性权益贡献自己的力量，欢迎加入AVAV社区 <a href='https://t.me/AVAV_official' target='_blank' class='text-cred'>https://t.me/AVAV_official</a> 或 <a href='https://t.me/AVAV_Global' target='_blank' class='text-cred'>https://t.me/AVAV_Global</a>，弱势AV女优救助基金也会适时设立专门推特和社区，更新进展。"
+  title: "AVAV Star Relief Foundation"
+  intro: "Intro"
+  intro_des: "Actresses may seem glamorous, but they are already a very involved profession. Japan currently produces about 4,000 films per year, but considering that the number of active in Japan is roughly 20,000, excluding the top traffic stars who have produced a large number of films, most actresses may not have one film a year.Moreover, due to P station and other online video platforms taking away DVD customers, coupled with the continuous influx of young girls into the industry, the job opportunities of most actresses today have plummeted. They are no longer the high-paying professions 20 years ago, and the average income is only higher than the average Salary earners are a bit higher. There is a general consensus among actresses** - the more you give, the scarier it is. **Because high salary means binding, piercing, beating and other extreme shooting menus. An actress once said, &quot;The day I got 200,000 yuan (¥10,000), I thought I was going to die there.&quot; There have also been actresses who lost their lives due to special operations such as vacuum binding and suffocation.<br>Eighty percent of actresses' wages will be taken away by brokerage companies, and these brokerage companies usually induce and coerce actresses into signing various contracts. If they violate them, they will have to pay high liquidated damages. Many actresses can only be at the mercy of brokerage companies or underworld. Most actresses will be out of fashion after a few years of work. Not only will they earn a lot of money, they will also be asked to shoot some heavy-flavored films. In the end, their health will be broken, and they will basically die from society. Except for a few who have successfully transformed, such as Teacher Sora Aoi, more than 90% of actresses cannot find normal employment in society after retiring, and can only go to places like izakaya or work as prostitutes.<br>The industry is full of cruelty and injustice. Many actresses are under tremendous pressure in the industry, and their rights are often violated.<br>In order to better support and help these victimized actresses, the AVAV Foundation initiated the establishment of a &quot;Vulnerable Actress Relief Fund&quot; to safeguard the legitimate rights and interests of practitioners. We hope that through the operation of this foundation, we can provide victims with necessary legal aid, vocational training, psychological counseling, employment support, etc. We also hope that through public education and policy advocacy, we can change society's prejudice and discrimination against them, increase society's understanding and sympathy for their plight, and at the same time push the government to introduce measures and enact laws to regulate the industry and improve the employment environment for practitioners.<br>Establishing a relief fund for disadvantaged actresses The &quot;Vulnerable Actresses Relief Fund&quot; initiated by the AVAV community aims to bring together the power of blockchain users and practitioners to combat widespread gender discrimination and violent exploitation in the industry, protect women's rights and interests, and uphold social justice.<br>The AVAV community will collect public donations and corporate sponsorships to set up a fair and transparent fund to help victims of vulnerable actresses, provide legal aid, psychological counseling, media and other assistance, while also funding the career transition and life needs of the victimized actresses."
+  intro_donation: "Donation address (AVAX-C chain, multi-signature address): "
+  donate_addr: "0xA4f68b10EA7cA139215A2549af384147dB2951e7"
+  rescue_object: "Rescue Objects"
+  rescue_object_des: "Actresses who suffered unfair treatment and exploitation. After the rescue fund is established, vulnerable and vulnerable actresses who have been victimized will be able to apply for rescue, and the rescue list will be jointly screened by Japanese representatives of the AVAV community, local media, and legal professionals."
+  rescue_terms: "Rescue Terms"
+  terms_1: "Each actress whose application is approved will receive a grant of 1,000 USDT to help the victimized and disadvantaged actresses overcome their current difficulties. The funds funded will be disclosed to the AVAV community and the whole society in a timely manner and will be subject to supervision."
+  terms_2: "Invite professionals to provide legal aid, psychological counseling, career planning and other intellectual support to the victimized vulnerable actresses."
+  terms_3: "The AVAV community will contact local Japanese media and social welfare groups to speak out for the victimized actresses and safeguard their legitimate rights and interests."
+  terms_4: "The AVAV community organizes a fundraising event for the victimized actress."
+  contact_info: "Contact Information"
+  contact_info_des: "If you are interested in rescuing disadvantaged actresses or want to contribute to protecting women's rights, welcome to join the AVAV community https://t.me/AVAV_official or https://t.me/AVAV_Global, the Disadvantaged actress Relief Fund will also set up a dedicated Twitter and community in due course to update progress."
+  constitution: "Constitution"
+  consti_des: "Constitution"
   resident_star: "公益大使"
 ---

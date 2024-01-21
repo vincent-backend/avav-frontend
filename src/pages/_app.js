@@ -11,7 +11,7 @@ import { ReactNotifications } from "react-notifications-component";
 const primaryFont = localFont({
   src: [
     {
-      path: "../font/PingFang-Medium.ttf",
+      path: "../font/PingFang-SC-Regular.ttf",
       style: "normal",
     },
   ],

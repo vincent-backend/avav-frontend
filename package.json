@@ -26,7 +26,8 @@
     "react-dom": "^18",
     "react-icons": "^4.12.0",
     "react-medium-image-zoom": "^5.1.9",
-    "react-notifications-component": "^4.0.1"
+    "react-notifications-component": "^4.0.1",
+    "react-waypoint": "^10.3.0"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.7",
