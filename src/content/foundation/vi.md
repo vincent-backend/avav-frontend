@@ -14,7 +14,7 @@ page:
   terms_3: "The AVAV community will contact local Japanese media and social welfare groups to speak out for the victimized actresses and safeguard their legitimate rights and interests."
   terms_4: "The AVAV community organizes a fundraising event for the victimized actress."
   contact_info: "Contact Information"
-  contact_info_des: "If you are interested in rescuing disadvantaged actresses or want to contribute to protecting women's rights, welcome to join the AVAV community https://t.me/AVAV_official or https://t.me/AVAV_Global, the Disadvantaged actress Relief Fund will also set up a dedicated Twitter and community in due course to update progress."
+  contact_info_des: "If you are interested in rescuing disadvantaged actresses or want to contribute to protecting women's rights, welcome to join the AVAV community <a href='https://t.me/AVAV_official' target='_blank' class='text-cred'>https://t.me/AVAV_official</a> or <a href='https://t.me/AVAV_Global' target='_blank' class='text-cred'>https://t.me/AVAV_Global</a>, the Disadvantaged actress Relief Fund will also set up a dedicated Twitter and community in due course to update progress."
   constitution: "Constitution"
   consti_des: "Constitution"
   resident_star: "Đại sứ từ thiện"
