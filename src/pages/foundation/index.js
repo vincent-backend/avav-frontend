@@ -341,7 +341,7 @@ export default function Foundation({ data }) {
               >
                 {page.resident_star}
               </h3>
-              <div className="mt-7 md:mt-15 mx-6 flex flex-wrap justify-center md:justify-start gap-x-[70px] gap-y-[40px]">
+              <div className="mt-7 md:mt-15 mx-6 flex flex-wrap justify-center gap-x-[70px] gap-y-[40px]">
                 {f_stars.map((star) => {
                   return (
                     <div
