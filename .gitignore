@@ -38,5 +38,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-#config.json
-
+#translate
+**/ja.md
+**/ko.md
+**/vi.md
