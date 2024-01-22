@@ -16,7 +16,6 @@ page:
   contact_info: "連絡先"
   contact_info_des: "恵まれない女優の救済に興味がある場合、または女性の権利保護に貢献したい場合は、AVAV コミュニティへの参加を歓迎します。 <a href='https://t.me/AVAV_official' target='_blank' class='text-cred'>https://t.me/AVAV_official</a> or <a href='https://t.me/AVAV_Global' target='_blank' class='text-cred'>https://t.me/AVAV_Global</a>, 恵まれない女優救済基金も、やがて専用の Twitter とコミュニティを立ち上げ、進捗状況を更新する予定です。"
   constitution: "憲法"
-
   title_const: "AVAV 恵まれないスター救済基金"
   introduction: "導入"
   introduction_subtitle: "財団の背景:"

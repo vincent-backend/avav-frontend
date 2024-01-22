@@ -16,8 +16,7 @@ page:
   contact_info: "联系地址"
   contact_info_des: "如果您有兴趣拯救弱势女演员或者想为保护女性权益做出贡献，欢迎加入AVAV社区 <a href='https://t.me/AVAV_official' target='_blank' class='text-cred'>https://t.me/AVAV_official</a> or <a href='https://t.me/AVAV_Global' target='_blank' class='text-cred'>https://t.me/AVAV_Global</a>, 贫困女演员救助基金还计划适时推出专门的推特和社区，以更新进展情况。"
   constitution: "宪法"
-  
-   title_const: "AVAV弱勢明星救援基金"
+  title_const: "AVAV弱勢明星救援基金"
   introduction: "介紹"
   introduction_subtitle: "基金會背景："
   introduction_des: "作為銘文賽道的領導者之一，AVAV受到了各界的廣泛關注，並一度爆出圈子。 AVAV憑藉著自身的慾望屬性來襲，不禁讓人聯想到，AV、明星、69等關鍵字立刻就從你的腦海中跳了出來。誠然，美食和女演員是無法避免的，但AVAV共識在致敬青春和慾望的同時，也有更務實的思考。<br>我們再看看明星行業，那些美麗又美麗的明星的外表，其實，遭遇業內各種不公平待遇。經紀公司無恥壓榨，辛苦賺來的薪水需要經紀公司分；資源分配不公平，頭部明星影片數量眾多，讓二、三線明星落後；短暫的職業生涯，退休後的職業道路，這些問題揭示了明星行業的殘酷和不公正。從某種程度上來說，AVAV銘文的火爆離不開在明星產業工作多年的明星老師。於是，AVAV基金會決定成立AVAV弱勢明星救援基金，幫助面臨困難的明星。<br>很多人說，題字是空氣，是另一種形式的表情包，沒有實際落地應用，而且AVAV家族表示，我們不僅要做銘文賽道的領跑者，更要做回饋社會的先鋒！"
