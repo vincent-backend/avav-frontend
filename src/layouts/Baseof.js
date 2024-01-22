@@ -155,7 +155,7 @@ const Base = ({
 
         {/* author from config.json */}
         <meta name="author" content={meta_author} />
-        <link rel="prefetch" href="/images/art/photo-logo.svg" />
+        <link rel="prefetch" href="/images/art/logo.svg" />
         <link rel="prefetch" href="/images/foundation/loading.gif" />
       </Head>
       <Header />

@@ -39,6 +39,4 @@ yarn-error.log*
 next-env.d.ts
 
 #translate
-**/ja.md
 **/ko.md
-**/vi.md

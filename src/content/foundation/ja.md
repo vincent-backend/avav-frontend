@@ -1,5 +1,5 @@
 ---
-lang: "zh-CN"
+lang: "ja"
 page:
   title: "AVAV Star Relief Foundation"
   intro: "Intro"
@@ -151,5 +151,4 @@ page:
   conclusion: "Conclusion"
   conclusion_des: "<p class='text-white'>This charter and plan are the draft formed by the AVAV Foundation board after extensive discussion, there are many shortcomings or omissions, please give us a lot of advice, we will discuss and ponder on the principle of democracy and efficiency, in order to form and implement useful insights, and especially welcome professionals from all aspects to join the AVAV Disadvantaged Stars Rescue Foundation, contribute your energy! Provide substantial help for disadvantaged stars!<br>Foundation members are free to contribute without any salary!<br>The management of the Foundation reserves the right to interpret these articles of association.</p>"
 
-  resident_star: "公益大使"
----
+  resident_star: "チャリティーアンバサダー"

@@ -21,9 +21,9 @@ export default function PhotoListElement({ name, src }) {
       >
         <Image
           alt="Loading..."
-          src="/images/art/photo-logo.svg"
-          width={100}
-          height={100}
+          src="/images/art/logo.svg"
+          width={60}
+          height={60}
           priority = {true}
         />
       </div>
