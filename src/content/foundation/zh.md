@@ -17,137 +17,137 @@ page:
   contact_info_des: "If you are interested in rescuing disadvantaged actresses or want to contribute to protecting women's rights, welcome to join the AVAV community <a href='https://t.me/AVAV_official' target='_blank' class='text-cred'>https://t.me/AVAV_official</a> or <a href='https://t.me/AVAV_Global' target='_blank' class='text-cred'>https://t.me/AVAV_Global</a>, the Disadvantaged actress Relief Fund will also set up a dedicated Twitter and community in due course to update progress."
   constitution: "Constitution"
   
-  title_const: "AVAV Underprivileged Stars Rescue Fund"
-  introduction: "Introduction"
-  introduction_subtitle: "Foundation background:"
-  introduction_des: "As one of the leaders of the inscription circuit, AVAV has received wide attention from all walks of life and once burst out of the circle. AVAV hit with its own desire attributes can not help but let people think, AV, star, 69 and other keywords immediately jumped out of your mind. It is true that food and actress are unavoidable, but the AVAV consensus also has a more pragmatic thinking while paying tribute to youth and desire.<br>We will look at the star industry, the appearance of beautiful and beautiful stars, in fact, encountered a variety of unfair treatment in the industry. The shameless squeeze of the brokerage company, the hard-earned salary needs to be divided by the brokerage company; The distribution of resources is unfair, and the large number of films of the head stars make the second and third tier stars lag behind; The short career life, the career path after retirement, these issues reveal the cruelty and injustice of the celebrity industry. To some extent, the popularity of AVAV inscriptions cannot be separated from the star teachers who have worked in the star industry for many years. As a result, the AVAV Foundation has decided to establish the AVAV UnderPrivileged Stars Relief Fund to help stars facing difficulties.<br>Many people say that the inscription is air, is another form of meme, there is no actual landing application, and the AVAV family said that we should not only be the leader of the inscription circuit, but also be the pioneer of giving back to the society!"
-  purpose: "Purpose and nature of the Foundation"
-  purpose_des: "<p class='text-5 text-white pt-3'>&#9679; Purpose</p>
-  <p class='text-white'>AVAV Underprivileged Stars Rescue Foundation aims to help stars who are in a disadvantaged position in the industry, provide them with practical assistance and support, safeguard the rights and interests of practitioners, and improve the employment environment of practitioners. The content of assistance includes but is not limited to employment assistance, economic assistance, legal aid, medical assistance and psychological counseling.</p>
-  <p class='text-5 text-white pt-3'>&#9679; Properties</p>
-  <p class='text-white'>AVAV Underprivileged Foundation is a non-profit community organization, and it is up to the community to decide whether to register as an entity.</p>"
-  manage: "Management structure"
+  title_const: "AVAV弱勢明星救援基金"
+  introduction: "介紹"
+  introduction_subtitle: "基金會背景："
+  introduction_des: "作為銘文賽道的領導者之一，AVAV受到了各界的廣泛關注，並一度爆出圈子。 AVAV憑藉著自身的慾望屬性來襲，不禁讓人聯想到，AV、明星、69等關鍵字立刻就從你的腦海中跳了出來。誠然，美食和女演員是無法避免的，但AVAV共識在致敬青春和慾望的同時，也有更務實的思考。<br>我們再看看明星行業，那些美麗又美麗的明星的外表，其實，遭遇業內各種不公平待遇。經紀公司無恥壓榨，辛苦賺來的薪水需要經紀公司分；資源分配不公平，頭部明星影片數量眾多，讓二、三線明星落後；短暫的職業生涯，退休後的職業道路，這些問題揭示了明星行業的殘酷和不公正。從某種程度上來說，AVAV銘文的火爆離不開在明星產業工作多年的明星老師。於是，AVAV基金會決定成立AVAV弱勢明星救援基金，幫助面臨困難的明星。<br>很多人說，題字是空氣，是另一種形式的表情包，沒有實際落地應用，而且AVAV家族表示，我們不僅要做銘文賽道的領跑者，更要做回饋社會的先鋒！"
+  purpose: "基金會的目的和性質"
+  purpose_des: "<p class='text-5 text-white pt-3'>&#9679; 目的</p>
+  <p class='text-white'>AVAV弱勢明星救助基金會旨在幫助在業界處於弱勢地位的明星，為他們提供切實的幫助和支持，維護從業者的權益，改善從業者的就業環境。援助內容包括但不限於就業援助、經濟援助、法律援助、醫療援助、心理諮商等。</p>
+  <p class='text-5 text-white pt-3'>&#9679; 特性</p>
+  <p class='text-white'>AVAV弱勢群體基金會是一個非營利社區組織，由社區決定是否註冊為實體。</p>"
+  manage: "管理架構"
   manage_des: "<table class='border-collapse w-full min-w-[600px]'>
   <thead>
     <tr class='bg-[#1A1C1F] border border-[#1A1C1F] text-white h-[30px] md:h-[44px]'>
-      <th class='w-[30%] text-left pl-4 py-3'>Job</th>
-      <th class='w-[15%] text-left pl-4 py-3'>Holder</th>
-      <th class='w-[40%] text-left pl-4 py-3'>Job content</th>
-      <th class='text-left pl-4 py-3'>Remark</th>
+      <th class='w-[30%] text-left pl-4 py-3'>工作</th>
+      <th class='w-[15%] text-left pl-4 py-3'>持有者</th>
+      <th class='w-[40%] text-left pl-4 py-3'>工作內容</th>
+      <th class='text-left pl-4 py-3'>評論</th>
     </tr>
   </thead>
   <tbody class='text-[14px] leading-5 text-text'>
     <tr class='border border-[#0f0f0f] bg-[#0f0f0f]'>
-      <td class='text-left pl-4 py-3'>President of the Foundation</td>
+      <td class='text-left pl-4 py-3'>基金會主席</td>
       <td class='text-left pl-4 py-3'></td>
-      <td class='text-left pl-4 py-3'>Responsible for setting the policy and direction of the Foundation</td>
+      <td class='text-left pl-4 py-3'>負責制定基金會的政策與方向</td>
       <td class='text-left pl-4 py-3'></td>
     </tr>
     <tr class='border border-[#1A1C1F] bg-[#1A1C1F]'>
-      <td class='text-left pl-4 py-3'>Vice President of the Foundation</td>
+      <td class='text-left pl-4 py-3'>基金會副會長</td>
       <td class='text-left pl-4 py-3'></td>
-      <td class='text-left pl-4 py-3'>The head of operations of the foundation, responsible for managing the foundation The overall strategy and operation of the Foundation</td>
+      <td class='text-left pl-4 py-3'>基金會營運負責人，負責管理基金會 基金會的整體策略和運營</td>
       <td class='text-left pl-4 py-3'></td>
     </tr>
     <tr class='border border-[#0f0f0f] bg-[#0f0f0f]'>
-      <td class='text-left pl-4 py-3'>Foundation executive</td>
+      <td class='text-left pl-4 py-3'>基金會執行官</td>
       <td class='text-left pl-4 py-3'></td>
-      <td class='text-left pl-4 py-3'>Overall management of the implementation of various projects</td>
-      <td class='text-left pl-4 py-3'></td>
-    </tr>
-    <tr class='border border-[#1A1C1F] bg-[#1A1C1F]'>
-      <td class='text-left pl-4 py-3'>Foundation treasurer</td>
-      <td class='text-left pl-4 py-3'></td>
-      <td class='text-left pl-4 py-3'>To manage the financial affairs of the Foundation, including budgeting, financial reporting and auditing</td>
-      <td class='text-left pl-4 py-3'></td>
-    </tr>
-    <tr class='border border-[#0f0f0f] bg-[#0f0f0f]'>
-      <td class='text-left pl-4 py-3'>Head of Foundation Development</td>
-      <td class='text-left pl-4 py-3'></td>
-      <td class='text-left pl-4 py-3'>Responsible for the Foundation's fundraising activities, including donor relationship management, organization and implementation of fundraising activities</td>
+      <td class='text-left pl-4 py-3'>統籌管理各類專案的實施</td>
       <td class='text-left pl-4 py-3'></td>
     </tr>
     <tr class='border border-[#1A1C1F] bg-[#1A1C1F]'>
-      <td class='text-left pl-4 py-3'>Director of communications and public relations for the foundation</td>
+      <td class='text-left pl-4 py-3'>基金會財務主管</td>
       <td class='text-left pl-4 py-3'></td>
-      <td class='text-left pl-4 py-3'>Manage the foundation's social media accounts, and take charge of the foundation's external communication and image maintenance</td>
+      <td class='text-left pl-4 py-3'>管理基金會的財務事務，包括預算、財務報告和審計</td>
       <td class='text-left pl-4 py-3'></td>
     </tr>
-    <tr class='border border-[#0f0f0f] bg-[#0f0f0f]'>
-      <td class='text-left pl-4 py-3'>Project manager</td>
+    <tr class='邊框邊框-[#0f0f0f] bg-[#0f0f0f]'>
+      <td class='text-left pl-4 py-3'>基金會開發主管</td>
       <td class='text-left pl-4 py-3'></td>
-      <td class='text-left pl-4 py-3'>Manage the Foundation's programs, including planning, executing, and monitoring program progress, and connect underprivileged women</td>
+      <td class='text-left pl-4 py-3'>負責基金會的募款活動，包括捐款者關係管理、募款活動的組織和實施</td>
       <td class='text-left pl-4 py-3'></td>
     </tr>
     <tr class='border border-[#1A1C1F] bg-[#1A1C1F]'>
-      <td class='text-left pl-4 py-3'>Volunteer Team Leader</td>
+      <td class='text-left pl-4 py-3'>基金會傳播與公共關係總監</td>
       <td class='text-left pl-4 py-3'></td>
-      <td class='text-left pl-4 py-3'>Recruit volunteers, organize and carry out volunteer activities to assist the project manager to complete the project</td>
+      <td class='text-left pl-4 py-3'>管理基金會社群媒體帳號，負責基金會對外溝通及形象維護</td>
+      <td class='text-left pl-4 py-3'></td>
+    </tr>
+    <tr class='邊框邊框-[#0f0f0f] bg-[#0f0f0f]'>
+      <td class='text-left pl-4 py-3'>專案經理</td>
+      <td class='text-left pl-4 py-3'></td>
+      <td class='text-left pl-4 py-3'>管理基金會的項目，包括規劃、執行和監控項目進展，並聯繫貧困婦女</td>
+      <td class='text-left pl-4 py-3'></td>
+    </tr>
+    <tr class='border border-[#1A1C1F] bg-[#1A1C1F]'>
+      <td class='text-left pl-4 py-3'>志工團隊負責人</td>
+      <td class='text-left pl-4 py-3'></td>
+      <td class='text-left pl-4 py-3'>招募志願者，組織進行志願者活動，協助專案經理完成專案</td>
       <td class='text-left pl-4 py-3'></td>
     </tr>
   </tbody>
   </table>"
-  operation: "Mode of operation"
-  operation_des: "<p class='mt-2 md:mt-4 text-4 md:text-[20px] text-white font-medium'>1. Fund management</p>
-  <p class='text-cred mt-2 md:mt-4'>&#9679; Foundation Wallet Address:</p>
-  <p class='text-text'>Wallets are multi-signature wallets, and project expenditures must be signed by the vice president of the foundation, the CEO of the foundation, and the treasurer. Due to the particularity of the ASC20 agreement, the inscription does not support multiple signatures, AVAV donations can only be divided into multiple wallets, USTD, AVAX and other assets can be stored in multiple wallets.</p>
-  <p class='text-cred mt-2 md:mt-4'>&#9679; Fundraising and distribution</p>
-  <p class='text-text'>The foundation raises funds through public donations and private donations. The foundation distributes funds to various projects and operating costs. At least 70% of the funds raised are used directly to support projects, with the remainder going to the contingency fund.</p>
-  <p class='text-cred mt-2 md:mt-4'>&#9679; Financial transparency</p>
-  <p class='text-text'>The Foundation conducts quarterly financial reports and annual financial audits, and publishes financial reports and audit reports to donors and the public to ensure transparency and open letter of funds.</p>
-  <p class='mt-2 md:mt-4 text-4 md:text-[20px] text-white font-medium'>2. Project execution</p>
-  <p class='text-cred mt-2 md:mt-4'>&#9679; Project planning</p>
-  <p class='text-text'>All projects need to be planned in accordance with the Foundation's purpose. Projects include but are not limited to employment assistance for vulnerable stars, fund assistance, legal aid, medical assistance, psychological counseling, etc.</p>
-  <p class='text-cred mt-2 md:mt-4'>&#9679; Execution process</p>
-  <p class='text-text'>After receiving the request for help, the foundation arranges the project manager and volunteers to communicate with the help seekers to ensure the authenticity of the situation. The management of the foundation will review the application, and if the approval is passed, the foundation will initiate the project and assign the project manager to assist the applicant. If you do not pass, you can apply again after 1 month.</p>
-  <p class='text-cred mt-2 md:mt-4'>&#9679; Help Way</p>
-  <p class='text-text'>Applicants can apply via email, private message to the foundation's official Twitter account, etc. The following information is required for the application:</p>
+  operation: "操作模式"
+  operation_des: "<p class='mt-2 md:mt-4 text-4 md:text-[20px] text-white font-medium'>1.資金管理</p>
+  <p class='text-cred mt-2 md:mt-4'>&#9679;基金會皮夾地址：</p>
+  <p class='text-text'>錢包是多重簽名錢包，專案支出必須由基金會副總裁、基金會執行長、財務長簽署。由於ASC20協議的特殊性，銘文不支援多重簽名，AVAV捐贈只能分到多個錢包，USTD、AVAX等資產可以儲存在多個錢包中。</p>
+  <p class='text-cred mt-2 md:mt-4'>&#9679;籌款及分配</p>
+  <p class='text-text'>基金會透過公共捐款和私人捐款籌集資金。基金會將資金分配給各種項目和營運費用。至少 70% 的籌集資金直接用於支持項目，其餘部分用於應急基金。</p>
+  <p class='text-cred mt-2 md:mt-4'>&#9679;財務透明度</p>
+  <p class='text-text'>基金會進行季度財務報告和年度財務審計，並向捐助者和公眾發布財務報告和審計報告，以確保資金的透明度和公開信。</p>
+  <p class='mt-2 md:mt-4 text-4 md:text-[20px] text-white font-medium'>2.專案執行</p>
+  <p class='text-cred mt-2 md:mt-4'>&#9679;專案規劃</p>
+  <p class='text-text'>所有專案都需要依照基金會的宗旨進行規劃。項目包括但不限於弱勢明星就業援助、資金援助、法律援助、醫療救助、心理諮詢等。</p>
+  <p class='text-cred mt-2 md:mt-4'>&#9679;執行流程</p>
+  <p class='text-text'>基金會收到求助請求後，安排專案經理和志工與求助者溝通，確保情況的真實性。基金會管理層將對申請進行審核，如果批准通過，基金會將啟動專案並指派專案經理協助申請人。如果沒有通過，1個月後可以再申請。</p>
+  <p class='text-cred mt-2 md:mt-4'>&#9679;幫助方式</p>
+  <p class='text-text'>申請者可透過電子郵件、私訊基金會官方推特帳號等方式提出申請，申請時需提供以下資訊：</p>
   <table class='border-collapse w-full max-w-[470px] mt-2 md:mt-4'>
-  <tbody class='text-[14px] leading-5 text-text'>
+  <tbody class='text-[14px]leading-5 text-text'>
     <tr class='border border-[#1A1C1F] bg-[#1A1C1F] bg-opacity-50'>
-      <td class='text-left pl-4 py-3 border border-[#1A1C1F] w-[50%]'>name</td>
+      <td class='text-left pl-4 py-3 border border-[#1A1C1F] w-[50%]'>名稱</td>
       <td class='text-left pl-4 py-3 border border-[#1A1C1F]'>&nbsp;</td>
     </tr>
     <tr class='border border-[#1A1C1F] bg-[#0f0f0f]'>
-      <td class='text-left pl-4 py-3 border border-[#1A1C1F] w-[50%]'>age</td>
+      <td class='text-left pl-4 py-3 border border-[#1A1C1F] w-[50%]'>年齡</td>
       <td class='text-left pl-4 py-3 border border-[#1A1C1F]'>&nbsp;</td>
     </tr>
     <tr class='border border-[#1A1C1F] bg-[#1A1C1F] bg-opacity-50'>
-      <td class='text-left pl-4 py-3 border border-[#1A1C1F] w-[50%]'>Active/retired</td>
+      <td class='text-left pl-4 py-3 border border-[#1A1C1F] w-[50%]'>現役/退役</td>
       <td class='text-left pl-4 py-3 border border-[#1A1C1F]'>&nbsp;</td>
     </tr>
     <tr class='border border-[#1A1C1F] bg-[#0f0f0f]'>
-      <td class='text-left pl-4 py-3 border border-[#1A1C1F] w-[50%]'>Help content</td>
+      <td class='text-left pl-4 py-3 border border-[#1A1C1F] w-[50%]'>幫助內容</td>
       <td class='text-left pl-4 py-3 border border-[#1A1C1F]'>&nbsp;</td>
     </tr>
     <tr class='border border-[#1A1C1F] bg-[#1A1C1F] bg-opacity-50'>
-      <td class='text-left pl-4 py-3 border border-[#1A1C1F] w-[50%]'>Personal contact information</td>
+      <td class='text-left pl-4 py-3 border border-[#1A1C1F] w-[50%]'>個人聯絡資訊</td>
       <td class='text-left pl-4 py-3 border border-[#1A1C1F]'>&nbsp;</td>
     </tr>
     <tr class='border border-[#1A1C1F] bg-[#0f0f0f]'>
-      <td class='text-left pl-4 py-3 border border-[#1A1C1F] w-[50%]'>Work designation</td>
+      <td class='text-left pl-4 py-3 border border-[#1A1C1F] w-[50%]'>工作名稱</td>
       <td class='text-left pl-4 py-3 border border-[#1A1C1F]'>&nbsp;</td>
     </tr>
   </tbody>
-  </table>
-  <p class='mt-2 md:mt-4 text-text'>Email:</p>
-  <p class='mt-2 md:mt-4 text-text'>Official Twitter account:</p>"
-  amendment: "Amendment and dissolution clause"
-  amendment_des: "<p class='mt-2 md:mt-4 text-white'>In the actual operation of the foundation, the members of the foundation can make reasonable suggestions for amendments to the constitution, implementation procedures, etc.</p>
-  <p class='mt-2 md:mt-4 text-4 md:text-[20px] text-white font-medium'>1. Amendment of Articles of Association</p>
-  <p class='text-cred mt-2 md:mt-4'>&#9679; Proposal process</p>
-  <p class='text-text'>Amendments to the articles of Association may be proposed by members of the Foundation. All proposals should be submitted in writing and clearly state the proposed changes and the reasons for them.</p>
-  <p class='text-cred mt-2 md:mt-4'>&#9679; Review procedure</p>
-  <p class='text-text'>The proposed revisions will be discussed at a meeting of the Foundation's management. Proposals must be notified to all Foundation management members at least 30 days in advance.</p>
-  <p class='text-cred mt-2 md:mt-4'>&#9679; Vote and pass</p>
-  <p class='text-text'>Any amendment to the charter requires the consent of at least 50% of the Foundation's management to be adopted. The adopted amendments will be presented to all members at the next formal.</p>
-  <p class='mt-2 md:mt-4 text-4 md:text-[20px] text-white font-medium'>2. Dissolution clause</p>
-  <p class='text-cred mt-2 md:mt-4'>&#9679; Conditions of dissolution</p>
-  <p class='text-text'>Foundations may be considered for dissolution due to financial difficulties, mission accomplishment, merger, etc. The dissolution proposal must be made by the Foundation's management, with a detailed explanation of the reasons for the dissolution.</p>
-  <p class='text-cred mt-2 md:mt-4'>&#9679; Dissolution process</p>
-  <p class='text-text'>The dissolution proposal must be discussed at a Foundation meeting and must be agreed upon by at least 50% of the Foundation's management and donors.</p>
-  <p class='text-cred mt-2 md:mt-4'>&#9679; Fund handling</p>
-  <p class='text-text'>The foundation is dissolved and all remaining funds will be used to purchase AVAV and transferred to the Black hole address.</p>"
-  conclusion: "Conclusion"
-  conclusion_des: "<p class='text-white'>This charter and plan are the draft formed by the AVAV Foundation board after extensive discussion, there are many shortcomings or omissions, please give us a lot of advice, we will discuss and ponder on the principle of democracy and efficiency, in order to form and implement useful insights, and especially welcome professionals from all aspects to join the AVAV Disadvantaged Stars Rescue Foundation, contribute your energy! Provide substantial help for disadvantaged stars!<br>Foundation members are free to contribute without any salary!<br>The management of the Foundation reserves the right to interpret these articles of association.</p>"
+  </表>
+  <p class='mt-2 md:mt-4 text-text'>電子郵件：</p>
+  <p class='mt-2 md:mt-4 text-text'>官方 Twitter 帳號：</p>"
+  amendment: "修改及解散條款"
+  amendment_des: "<p class='mt-2 md:mt-4 text-white'>基金會實際運作中，基金會成員可以對章程、實施程序等修改提出合理建議</p>
+  <p class='mt-2 md:mt-4 text-4 md:text-[20px] text-white font-medium'>1.修改公司章程</p>
+  <p class='text-cred mt-2 md:mt-4'>&#9679;提案流程</p>
+  <p class='text-text'>基金會成員可以提議對章程進行修改。所有提案均應以書面形式提交，並明確說明擬議的變更及其理由。</p>
+  <p class='text-cred mt-2 md:mt-4'>&#9679;審核流程</p>
+  <p class='text-text'>擬議的修訂將在基金會管理層會議上進行討論。提案必須至少提前 30 天通知所有基金會管理成員。</p>
+  <p class='text-cred mt-2 md:mt-4'>&#9679;投票並通過</p>
+  <p class='text-text'>章程的任何修改都需要至少 50% 的基金會管理層同意才能通過。通過的修正案將在下一次正式會議上提交給所有成員。</p>
+  <p class='mt-2 md:mt-4 text-4 md:text-[20px] text-white font-medium'>2.解散條款</p>
+  <p class='text-cred mt-2 md:mt-4'>&#9679;解散條件</p>
+  <p class='text-text'>基金會可能因財務困難、使命完成、合併等原因考慮解散。解散建議必須由基金會管理層提出，並詳細說明解散原因。 </p>
+  <p class='text-cred mt-2 md:mt-4'>&#9679;溶解過程</p>
+  <p class='text-text'>解散提案必須在基金會會議上進行討論，並且必須得到至少 50% 的基金會管理層和捐助者的同意。</p>
+  <p class='text-cred mt-2 md:mt-4'>&#9679;資金處理</p>
+  <p class='text-text'>基金會解散，所有剩餘資金將用於購買 AVAV 並轉入黑洞地址。</p>"
+  conclusion: "結論"
+  conclusion_des: "<p class='text-white'>本章程和計劃是AVAV基金會董事會經過廣泛討論後形成的草案，有很多不足或遺漏的地方，請大家多多指教，我們會在原則上進行討論和思考民主、效率，以形成和落實有用的見解，特別歡迎各方面的專業人士加入AVAV弱勢明星救助基金會，貢獻您的能量！為弱勢明星提供實質幫助！<br>基金會成員無償無償自由捐款！<br>基金會管理層保留對本章程的解釋權。</p>"
   resident_star: "常驻明星"

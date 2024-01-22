@@ -27,7 +27,7 @@ export default function Foundation({ data }) {
   let { page } = frontmatter;
 
   // sub menu
-  const [menuId, setMenuId] = useState(2);
+  const [menuId, setMenuId] = useState(1);
   const refContent1 = useRef();
   const refContent2 = useRef();
 
