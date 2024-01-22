@@ -10,7 +10,6 @@ import Dashboard from "@/layouts/components/home/Dashboard";
 import Entrance from "@/layouts/components/home/Entrance";
 import HistoryTimeline from "@/layouts/components/home/HistoryTimeline";
 import Loading from "@/layouts/components/Loading";
-import LogoAnimation from "@/layouts/components/home/LogoAnimation";
 import ModalVideo from "@/layouts/components/home/ModalVideo";
 import { getDataFromContent } from "@/lib/contentParser";
 import { gsap } from "@/lib/gsap";
@@ -274,9 +273,6 @@ export default function Home({ data }) {
                       </p>
                     </div>
                   </Link>
-                </div>
-                <div className="hidden justify-center lg:absolute lg:bottom-[60px] lg:right-[-16%] xl:right-0 2xl:right-[120px] w-full aspect-square lg:w-[750px] -z-10">
-                  <LogoAnimation />
                 </div>
               </div>
             </div>

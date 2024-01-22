@@ -25,7 +25,8 @@ export default function LogoAnimation () {
      });
 
     return(
-        <div className={`w-full aspect-square md:w-[750px] bg-contain bg-no-repeat bg-center`}>
+        <div className={`w-full aspect-square md:w-[750px]`}>
+            <Image alt="img" className="hidden" src="/images/home/logo/0.png" width={750} height={750} />
         </div>
     );
 }

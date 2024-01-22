@@ -193,11 +193,7 @@ export default function Foundation({ data }) {
                     <Intro page={page} handleAddrCopy={handleAddrCopy} />
                     </>
                   ) : (
-                    <>
-                    <button onClick={()=>setMenuId(1)} className="bg-[#FD2C2F] bg-opacity-10 border border-[#FD2C2F] text-white text-center leading-10 w-full h-10 mb-5">{page.intro}</button>
                     <Constitution page={page} />
-                    </>
-                    
                   )}
                 </div>
               </div>

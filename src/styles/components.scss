@@ -81,6 +81,59 @@
   }
 }
 
+.logo-img-animation {
+  @apply transition-all;
+  animation: ani-logo 6s infinite;
+
+  @keyframes ani-logo {
+    0%, 100% {
+      content: url(/images/home/logo/0.png);
+    }
+    3.3333% {
+      content: url(/images/home/logo/2.png);
+    }
+    6.667% {
+      content: url(/images/home/logo/4.png);
+    }
+    10% {
+      content: url(/images/home/logo/6.png);
+    }
+    13.33% {
+      content: url(/images/home/logo/8.png);
+    }
+    16.67% {
+      content: url(/images/home/logo/10.png);
+    }
+    20% {
+      content: url(/images/home/logo/12.png);
+    }
+    23.3333% {
+      content: url(/images/home/logo/14.png);
+    }
+    26.667% {
+      content: url(/images/home/logo/16.png);
+    }
+    30% {
+      content: url(/images/home/logo/18.png);
+    }
+    33.33% {
+      content: url(/images/home/logo/20.png);
+    }
+    36.67% {
+      content: url(/images/home/logo/22.png);
+    }
+    40% {
+      content: url(/images/home/logo/24.png);
+    }
+    50% {
+      content: url(/images/home/logo/30.png);
+    }
+    75% {
+      content: url(/images/home/logo/40.png);
+    }
+  }
+}
+
 .right-light {
   animation: ani1 3.6s ease-out infinite; 
 
