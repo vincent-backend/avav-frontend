@@ -13,6 +13,7 @@ import Loading from "@/layouts/components/Loading";
 import { Waypoint } from "react-waypoint";
 import CopyToClipboard from "@/hooks/useClipboard";
 import { Store } from "react-notifications-component";
+import { Constitution, Intro } from "@/layouts/components/foundation/foundation-article";
 
 export default function Foundation({ data }) {
   const { locale, setLocale } = useTranslation();
@@ -25,25 +26,18 @@ export default function Foundation({ data }) {
   const [frontmatter, setFrontmatter] = useState(c_data);
   let { page } = frontmatter;
 
-  // waypoint
+  // sub menu
   const [menuId, setMenuId] = useState(1);
-  const refContent = useRef();
-  const refIntro = useRef();
-  const handleEnter = (e_id) => {
-    if (e_id == 1) {
-      setMenuId(1);
-    }
-  };
-
-  const handleLeave = (l_id) => {
-    if (l_id == 1) {
-      setMenuId(2);
-    }
-  };
+  const refContent1 = useRef();
+  const refContent2 = useRef();
 
   const handleLink = (lid) => {
-    if (lid == 2) refContent.current.scrollTo(0, refIntro.current.clientHeight);
-    if (lid == 1) refContent.current.scrollTo(0, 0);
+    setMenuId(lid);
+    if (lid == 2) {
+      //refContent2.current.scrollTo(0, 0);
+    } else {
+      //refContent1.current.scrollTo(0, refC1.current.clientHeight);
+    }
   };
 
   // copy address
@@ -152,11 +146,11 @@ export default function Foundation({ data }) {
                   locale != "en" && "font-primary font-bold"
                 )}
               >
-                {page.title}
+                {menuId == 1 ? page.title : page.title_const}
               </h3>
               {/* Pc intro */}
               <div className="hidden md:block pt-[60px] mb-[25px] md:pt-[80px] md:mb-[50px]">
-                <div className="flex flex-row w-full h-[600px] gap-[34px]">
+                <div className="flex flex-row w-full h-[900px] gap-[34px]">
                   <ul className="w-[200px] h-full border-r-[1px] border-r-[#D8D8D8]">
                     <li
                       className={clsx(
@@ -176,159 +170,36 @@ export default function Foundation({ data }) {
                       )}
                       onClick={() => handleLink(2)}
                     >
-                      {page.rescue_object}
-                    </li>
-                    <li
-                      className={clsx(
-                        "w-full h-[46px] leading-[46px] text-[16px] font-[500] text-right pr-3 cursor-pointer",
-                        menuId == 3 &&
-                          "text-cred font-bold bg-gradient-to-r from-transparent to-[#430B0C] border-r-4 border-r-cred"
-                      )}
-                      onClick={() => handleLink(2)}
-                    >
-                      {page.rescue_terms}
-                    </li>
-                    <li
-                      className={clsx(
-                        "w-full h-[46px] leading-[46px] text-[16px] font-[500] text-right pr-3 cursor-pointer",
-                        menuId == 4 &&
-                          "text-cred font-bold bg-gradient-to-r from-transparent to-[#430B0C] border-r-4 border-r-cred"
-                      )}
-                      onClick={() => handleLink(2)}
-                    >
-                      {page.contact_info}
-                    </li>
-                    <li
-                      className={clsx(
-                        "w-full h-[46px] leading-[46px] text-[16px] font-[500] text-right pr-3 cursor-pointer",
-                        menuId == 5 &&
-                          "text-cred font-bold bg-gradient-to-r from-transparent to-[#430B0C] border-r-4 border-r-cred"
-                      )}
-                      onClick={() => handleLink(2)}
-                    >
                       {page.constitution}
                     </li>
                   </ul>
-                  <div className="w-full h-full text-white overflow-y-auto no-scrollbar scroll-smooth" ref={refContent}>
-                    <Waypoint
-                      onEnter={() => handleEnter(1)}
-                      onLeave={() => handleLeave(1)}
-                    >
-                      <div id="intro" className="pb-5" ref={refIntro}>
-                        <p className="found-subtitle">{page.intro}</p>
-                        {markdownify(page.intro_des, "", "found-description")}
-                        <p className="text-cred font-[500]">
-                          {page.intro_donation}
-                        </p>
-                        <div className="mt-3 flex flex-col md:flex-row items-center">
-                          <div className="relative flex flex-row items-center justify-between h-[60px] md:h-[70px] bg-[#1A1C1F] mt-4 md:mt-0">
-                            <p className="text-white font-primary text-[14px] px-[10px] md:px-[20px] break-all">
-                              {page.donate_addr}
-                            </p>
-                            <button
-                              className="bg-cred min-w-[60px] md:w-[70px] h-full pl-[18px] md:pl-[22px]"
-                              onClick={() => handleAddrCopy()}
-                            >
-                              <Image
-                                alt="copy"
-                                src="/images/footer/copy_nor.svg"
-                                width={22}
-                                height={22}
-                              />
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </Waypoint>
-                    <Waypoint
-                      onEnter={() => handleEnter(2)}
-                      onLeave={() => handleLeave(2)}
-                    >
-                      <div id="rescue_object" className="pb-10">
-                        <p className="found-subtitle">{page.rescue_object}</p>
-                        {markdownify(
-                          page.rescue_object_des,
-                          "",
-                          "found-description"
-                        )}
-                      </div>
-                    </Waypoint>
-                    <Waypoint
-                      onEnter={() => handleEnter(3)}
-                      onLeave={() => handleLeave(3)}
-                    >
-                      <div id="rescue_terms" className="pb-10">
-                        <p className="found-subtitle">{page.rescue_terms}</p>
-                        <ul>
-                          <li className="flex flex-row items-start">
-                            <Image
-                              alt="list-symbol"
-                              src="/images/foundation/ellipse.svg"
-                              width={7}
-                              height={7}
-                              className="mt-[10px] mr-2"
-                            />
-                            {page.terms_1}
-                          </li>
-                          <li className="flex flex-row items-start">
-                            <Image
-                              alt="list-symbol"
-                              src="/images/foundation/ellipse.svg"
-                              width={7}
-                              height={7}
-                              className="mt-[10px] mr-2"
-                            />
-                            {page.terms_2}
-                          </li>
-                          <li className="flex flex-row items-start">
-                            <Image
-                              alt="list-symbol"
-                              src="/images/foundation/ellipse.svg"
-                              width={7}
-                              height={7}
-                              className="mt-[10px] mr-2"
-                            />
-                            {page.terms_3}
-                          </li>
-                          <li className="flex flex-row items-start">
-                            <Image
-                              alt="list-symbol"
-                              src="/images/foundation/ellipse.svg"
-                              width={7}
-                              height={7}
-                              className="mt-[10px] mr-2"
-                            />
-                            {page.terms_4}
-                          </li>
-                        </ul>
-                      </div>
-                    </Waypoint>
-                    <Waypoint
-                      onEnter={() => handleEnter(4)}
-                      onLeave={() => handleLeave(4)}
-                    >
-                      <div id="contact_info" className="pb-10">
-                        <p className="found-subtitle">{page.contact_info}</p>
-                        {markdownify(
-                          page.contact_info_des,
-                          "",
-                          "found-description"
-                        )}
-                      </div>
-                    </Waypoint>
+                  {menuId == 1 ? (
+                    <div className={clsx("w-full h-full text-white overflow-y-auto no-scrollbar scroll-smooth")} ref={refContent1}>
+                    <Intro page={page} handleAddrCopy={handleAddrCopy} />
                   </div>
+                  ) : (
+                    <div className={clsx("w-full h-full text-white overflow-y-auto no-scrollbar scroll-smooth")} ref={refContent2}>
+                    <Constitution page={page}/>
+                  </div>
+                  )}
                 </div>
               </div>
               {/* Mobile */}
-              <div className="md:hidden pt-[60px] mb-[25px] md:pt-[80px] md:mb-[50px]">
-                <div className="flex flex-wrap gap-4 w-full">
-                  <Link href="/foundation/intro" className="bg-[#FD2C2F] bg-opacity-10 border border-[#FD2C2F] text-white text-center leading-10 w-[calc(50%-9px)] h-10">{page.intro}</Link>
-                  <Link href="/foundation/rescue-object" className="bg-[#FD2C2F] bg-opacity-10 border border-[#FD2C2F] text-white text-center leading-10 w-[calc(50%-9px)] h-10">{page.rescue_object}</Link>
-                  <Link href="/foundation/rescue-terms" className="bg-[#FD2C2F] bg-opacity-10 border border-[#FD2C2F] text-white text-center leading-10 w-[calc(50%-9px)] h-10">{page.rescue_terms}</Link>
-                  <Link href="/foundation/contact-info" className="bg-[#FD2C2F] bg-opacity-10 border border-[#FD2C2F] text-white text-center leading-10 w-[calc(50%-9px)] h-10">{page.contact_info}</Link>
-                  <button className="bg-[#FD2C2F] bg-opacity-10 border border-[#FD2C2F] text-white text-center leading-10 w-[calc(50%-9px)] h-10">{page.constitution}</button>
+              <div className="md:hidden pt-10 mb-[25px] md:pt-[80px] md:mb-[50px] w-full">
+                <div className="w-full">
+                  {menuId == 1 ? (
+                    <>
+                    <button onClick={()=>setMenuId(2)} className="bg-[#FD2C2F] bg-opacity-10 border border-[#FD2C2F] text-white text-center leading-10 w-full h-10 mb-5">{page.constitution}</button>
+                    <Intro page={page} handleAddrCopy={handleAddrCopy} />
+                    </>
+                  ) : (
+                    <>
+                    <button onClick={()=>setMenuId(1)} className="bg-[#FD2C2F] bg-opacity-10 border border-[#FD2C2F] text-white text-center leading-10 w-full h-10 mb-5">{page.intro}</button>
+                    <Constitution page={page} />
+                    </>
+                    
+                  )}
                 </div>
-
               </div>
             </section>
             <section className="animate container mt-[50px] md:mt-[70px]">
@@ -341,7 +212,7 @@ export default function Foundation({ data }) {
               >
                 {page.resident_star}
               </h3>
-              <div className="mt-7 md:mt-15 mx-6 flex flex-wrap justify-center md:justify-start gap-x-[70px] gap-y-[40px]">
+              <div className="mt-7 md:mt-15 mx-6 flex flex-wrap justify-center gap-x-[70px] gap-y-[40px]">
                 {f_stars.map((star) => {
                   return (
                     <div

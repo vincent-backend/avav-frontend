@@ -106,7 +106,7 @@
 
 // foundation
 .found-subtitle {
-  @apply text-cred text-[30px];
+  @apply text-cred text-[20px] md:text-[30px] font-bold;
 }
 .found-description {
   @apply text-base text-white;
