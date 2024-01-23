@@ -49,6 +49,7 @@ export default function Tutorial({ data }) {
 
   const handleNavigate = (page) => {
     setCurrentPage(page);
+    window.scrollTo({top: 60, behavior: 'smooth'});
   };
 
   useEffect(() => {
@@ -111,7 +112,7 @@ export default function Tutorial({ data }) {
                 {Math.min((currentPage + 1) * countPerPage, EventItems.length)}{" "}
                 of {EventItems.length} entries
               </div>
-              <div className="flex w-full md:justify-end">
+              <div className="flex w-full justify-center md:justify-end">
                 <Paginations
                   pageCount={pageCount}
                   currentPage={currentPage}
