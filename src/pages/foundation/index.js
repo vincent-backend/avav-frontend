@@ -13,7 +13,10 @@ import Loading from "@/layouts/components/Loading";
 import { Waypoint } from "react-waypoint";
 import CopyToClipboard from "@/hooks/useClipboard";
 import { Store } from "react-notifications-component";
-import { Constitution, Intro } from "@/layouts/components/foundation/foundation-article";
+import {
+  Constitution,
+  Intro,
+} from "@/layouts/components/foundation/foundation-article";
 
 export default function Foundation({ data }) {
   const { locale, setLocale } = useTranslation();
@@ -174,27 +177,35 @@ export default function Foundation({ data }) {
                     </li>
                   </ul>
                   {menuId == 1 ? (
-                    <div className={clsx("w-full h-full text-white overflow-y-auto no-scrollbar scroll-smooth")} ref={refContent1}>
-                    <Intro page={page} handleAddrCopy={handleAddrCopy} />
-                  </div>
+                    <div
+                      className={clsx(
+                        "w-full h-full text-white overflow-y-auto no-scrollbar scroll-smooth"
+                      )}
+                      ref={refContent1}
+                    >
+                      <Intro page={page} handleAddrCopy={handleAddrCopy} />
+                    </div>
                   ) : (
-                    <div className={clsx("w-full h-full text-white overflow-y-auto no-scrollbar scroll-smooth")} ref={refContent2}>
-                    <Constitution page={page}/>
-                  </div>
+                    <div
+                      className={clsx(
+                        "w-full h-full text-white overflow-y-auto no-scrollbar scroll-smooth"
+                      )}
+                      ref={refContent2}
+                    >
+                      <Constitution page={page} />
+                    </div>
                   )}
                 </div>
               </div>
               {/* Mobile */}
               <div className="md:hidden pt-10 mb-[25px] md:pt-[80px] md:mb-[50px] w-full">
                 <div className="w-full">
-                  {menuId == 1 ? (
-                    <>
-                    <button onClick={()=>setMenuId(2)} className="bg-[#FD2C2F] bg-opacity-10 border border-[#FD2C2F] text-white text-center leading-10 w-full h-10 mb-5">{page.constitution}</button>
-                    <Intro page={page} handleAddrCopy={handleAddrCopy} />
-                    </>
-                  ) : (
-                    <Constitution page={page} />
-                  )}
+                  <Link href="/foundation/constitution">
+                    <div className="bg-[#FD2C2F] bg-opacity-10 border border-[#FD2C2F] text-white text-center leading-10 w-full h-10 mb-5">
+                      {page.constitution}
+                    </div>
+                  </Link>
+                  <Intro page={page} handleAddrCopy={handleAddrCopy} />
                 </div>
               </div>
             </section>

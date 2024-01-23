@@ -66,7 +66,7 @@ const Header = () => {
             id="nav-menu"
             className={clsx(!showMenu && "hidden", "navbar-nav order-2 w-full justify-center md:justify-end md:w-auto md:order-1 md:flex")}
           >
-            <div className="w-full h-screen md:bg-none md:flex md:justify-end md:h-auto md:space-x-1 xl:space-x-3">
+            <div className="w-full h-screen md:bg-none md:flex md:justify-end md:h-auto md:space-x-1">
               <li className="nav-item md:hidden">
                 <Link
                   href="/"
@@ -89,9 +89,8 @@ const Header = () => {
                     <ul className="nav-dropdown-list hidden max-h-0 w-[240px] mx-auto overflow-hidden border border-[#979797] border-opacity-20 px-2 py-0 transition-all duration-500 group-hover:block group-hover:max-h-[246px] group-hover:py-1 md:invisible md:absolute md:left-1/2 md:block md:w-auto md:-translate-x-1/2 md:group-hover:visible md:group-hover:opacity-100">
                       {menu.children.map((child, i) => (
                         <li className="nav-dropdown-item" key={`children-${i}`}>
-                          {child.url == "/foundation" ? (
-                            <Link
-                            href={child.url}
+                          <Link
+                            href={child.url} target={child.target}
                             className={`nav-dropdown-link block transition-all ${
                               asPath.pathname === child.url && "active"
                             }`}
@@ -99,27 +98,14 @@ const Header = () => {
                           >
                             {child.name[locale]}
                           </Link>
-                          ) : (
-                            <Link
-                            href={child.url} target="_blank"
-                            className={`nav-dropdown-link block transition-all ${
-                              asPath.pathname === child.url && "active"
-                            }`}
-                            onClick={()=>setShowMenu(false)}
-                          >
-                            {child.name[locale]}
-                          </Link>
-                          )}
                         </li>
                       ))}
                     </ul>
                   </li>
                 ) : (
                   <li className="nav-item">
-                    {menu.url === "/tutorial" || menu.url === "/art" ?
-                    (
-                      <Link
-                      href={menu.url} 
+                    <Link
+                      href={menu.url} target={menu.target}
                       className={`nav-link block ${
                         asPath.pathname === menu.url && "active"
                       }`}
@@ -127,20 +113,6 @@ const Header = () => {
                     >
                       {menu.name[locale]}
                     </Link>
-                    ) : (
-                      <Link
-                      href={menu.url} 
-                      target="_blank"
-                      className={`nav-link block ${
-                        asPath.pathname === menu.url && "active"
-                      }`}
-                      onClick={()=>setShowMenu(false)}
-                    >
-                      {menu.name[locale]}
-                    </Link>
-                    )
-                    }
-                    
                   </li>
                 )}
               </React.Fragment>

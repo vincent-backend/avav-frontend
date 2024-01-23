@@ -1,17 +1,17 @@
 ---
 lang: "ko"
 tutorial:
-  title: "비문 커뮤니티 가이드"
+  title: "Inscription Community Guide"
 
 tutorial1:
-  title: "AVAV 비문은 어떻게 구매하나요? 그리고 준비물은?"
-  content: "먼저 EVM과 호환되는 Web3 지갑이 필요합니다. 프로세스를 간단하고 원활하게 진행하려면 원스톱 쇼핑을 위해 OKX 지갑을 권장합니다. 경험이 많은 분들은 메타마스크나 애벌랜치 체인 공식 코어 등을 선택할 수 있습니다. 새 지갑을 생성한 후에는 반드시 니모닉을 백업하고 보호하세요! 누군가 니모닉을 보거나 도움을 받지 못할 수도 있으니까요."
+  title: "How to buy AVAV inscriptions? And some preparatory work"
+  content: "First, you need an EVM-compatible Web3 wallet. In order to make the process simple and smooth, it is recommended to use OKX wallet, which can be done in one stop. Experienced friends can choose MetaMask or Avalanche chain official Core, etc. Make sure to back up and protect your mnemonics after creating your new wallet!! If someone sees your mnemonic, or you lose your help."
 
 tutorial2:
-  title: "AVAV 인스크립션을 보고 전송하려면 어떻게 해야 하나요?"
-  content: "커뮤니티에서 비문을 보는 방법과 비문을 올리는 방법을 묻는 사람들을 많이 보았습니다. 여기에는 인스크립션이 아바스크립션 웹3 로컬 지갑을 따라다니며 거래소가 아닌 지갑에 이미 있다는 오해가 있습니다. 아바스크립션은 탈중앙화 거래소(DEX)이며 콜드월렛만이 자금을 선지급하지 않고 거래를 승인합니다."
+  title: "How can I view and transfer my AVAV inscriptions?"
+  content: "Before I saw many friends in the community asking how to check their inscriptions and how to put them forward. There is a myth here that the inscription follows your AVAX Web3 local wallet and is already in your wallet, not in the exchange. Avascriptions are decentralized exchanges (DEX), and only when the cold wallet authorizes the transaction, there is no need to advance the funds."
 
 
 tutorial3:
-  title: "AVAV 인스크립션은 어떻게 판매하나요? "
-  content: "다음은 아바브 비문 판매 방법인데요, 이 단계를 통해 여러분 모두 바다를 볼 수 있는 빌라를 가지셨으면 좋겠네요 하하~ 먼저 내 비문 페이지로 이동하여 <목록>을 클릭하세요. 이번에는 보류중인 주문을 생성하기 시작하고 먼저 가격을 결정하고 빨간색 <AVAX 수>를 클릭하여 가격 필드에 기본 가격을 채운 다음 가운데 화살표가 가리키는 첫 번째 상자에서 가격을 천천히 수정합니다."
+  title: "How can I sell my AVAV inscriptions?"
+  content: "Next talk about how to sell your AVAV inscription, I hope that by this step everyone has villa to see the sea Ha ~ First go to my inscription page, click 'List'. At this time to start creating your pending order, first determine the price, click on the red 'how many AVAX' will fill in the floor price to the price bar, then slowly modify the first box in the price, the middle arrow points to."
