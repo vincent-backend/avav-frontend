@@ -40,3 +40,4 @@ next-env.d.ts
 
 #translate
 **/ko.md
+/src/content/*.json

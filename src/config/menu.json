@@ -1,123 +1,288 @@
 {
   "main": [
     {
-      "name": {"en":"Telegram", "zh-CN":"Telegram", "zh":"Telegram", "ja":"Telegram", "ko":"Telegram", "vi":"Telegram"},
+      "name": {
+        "en": "Social Contact",
+        "zh-CN": "Social Contact",
+        "zh": "Social Contact",
+        "ja": "Social Contact",
+        "ko": "Social Contact",
+        "vi": "Social Contact"
+      },
       "url": "",
       "hasChildren": true,
       "children": [
         {
-          "name": {"en":"AVAV Global Community", "zh-CN":"AVAV Global Community", "zh":"AVAV Global Community", "ja":"AVAV Global Community", "ko":"AVAV Global Community", "vi":"AVAV Global Community"},
-          "url": "https://t.me/avavglobal",
-          "target": "_blank"
+          "name": {
+            "en": "Telegram",
+            "zh-CN": "Telegram",
+            "zh": "Telegram",
+            "ja": "Telegram",
+            "ko": "Telegram",
+            "vi": "Telegram"
+          },
+          "url": "",
+          "hasChildren": true,
+          "children": [
+            {
+              "name": {
+                "en": "AVAV Global Community",
+                "zh-CN": "AVAV Global Community",
+                "zh": "AVAV Global Community",
+                "ja": "AVAV Global Community",
+                "ko": "AVAV Global Community",
+                "vi": "AVAV Global Community"
+              },
+              "url": "https://t.me/avavglobal",
+              "target": "_blank"
+            },
+            {
+              "name": {
+                "en": "AVAV Chinese Community",
+                "zh-CN": "AVAV Chinese Community",
+                "zh": "AVAV Chinese Community",
+                "ja": "AVAV Chinese Community",
+                "ko": "AVAV Chinese Community",
+                "vi": "AVAV Chinese Community"
+              },
+              "url": "https://t.me/AVAV_official",
+              "target": "_blank"
+            },
+            {
+              "name": {
+                "en": "AVAV English Community",
+                "zh-CN": "AVAV English Community",
+                "zh": "AVAV English Community",
+                "ja": "AVAV English Community",
+                "ko": "AVAV English Community",
+                "vi": "AVAV English Community"
+              },
+              "url": "https://t.me/AVAV_English",
+              "target": "_blank"
+            },
+            {
+              "name": {
+                "en": "AVAV Nigerian Community",
+                "zh-CN": "AVAV Nigerian Community",
+                "zh": "AVAV Nigerian Community",
+                "ja": "AVAV Nigerian Community",
+                "ko": "AVAV Nigerian Community",
+                "vi": "AVAV Nigerian Community"
+              },
+              "url": "https://t.me/avavnigerian",
+              "target": "_blank"
+            },
+            {
+              "name": {
+                "en": "AVAV Turkey Community",
+                "zh-CN": "AVAV Turkey Community",
+                "zh": "AVAV Turkey Community",
+                "ja": "AVAV Turkey Community",
+                "ko": "AVAV Turkey Community",
+                "vi": "AVAV Turkey Community"
+              },
+              "url": "https://t.me/avavturkey",
+              "target": "_blank"
+            },
+            {
+              "name": {
+                "en": "AVAV Japan Community",
+                "zh-CN": "AVAV Japan Community",
+                "zh": "AVAV Japan Community",
+                "ja": "AVAV Japan Community",
+                "ko": "AVAV Japan Community",
+                "vi": "AVAV Japan Community"
+              },
+              "url": "https://t.me/avavjapan",
+              "target": "_blank"
+            },
+            {
+              "name": {
+                "en": "AVAV Korea Community",
+                "zh-CN": "AVAV Korea Community",
+                "zh": "AVAV Korea Community",
+                "ja": "AVAV Korea Community",
+                "ko": "AVAV Korea Community",
+                "vi": "AVAV Korea Community"
+              },
+              "url": "https://t.me/avavkorea",
+              "target": "_blank"
+            },
+            {
+              "name": "AVAV Vietnam Community",
+              "url": "https://t.me/avav_vietnami",
+              "target": "_blank"
+            }
+          ]
         },
         {
-          "name": {"en":"AVAV Chinese Community", "zh-CN":"AVAV Chinese Community", "zh":"AVAV Chinese Community", "ja":"AVAV Chinese Community", "ko":"AVAV Chinese Community", "vi":"AVAV Chinese Community"},
-          "url": "https://t.me/AVAV_official",
-          "target": "_blank"
+          "name": {
+            "en": "Twitter",
+            "zh-CN": "Twitter",
+            "zh": "Twitter",
+            "ja": "Twitter",
+            "ko": "Twitter",
+            "vi": "Twitter"
+          },
+          "url": "",
+          "hasChildren": true,
+          "children": [
+            {
+              "name": {
+                "en": "AVAV Global Community",
+                "zh-CN": "AVAV Global Community",
+                "zh": "AVAV Global Community",
+                "ja": "AVAV Global Community",
+                "ko": "AVAV Global Community",
+                "vi": "AVAV Global Community"
+              },
+              "url": "https://x.com/avav_global",
+              "target": "_blank"
+            },
+            {
+              "name": {
+                "en": "AVAV Chinese Community",
+                "zh-CN": "AVAV Chinese Community",
+                "zh": "AVAV Chinese Community",
+                "ja": "AVAV Chinese Community",
+                "ko": "AVAV Chinese Community",
+                "vi": "AVAV Chinese Community"
+              },
+              "url": "https://x.com/avavcommunity",
+              "target": "_blank"
+            }
+          ]
         },
         {
-          "name": {"en":"AVAV English Community", "zh-CN":"AVAV English Community", "zh":"AVAV English Community", "ja":"AVAV English Community", "ko":"AVAV English Community", "vi":"AVAV English Community"},
-          "url": "https://t.me/AVAV_English",
-          "target": "_blank"
-        },
-        {
-          "name": {"en":"AVAV Nigerian Community", "zh-CN":"AVAV Nigerian Community", "zh":"AVAV Nigerian Community", "ja":"AVAV Nigerian Community", "ko":"AVAV Nigerian Community", "vi":"AVAV Nigerian Community"},
-          "url": "https://t.me/avavnigerian",
-          "target": "_blank"
-        },
-        {
-          "name": {"en":"AVAV Turkey Community", "zh-CN":"AVAV Turkey Community", "zh":"AVAV Turkey Community", "ja":"AVAV Turkey Community", "ko":"AVAV Turkey Community", "vi":"AVAV Turkey Community"},
-          "url": "https://t.me/avavturkey",
-          "target": "_blank"
-        },
-        {
-          "name": {"en":"AVAV Japan Community", "zh-CN":"AVAV Japan Community", "zh":"AVAV Japan Community", "ja":"AVAV Japan Community", "ko":"AVAV Japan Community", "vi":"AVAV Japan Community"},
-          "url": "https://t.me/avavjapan",
-          "target": "_blank"
-        },
-        {
-          "name": {"en":"AVAV Korea Community", "zh-CN":"AVAV Korea Community", "zh":"AVAV Korea Community", "ja":"AVAV Korea Community", "ko":"AVAV Korea Community", "vi":"AVAV Korea Community"},
-          "url": "https://t.me/avavkorea",
-          "target": "_blank"
-        },
-        {
-          "name": "AVAV Vietnam Community",
-          "url": "https://t.me/avav_vietnami",
+          "name": {
+            "en": "Discord",
+            "zh-CN": "Discord",
+            "zh": "Discord",
+            "ja": "Discord"
+          },
+          "url": "https://discord.gg/Rn7ArXbD",
           "target": "_blank"
         }
-
       ]
     },
     {
-      "name": {"en":"Twitter", "zh-CN":"Twitter", "zh":"Twitter", "ja":"Twitter", "ko":"Twitter", "vi":"Twitter"},
+      "name": {
+        "en": "Support Wallets",
+        "zh-CN": "支持钱包",
+        "zh": "支持錢包",
+        "ja": "サポートウォレット",
+        "ko": "지원 지갑",
+        "vi": "Ví hỗ trợ"
+      },
       "url": "",
       "hasChildren": true,
       "children": [
         {
-          "name": {"en":"AVAV Global Community", "zh-CN":"AVAV Global Community", "zh":"AVAV Global Community", "ja":"AVAV Global Community", "ko":"AVAV Global Community", "vi":"AVAV Global Community"},
-          "url": "https://x.com/avav_global",
-          "target": "_blank"
-        },
-        {
-          "name": {"en":"AVAV Chinese Community", "zh-CN":"AVAV Chinese Community", "zh":"AVAV Chinese Community", "ja":"AVAV Chinese Community", "ko":"AVAV Chinese Community", "vi":"AVAV Chinese Community"},
-          "url": "https://x.com/avavcommunity",
-          "target": "_blank"
-        }
-      ]
-    },
-    {
-      "name": {"en":"Discord", "zh-CN":"Discord", "zh":"Discord", "ja":"Discord"},
-      "url": "https://discord.gg/Rn7ArXbD",
-      "target": "_blank"
-    },
-    {
-      "name": {"en":"Support Wallets", "zh-CN":"支持钱包", "zh":"支持錢包", "ja":"サポートウォレット", "ko":"지원 지갑", "vi":"Ví hỗ trợ"},
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": {"en":"OKX", "zh-CN":"OKX", "zh":"OKX", "ja":"OKX", "ko":"OKX", "vi":"OKX"},
+          "name": {
+            "en": "OKX",
+            "zh-CN": "OKX",
+            "zh": "OKX",
+            "ja": "OKX",
+            "ko": "OKX",
+            "vi": "OKX"
+          },
           "url": "https://www.okx.com/web3",
           "target": "_blank"
         },
         {
-          "name": {"en":"Token Pocket", "zh-CN":"Token Pocket", "zh":"Token Pocket", "ja":"Token Pocket", "ko":"Token Pocket", "vi":"Token Pocket"},
+          "name": {
+            "en": "Token Pocket",
+            "zh-CN": "Token Pocket",
+            "zh": "Token Pocket",
+            "ja": "Token Pocket",
+            "ko": "Token Pocket",
+            "vi": "Token Pocket"
+          },
           "url": "https://www.tokenpocket.pro/",
           "target": "_blank"
         },
         {
-          "name": {"en":"Metamask", "zh-CN":"Metamask", "zh":"Metamask", "ja":"Metamask", "ko":"Metamask", "vi":"Metamask"},
+          "name": {
+            "en": "Metamask",
+            "zh-CN": "Metamask",
+            "zh": "Metamask",
+            "ja": "Metamask",
+            "ko": "Metamask",
+            "vi": "Metamask"
+          },
           "url": "https://metamask.io/",
           "target": "_blank"
         }
       ]
     },
     {
-      "name": {"en":"Buy Tutorial", "zh-CN":"购买教程", "zh":"購買教學課程", "ja":"チュートリアル", "ko":"튜토리얼 구입", "vi":"Hướng dẫn"},
+      "name": {
+        "en": "Buy Tutorial",
+        "zh-CN": "购买教程",
+        "zh": "購買教學課程",
+        "ja": "チュートリアル",
+        "ko": "튜토리얼 구입",
+        "vi": "Hướng dẫn"
+      },
       "url": "/tutorial",
       "target": "_self"
     },
     {
-      "name": {"en":"K Line Chart", "zh-CN":"k 线图", "zh":"k 線圖", "ja":"k 折れ線グラフ", "ko":"K Line Chart", "vi":"Biểu đồ đường K"},
+      "name": {
+        "en": "K Line Chart",
+        "zh-CN": "k 线图",
+        "zh": "k 線圖",
+        "ja": "k 折れ線グラフ",
+        "ko": "K Line Chart",
+        "vi": "Biểu đồ đường K"
+      },
       "url": "https://coinmarketcap.com/currencies/avav/",
       "target": "_blank"
     },
     {
-      "name": {"en":"AVAV Art", "zh-CN":"AVAV 艺术", "zh":"AVAV 艺术", "ja":"AVAVアート", "ko":"AVAV 아트", "vi":"Nghệ Thuật AVAV"},
+      "name": {
+        "en": "AVAV Art",
+        "zh-CN": "AVAV 艺术",
+        "zh": "AVAV 艺术",
+        "ja": "AVAVアート",
+        "ko": "AVAV 아트",
+        "vi": "Nghệ Thuật AVAV"
+      },
       "url": "/art",
       "target": "_self"
     },
     {
-      "name": {"en":"AVAV Foundation", "zh-CN":"AVAV基金会", "zh":"AVAV基金會", "ja":"AVAV財団", "ko":"AVAV 재단", "vi":"Quỹ AVAV"},
+      "name": {
+        "en": "AVAV Foundation",
+        "zh-CN": "AVAV基金会",
+        "zh": "AVAV基金會",
+        "ja": "AVAV財団",
+        "ko": "AVAV 재단",
+        "vi": "Quỹ AVAV"
+      },
       "hasChildren": true,
       "children": [
         {
-          "name": {"en":"AVAV Community Foundation", "zh-CN":"AVAV 社区基金会", "zh":"AVAV 社區基金會", "ja":"AVAV コミュニティ財団", "ko":"AVAV Relief Foundation", "vi":"Quỹ cộng đồng AVAV"},
+          "name": {
+            "en": "AVAV Community Foundation",
+            "zh-CN": "AVAV 社区基金会",
+            "zh": "AVAV 社區基金會",
+            "ja": "AVAV コミュニティ財団",
+            "ko": "AVAV Relief Foundation",
+            "vi": "Quỹ cộng đồng AVAV"
+          },
           "url": "https://reurl.cc/mrZMgG",
           "target": "_blank"
         },
         {
-          "name": {"en":"AVAV Relief Foundation", "zh-CN":"AVAV 救济基金会", "zh":"AVAV 救濟基金會", "ja":"AVAV救済財団", "ko":"AVAV 구호 재단", "vi":"Quỹ cứu trợ AVAV"},
+          "name": {
+            "en": "AVAV Relief Foundation",
+            "zh-CN": "AVAV 救济基金会",
+            "zh": "AVAV 救濟基金會",
+            "ja": "AVAV救済財団",
+            "ko": "AVAV 구호 재단",
+            "vi": "Quỹ cứu trợ AVAV"
+          },
           "url": "/foundation",
           "target": "_self"
         }
@@ -125,7 +290,14 @@
       "url": ""
     },
     {
-      "name": {"en":"Media Column", "zh-CN":"媒体专栏", "zh":"媒體專欄", "ja":"メディアコラム", "ko":"Media Column", "vi":"Cột phương tiện"},
+      "name": {
+        "en": "Media Column",
+        "zh-CN": "媒体专栏",
+        "zh": "媒體專欄",
+        "ja": "メディアコラム",
+        "ko": "Media Column",
+        "vi": "Cột phương tiện"
+      },
       "url": "/media-column",
       "target": "_self"
     }
@@ -165,7 +337,7 @@
         "url": "https://t.me/avav_vietnami"
       }
     ],
-    "twitter":[
+    "twitter": [
       {
         "name": "AVAV Global Community",
         "url": "https://x.com/avav_global"
@@ -177,20 +349,48 @@
     ],
     "more": [
       {
-        "name": {"en":"API Doc", "zh-CN":"API文档", "zh":"API文件", "ja":"APIドキュメント", "ko":"API 문서", "vi":"Tài liệu API"},
+        "name": {
+          "en": "API Doc",
+          "zh-CN": "API文档",
+          "zh": "API文件",
+          "ja": "APIドキュメント",
+          "ko": "API 문서",
+          "vi": "Tài liệu API"
+        },
         "url": "https://docs.avascriptions.com/developer-service/asc-20"
       },
       {
-        "name": {"en":"Buy Tutorial", "zh-CN":"购买教程", "zh":"購買教學課程", "ja":"チュートリアル", "ko":"튜토리얼 구입", "vi":"Hướng dẫn"},
+        "name": {
+          "en": "Buy Tutorial",
+          "zh-CN": "购买教程",
+          "zh": "購買教學課程",
+          "ja": "チュートリアル",
+          "ko": "튜토리얼 구입",
+          "vi": "Hướng dẫn"
+        },
         "url": "/tutorial"
       }
     ]
   },
-  "home" : {
-    "name": {"en":"HOME", "zh-CN":"主页", "zh": "首頁", "ja": "ホームページ", "ko":"홈페이지", "vi":"Trang chủ"},
+  "home": {
+    "name": {
+      "en": "HOME",
+      "zh-CN": "主页",
+      "zh": "首頁",
+      "ja": "ホームページ",
+      "ko": "홈페이지",
+      "vi": "Trang chủ"
+    },
     "url": "https://avav.meme"
   },
   "language": {
-    "name": {"en":"EN", "zh-CN":"中文", "zh": "繁体", "ja": "日本語", "ko":"한국어", "vi":"Tiếng Việt"}
+    "name": {
+      "en": "EN",
+      "zh-CN": "中文",
+      "zh": "繁体",
+      "ja": "日本語",
+      "ko": "한국어",
+      "vi": "Tiếng Việt"
+    }
   }
 }

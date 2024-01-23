@@ -8,6 +8,106 @@ import { CgClose } from "react-icons/cg";
 import clsx from "clsx";
 import useTranslation from "@/hooks/useTranslation";
 
+const MobileMenu = ({ menu, setShowMenu }) => {
+  const [isActive, setActive] = useState(false);
+  const { locale, setLocale } = useTranslation();
+  return (
+    <>
+      {menu.hasChildren ? (
+        <>
+          <div
+            className="flex flex-row items-center justify-center gap-4"
+            onClick={() => setActive(!isActive)}
+          >
+            <p className="nav-link block cursor-pointer">{menu.name[locale]}</p>
+            <div
+              className={clsx(
+                "bg-[url('/images/nav/nav_ic_arrow_unfold.svg')] w-[10px] h-[10px] transition-all duration-200",
+                isActive && "rotate-180"
+              )}
+            />
+          </div>
+          <div
+            className={clsx(
+              "flex flex-col overflow-y-hidden transition-all duration-100 ease-out h-0",
+              isActive && "h-auto"
+            )}
+          >
+            {menu.children.map((child, index) => (
+              <Link
+                key={index}
+                href={child.url}
+                target={child.target}
+                onClick={() => setShowMenu(false)}
+              >
+                <p className="text-text text-[16px] leading-10  text-center">
+                  {child.name[locale]}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </>
+      ) : (
+        <Link
+          href={menu.url}
+          target={menu.target}
+          onClick={() => setShowMenu(false)}
+        >
+          <p className="nav-link block text-center">{menu.name[locale]}</p>
+        </Link>
+      )}
+    </>
+  );
+};
+
+const MobileLangMenu = ({ language, onChangeLocale }) => {
+  const [isActive, setActive] = useState(false);
+  const { locale, setLocale } = useTranslation();
+  return (
+    <>
+      <div
+        className="flex flex-row items-center justify-center gap-4"
+        onClick={() => setActive(!isActive)}
+      >
+        <p className="nav-link block cursor-pointer">{language.name[locale]}</p>
+        <div
+          className={clsx(
+            "bg-[url('/images/nav/nav_ic_arrow_unfold.svg')] w-[10px] h-[10px] transition-all duration-200",
+            isActive && "rotate-180"
+          )}
+        />
+      </div>
+      <div
+        className={clsx(
+          "flex flex-col overflow-y-hidden transition-all duration-100 ease-out h-0",
+          isActive && "h-auto"
+        )}
+      >
+        <ul className="text-center cursor-pointer leading-8">
+          <li onClick={() => onChangeLocale("en")}>
+            EN
+          </li>
+          <li  onClick={() => onChangeLocale("zh-CN")}>
+            中文
+          </li>
+          <li onClick={() => onChangeLocale("zh")}>
+            繁体
+          </li>
+          <li onClick={() => onChangeLocale("ja")}>
+            日本語
+          </li>
+          <li onClick={() => onChangeLocale("ko")}>
+            Korean
+          </li>
+          <li onClick={() => onChangeLocale("vi")}>
+            Tiếng Việt
+          </li>
+        </ul>
+      </div>
+    </>
+  );
+};
+
 const Header = () => {
   const { locale, setLocale } = useTranslation();
 
@@ -25,13 +125,20 @@ const Header = () => {
   const onChangeLocale = (l) => {
     setLocale(l);
     setShowMenu(false);
-  }
+  };
 
   //sticky header
   useEffect(() => {
     const header = headerRef.current;
     const headerHeight = header.clientHeight + 60;
     let prevScroll = 0;
+
+    if (showMenu) {
+      document.body.style.overflow = "hidden";
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      document.body.style.overflow = "auto";
+    }
 
     window.addEventListener("scroll", () => {
       const scrollY = window.scrollY;
@@ -43,8 +150,7 @@ const Header = () => {
         setDirection(null);
       }
     });
-
-  }, [locale]);
+  }, [locale, showMenu]);
 
   // logo source
   const { logo } = config.site;
@@ -52,64 +158,77 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header ${sticky && "header-sticky"} ${!showMenu && direction === 1 && "unpinned"
-          }`}
+        className={`header ${sticky && "header-sticky"} ${
+          !showMenu && direction === 1 && "unpinned"
+        }`}
         ref={headerRef}
       >
-        <nav className={clsx("navbar nav-container", showMenu && "bg-[url('/images/home/bg-menu.png')] bg-cover md:bg-none overscroll-y-none")}>
+        <nav className={clsx("navbar nav-container")}>
           {/* logo */}
-          <div className="order-0"  onClick={()=>setShowMenu(false)}>
-            <Logo src={logo} lang={locale}/>
+          <div className="order-0" onClick={() => setShowMenu(false)}>
+            <Logo src={logo} lang={locale} />
           </div>
 
-          <ul
-            id="nav-menu"
-            className={clsx(!showMenu && "hidden", "navbar-nav order-2 w-full justify-center md:justify-end md:w-auto md:order-1 md:flex")}
-          >
-            <div className="w-full h-screen md:bg-none md:flex md:justify-end md:h-auto md:space-x-1">
-              <li className="nav-item md:hidden">
-                <Link
-                  href="/"
-                  className={clsx("nav-link block", asPath.pathname == "/" && "active")}
-                  onClick={()=>setShowMenu(false)}
-                >
-                  {home.name[locale]}
-                </Link>
-              </li>
-              {main.map((menu, i) => (
-              <React.Fragment key={`menu-${i}`}>
+          {/* Main menu */}
+          <ul className="menu-items">
+            {main.map((menu, index) => (
+              <React.Fragment key={`menu-${index}`}>
                 {menu.hasChildren ? (
-                  <li className="nav-item nav-dropdown group relative">
-                    <span className="nav-link inline-flex items-center">
+                  <li className="dropdown">
+                    <p className="menu-item first-item expand-btn cursor-pointer">
                       {menu.name[locale]}
-                      <svg className="h-4 w-4 fill-current ml-1" viewBox="0 0 20 20">
-                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                      </svg>
-                    </span>
-                    <ul className="nav-dropdown-list hidden max-h-0 w-[240px] mx-auto overflow-hidden border border-[#979797] border-opacity-20 px-2 py-0 transition-all duration-500 group-hover:block group-hover:max-h-[246px] group-hover:py-1 md:invisible md:absolute md:left-1/2 md:block md:w-auto md:-translate-x-1/2 md:group-hover:visible md:group-hover:opacity-100">
-                      {menu.children.map((child, i) => (
-                        <li className="nav-dropdown-item" key={`children-${i}`}>
-                          <Link
-                            href={child.url} target={child.target}
-                            className={`nav-dropdown-link block transition-all ${
-                              asPath.pathname === child.url && "active"
-                            }`}
-                            onClick={()=>setShowMenu(false)}
-                          >
-                            {child.name[locale]}
-                          </Link>
-                        </li>
+                    </p>
+                    <ul className="dropdown-menu">
+                      {menu.children.map((child, c_index) => (
+                        <React.Fragment key={`submenu-${index}-${c_index}`}>
+                          {child.hasChildren ? (
+                            <li className="dropdown dropdown-right">
+                              <p className="menu-item expand-btn">
+                                {child.name[locale]}
+                              </p>
+                              <ul className="menu-right">
+                                {child.children.map((grandson, g_index) => (
+                                  <React.Fragment key={`lastmenu-${g_index}`}>
+                                    <li>
+                                      <Link
+                                        href={grandson.url}
+                                        target={grandson.target}
+                                        className="menu-item"
+                                      >
+                                        {grandson.name[locale]}
+                                      </Link>
+                                    </li>
+                                  </React.Fragment>
+                                ))}
+                              </ul>
+                            </li>
+                          ) : (
+                            <li>
+                              <Link
+                                href={child.url}
+                                target={child.target}
+                                className={clsx(
+                                  "menu-item",
+                                  asPath.pathname == child.url && "active"
+                                )}
+                              >
+                                {child.name[locale]}
+                              </Link>
+                            </li>
+                          )}
+                        </React.Fragment>
                       ))}
                     </ul>
                   </li>
                 ) : (
-                  <li className="nav-item">
+                  <li>
                     <Link
-                      href={menu.url} target={menu.target}
-                      className={`nav-link block ${
-                        asPath.pathname === menu.url && "active"
-                      }`}
-                      onClick={()=>setShowMenu(false)}
+                      href={menu.url}
+                      target={menu.target}
+                      className={clsx(
+                        "menu-item",
+                        asPath.pathname == menu.url && "active"
+                      )}
                     >
                       {menu.name[locale]}
                     </Link>
@@ -118,73 +237,51 @@ const Header = () => {
               </React.Fragment>
             ))}
 
-              {/* Language support */}
-              <li className="nav-item nav-dropdown group relative md:mt-0">
-                <span className="nav-link inline-flex items-center">
-                  {language.name[locale]}
-                  <svg className="h-4 w-4 fill-current ml-1" viewBox="0 0 20 20">
-                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                  </svg>
-                </span>
-                <ul className="nav-dropdown-list hidden max-h-0 w-[150px] mx-auto overflow-hidden border border-[#979797] border-opacity-20 py-0 transition-all duration-500 group-hover:block group-hover:max-h-[196px] group-hover:py-1 md:invisible md:absolute md:left-1/2 md:block md:w-auto md:-translate-x-1/2 md:group-hover:visible md:group-hover:opacity-100">
-                  <li className="nav-dropdown-item" key={`en`}>
-                    <button
-                      className={clsx("nav-dropdown-link block transition-all w-full", locale == "en" && "active")}
-                      onClick={()=>onChangeLocale("en")}
-                    >
-                      EN
-                    </button>
+            {/* Language */}
+            <li className="dropdown">
+              <div className="menu-item first-item expand-btn cursor-pointer">
+                {language.name[locale]}
+                <ul className="dropdown-menu">
+                  <li
+                    className="menu-item"
+                    onClick={() => onChangeLocale("en")}
+                  >
+                    EN
                   </li>
-                  <li className="nav-dropdown-item" key={`cn`}>
-                    <button
-                      className={clsx("nav-dropdown-link block transition-all w-full", locale == "zh-CN" && "active")}
-                      onClick={()=>onChangeLocale("zh-CN")}
-                    >
-                      中文
-                    </button>
+                  <li
+                    className="menu-item"
+                    onClick={() => onChangeLocale("zh-CN")}
+                  >
+                    中文
                   </li>
-                  <li className="nav-dropdown-item" key={`zh`}>
-                    <button
-                      className={clsx("nav-dropdown-link block transition-all w-full", locale == "zh" && "active")}
-                      onClick={()=>onChangeLocale("zh")}
-                    >
-                      繁体
-                    </button>
+                  <li
+                    className="menu-item"
+                    onClick={() => onChangeLocale("zh")}
+                  >
+                    繁体
                   </li>
-                  <li className="nav-dropdown-item" key={`jp`}>
-                    <button
-                      className={clsx("nav-dropdown-link block transition-all w-full", locale == "ja" && "active")}
-                      onClick={()=>onChangeLocale("ja")}
-                    >
-                      日本語
-                    </button>
+                  <li
+                    className="menu-item"
+                    onClick={() => onChangeLocale("ja")}
+                  >
+                    日本語
                   </li>
-                  <li className="nav-dropdown-item" key={`kr`}>
-                    <button
-                      className={clsx("nav-dropdown-link block transition-all w-full", locale == "ko" && "active")}
-                      onClick={()=>onChangeLocale("ko")}
-                    >
-                      Korean
-                    </button>
+                  <li
+                    className="menu-item"
+                    onClick={() => onChangeLocale("ko")}
+                  >
+                    Korean
                   </li>
-                  <li className="nav-dropdown-item" key={`vt`}>
-                    <button
-                      className={clsx("nav-dropdown-link block transition-all w-full", locale == "vi" && "active")}
-                      onClick={()=>onChangeLocale("vi")}
-                    >
-                      Tiếng Việt
-                    </button>
+                  <li
+                    className="menu-item"
+                    onClick={() => onChangeLocale("vi")}
+                  >
+                    Tiếng Việt
                   </li>
                 </ul>
-              </li>
-            </div>
-            <div className="hidden items-center pl-8">
-              <Link className="nav-trade-btn" href={config.nav_button.link} target="_blank" onClick={()=>setShowMenu(false)}>
-                {locale == "en" ? `Trade Now`:`立即交易`}
-              </Link>
-            </div>
+              </div>
+            </li>
           </ul>
-
           <div className="order-1 flex items-center md:ml-0">
             {/* navbar toggler */}
             {showMenu ? (
@@ -199,14 +296,46 @@ const Header = () => {
                 className="text-dark md:hidden -mr-3"
                 onClick={() => setShowMenu(!showMenu)}
               >
-                <svg width="60px" height="60px" viewBox="0 0 88 88" version="1.1">
+                <svg
+                  width="60px"
+                  height="60px"
+                  viewBox="0 0 88 88"
+                  version="1.1"
+                >
                   <title>home_menu@2x</title>
-                  <g id="页面-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
-                    <g id="$avav_h5" transform="translate(-657.000000, -94.000000)">
-                      <g id="Navigation-Bar" transform="translate(0.000000, 88.000000)">
-                        <g id="home_menu" transform="translate(657.000000, 6.000000)">
-                          <rect id="矩形" fill="#EAEAEA" opacity="0" x="0" y="0" width="88" height="88"></rect>
-                          <path d="M63,55 L63,59 L25,59 L25,55 L63,55 Z M63,42 L63,46 L25,46 L25,42 L63,42 Z M63,29 L63,33 L25,33 L25,29 L63,29 Z" id="ic" fill="#FFFFFF"></path>
+                  <g
+                    id="页面-1"
+                    stroke="none"
+                    strokeWidth="1"
+                    fill="none"
+                    fillRule="evenodd"
+                  >
+                    <g
+                      id="$avav_h5"
+                      transform="translate(-657.000000, -94.000000)"
+                    >
+                      <g
+                        id="Navigation-Bar"
+                        transform="translate(0.000000, 88.000000)"
+                      >
+                        <g
+                          id="home_menu"
+                          transform="translate(657.000000, 6.000000)"
+                        >
+                          <rect
+                            id="矩形"
+                            fill="#EAEAEA"
+                            opacity="0"
+                            x="0"
+                            y="0"
+                            width="88"
+                            height="88"
+                          ></rect>
+                          <path
+                            d="M63,55 L63,59 L25,59 L25,55 L63,55 Z M63,42 L63,46 L25,46 L25,42 L63,42 Z M63,29 L63,33 L25,33 L25,29 L63,29 Z"
+                            id="ic"
+                            fill="#FFFFFF"
+                          ></path>
                         </g>
                       </g>
                     </g>
@@ -218,6 +347,38 @@ const Header = () => {
           </div>
         </nav>
       </header>
+      <div
+        className={clsx(
+          "md:hidden absolute w-[100vw] h-[100vh] bg-[url('/images/home/bg-menu.png')] top-0 bg-cover transition-all duration-100 ease-linear z-10",
+          showMenu && "left-0",
+          !showMenu && "-left-[100vw]"
+        )}
+      >
+        <div
+          className="flex container h-full justify-center mt-16  overflow-y-scroll"
+          id="mobile-menu"
+        >
+          <div className="flex flex-col">
+            <Link
+              href="/"
+              className={clsx(
+                "nav-link text-center block",
+                asPath.pathname == "/" && "active"
+              )}
+              onClick={() => setShowMenu(false)}
+            >
+              {home.name[locale]}
+            </Link>
+            {main.map((menu, index) => (
+              <MobileMenu key={index} menu={menu} setShowMenu={setShowMenu} />
+            ))}
+            <MobileLangMenu
+              language={language}
+              onChangeLocale={onChangeLocale}
+            />
+          </div>
+        </div>
+      </div>
     </>
   );
 };
