@@ -15,7 +15,7 @@ page:
   terms_4: "AVAV 社區為受害女演員舉辦了一場籌款活動。"
   contact_info: "聯絡資訊"
   contact_info_des: "如果您有興趣拯救弱勢女演員或想為保護女性權益做出貢獻，歡迎加入AVAV社區 <a href='https://t.me/AVAV_official' target='_blank' class='text-cred'>https://t.me/AVAV_official</a> or <a href='https://t.me/AVAV_Global' target='_blank' class='text-cred'>https://t.me/AVAV_Global</a>, 弱勢女星救助基金也將適時設立專門的推特和社區，更新進度。"
-  constitution: "憲法"
+  constitution: "章程"
   title_const: "AVAV弱势明星救助基金"
   introduction: "介绍"
   introduction_subtitle: "基金会背景："
