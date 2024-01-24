@@ -99,7 +99,7 @@
 }
 
 .navbar .menu-items {
-  @apply hidden lg:flex items-center;
+  @apply hidden lg:flex items-center order-2;
 }
 
 .navbar ul li {
@@ -193,6 +193,13 @@
   }
 }
 
+
+.mobile-lang-menu {
+  @apply text-text;
+  &.active {
+    @apply text-cred;
+  }
+}
 
 // mobile menu
 

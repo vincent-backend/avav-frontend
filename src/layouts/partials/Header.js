@@ -7,19 +7,29 @@ import React, { useEffect, useRef, useState } from "react";
 import { CgClose } from "react-icons/cg";
 import clsx from "clsx";
 import useTranslation from "@/hooks/useTranslation";
+import useOutsideAlerter from "@/hooks/useOutsideAlterter";
 
-const MobileMenu = ({ menu, setShowMenu }) => {
+const MobileMenu = ({
+  c_menu,
+  setShowMenu,
+  setTelegramShow,
+  setTwitterShow
+}) => {
   const [isActive, setActive] = useState(false);
   const { locale, setLocale } = useTranslation();
+  const asPath = useRouter();
+
   return (
     <>
-      {menu.hasChildren ? (
+      {c_menu.hasChildren ? (
         <>
           <div
             className="flex flex-row items-center justify-center gap-4"
             onClick={() => setActive(!isActive)}
           >
-            <p className="nav-link block cursor-pointer">{menu.name[locale]}</p>
+            <p className="nav-link block cursor-pointer">
+              {c_menu.name[locale]}
+            </p>
             <div
               className={clsx(
                 "bg-[url('/images/nav/nav_ic_arrow_unfold.svg')] w-[10px] h-[10px] transition-all duration-200",
@@ -29,31 +39,59 @@ const MobileMenu = ({ menu, setShowMenu }) => {
           </div>
           <div
             className={clsx(
-              "flex flex-col overflow-y-hidden transition-all duration-100 ease-out h-0",
-              isActive && "h-auto"
+              "flex flex-col overflow-y-hidden transition-all duration-200 ease-out h-0",
+              isActive && `h-auto`
             )}
           >
-            {menu.children.map((child, index) => (
-              <Link
-                key={index}
-                href={child.url}
-                target={child.target}
-                onClick={() => setShowMenu(false)}
-              >
-                <p className="text-text text-[16px] leading-10  text-center">
-                  {child.name[locale]}
-                </p>
-              </Link>
+            {c_menu.children.map((child, index) => (
+              <React.Fragment key={index}>
+                {child.name["en"] == "Telegram" ? (
+                  <button
+                    className="text-text text-[16px] leading-8 text-center"
+                    onClick={() => setTelegramShow(true)}
+                  >
+                    {child.name[locale]}
+                  </button>
+                ) : (
+                  <React.Fragment>
+                    {child.name["en"] == "Twitter" ? (
+                      <button
+                        className="text-text text-[16px] leading-8 text-center"
+                        onClick={() => setTwitterShow(true)}
+                      >
+                        {child.name[locale]}
+                      </button>
+                    ) : (
+                      <Link
+                        href={child.url}
+                        target={child.target}
+                        onClick={() => setShowMenu(false)}
+                      >
+                        <p className="text-text text-[16px] leading-8  text-center">
+                          {child.name[locale]}
+                        </p>
+                      </Link>
+                    )}
+                  </React.Fragment>
+                )}
+              </React.Fragment>
             ))}
           </div>
         </>
       ) : (
         <Link
-          href={menu.url}
-          target={menu.target}
+          href={c_menu.url}
+          target={c_menu.target}
           onClick={() => setShowMenu(false)}
         >
-          <p className="nav-link block text-center">{menu.name[locale]}</p>
+          <p
+            className={clsx(
+              "nav-link block text-center",
+              asPath.pathname == c_menu.url && "active"
+            )}
+          >
+            {c_menu.name[locale]}
+          </p>
         </Link>
       )}
     </>
@@ -84,22 +122,40 @@ const MobileLangMenu = ({ language, onChangeLocale }) => {
         )}
       >
         <ul className="text-center cursor-pointer leading-8">
-          <li onClick={() => onChangeLocale("en")}>
+          <li
+            className={clsx("mobile-lang-menu", locale == "en" && "active")}
+            onClick={() => onChangeLocale("en")}
+          >
             EN
           </li>
-          <li  onClick={() => onChangeLocale("zh-CN")}>
+          <li
+            className={clsx("mobile-lang-menu", locale == "zh-CN" && "active")}
+            onClick={() => onChangeLocale("zh-CN")}
+          >
             中文
           </li>
-          <li onClick={() => onChangeLocale("zh")}>
+          <li
+            className={clsx("mobile-lang-menu", locale == "zh" && "active")}
+            onClick={() => onChangeLocale("zh")}
+          >
             繁体
           </li>
-          <li onClick={() => onChangeLocale("ja")}>
+          <li
+            className={clsx("mobile-lang-menu", locale == "ja" && "active")}
+            onClick={() => onChangeLocale("ja")}
+          >
             日本語
           </li>
-          <li onClick={() => onChangeLocale("ko")}>
+          <li
+            className={clsx("mobile-lang-menu", locale == "ko" && "active")}
+            onClick={() => onChangeLocale("ko")}
+          >
             Korean
           </li>
-          <li onClick={() => onChangeLocale("vi")}>
+          <li
+            className={clsx("mobile-lang-menu", locale == "vi" && "active")}
+            onClick={() => onChangeLocale("vi")}
+          >
             Tiếng Việt
           </li>
         </ul>
@@ -112,7 +168,7 @@ const Header = () => {
   const { locale, setLocale } = useTranslation();
 
   // distructuring the main menu from menu object
-  const { main, home, language } = menu;
+  const { main, home, footer, language } = menu;
 
   // states declaration
   const [showMenu, setShowMenu] = useState(false);
@@ -121,6 +177,16 @@ const Header = () => {
   const [direction, setDirection] = useState(null);
 
   const asPath = useRouter();
+
+  // telegram
+  const refTelegramHeader = useRef();
+  const [isTelegramMobileMenu, setTelegramMobileMenu] = useState(false);
+  useOutsideAlerter(refTelegramHeader, setTelegramMobileMenu);
+
+  // twitter
+  const refTwitterHeader = useRef();
+  const [isTwitterMobileMenu, setTwitterMobileMenu] = useState(false);
+  useOutsideAlerter(refTwitterHeader, setTwitterMobileMenu);
 
   const onChangeLocale = (l) => {
     setLocale(l);
@@ -243,37 +309,37 @@ const Header = () => {
                 {language.name[locale]}
                 <ul className="dropdown-menu">
                   <li
-                    className="menu-item"
+                    className={clsx("menu-item", locale == "en" && "active")}
                     onClick={() => onChangeLocale("en")}
                   >
                     EN
                   </li>
                   <li
-                    className="menu-item"
+                    className={clsx("menu-item", locale == "zh-CN" && "active")}
                     onClick={() => onChangeLocale("zh-CN")}
                   >
                     中文
                   </li>
                   <li
-                    className="menu-item"
+                    className={clsx("menu-item", locale == "zh" && "active")}
                     onClick={() => onChangeLocale("zh")}
                   >
                     繁体
                   </li>
                   <li
-                    className="menu-item"
+                    className={clsx("menu-item", locale == "ja" && "active")}
                     onClick={() => onChangeLocale("ja")}
                   >
                     日本語
                   </li>
                   <li
-                    className="menu-item"
+                    className={clsx("menu-item", locale == "ko" && "active")}
                     onClick={() => onChangeLocale("ko")}
                   >
                     Korean
                   </li>
                   <li
-                    className="menu-item"
+                    className={clsx("menu-item", locale == "vi" && "active")}
                     onClick={() => onChangeLocale("vi")}
                   >
                     Tiếng Việt
@@ -349,13 +415,13 @@ const Header = () => {
       </header>
       <div
         className={clsx(
-          "md:hidden absolute w-[100vw] h-[100vh] bg-[url('/images/home/bg-menu.png')] top-0 bg-cover transition-all duration-100 ease-linear z-10",
+          "md:hidden absolute w-[100vw] h-[100vh] bg-[url('/images/home/bg-menu.png')] top-0 bg-cover transition-all duration-100 ease-linear z-10 overflow-y-scroll",
           showMenu && "left-0",
           !showMenu && "-left-[100vw]"
         )}
       >
         <div
-          className="flex container h-full justify-center mt-16  overflow-y-scroll"
+          className="flex container min-h-full justify-center pt-16 py-8"
           id="mobile-menu"
         >
           <div className="flex flex-col">
@@ -370,7 +436,13 @@ const Header = () => {
               {home.name[locale]}
             </Link>
             {main.map((menu, index) => (
-              <MobileMenu key={index} menu={menu} setShowMenu={setShowMenu} />
+              <MobileMenu
+                key={index}
+                c_menu={menu}
+                setShowMenu={setShowMenu}
+                setTelegramShow={setTelegramMobileMenu}
+                setTwitterShow={setTwitterMobileMenu}
+              />
             ))}
             <MobileLangMenu
               language={language}
@@ -378,6 +450,48 @@ const Header = () => {
             />
           </div>
         </div>
+      </div>
+      {/* Telegram */}
+      <div
+        className={clsx(
+          "absolute z-20 overflow-y-hidden opacity-0 bg-[#1E2126] w-full md:w-[230px] h-0 rounded-lg border-[#2f2f2f] border-2 px-[14px] py-2 text-[12px] bottom-[10px] left-0 transition-all duration-200 ease-linear",
+          isTelegramMobileMenu && "opacity-100 h-[350px]"
+        )}
+        ref={refTelegramHeader}
+      >
+        {footer.telegram.map((item, index) => {
+          return (
+            <Link
+              key={index}
+              href={item.url}
+              target="_blank"
+              className="block text-white text-[15px] hover:text-cred active:text-cred py-2 border-b-[1px] border-b-[#ffffff] border-opacity-10"
+            >
+              {item.name}
+            </Link>
+          );
+        })}
+      </div>
+      {/* Twitter */}
+      <div
+        className={clsx(
+          "absolute z-20 overflow-y-hidden opacity-0 bg-[#1E2126] w-full md:w-[230px] h-0 rounded-lg border-[#2f2f2f] border-2 px-[14px] py-2 text-[12px] bottom-[10px] left-0 transition-all duration-200 ease-linear",
+          isTwitterMobileMenu && "opacity-100 h-[102px]"
+        )}
+        ref={refTwitterHeader}
+      >
+        {footer.twitter.map((item, index) => {
+          return (
+            <Link
+              key={index}
+              href={item.url}
+              target="_blank"
+              className="block text-white text-[15px] hover:text-cred active:text-cred py-2 border-b-[1px] border-b-[#ffffff] border-opacity-10"
+            >
+              {item.name}
+            </Link>
+          );
+        })}
       </div>
     </>
   );
