@@ -173,9 +173,10 @@ export default function Foundation({ data }) {
                       {page.constitution}
                     </li>
                   </ul>
+                  <div className="w-full h-full overflow-y-auto no-scrollbar scroll-smooth">
                   <div
                       className={clsx(
-                        "w-full h-full text-white overflow-y-auto no-scrollbar scroll-smooth", menuId != 1 && "hidden"
+                        "w-full text-white ", menuId != 1 && "hidden"
                       )}
                       ref={refContent1}
                     >
@@ -183,12 +184,14 @@ export default function Foundation({ data }) {
                     </div>
                     <div
                       className={clsx(
-                        "w-full h-full text-white overflow-y-auto no-scrollbar scroll-smooth", menuId != 2 && "hidden"
+                        "w-full text-white", menuId != 2 && "hidden"
                       )}
                       ref={refContent2}
                     >
                       <Constitution page={page} />
                     </div>
+                  </div>
+                  
                 </div>
               </div>
               {/* Mobile */}
