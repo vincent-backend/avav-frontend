@@ -17,7 +17,7 @@ const Paginations = ({pageCount, currentPage, navigate}) => {
     return (
         <div className="flex flex-row justify-between space-x-[10px] my-2 text-base">
             <button disabled={currentPage == 0} className={clsx("w-[30px] h-[30px] rounded-sm", 
-            currentPage > 0 && "bg-[url('/images/pagination/arrow_left_nor.svg')]",
+            currentPage > 0 && "bg-[url('/images/pagination/arrow_left_nor.svg')] hover:bg-[url('/images/pagination/arrow_left_hover.svg')] active:bg-[url('/images/pagination/arrow_left_hover.svg')]",
             currentPage == 0 && "bg-[url('/images/pagination/arrow_left_dis.svg')]")}
             onClick={()=>navigate(currentPage-1)}
             />
@@ -52,7 +52,7 @@ const Paginations = ({pageCount, currentPage, navigate}) => {
             </>
         }
           <button disabled={currentPage == pageCount-1} className={clsx("w-[30px] h-[30px] rounded-sm",
-            currentPage < pageCount - 1 && "bg-[url('/images/pagination/arrow_right_nor.svg')]",
+            currentPage < pageCount - 1 && "bg-[url('/images/pagination/arrow_right_nor.svg')] hover:bg-[url('/images/pagination/arrow_right_hover.svg')] active:bg-[url('/images/pagination/arrow_right_hover.svg')]",
             currentPage == pageCount - 1 && "bg-[url('/images/pagination/arrow_right_dis.svg')]")}
             onClick={()=>navigate(currentPage+1)}
             />
