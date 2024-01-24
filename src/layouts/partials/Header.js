@@ -193,6 +193,8 @@ const Header = () => {
     setShowMenu(false);
   };
 
+  
+
   //sticky header
   useEffect(() => {
     const header = headerRef.current;

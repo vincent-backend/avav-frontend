@@ -16,7 +16,7 @@ const BigEventRow = ({ row }) => {
   return (
     <div className="flex flex-row w-full justify-between items-center bg-[#FFFFFF] bg-opacity-5 hover:bg-[#FD2C2F] hover:bg-opacity-10 px-4 md:px-[30px] py-2 border-l-[3px] border-l-cred border-t-[1px] border-r-[1px] border-b-[1px] border-[#1b1b1b] hover:border-t-[1px] hover:border-r-[1px] hover:border-b-[1px] hover:border-cred hover:border-opacity-80">
       <div className="flex flex-col gap-[5px] md:gap-[10px]">
-        <p className="text-white text-[20px] font-medium">{row.name}</p>
+        <p className="text-white text-[20px] font-medium leading-tight">{row.name}</p>
         <p className="text-text text-[14px] font-normal">{row.date}</p>
       </div>
       <Link href={row.url} target="_blank">
