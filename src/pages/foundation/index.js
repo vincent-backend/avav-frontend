@@ -36,11 +36,8 @@ export default function Foundation({ data }) {
 
   const handleLink = (lid) => {
     setMenuId(lid);
-    if (lid == 2) {
-      //refContent2.current.scrollTo(0, 0);
-    } else {
-      //refContent1.current.scrollTo(0, refC1.current.clientHeight);
-    }
+    refContent1.current.scrollTo({top: 0, behavior: "smooth"});
+    refContent2.current.scrollTo({top: 0, behavior: "smooth"});
   };
 
   // copy address
@@ -176,36 +173,37 @@ export default function Foundation({ data }) {
                       {page.constitution}
                     </li>
                   </ul>
-                  {menuId == 1 ? (
-                    <div
+                  <div
                       className={clsx(
-                        "w-full h-full text-white overflow-y-auto no-scrollbar scroll-smooth"
+                        "w-full h-full text-white overflow-y-auto no-scrollbar scroll-smooth", menuId != 1 && "hidden"
                       )}
                       ref={refContent1}
                     >
                       <Intro page={page} handleAddrCopy={handleAddrCopy} />
                     </div>
-                  ) : (
                     <div
                       className={clsx(
-                        "w-full h-full text-white overflow-y-auto no-scrollbar scroll-smooth"
+                        "w-full h-full text-white overflow-y-auto no-scrollbar scroll-smooth", menuId != 2 && "hidden"
                       )}
                       ref={refContent2}
                     >
                       <Constitution page={page} />
                     </div>
-                  )}
                 </div>
               </div>
               {/* Mobile */}
               <div className="md:hidden pt-10 mb-[25px] md:pt-[80px] md:mb-[50px] w-full">
-                <div className="w-full">
+                <div className="flex flex-col w-full">
+                  <Link href="/foundation/intro">
+                    <div className="bg-[#FD2C2F] bg-opacity-10 border border-[#FD2C2F] text-white text-center leading-10 w-full h-10 mb-5">
+                      {page.intro}
+                    </div>
+                  </Link>
                   <Link href="/foundation/constitution">
                     <div className="bg-[#FD2C2F] bg-opacity-10 border border-[#FD2C2F] text-white text-center leading-10 w-full h-10 mb-5">
                       {page.constitution}
                     </div>
                   </Link>
-                  <Intro page={page} handleAddrCopy={handleAddrCopy} />
                 </div>
               </div>
             </section>
