@@ -291,12 +291,12 @@
     },
     {
       "name": {
-        "en": "Media Column",
+        "en": "Media Report",
         "zh-CN": "媒体专栏",
-        "zh": "媒體專欄",
-        "ja": "メディアコラム",
-        "ko": "Media Column",
-        "vi": "Cột phương tiện"
+        "zh": "媒體報道",
+        "ja": "メディアレポート",
+        "ko": "Media Report",
+        "vi": "Báo cáo truyền thông"
       },
       "url": "/media-column",
       "target": "_self"
