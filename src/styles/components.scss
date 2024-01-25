@@ -164,3 +164,8 @@
 .found-description {
   @apply text-base text-white;
 }
+
+// umate
+.umate-portfolio {
+  @apply flex flex-col md:gap-[50px] justify-center items-center;
+}

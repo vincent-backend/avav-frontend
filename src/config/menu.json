@@ -300,6 +300,32 @@
       },
       "url": "/media-column",
       "target": "_self"
+    },
+    {
+      "name": {
+        "en": "App classification",
+        "zh-CN": "应用分类",
+        "zh": "應用分類",
+        "ja": "アプリの分類",
+        "ko": "App classification",
+        "vi": "Phân loại ứng dụng"
+      },
+      "hasChildren": true,
+      "children": [
+        {
+          "name": {
+            "en": "Umate",
+            "zh-CN": "Umate",
+            "zh": "Umate",
+            "ja": "Umate",
+            "ko": "Umate",
+            "vi": "Umate"
+          },
+          "url": "/apps/umate",
+          "target": "_self"
+        }
+      ],
+      "url": ""
     }
   ],
   "footer": {

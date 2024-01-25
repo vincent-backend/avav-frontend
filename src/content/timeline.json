@@ -1,6 +1,10 @@
 {
     "en": [
         {
+            "date": "January 25, 2024",
+            "content": "CoinEX exchange announced that it will list the AVAV/USDT trading pair on January 25."
+        },
+        {
             "date": "January 17, 2024",
             "content": "AVAV Disadvantaged Actresses Relief Foundation Established"
         },
@@ -66,6 +70,10 @@
         }
     ],
     "zh-CN": [
+        {
+            "date": "2024年1月25日",
+            "content": "CoinEX交易所公告将于1月25日上线AVAV/USDT交易对。"
+        },
         {
             "date": "2024年1月17日",
             "content": "AVAV弱势女优救助基金会成立"
@@ -137,6 +145,10 @@
     ],
     "zh": [
         {
+            "date": "2024年1月25日",
+            "content": "CoinEX交易所公告將於1月25日上線AVAV/USDT交易對。"
+        },
+        {
             "date": "2024年1月17日",
             "content": "AVAV弱势女优救助基金会成立"
         },
@@ -203,8 +215,12 @@
     ],
     "ja": [
         {
+            "date": "2024年1月25日",
+            "content": "CoinEX取引所は、AVAV/USDT取引ペアを1月25日に上場すると発表した。"
+        },
+        {
             "date": "2024年1月17日",
-            "content": "VAV不遇女優救済財団設立"
+            "content": "AVAV不遇女優救済財団設立"
         },
         {
             "date": "2024年1月17日",
@@ -272,6 +288,10 @@
         }
     ],
     "ko": [
+        {
+            "date": "2024年1月25日",
+            "content": "CoinEX交易所公告将于1月25日上线AVAV/USDT交易对。"
+        },
         {
             "date": "2024年1月17日",
             "content": "VAV不遇女優救済財団設立"
