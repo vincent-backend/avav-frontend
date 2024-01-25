@@ -1,4 +1,4 @@
 ---
 lang: "vi"
 page:
-  title: "AVAV Big Event"
+  title: "Sự kiện lớn AVAV"

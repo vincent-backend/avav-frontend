@@ -1,5 +1,5 @@
 ---
 lang: "zh-CN"
 page:
-  title: "AVAV Big Event"
+  title: "AVAV 大事件"
 ---

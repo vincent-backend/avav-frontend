@@ -3,11 +3,11 @@
     {
       "name": {
         "en": "Social Contact",
-        "zh-CN": "Social Contact",
-        "zh": "Social Contact",
-        "ja": "Social Contact",
-        "ko": "Social Contact",
-        "vi": "Social Contact"
+        "zh-CN": "社交",
+        "zh": "社交",
+        "ja": "社会的接触",
+        "ko": "사회적 접촉",
+        "vi": "tiếp xúc xã hội"
       },
       "url": "",
       "hasChildren": true,
@@ -168,8 +168,8 @@
     {
       "name": {
         "en": "Support Wallets",
-        "zh-CN": "支持社交",
-        "zh": "支持社群",
+        "zh-CN": "支持錢包",
+        "zh": "支持钱包",
         "ja": "サポートウォレット",
         "ko": "지원 지갑",
         "vi": "Ví hỗ trợ"
