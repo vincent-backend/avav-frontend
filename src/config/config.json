@@ -1,0 +1,49 @@
+{
+  "site": {
+    "title": "$AVAV ▲▼▲▼",
+    "base_url": "https://avav.meme/",
+    "favicon": "/favicon.ico",
+    "logo": "/logo.png",
+    "width": "36",
+    "height": "36",
+    "logo_mobile": "/images/logo-mobile.png",
+    "logo_text": "AVAV"
+  },
+
+  "params": {
+    "tag_manager_id": "",
+    "contact_form_action": "#",
+    "footer_content": "ss",
+    "copyright": "Admin@Avav.com"
+  },
+
+  "general": {
+    "donate_addr": "0x6c85fd703e2c8e38647562212321d6383c67dc06",
+    "api_root":  "https://avav.meme/art_votes/"
+  },
+
+  "contact_info": {
+    "phone": "+",
+    "email": "Admin@Avav.com",
+    "location": ""
+  },
+
+  "nav_button": {
+    "enable": true,
+    "label_en": "EN",
+    "label_cn": "汉语",
+    "link": "/"
+  },
+
+  "metadata": {
+    "meta_author": "Admin@Avav.com",
+    "meta_image": "images/bg_coin.png",
+    "meta_description": "A Very Amazing Victory. $AVAV was the first inscriptions meme of Avalanche Ecology to receive a diamond badge, with a trading volume of 500,000 AVAX in three days."
+  },
+
+  "disqus": {
+    "enable": true,
+    "shortname": "AVAV",
+    "settings": {}
+  }
+}

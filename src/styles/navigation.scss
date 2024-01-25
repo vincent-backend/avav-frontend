@@ -1,0 +1,238 @@
+
+.header-height-fix {
+  @apply h-[60px];
+}
+.header {
+  @apply fixed left-0 w-full top-0 z-50 transition-all duration-500 ;
+
+  &-sticky {
+    @apply py-0;
+  }
+
+  &.unpinned {
+    @apply -translate-y-full;
+  }
+}
+
+// navbar items
+.navbar {
+  @apply relative flex flex-wrap items-center justify-between;
+}
+
+.navbar-brand {
+  @apply text-xl font-semibold text-dark lg:block;
+  image {
+    @apply max-h-full max-w-full;
+  }
+}
+
+.navbar-nav {
+  @apply text-center flex-[0_0_100%] md:flex-auto;
+}
+
+.nav-item {
+  @apply text-center;
+}
+
+.nav-link {
+  @apply  px-3 py-2 text-[1rem] font-medium text-white transition hover:text-[#FB2C1F] lg:py-4;
+
+  &.active {
+    @apply text-[#FB2C1F];
+  }
+}
+
+.nav-dropdown {
+  @apply mx-0;
+}
+
+.nav-dropdown-list {
+  @apply z-10 rounded-lg bg-[#1E2126] w-[120px] lg:shadow-sm;
+}
+
+.nav-dropdown-item {
+  @apply leading-3;
+}
+
+.nav-dropdown-link {
+  @apply min-w-[75px] py-1 text-sm font-medium text-dark transition lg:hover:text-primary whitespace-nowrap px-4 rounded-lg;
+  
+  &.active {
+    @apply  text-cred;
+  }
+}
+.nav-trade-btn {
+  @apply bg-[url('/images/nav/nav_btn_bg.svg')] w-[100px] h-[30px] text-center text-primary leading-[30px];
+}
+
+.menu-btn {
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.navbar .menu-btn__lines::before,
+.navbar .menu-btn__lines::after {
+  content: "";
+  position: absolute;
+}
+
+.navbar .menu-btn__lines,
+.navbar .menu-btn__lines::before,
+.navbar .menu-btn__lines::after {
+  width: 1.5rem;
+  height: 0.1rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.navbar .menu-btn__lines::before {
+  transform: translateY(-0.5rem);
+}
+
+.navbar .menu-btn__lines::after {
+  transform: translateY(0.5rem);
+}
+
+.navbar .menu-items {
+  @apply hidden lg:flex items-center order-2;
+}
+
+.navbar ul li {
+  list-style: none;
+  transition: 0.3s ease;
+}
+
+.navbar ul li .arrow {
+  transition: all 0.3s ease-out;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* dropdown menu */
+
+.navbar .dropdown {
+  position: relative;
+}
+.expand-btn:after {
+  content: " \25BE";
+  opacity: 0.4;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.navbar .dropdown-menu,
+.menu-right {
+  position: absolute;
+  background: #1E2126;
+  min-width: 150px;
+  max-width: 300px;
+  line-height: 30px;
+  border-radius: 0 0 5px 5px;
+  top: 65px;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+  -webkit-box-shadow: 0 20px 50px 0 rgb(0 0 0 / 5%);
+  box-shadow: 0 20px 50px 0 rgb(0 0 0 / 5%);
+}
+
+.navbar .menu-right {
+  top: 0;
+  left: 100%;
+}
+.navbar .dropdown-menu {
+  @apply right-0 left-auto;
+}
+
+.navbar .menu-item {
+  @apply flex justify-between w-full py-2 px-4 text-white hover:text-cred active:text-cred whitespace-nowrap;
+  &.active {
+    @apply text-cred font-bold;
+  }
+}
+
+.menu-item.first-item {
+  @apply py-5 px-3;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+  @apply opacity-100 visible;
+}
+
+.navbar .dropdown-right:hover .menu-right {
+  @apply left-[100%] opacity-100 visible;
+}
+
+.navbar .dropdown-right:hover .menu-left {
+  @apply -left-full;
+}
+
+// search style
+.search-icon {
+  @apply cursor-pointer p-2 text-xl text-dark hover:text-primary;
+}
+.search-modal {
+  @apply invisible absolute top-0 left-0 right-0 z-10 h-10 bg-white opacity-0 transition md:h-full;
+  .form-input {
+    @apply h-full w-full border-0 text-lg;
+  }
+  .search-close {
+    @apply absolute top-1/2 right-2 -translate-y-1/2 p-3 text-h4;
+  }
+  &.open {
+    @apply visible opacity-100;
+  }
+}
+
+
+.mobile-lang-menu {
+  @apply text-text;
+  &.active {
+    @apply text-cred;
+  }
+}
+
+// mobile menu
+
+/* reset our lists to remove bullet points and padding */
+.mainmenu {
+  @apply list-none p-0 m-0 text-white;
+}
+
+.submenu {
+  @apply list-none pl-2 m-0 text-white;
+}
+
+/* make ALL links (main and submenu) have padding and background color */
+.mainmenu a {
+  @apply block p-[10px] text-white;
+}
+
+.mainmenu li:hover .submenu {
+  display: block;
+  max-height: 200px;
+}
+
+/*
+  we now overwrite the background-color for .submenu links only.
+  CSS reads down the page, so code at the bottom will overwrite the code at the top.
+*/
+
+/* this is the initial state of all submenus.
+  we set it to max-height: 0, and hide the overflowed content.
+*/
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}

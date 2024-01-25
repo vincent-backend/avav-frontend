@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="332px" height="248px" viewBox="0 0 332 248" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>card_bg_nor@2x</title>
+    <defs>
+        <linearGradient x1="0%" y1="20.0459302%" x2="62.5802784%" y2="54.0300497%" id="linearGradient-1">
+            <stop stop-color="#C32326" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="AVAV艺术投票_分类_h5" transform="translate(-30.000000, -407.000000)">
+            <g id="1" transform="translate(30.000000, 363.000000)">
+                <g id="card_bg_nor" transform="translate(0.000000, 44.000000)">
+                    <path d="M297.037123,1.5 L330.5,40.6395284 L330.5,246.5 L1.5,246.5 L1.5,1.5 L297.037123,1.5 Z" id="矩形" stroke="url(#linearGradient-1)" stroke-width="3" fill-opacity="0.0509803928" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

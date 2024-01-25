@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="226px" height="140px" viewBox="0 0 226 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>card_bg_hover@2x</title>
+    <defs>
+        <linearGradient x1="0%" y1="29.3999708%" x2="62.5802784%" y2="52.771548%" id="linearGradient-1">
+            <stop stop-color="#C32326" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-2" points="0 0 202.948113 0 226 23 226 140 0 140"></polygon>
+        <filter x="-5.3%" y="-8.6%" width="110.6%" height="117.1%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="10" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="-4" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.992156863   0 0 0 0 0.17254902   0 0 0 0 0.184313725  0 0 0 0.471131652 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="AVAV艺术投票_分类" transform="translate(-844.000000, -238.000000)">
+            <g id="3" transform="translate(844.000000, 208.000000)">
+                <g id="card_bg_hover" transform="translate(0.000000, 30.000000)">
+                    <g id="矩形">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                        <path stroke="url(#linearGradient-1)" stroke-width="2" d="M1,1 L202.534559,1 L225,23.4148737 L225,139 L1,139 L1,1 Z" stroke-linejoin="square"></path>
+                    </g>
+                    <path d="M226,118 L226,119.998607 L205.999,119.998 L205.999542,140 L204,140 L204,118.015333 L204.005,118.015 L204.005039,118 L226,118 Z" id="形状结合" fill="#FD2C2F" transform="translate(215.000000, 129.000000) rotate(-180.000000) translate(-215.000000, -129.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

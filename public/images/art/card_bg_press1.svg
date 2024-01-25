@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="332px" height="248px" viewBox="0 0 332 248" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>card_bg_press@2x</title>
+    <defs>
+        <linearGradient x1="0%" y1="20.0459302%" x2="62.5802784%" y2="54.0300497%" id="linearGradient-1">
+            <stop stop-color="#C32326" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-2" points="0 0 297.728168 0 332 40.0857143 332 248 0 248"></polygon>
+        <filter x="-5.7%" y="-7.7%" width="111.4%" height="115.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="15" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="-8" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.992156863   0 0 0 0 0.17254902   0 0 0 0 0.184313725  0 0 0 0.573643398 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="AVAV艺术投票_分类_h5" transform="translate(-30.000000, -725.000000)">
+            <g id="1备份-2" transform="translate(30.000000, 681.000000)">
+                <g id="card_bg_press" transform="translate(0.000000, 44.000000)">
+                    <g id="矩形">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                        <path stroke="url(#linearGradient-1)" stroke-width="2" d="M297.267471,1 L331,40.4549237 L331,247 L1,247 L1,1 L297.267471,1 Z" stroke-linejoin="square"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
