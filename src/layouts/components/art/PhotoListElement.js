@@ -41,6 +41,5 @@ export default function PhotoListElement({ name, src }) {
         />
     </Zoom>
     </React.Fragment>
-    
   );
 }
