@@ -20,7 +20,7 @@ module.exports = {
         h1: "130px",
         h2: "50px",
         h3: "40px",
-        h4: "24px",
+        h4: "30px",
         h5: "20px"
       },
       colors: {
