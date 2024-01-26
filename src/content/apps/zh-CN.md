@@ -8,7 +8,7 @@ umate:
   port_1: "<span class='text-cred'>超低 </span><span class='text-white'>费率</span>"
   port_2: "<span class='text-cred'>超快 </span><span class='text-white'>到账</span>"
   port_3: "<span class='text-cred'>超级安全 </span><span class='text-white'>保障</span>"
-  port_4: "<span class='text-cred'>相对USDT的 </span><span class='text-white'>优势</span>"
+  port_4: "<span class='text-cred'>超越USDT的 </span><span class='text-white'>优势</span>"
   tutorial: "AVAV 视频付款教程"
   download_button: "SDK 开放源代码文档下载"
 ---
