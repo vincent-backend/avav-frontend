@@ -13,7 +13,7 @@ const Footer = () => {
   const { locale, setLocale } = useTranslation();
   const { footer } = menu;
   const [isTelegramMenu, setTelegramMenu] = useState(false);
-  
+
   const telegramMenuRef = useRef(null);
   useOutsideAlerter(telegramMenuRef, setTelegramMenu);
 
@@ -163,6 +163,12 @@ const Footer = () => {
                   href="https://medium.com/@pr_86854/avav-beyond-hype-the-first-practical-inscription-token-9f36e992137a"
                   target="_blank"
                   className="w-[28px] h-[28px] bg-[url('/images/footer/bot_ic_4_nor.svg')] hover:bg-[url('/images/footer/bot_ic_4_hover.svg')] transition-all duration-100 ease-in"
+                />
+
+                <Link
+                  href="https://github.com/avascriptions"
+                  target="_blank"
+                  className="w-[28px] h-[28px] bg-[url('/images/footer/bot_ic_5_nor.svg')] hover:bg-[url('/images/footer/bot_ic_5_hover.svg')] transition-all duration-100 ease-in"
                 />
               </div>
             </div>
