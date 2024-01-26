@@ -12,7 +12,7 @@ import clsx from "clsx";
 import Link from "next/link";
 import ModalVideo from "@/layouts/components/home/ModalVideo";
 
-export default function Tutorial({ data }) {
+export default function AVAPAY({ data }) {
   const { locale, setLocale } = useTranslation();
 
   const [loading, setLoading] = useState(false);

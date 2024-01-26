@@ -304,8 +304,8 @@
     {
       "name": {
         "en": "App classification",
-        "zh-CN": "应用分类",
-        "zh": "應用分類",
+        "zh-CN": "应用",
+        "zh": "應用",
         "ja": "アプリの分類",
         "ko": "App classification",
         "vi": "Phân loại ứng dụng"
@@ -314,14 +314,14 @@
       "children": [
         {
           "name": {
-            "en": "Umate",
-            "zh-CN": "Umate",
-            "zh": "Umate",
-            "ja": "Umate",
-            "ko": "Umate",
-            "vi": "Umate"
+            "en": "AVAVPAY",
+            "zh-CN": "AVAVPAY",
+            "zh": "AVAVPAY",
+            "ja": "AVAVPAY",
+            "ko": "AVAVPAY",
+            "vi": "AVAVPAY"
           },
-          "url": "/apps/umate",
+          "url": "/apps/avavpay",
           "target": "_self"
         }
       ],
