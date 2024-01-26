@@ -215,13 +215,13 @@ export default function Tutorial({ data }) {
           {/* Opensource Link */}
           <div className="container flex w-full h-[60px] mx-auto mt-[30px] md:mt-[60px] items-center justify-center">
             <a href="/upload/avav-demo.zip" download="avav-demo.zip">
-              <div className="group flex items-center justify-center relative w-[350px] h-[50px] hover:w-[360px] hover:h-[60px] transition-all duration-200 ease-linear">
+              <div className="group flex items-center justify-center relative w-[350px] h-[50px]">
                 <Image
                   alt="connect"
                   src="/images/apps/umate/btn_bg_link.svg"
                   width={350}
                   height={50}
-                  className="-z-10 absolute left-0 top-0 opacity-100 w-full sm:w-[350px] h-[50px] group-hover:w-[360px] group-hover:h-[60px] group-hover:opacity-70 group-active:w-[360px] group-active:h-[60px] group-active:opacity-70 transition-all duration-200 ease-linear"
+                  className="-z-10 absolute left-0 top-0 opacity-100 w-full md:w-[350px] h-[50px] group-hover:opacity-70 group-active:w-[360px] group-active:h-[60px] group-active:opacity-70 transition-all duration-200 ease-linear"
                 />
                 <p className="text-center text-[16px] text-white leading-[50px]">
                   {umate.download_button}
