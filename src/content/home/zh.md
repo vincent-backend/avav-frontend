@@ -6,7 +6,7 @@ banner:
   title: "Welcome To"
   subtitle: "A Very Amazing Victory. A very amazing victory"
   content: "$AVAV 是雪崩生態中第一個獲得鑽石徽章的銘文模因，帶有三個日交易量達到 50 萬 AVAX（2,550 萬美元交易量）。銘文從開始鑄造到鑄造結束歷時1個多月，持有者數量高達五萬人。當你看到這個名字時，你可以與社區產生情感共鳴。它是年輕人最喜歡的銘文，是具有全球屬性的超級迷因。"
-  btn_con: "連接到 AVAX"
+  btn_con: "啟動應用程式"
 blog_1:
   title: "按照您的方式構建"
   subtitle: "Avalanche 擁有加速從創意到發布所需的先進工具。"

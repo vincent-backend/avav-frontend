@@ -6,7 +6,7 @@ banner:
   title: "Welcome To"
   subtitle: "A Very Amazing Victory. A very amazing victory"
   content: "$AVAV là meme ghi dòng chữ đầu tiên trong Hệ sinh thái Avalanche nhận được huy hiệu kim cương, với khối lượng giao dịch trong ba ngày đạt 500.000 AVAX (25,5 triệu usd vol). Từ khi bắt đầu đến khi kết thúc quá trình đúc chữ khắc phải mất hơn một tháng, số lượng người nắm giữ lên tới 50.000 người. Khi nhìn thấy cái tên này, bạn có thể tạo được sự cộng hưởng cảm xúc với cộng đồng. Đó là dòng chữ yêu thích của giới trẻ và là một siêu meme có tính chất toàn cầu."
-  btn_con: "Kết nối với AVAX"
+  btn_con: "Chạy chương trình"
 blog_1:
   title: "XÂY DỰNG NÓ THEO CÁCH CỦA BẠN"
   subtitle: "Avalanche có công cụ nâng cao mà bạn cần để tăng tốc từ ý tưởng đến triển khai."
