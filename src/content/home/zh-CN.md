@@ -6,7 +6,7 @@ banner:
   title: "欢迎来到"
   subtitle: "A Very Amazing Victory. 这是一次非常惊人的胜利。"
   content: "$AVAV 是雪崩生态第一个获得钻石徽章的铭文模因，三天交易量达到 500,000 AVAX(25.5M usd vol)。铭文从开始铸造到铸造结束历时1个多月，当你看到AVAV这个名字时就能与社区产生的强烈情感共识是：激情进取，热爱生活的人们最喜欢的铭文，完美具备全球化属性的超级meme。"
-  btn_con: "连接到 AVAX"
+  btn_con: "启动应用程序"
 blog_1:
   title: "按照您的方式构建"
   subtitle: "Avalanche 拥有加速从创意到发布所需的先进工具。"
