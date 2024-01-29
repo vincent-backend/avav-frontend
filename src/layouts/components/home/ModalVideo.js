@@ -15,13 +15,14 @@ export default function ModalVideo({
 }) {
   const [modalOpen, setModalOpen] = useState(false);
   const videoRef = useRef(null);
-  useOutsideAlerter(videoRef, setVideoShow);
+  const divRef = useRef();
+  useOutsideAlerter(divRef, setVideoShow);
 
   return (
-    <div className="flex justify-center">
+    <div ref={divRef} className="flex justify-center">
       {/* Video thumbnail */}
       <button
-        className="relative flex justify-center items-center focus:outline-none focus-visible:ring focus-visible:ring-indigo-300 rounded-3xl group"
+        className="relative flex justify-center items-center focus:outline-none focus-visible:ring focus-visible:ring-indigo-300 rounded-2xl group"
         onClick={() => {
           setModalOpen(true)
         }}
@@ -83,7 +84,7 @@ export default function ModalVideo({
             leaveTo="opacity-0 scale-75"
           >
             <div className="max-w-5xl mx-auto flex items-center justify-center">
-              <Dialog.Panel className="max-h-full w-full rounded-3xl shadow-2xl bg-black overflow-hidden">
+              <Dialog.Panel className="max-h-full w-full rounded-2xl shadow-2xl bg-black overflow-hidden">
                 <video ref={videoRef} width={videoWidth} height={videoHeight} loop controls>
                   <source src={video} type="video/mp4" />
                   Your browser does not support the video tag.
