@@ -10,6 +10,7 @@ import f_stars from "@/content/foundation_star.json";
 import clsx from "clsx";
 import Link from "next/link";
 import Loading from "@/layouts/components/Loading";
+import ModalVideo from "@/layouts/components/home/ModalVideo";
 import { Waypoint } from "react-waypoint";
 import CopyToClipboard from "@/hooks/useClipboard";
 import { Store } from "react-notifications-component";
@@ -34,10 +35,32 @@ export default function Foundation({ data }) {
   const refContent1 = useRef();
   const refContent2 = useRef();
 
+  // video
+  const [isVideoShow, setVideoShow] = useState(false);
+  const [thumb, setThumb] = useState(null);
+  const [thumbWidth, setThumbWidth] = useState(0);
+  const [thumbHeight, setThumbHeight] = useState(0);
+  const [thumbAlt, setThumbAlt] = useState("");
+  const [video, setVideo] = useState("");
+  const [videoWidth, setVideoWidth] = useState(0);
+  const [videoHeight, setVideoHeight] = useState(0);
+
+  const handleVideoPlay = (star) => {
+    setThumb(star.video.thumb_src);
+    setThumbWidth(star.video.thumb_width);
+    setThumbHeight(star.video.thumb_height);
+    setThumbAlt(star.name);
+    setVideo(star.video.src);
+    setVideoWidth(star.video.width);
+    setVideoHeight(star.video.height);
+    
+    setVideoShow(true);
+  }
+
   const handleLink = (lid) => {
     setMenuId(lid);
-    refContent1.current.scrollTo({top: 0, behavior: "smooth"});
-    refContent2.current.scrollTo({top: 0, behavior: "smooth"});
+    refContent1.current.scrollTo({ top: 0, behavior: "smooth" });
+    refContent2.current.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   // copy address
@@ -156,7 +179,7 @@ export default function Foundation({ data }) {
                       className={clsx(
                         "w-full h-[46px] leading-[46px] text-[16px] font-[500] text-right pr-3 cursor-pointer",
                         menuId == 1 &&
-                          "text-cred font-bold bg-gradient-to-r from-transparent to-[#430B0C] border-r-4 border-r-cred"
+                        "text-cred font-bold bg-gradient-to-r from-transparent to-[#430B0C] border-r-4 border-r-cred"
                       )}
                       onClick={() => handleLink(1)}
                     >
@@ -166,7 +189,7 @@ export default function Foundation({ data }) {
                       className={clsx(
                         "w-full h-[46px] leading-[46px] text-[16px] font-[500] text-right pr-3 cursor-pointer",
                         menuId == 2 &&
-                          "text-cred font-bold bg-gradient-to-r from-transparent to-[#430B0C] border-r-4 border-r-cred"
+                        "text-cred font-bold bg-gradient-to-r from-transparent to-[#430B0C] border-r-4 border-r-cred"
                       )}
                       onClick={() => handleLink(2)}
                     >
@@ -174,7 +197,7 @@ export default function Foundation({ data }) {
                     </li>
                   </ul>
                   <div className="w-full h-full overflow-y-auto no-scrollbar scroll-smooth">
-                  <div
+                    <div
                       className={clsx(
                         "w-full text-white ", menuId != 1 && "hidden"
                       )}
@@ -191,7 +214,7 @@ export default function Foundation({ data }) {
                       <Constitution page={page} />
                     </div>
                   </div>
-                  
+
                 </div>
               </div>
               {/* Mobile */}
@@ -225,7 +248,7 @@ export default function Foundation({ data }) {
                   return (
                     <div
                       key={star.id}
-                      className="flex flex-col justify-center gap-[18px]"
+                      className="flex flex-col items-center gap-[18px]"
                     >
                       <Image
                         alt={star.name}
@@ -234,13 +257,36 @@ export default function Foundation({ data }) {
                         height={106}
                         className="rounded-full"
                       />
-                      <p className="text-[16px] text-center">{star.name}</p>
+                      <div className="flex flex-row items-center justify-center gap-2">
+                        <p className="text-[16px] text-center flex-grow">{star.name}</p>
+                        {star.isVideo &&
+                          <button className="w-[18px] h-[14px] bg-[url('/images/foundation/video_nor.svg')] hover:bg-[url('/images/foundation/video_hover.svg')] active:bg-[url('/images/foundation/video_hover.svg')]"
+                                  onClick={()=>handleVideoPlay(star)}/>
+                        }
+                      </div>
                     </div>
                   );
                 })}
               </div>
             </section>
           </div>
+          {/* Video show */}
+          {isVideoShow && (
+            <div className="z-20 fixed top-0 left-0 w-full h-full bg-[#000000] bg-opacity-20 transition-all duration-500 ease-out">
+              <div className="flex justify-center items-center h-full">
+                <ModalVideo
+                  thumb={thumb}
+                  thumbWidth={thumbWidth}
+                  thumbHeight={thumbHeight}
+                  thumbAlt={thumbAlt}
+                  video={video}
+                  videoWidth={videoWidth}
+                  videoHeight={videoHeight}
+                  setVideoShow={setVideoShow}
+                />
+              </div>
+            </div>
+          )}
         </>
       )}
     </Base>

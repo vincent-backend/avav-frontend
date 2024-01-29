@@ -1,3 +1,16 @@
 [
-    {"id": 1, "name":"泷泽萝拉", "photo":"avav-1.png"}
+    {
+        "id": 1,
+        "name": "泷泽萝拉",
+        "photo": "avav-1.png",
+        "isVideo": true,
+        "video": {
+            "src": "/videos/foundation/avatar-1.mov",
+            "width": 640,
+            "height": 352,
+            "thumb_src": "/videos/foundation/avatar-1-thumb.png",
+            "thumb_width": 640,
+            "thumb_height": 352
+        }
+    }
 ]
