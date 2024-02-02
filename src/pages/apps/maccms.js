@@ -104,7 +104,7 @@ export default function MacCMS({ data }) {
               {/* Banner link button */}
               <div className="flex w-full h-[60px] mx-auto items-center">
                 <Link
-                  href="https://maccms.com"
+                  href="https://maccms.la/"
                   target="_blank"
                   className="mt-[20px] md:mt-[30px] mx-auto"
                 >
@@ -220,8 +220,8 @@ export default function MacCMS({ data }) {
           {/* Video tutorial */}
           <div className="relative mt-[50px] md:mt-[100px] w-full flex flex-col items-center">
             {/* Background */}
-            <Image alt="background" src="/images/apps/umate/pic_graph_1.gif" width={750} height={532} className="absolute -z-20 left-0 top-[-120px] md:top-[-340px]" />
-            <Image alt="background" src="/images/apps/maccms/maccms_bg_2.gif" width={300} height={300} className="hidden -z-20 md:block absolute left-0 top-[60px]" />
+            <Image alt="background" src="/images/apps/umate/pic_graph_1.gif" width={750} height={532} className="absolute -z-20 left-0 top-[-120px] md:top-[-380px]" />
+            <Image alt="background" src="/images/apps/maccms/maccms_bg_2.gif" width={300} height={300} className="hidden -z-20 md:block absolute left-0 top-[90px]" />
             {/* title */}
             <h4 className="text-cred inline-block">{common.tutorial}</h4>
             <div className="mx-auto">
