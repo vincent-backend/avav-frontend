@@ -316,7 +316,7 @@ export default function Home({ data }) {
           </section>
 
           {/*Blog 1*/}
-          <section className="animate mt-[60px] md:mt-[120px] relative">
+          <section className="animate mt-[60px] md:mt-[120px] relative overflow-hidden">
             {/*Left line*/}
             <div className="absolute w-[55%] h-[804px] md:w-[1000px] -top-24 md:top-0 left-0 bg-contain bg-center bg-no-repeat bg-[url('/images/home/line.gif')] md:bg-[url('/images/home/md/line.gif')] -z-10" />
             <div className="container">
@@ -377,7 +377,7 @@ export default function Home({ data }) {
             </div>
           </section>
           {/* JOIN WEB3's MOST VIBRANT COMMUNITY */}
-          <section className="animate mt-12 md:mt-[212px] relative">
+          <section className="animate mt-12 md:mt-[212px] relative overflow-x-hidden">
             <div className="-z-20 absolute w-[100%] h-[566px] md:w-[1000px] md:h-[800px] top-0 right-0 bg-contain bg-no-repeat bg-[url('/images/home/bg_Decoration_2.gif')] md:bg-[url('/images/home/md/bg_Decoration_2.gif')]" />
             <div className="container">
               <div className="flex flex-col mx-auto max-w-[890px]">
