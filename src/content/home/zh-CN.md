@@ -29,4 +29,5 @@ home:
   dev_course: "发展历程"
   donation: "$AVAV社区共建捐赠地址"
   donation_description: "社区捐款主要用于社区建设。<br>管理团队主要由社区的早期贡献者管理。"
+  token_addr: "$AVAV 合约token地址"
 ---

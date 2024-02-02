@@ -29,4 +29,5 @@ home:
   dev_course: "開発コース"
   donation: "$AVAV コミュニティが構築した寄付アドレス"
   donation_description: "コミュニティの寄付は主にコミュニティ構築に使用されます。<br>管理チームは主にコミュニティへの初期の貢献者によって管理されます。"
+  token_addr: "$AVAV コントラクトトークンアドレス"
 ---

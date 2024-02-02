@@ -99,7 +99,7 @@
 }
 
 .navbar .menu-items {
-  @apply hidden md:flex flex-wrap items-center justify-end flex-shrink;
+  @apply hidden md:flex flex-wrap items-center justify-end flex-shrink mt-2;
 }
 
 .navbar ul li {
@@ -136,7 +136,7 @@
   max-width: 300px;
   line-height: 30px;
   border-radius: 0 0 5px 5px;
-  top: 65px;
+  top: 46px;
   left: 0;
   opacity: 0;
   visibility: hidden;
@@ -161,7 +161,7 @@
 }
 
 .menu-item.first-item {
-  @apply py-5 px-3;
+  @apply py-2 px-3;
 }
 
 .navbar .dropdown:hover .dropdown-menu {

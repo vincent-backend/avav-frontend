@@ -1,6 +1,10 @@
 {
     "en": [
         {
+            "date": "February 2, 2024",
+            "content": "AVAVBridge Inscription's first cross-chain bridge Token is officially launched."
+        },
+        {
             "date": "January 25, 2024",
             "content": "CoinEX exchange announced that it will list the AVAV/USDT trading pair on January 25."
         },
@@ -70,6 +74,10 @@
         }
     ],
     "zh-CN": [
+        {
+            "date": "2024年2月2日",
+            "content": "AVAVBridge 铭文第一个跨链桥Token正式上线。"
+        },
         {
             "date": "2024年1月25日",
             "content": "CoinEX交易所公告将于1月25日上线AVAV/USDT交易对。"
@@ -145,6 +153,10 @@
     ],
     "zh": [
         {
+            "date": "2024年2月2日",
+            "content": "AVAVBridge 銘文第一個跨鏈橋Token正式上線。"
+        },
+        {
             "date": "2024年1月25日",
             "content": "CoinEX交易所公告將於1月25日上線AVAV/USDT交易對。"
         },
@@ -214,6 +226,10 @@
         }
     ],
     "ja": [
+        {
+            "date": "2024年2月2日",
+            "content": "AVAVBridge Inscription初のクロスチェーンブリッジトークンが正式に発売される。"
+        },
         {
             "date": "2024年1月25日",
             "content": "CoinEX取引所は、AVAV/USDT取引ペアを1月25日に上場すると発表した。"
@@ -288,6 +304,10 @@
         }
     ],
     "ko": [
+        {
+            "date": "2024年2月2日",
+            "content": "AVAVBridge 铭文第一个跨链桥Token正式上线。"
+        },
         {
             "date": "2024年1月25日",
             "content": "CoinEX交易所公告将于1月25日上线AVAV/USDT交易对。"
