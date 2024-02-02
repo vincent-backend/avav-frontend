@@ -323,6 +323,18 @@
           },
           "url": "/apps/avavpay",
           "target": "_self"
+        },
+        {
+          "name": {
+            "en": "MacCMS",
+            "zh-CN": "MacCMS",
+            "zh": "MacCMS",
+            "ja": "MacCMS",
+            "ko": "MacCMS",
+            "vi": "MacCMS"
+          },
+          "url": "/apps/maccms",
+          "target": "_self"
         }
       ],
       "url": ""

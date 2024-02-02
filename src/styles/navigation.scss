@@ -16,7 +16,7 @@
 
 // navbar items
 .navbar {
-  @apply relative flex flex-wrap items-center justify-between;
+  @apply relative flex flex-row items-center justify-between lg:items-start;
 }
 
 .navbar-brand {
@@ -99,7 +99,7 @@
 }
 
 .navbar .menu-items {
-  @apply hidden lg:flex items-center order-2;
+  @apply hidden md:flex flex-wrap items-center justify-end flex-shrink;
 }
 
 .navbar ul li {

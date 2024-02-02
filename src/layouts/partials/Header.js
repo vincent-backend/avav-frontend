@@ -193,8 +193,6 @@ const Header = () => {
     setShowMenu(false);
   };
 
-  
-
   //sticky header
   useEffect(() => {
     const header = headerRef.current;
@@ -246,7 +244,7 @@ const Header = () => {
                     <p className="menu-item first-item expand-btn cursor-pointer">
                       {menu.name[locale]}
                     </p>
-                    <ul className="dropdown-menu">
+                    <ul className="dropdown-menu z-[100]">
                       {menu.children.map((child, c_index) => (
                         <React.Fragment key={`submenu-${index}-${c_index}`}>
                           {child.hasChildren ? (

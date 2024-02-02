@@ -165,6 +165,11 @@
   @apply text-base text-white;
 }
 
+// apps-entrance
+.apps-entrance {
+  @apply  w-[210px] h-[72px] bg-[#151313] text-center leading-[64px] border-[4px] border-[#262626] hover:border-cred;
+}
+
 // umate
 .umate-portfolio {
   @apply flex flex-col md:gap-[50px] justify-center items-center;
