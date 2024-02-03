@@ -5,8 +5,13 @@ import { useEffect, useState } from "react";
 export default function HistoryTimeline() {
   let direction = "";
   const { locale, setLocale } = useTranslation();
-
+  const [itemLimit, setItemLimit] = useState(10);
   const [items, setItems] = useState(data[locale]);
+
+  const handleMore = () => {
+    if (items.length - itemLimit > 10) setItemLimit(itemLimit + 10);
+    else setItemLimit(items.length);
+  }
 
   useEffect(() => {
     setItems(data[locale]);
@@ -15,11 +20,15 @@ export default function HistoryTimeline() {
   return (
     <div className="mt-5 md:mt-[50px]">
       <div className="timeline">
-        {items.map((bloc, index) => {
+        {items.slice(0, itemLimit).map((bloc, index) => {
           direction = direction === "left" ? "right" : "left";
           return <TimeLineBloc data={bloc} direction={direction} key={index} />;
         })}
       </div>
+      {itemLimit < items.length &&
+        <div className="text-white text-[14px] md:text-[18px] font-secondary cursor-pointer" onClick={handleMore}>More...</div>
+      }
+      
     </div>
   );
 }

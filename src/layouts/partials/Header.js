@@ -250,7 +250,7 @@ const Header = () => {
                       {menu.children.map((child, c_index) => (
                         <React.Fragment key={`submenu-${index}-${c_index}`}>
                           {child.hasChildren ? (
-                            <li className="dropdown dropdown-right">
+                            <li className="dropdown dropdown-right group">
                               <p className="menu-item expand-btn">
                                 {child.name[locale]}
                               </p>
