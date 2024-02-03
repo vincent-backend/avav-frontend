@@ -1,6 +1,10 @@
 {
     "en": [
         {
+            "date": "February 2, 2024",
+            "content": "AVAVBridge Inscription's first cross-chain bridge Token is officially launched."
+        },
+        {
             "date": "January 31, 2024",
             "content": "$AVAV is now available on Binance Web3 Wallet."
         },
@@ -74,6 +78,10 @@
         }
     ],
     "zh-CN": [
+        {
+            "date": "2024年2月2日",
+            "content": "AVAVBridge 铭文第一个跨链桥Token正式上线。"
+        },
         {
             "date": "2024年1月31日",
             "content": "$AVAV 上线币安Web3钱包。"
@@ -153,6 +161,10 @@
     ],
     "zh": [
         {
+            "date": "2024年2月2日",
+            "content": "AVAVBridge 銘文第一個跨鏈橋Token正式上線。"
+        },
+        {
             "date": "2024年1月31日",
             "content": "$AVAV 上线币安Web3钱包。"
         },
@@ -226,6 +238,10 @@
         }
     ],
     "ja": [
+        {
+            "date": "2024年2月2日",
+            "content": "AVAVBridge Inscription初のクロスチェーンブリッジトークンが正式に発売される。"
+        },
         {
             "date": "2024年1月25日",
             "content": "CoinEX取引所は、AVAV/USDT取引ペアを1月25日に上場すると発表した。"
@@ -301,8 +317,16 @@
     ],
     "ko": [
         {
+            "date": "2024年2月2日",
+            "content": "AVAVBridge의 첫 번째 크로스체인 브리지 토큰이 공식 출시되었습니다."
+        },
+        {
             "date": "2024년 1월 31일",
             "content": "이제 $AVAV를 Binance Web3 지갑에서 사용할 수 있습니다."
+        },
+        {
+            "date": "2024年1月25日",
+            "content": "CoinEX交易所公告将于1月25日上线AVAV/USDT交易对。"
         },
         {
             "date": "2024년 1월 25일",

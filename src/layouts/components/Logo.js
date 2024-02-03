@@ -10,15 +10,12 @@ const Logo = ({ src, lang }) => {
     <Link href={`/`} className="navbar-brand block">
       <div className="flex flex-row items-center h-[60px]">
         <ImageFallback
-          width={width.replace("px", "")}
-          height={height.replace("px", "")}
+          width={36}
+          height={36}
           src={src ? src : logo}
           alt={title}
           priority
-          style={{
-            height: height.replace("px", "") + "px",
-            width: width.replace("px", "") + "px",
-          }}
+          className={`min-w-[36px] min-h-[36px]`}
         />
       </div>
     </Link>

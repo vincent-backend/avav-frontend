@@ -106,10 +106,10 @@ export default function Home({ data }) {
   };
 
   // copy address
-  const handleAddrCopy = () => {
-    if (CopyToClipboard(general.donate_addr, locale)) {
+  const handleAddrCopy = (copyStr) => {
+    if (CopyToClipboard(copyStr, locale)) {
       Store.addNotification({
-        message: "AVAV donation address has been copied.",
+        message: "Copy Success!",
         type: "success",
         insert: "top",
         container: "top-right",
@@ -290,8 +290,33 @@ export default function Home({ data }) {
           {/* Dashboard */}
           <Dashboard />
 
+          {/* AVAV Token Address */}
+          <section className="animate container mx-auto my-12 md:my-20 lg:my-28 max-w-[600px]">
+            <p className="text-cred font-primary font-bold text-center text-[18px] md:text-[26px]">
+              {home.token_addr}
+            </p>
+            <div className="mt-2 md:mt-5 flex flex-col md:flex-row items-center">
+              <div className="relative flex flex-row items-center justify-between h-[60px] md:h-[70px] bg-[#1A1C1F] w-full mt-4 md:mt-0">
+                <p className="text-white text-center font-secondary text-[14px] px-[10px] md:px-[20px] break-all w-full">
+                  {general.token_addr}
+                </p>
+                <button
+                  className="bg-cred min-w-[60px] md:min-w-[70px] h-full pl-[18px] md:pl-[22px]"
+                  onClick={() => handleAddrCopy(general.token_addr)}
+                >
+                  <Image
+                    alt="copy"
+                    src="/images/footer/copy_nor.svg"
+                    width={22}
+                    height={22}
+                  />
+                </button>
+              </div>
+            </div>
+          </section>
+
           {/*Blog 1*/}
-          <section className="animate mt-[60px] md:mt-[120px] relative">
+          <section className="animate mt-[60px] md:mt-[120px] relative overflow-hidden">
             {/*Left line*/}
             <div className="absolute w-[55%] h-[804px] md:w-[1000px] -top-24 md:top-0 left-0 bg-contain bg-center bg-no-repeat bg-[url('/images/home/line.gif')] md:bg-[url('/images/home/md/line.gif')] -z-10" />
             <div className="container">
@@ -352,7 +377,7 @@ export default function Home({ data }) {
             </div>
           </section>
           {/* JOIN WEB3's MOST VIBRANT COMMUNITY */}
-          <section className="animate mt-12 md:mt-[212px] relative">
+          <section className="animate mt-12 md:mt-[212px] relative overflow-x-hidden">
             <div className="-z-20 absolute w-[100%] h-[566px] md:w-[1000px] md:h-[800px] top-0 right-0 bg-contain bg-no-repeat bg-[url('/images/home/bg_Decoration_2.gif')] md:bg-[url('/images/home/md/bg_Decoration_2.gif')]" />
             <div className="container">
               <div className="flex flex-col mx-auto max-w-[890px]">
@@ -491,7 +516,7 @@ export default function Home({ data }) {
             </div>
           </section>
 
-          {/* AVAV Address */}
+          {/* AVAV Donation Address */}
           <section className="animate container mx-auto my-12 md:my-16 lg:my-36 max-w-[720px]">
             <p className="text-cred font-primary font-bold text-center text-[18px] md:text-[26px]">
               {home.donation}
@@ -511,12 +536,12 @@ export default function Home({ data }) {
                 |
               </div>
               <div className="relative flex flex-row items-center justify-between h-[60px] md:h-[70px] bg-[#1A1C1F] w-full mt-4 md:mt-0">
-                <p className="text-white font-primary text-[14px] px-[10px] md:px-[20px] break-all">
+                <p className="text-white font-secondary text-[14px] px-[10px] md:px-[20px] break-all">
                   {general.donate_addr}
                 </p>
                 <button
                   className="bg-cred min-w-[60px] md:w-[70px] h-full pl-[18px] md:pl-[22px]"
-                  onClick={() => handleAddrCopy()}
+                  onClick={() => handleAddrCopy(general.donate_addr)}
                 >
                   <Image
                     alt="copy"

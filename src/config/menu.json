@@ -323,9 +323,34 @@
           },
           "url": "/apps/avavpay",
           "target": "_self"
+        },
+        {
+          "name": {
+            "en": "MacCMS",
+            "zh-CN": "MacCMS",
+            "zh": "MacCMS",
+            "ja": "MacCMS",
+            "ko": "MacCMS",
+            "vi": "MacCMS"
+          },
+          "url": "/apps/maccms",
+          "target": "_self"
         }
       ],
       "url": ""
+    },
+    {
+      "name": {
+        "en": "AVAV Bridge",
+        "zh-CN": "AVAV 跨链桥",
+        "zh": "AVAV 跨鏈橋",
+        "ja": "AVAV Bridge",
+        "ko": "AVAV Bridge",
+        "vi": "AVAV Bridge"
+      },
+      "hasChildren": false,
+      "url": "https://bridge.avascriptions.com/",
+      "target": "_blank"
     }
   ],
   "footer": {

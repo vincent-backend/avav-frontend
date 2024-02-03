@@ -9,7 +9,7 @@
 }
 
 .nav-container {
-  @apply mx-0 px-4 md:mx-auto max-w-[1280px] md:px-5;
+  @apply mx-4 px-4 md:mx-auto max-w-[1480px] md:px-5;
 }
 
 // form style
@@ -163,6 +163,11 @@
 }
 .found-description {
   @apply text-base text-white;
+}
+
+// apps-entrance
+.apps-entrance {
+  @apply  w-[210px] h-[72px] bg-[#151313] text-center leading-[64px] border-[4px] border-[#262626] hover:border-cred;
 }
 
 // umate

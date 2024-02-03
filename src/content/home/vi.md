@@ -29,4 +29,5 @@ home:
   dev_course: "Khóa học phát triển"
   donation: "Địa chỉ quyên góp do cộng đồng $AVAV xây dựng"
   donation_description: "Sự đóng góp của cộng đồng chủ yếu được sử dụng để xây dựng cộng đồng.<br>Nhóm quản lý chủ yếu được quản lý bởi những người đóng góp sớm cho cộng đồng."
+  token_addr: "$AVAV Địa chỉ mã thông báo hợp đồng"
 ---
