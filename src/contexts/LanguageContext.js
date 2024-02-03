@@ -15,7 +15,6 @@ export function LanguageProvider({ children }) {
 
     if (browserLang === null) {
       setBrowserLang(navigator.language);
-      console.log(browserLang);
     }
 
     // set language

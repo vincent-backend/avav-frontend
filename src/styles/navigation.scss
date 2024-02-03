@@ -123,9 +123,10 @@
 }
 .expand-btn:after {
   content: " \25BE";
-  opacity: 0.4;
-  font-size: 16px;
+  opacity: 0.6;
+  font-size: 18px;
   margin-left: 5px;
+  @apply group-hover:-rotate-90 transition-all duration-100;
 }
 
 .navbar .dropdown-menu,

@@ -206,7 +206,7 @@ const Header = () => {
       document.body.style.overflow = "auto";
     }
 
-    window.addEventListener("scroll", () => {
+    const onScroll = () => {
       const scrollY = window.scrollY;
       scrollY > 0 ? setSticky(true) : setSticky(false);
       if (scrollY > headerHeight) {
@@ -215,7 +215,9 @@ const Header = () => {
       } else {
         setDirection(null);
       }
-    });
+    }
+    window.addEventListener("scroll", onScroll);
+    
   }, [locale, showMenu]);
 
   // logo source
@@ -248,7 +250,7 @@ const Header = () => {
                       {menu.children.map((child, c_index) => (
                         <React.Fragment key={`submenu-${index}-${c_index}`}>
                           {child.hasChildren ? (
-                            <li className="dropdown dropdown-right">
+                            <li className="dropdown dropdown-right group">
                               <p className="menu-item expand-btn">
                                 {child.name[locale]}
                               </p>
