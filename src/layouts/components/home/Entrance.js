@@ -281,7 +281,22 @@ export default function Entrance({ text, handleClick, handleIconClick }) {
         <Image
           alt="Binance"
           src="/images/home/entrance/binance-logo.png"
-          width={125}
+          width={106}
+          height={118}
+          className="h-[63.4%] w-auto md:h-[118px]"
+        />
+        <Image alt="trading" src="/images/home/entrance/logo_ic_Trading.svg" width={18} height={18} className="absolute w-[18px] h-[18px] top-2 left-2" />
+      </Link>
+      {/* Binance */}
+      <Link
+        href="https://traderjoexyz.com/avalanche/pool/v21/0x97c3780bdde6916f601a4562c5f24a8b68d4a7ae/AVAX/100"
+        target="_blank"
+        className="site-link relative"
+      >
+        <Image
+          alt="Trader Joe"
+          src="/images/home/entrance/traderjoe-logo.png"
+          width={128}
           height={118}
           className="h-[63.4%] w-auto md:h-[118px]"
         />
