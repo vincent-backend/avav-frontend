@@ -206,7 +206,7 @@ const Header = () => {
       document.body.style.overflow = "auto";
     }
 
-    window.addEventListener("scroll", () => {
+    const onScroll = () => {
       const scrollY = window.scrollY;
       scrollY > 0 ? setSticky(true) : setSticky(false);
       if (scrollY > headerHeight) {
@@ -215,7 +215,9 @@ const Header = () => {
       } else {
         setDirection(null);
       }
-    });
+    }
+    window.addEventListener("scroll", onScroll);
+    
   }, [locale, showMenu]);
 
   // logo source
