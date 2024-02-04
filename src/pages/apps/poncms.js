@@ -13,7 +13,7 @@ import Link from "next/link";
 import ModalVideo from "@/layouts/components/home/ModalVideo";
 import AppEntrance from "@/layouts/components/apps/entrance";
 
-export default function MacCMS({ data }) {
+export default function PonCMS({ data }) {
   const { locale, setLocale } = useTranslation();
 
   const [loading, setLoading] = useState(false);
@@ -26,7 +26,7 @@ export default function MacCMS({ data }) {
   const [frontmatter, setFrontmatter] = useState(c_data);
 
   //
-  let { common, maccms } = frontmatter;
+  let { common, poncms } = frontmatter;
 
   useEffect(() => {
     //frontmatter
@@ -66,46 +66,36 @@ export default function MacCMS({ data }) {
           {/* Background */}
           <Image
             alt="banner-bg"
-            src="/images/apps/maccms/banner.gif"
+            src="/images/apps/umate/banner_bg.gif"
             width={750}
             height={1480}
             className="-z-10 absolute md:hidden top-0 left-0 w-full h-auto"
           />
-          <div className="absolute hidden md:block -z-10 w-[1922px] h-[660px] top-0 left-[calc(50vw-961px)] bg-[url('/images/apps/maccms/pc/banner.gif')]" />
+          <div className="absolute hidden md:block -z-10 w-[1922px] h-[660px] top-0 left-[calc(50vw-961px)] bg-[url('/images/apps/umate/md/banner.gif')]" />
 
-          <div className="container h-[calc(100vh-80px)] md:h-[550px]">
+          <div className="container h-[calc(100vh-50px)] md:h-[550px]">
             {/* banner */}
             {markdownify(
-              maccms.title,
+              poncms.title,
               "",
               `${locale == "en" ? "font-secondary" : "font-primary font-bold"}`
             )}
-            {/* Statistics */}
-            <div className="flex flex-wrap justify-between w-full md:max-w-[700px] mx-auto mt-[25px] md:mt-10 gap-y-5">
-              {maccms.statistics.map((item, index) => {
-                return (<div key={index} className="flex flex-col md:gap-y-2 md:w-auto">
-                  <p className="font-primary text-white text-[14px] md:text-[18px]">{item.title}</p>
-                  <p className="font-secondary text-white text-[20px] md:text-[24px]">{item.value}</p>
-                </div>)
-              }
-              )}
-            </div>
-            <div className="flex flex-col w-full items-center justify-center mt-[25px] md:mt-12">
+            <div className="flex flex-col w-full items-center justify-center mt-[30px] md:mt-[60px]">
               <Image
                 alt="banner-logo"
-                src="/images/apps/maccms/logo.png"
-                width={60}
-                height={60}
+                src="/images/apps/umate/banner_logo.png"
+                width={126}
+                height={38}
               />
               {markdownify(
-                maccms.banner_content,
+                poncms.banner_content,
                 "",
                 "mt-[16px] md:mt-[24px] text-center text-[20px]"
               )}
               {/* Banner link button */}
-              <div className="flex w-full h-[60px] mx-auto items-center">
+              <div className="flex w-full h-[60px] mx-auto items-center mt-32 md:mt-20">
                 <Link
-                  href="https://maccms.la/"
+                  href="https://umate.me"
                   target="_blank"
                   className="mt-[20px] md:mt-[30px] mx-auto"
                 >
@@ -118,7 +108,7 @@ export default function MacCMS({ data }) {
                       className="-z-10 absolute left-0 top-0 opacity-100 w-[200px] h-[50px] group-hover:w-[240px] group-hover:h-[60px] group-hover:opacity-70 group-active:w-[240px] group-active:h-[60px] group-active:opacity-70 transition-all duration-200 ease-linear"
                     />
                     <p className="text-center text-white leading-[50px]">
-                      {maccms.banner_button}
+                      {poncms.banner_button}
                     </p>
                   </div>
                 </Link>
@@ -134,7 +124,7 @@ export default function MacCMS({ data }) {
             {/* Background */}
             <Image
               alt="flower-1"
-              src="/images/apps/maccms/maccms_bg_1.gif"
+              src="/images/apps/umate/pic_flowers_1.gif"
               width={250}
               height={400}
               className="-z-20 md:hidden absolute right-0 top-[50%]"
@@ -144,7 +134,8 @@ export default function MacCMS({ data }) {
                 {markdownify(
                   common.port_1,
                   "",
-                  `text-center text-[20px] md:text-[40px] ${locale == "en" ? "font-secondary" : "font-primary font-bold"
+                  `text-center text-[20px] md:text-[40px] ${
+                    locale == "en" ? "font-secondary" : "font-primary font-bold"
                   }`
                 )}
                 <Image
@@ -159,7 +150,8 @@ export default function MacCMS({ data }) {
                 {markdownify(
                   common.port_2,
                   "",
-                  `text-center text-[20px] md:text-[40px] ${locale == "en" ? "font-secondary" : "font-primary font-bold"
+                  `text-center text-[20px] md:text-[40px] ${
+                    locale == "en" ? "font-secondary" : "font-primary font-bold"
                   }`
                 )}
                 <Image
@@ -174,7 +166,8 @@ export default function MacCMS({ data }) {
                 {markdownify(
                   common.port_3,
                   "",
-                  `text-center text-[20px] md:text-[40px] ${locale == "en" ? "font-secondary" : "font-primary font-bold"
+                  `text-center text-[20px] md:text-[40px] ${
+                    locale == "en" ? "font-secondary" : "font-primary font-bold"
                   }`
                 )}
                 <Image
@@ -189,7 +182,8 @@ export default function MacCMS({ data }) {
                 {markdownify(
                   common.port_4,
                   "",
-                  `text-center text-[20px] md:text-[40px] ${locale == "en" ? "font-secondary" : "font-primary font-bold"
+                  `text-center text-[20px] md:text-[40px] ${
+                    locale == "en" ? "font-secondary" : "font-primary font-bold"
                   }`
                 )}
                 <Image
@@ -205,21 +199,21 @@ export default function MacCMS({ data }) {
           {/* Video tutorial */}
           <div className="relative mt-[50px] md:mt-[100px] w-full flex flex-col items-center">
             {/* Background */}
-            <Image alt="background" src="/images/apps/umate/pic_graph_1.gif" width={750} height={532} className="absolute -z-20 left-0 top-[-120px] md:top-[-380px]" />
-            <Image alt="background" src="/images/apps/maccms/maccms_bg_2.gif" width={300} height={300} className="hidden -z-20 md:block absolute left-0 top-[90px]" />
+            <Image alt="background" src="/images/apps/umate/pic_graph_1.gif" width={750} height={532} className="absolute -z-20 left-0 top-[-120px] md:top-[-390px]" />
+            <Image alt="background" src="/images/apps/umate/pic_flowers_2.gif" width={400} height={400} className="hidden -z-20 md:block absolute left-0 top-[175px]" />
             {/* title */}
             <h4 className="text-cred inline-block">{common.tutorial}</h4>
             <div className="mx-auto">
               <ModalVideo
-                thumb={"/images/apps/umate/video_thumb.png"}
-                thumbWidth={360}
-                thumbHeight={640}
-                thumbAlt={"AVAV Video Payment Tutorial"}
-                video={"/videos/telegram_video.mp4"}
-                videoWidth={288}
-                videoHeight={640}
-                setVideoShow={setVideoShow}
-              />
+                  thumb={"/images/apps/umate/video_thumb.png"}
+                  thumbWidth={360}
+                  thumbHeight={640}
+                  thumbAlt={"AVAV Video Payment Tutorial"}
+                  video={"/videos/telegram_video.mp4"}
+                  videoWidth={288}
+                  videoHeight={640}
+                  setVideoShow={setVideoShow}
+                />
             </div>
           </div>
           {/* Opensource Link */}

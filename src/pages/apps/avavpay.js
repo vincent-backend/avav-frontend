@@ -11,6 +11,7 @@ import { markdownify } from "@/lib/utils/textConverter";
 import clsx from "clsx";
 import Link from "next/link";
 import ModalVideo from "@/layouts/components/home/ModalVideo";
+import AppEntrance from "@/layouts/components/apps/entrance";
 
 export default function AVAPAY({ data }) {
   const { locale, setLocale } = useTranslation();
@@ -114,9 +115,12 @@ export default function AVAPAY({ data }) {
               </div>
             </div>
           </div>
+          
+          {/* Entrance */}
+          <AppEntrance />
 
           {/* Portfolio */}
-          <div className="relative w-full justify-center md:justify-between mt-[10px] md:mt-[20px]">
+          <div className="relative w-full justify-center md:justify-between mt-[30px] md:mt-[70px]">
             {/* Background */}
             <Image
               alt="flower-1"
