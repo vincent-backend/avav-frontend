@@ -130,7 +130,7 @@ export default function MacCMS({ data }) {
               <Link href="/apps/avavpay" target="_blank" className="group apps-entrance bg-[url('/images/apps/entrance/umate-logo.png')]">
                 <p className="font-secondary text-text group-hover:text-white text-[24px]">Umate.me</p>
               </Link>
-              <Link href="/apps/maccms" target="_self" className="group apps-entrance bg-[url('/images/apps/entrance/maccms-logo.png')]">
+               <Link href="/apps/maccms" target="_self" className="group apps-entrance bg-[url('/images/apps/entrance/maccms-logo.png')]">
                 <p className="font-secondary text-text group-hover:text-white text-[24px]">Maccms</p>
               </Link>
             </div>
