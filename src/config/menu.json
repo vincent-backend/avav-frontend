@@ -335,18 +335,6 @@
           },
           "url": "/apps/maccms",
           "target": "_self"
-        },
-        {
-          "name": {
-            "en": "PonCMS",
-            "zh-CN": "PonCMS",
-            "zh": "PonCMS",
-            "ja": "PonCMS",
-            "ko": "PonCMS",
-            "vi": "PonCMS"
-          },
-          "url": "/apps/poncms",
-          "target": "_self"
         }
       ],
       "url": ""

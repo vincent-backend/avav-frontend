@@ -127,7 +127,7 @@ export default function AVAPAY({ data }) {
               src="/images/apps/umate/pic_flowers_1.gif"
               width={250}
               height={400}
-              className="-z-20 md:hidden absolute right-0 top-[50%]"
+              className="-z-20 md:hidden absolute right-0 top-[40%]"
             />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-[50px] md:gap-y-[100px] mx-auto max-w-[960px]">
               <div className="umate-portfolio">

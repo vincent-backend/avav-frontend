@@ -66,12 +66,12 @@ export default function PonCMS({ data }) {
           {/* Background */}
           <Image
             alt="banner-bg"
-            src="/images/apps/umate/banner_bg.gif"
+            src="/images/apps/poncms/banner.gif"
             width={750}
             height={1480}
             className="-z-10 absolute md:hidden top-0 left-0 w-full h-auto"
           />
-          <div className="absolute hidden md:block -z-10 w-[1922px] h-[660px] top-0 left-[calc(50vw-961px)] bg-[url('/images/apps/umate/md/banner.gif')]" />
+          <div className="absolute hidden md:block -z-10 w-[1920px] h-[660px] top-0 left-[calc(50vw-961px)] bg-[url('/images/apps/poncms/md/banner.gif')]" />
 
           <div className="container h-[calc(100vh-50px)] md:h-[550px]">
             {/* banner */}
@@ -83,9 +83,9 @@ export default function PonCMS({ data }) {
             <div className="flex flex-col w-full items-center justify-center mt-[30px] md:mt-[60px]">
               <Image
                 alt="banner-logo"
-                src="/images/apps/umate/banner_logo.png"
-                width={126}
-                height={38}
+                src="/images/apps/poncms/logo.png"
+                width={62}
+                height={62}
               />
               {markdownify(
                 poncms.banner_content,
@@ -95,7 +95,7 @@ export default function PonCMS({ data }) {
               {/* Banner link button */}
               <div className="flex w-full h-[60px] mx-auto items-center mt-32 md:mt-20">
                 <Link
-                  href="https://umate.me"
+                  href="https://avscms.com"
                   target="_blank"
                   className="mt-[20px] md:mt-[30px] mx-auto"
                 >
@@ -124,10 +124,10 @@ export default function PonCMS({ data }) {
             {/* Background */}
             <Image
               alt="flower-1"
-              src="/images/apps/umate/pic_flowers_1.gif"
+              src="/images/apps/poncms/Poncms_bg_1.gif"
               width={250}
               height={400}
-              className="-z-20 md:hidden absolute right-0 top-[50%]"
+              className="-z-20 md:hidden absolute right-0 top-[40%]"
             />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-[50px] md:gap-y-[100px] mx-auto max-w-[960px]">
               <div className="umate-portfolio">
@@ -200,7 +200,7 @@ export default function PonCMS({ data }) {
           <div className="relative mt-[50px] md:mt-[100px] w-full flex flex-col items-center">
             {/* Background */}
             <Image alt="background" src="/images/apps/umate/pic_graph_1.gif" width={750} height={532} className="absolute -z-20 left-0 top-[-120px] md:top-[-390px]" />
-            <Image alt="background" src="/images/apps/umate/pic_flowers_2.gif" width={400} height={400} className="hidden -z-20 md:block absolute left-0 top-[175px]" />
+            <Image alt="background" src="/images/apps/poncms/Poncms_bg_2.gif" width={300} height={300} className="hidden -z-20 md:block absolute left-0 top-[175px]" />
             {/* title */}
             <h4 className="text-cred inline-block">{common.tutorial}</h4>
             <div className="mx-auto">
