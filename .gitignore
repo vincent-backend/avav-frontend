@@ -38,5 +38,10 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+#contents
+/src/content/art_category.json
 #translate
 **/ko.md
+
+#images
+/public/images/art/category/
