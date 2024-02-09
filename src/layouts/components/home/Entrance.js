@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Entrance({ text, handleClick, handleIconClick }) {
   return (
-    <div className="animate flex flex-wrap justify-center lg:justify-start gap-4 mt-[200px] md:mt-[60px] ">
+    <div className="animate flex flex-wrap justify-center lg:justify-start gap-4">
       {/* Bitget */}
       <Link href="https://www.bitget.com/spot/AVAVUSDT" target="_blank" className="site-link relative">
         <Image
