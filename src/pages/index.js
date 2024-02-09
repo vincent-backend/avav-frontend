@@ -277,7 +277,7 @@ export default function Home({ data }) {
               </div>
             </div>
           </section>
-          <section className="animate mt-52 md:mt-20">
+          <section className="animate mt-[195px] md:mt-20">
             {/* Site Link */}
             <div className="container">
               <Entrance
