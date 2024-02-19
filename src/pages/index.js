@@ -159,7 +159,7 @@ export default function Home({ data }) {
         return;
       }
     };
-    window.addEventListener("keydown", onKeyPress);
+    if (typeof window !== "undefined")  window.addEventListener("keydown", onKeyPress);
 
     // animate
     const ctx = gsap.context(() => {
@@ -192,7 +192,7 @@ export default function Home({ data }) {
 
     const handleStart = (url) => {
       url !== router.asPath && setLoading(true);
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      if (typeof window !== "undefined") window.scrollTo({ top: 0, behavior: "smooth" });
     };
     const handleComplete = (url) => url === router.asPath && setLoading(false);
 
@@ -205,7 +205,7 @@ export default function Home({ data }) {
       router.events.off("routeChangeComplete", handleComplete);
       router.events.off("routeChangeError", handleComplete);
       ctx.revert();
-      window.removeEventListener("keydown", onKeyPress);
+      if (typeof window !== "undefined") window.removeEventListener("keydown", onKeyPress);
     };
   }, [locale, data]);
 

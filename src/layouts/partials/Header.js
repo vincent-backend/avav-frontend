@@ -229,7 +229,7 @@ const Header = () => {
       }
     }
     
-    window.addEventListener("scroll", onScroll);
+    if (typeof window !== "undefined") window.addEventListener("scroll", onScroll);
     
   }, [locale, showMenu]);
 

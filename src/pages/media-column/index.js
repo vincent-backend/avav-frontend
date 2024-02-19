@@ -49,7 +49,7 @@ export default function Tutorial({ data }) {
 
   const handleNavigate = (page) => {
     setCurrentPage(page);
-    window.scrollTo({top: 60, behavior: 'smooth'});
+    if (typeof window !== "undefined") window.scrollTo({top: 60, behavior: 'smooth'});
   };
 
   useEffect(() => {
@@ -59,7 +59,7 @@ export default function Tutorial({ data }) {
 
     const handleStart = (url) => {
       url !== router.asPath && setLoading(true);
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      if (typeof window !== "undefined") window.scrollTo({ top: 0, behavior: "smooth" });
     };
     const handleComplete = (url) => url === router.asPath && setLoading(false);
 

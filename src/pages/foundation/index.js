@@ -101,7 +101,7 @@ export default function Foundation({ data }) {
 
     const handleStart = (url) => {
       url !== router.asPath && setLoading(true);
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      if (typeof window !== "undefined") window.scrollTo({ top: 0, behavior: "smooth" });
     };
     const handleComplete = (url) => url === router.asPath && setLoading(false);
 
