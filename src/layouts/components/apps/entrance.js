@@ -11,15 +11,15 @@ export default function AppEntrance() {
                 <p className="font-secondary text-text group-hover:text-white text-[24px]">Umate.me</p>
               </Link>
               <Link href="/apps/maccms" target="_self" className="group apps-entrance bg-[url('/images/apps/entrance/maccms-logo.png')]">
-                <p className="font-secondary text-text group-hover:text-white text-[24px]">Maccms</p>
+                <p className="font-secondary text-text group-hover:text-white text-[24px]">MacCMS</p>
               </Link>
             </div>
             <div className="flex flex-col sm:flex-row w-full lg:w-auto justify-center items-center gap-x-5 gap-y-5">
               <Link href="" target="_self" className="group apps-entrance">
-                <p className="font-secondary text-text group-hover:text-white text-[24px]">Seacms</p>
+                <p className="font-secondary text-text group-hover:text-white text-[24px]">SeaCMS</p>
               </Link>
               <Link href="/apps/poncms" target="_self" className="group apps-entrance bg-[url('/images/apps/entrance/poncms-logo.png')]">
-                <p className="font-secondary text-text group-hover:text-white text-[24px]">Poncms</p>
+                <p className="font-secondary text-text group-hover:text-white text-[24px]">PonCMS</p>
               </Link>
             </div>
           </div>
