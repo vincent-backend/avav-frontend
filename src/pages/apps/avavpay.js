@@ -71,7 +71,7 @@ export default function AVAPAY({ data }) {
             height={1480}
             className="-z-10 absolute md:hidden top-0 left-0 w-full h-auto"
           />
-          <div className="absolute hidden md:block -z-10 w-[1922px] h-[660px] top-0 left-[calc(50vw-961px)] bg-[url('/images/apps/umate/md/banner.gif')]" />
+          <div className="absolute hidden md:block -z-10 w-[1920px] h-[660px] top-0 left-[calc(50vw-960px)] bg-[url('/images/apps/umate/md/banner.gif')]" />
 
           <div className="container h-[calc(100vh-50px)] md:h-[550px]">
             {/* banner */}

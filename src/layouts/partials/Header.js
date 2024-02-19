@@ -213,7 +213,7 @@ const Header = () => {
 
     if (showMenu) {
       document.body.style.overflow = "hidden";
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      if (typeof window !== 'undefined') window.scrollTo({ top: 0, behavior: "smooth" });
     } else {
       document.body.style.overflow = "auto";
     }
@@ -228,6 +228,7 @@ const Header = () => {
         setDirection(null);
       }
     }
+    
     window.addEventListener("scroll", onScroll);
     
   }, [locale, showMenu]);
