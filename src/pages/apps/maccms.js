@@ -11,6 +11,7 @@ import { markdownify } from "@/lib/utils/textConverter";
 import clsx from "clsx";
 import Link from "next/link";
 import ModalVideo from "@/layouts/components/home/ModalVideo";
+import AppEntrance from "@/layouts/components/apps/entrance";
 
 export default function MacCMS({ data }) {
   const { locale, setLocale } = useTranslation();
@@ -124,6 +125,7 @@ export default function MacCMS({ data }) {
               </div>
             </div>
           </div>
+          
           {/* Entrance */}
           <div className="flex flex-col lg:flex-row w-full justify-center items-center gap-x-5 gap-y-5">
             <div className="flex flex-col sm:flex-row w-full lg:w-auto justify-center items-center gap-x-5 gap-y-5">
@@ -143,6 +145,7 @@ export default function MacCMS({ data }) {
               </Link>
             </div>
           </div>
+          <AppEntrance />
 
           {/* Portfolio */}
           <div className="relative w-full justify-center md:justify-between mt-[30px] md:mt-[70px]">
@@ -152,7 +155,7 @@ export default function MacCMS({ data }) {
               src="/images/apps/maccms/maccms_bg_1.gif"
               width={250}
               height={400}
-              className="-z-20 md:hidden absolute right-0 top-[50%]"
+              className="-z-20 md:hidden absolute right-0 top-[40%]"
             />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-[50px] md:gap-y-[100px] mx-auto max-w-[960px]">
               <div className="umate-portfolio">

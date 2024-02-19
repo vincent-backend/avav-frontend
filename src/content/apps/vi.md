@@ -28,3 +28,8 @@ maccms:
   ]
   banner_content: "<p class='text-text text-[14px] leading-tight'>MacCMS, một nền tảng quản lý nội dung được sử dụng rộng rãi, đã được hàng chục nghìn trang web áp dụng để chạy các dịch vụ video theo yêu cầu của họ.<br/>Hệ thống này được biết đến với các tính năng phát hành và quản lý rạp chiếu phim hiệu quả và ngắn gọn, đồng thời có một lượng lớn cơ sở người dùng trên toàn thế giới.</p>"
   banner_button: "Maccms"
+poncms:
+  title: "<h3 class='text-cred text-center'>The world's largest video program</h3>
+  <h3 class='text-white text-center'>Support AVAV payment</h3>"
+  banner_content: "<p class='text-text text-[14px] max-w-[674px]'>1 billion daily visitors worldwide link to potential users worldwide. Pon is also a client</p>"
+  banner_button: "Poncms"

@@ -27,3 +27,8 @@ maccms:
   ]
   banner_content: "<p class='text-text text-[14px] leading-tight'>MacCMS是一個廣泛使用的內容管理平台，已被數以萬計的網站採用來運行其點播視訊服務。<br/>該系統以高效、簡潔的影院管理和發布功能而著稱，擁有龐大的用戶群。全球用戶群。</p>"
   banner_button: "Maccms"
+poncms:
+  title: "<h3 class='text-cred text-center'>The world's largest video program</h3>
+  <h3 class='text-white text-center'>Support AVAV payment</h3>"
+  banner_content: "<p class='text-text text-[14px] max-w-[674px]'>1 billion daily visitors worldwide link to potential users worldwide. Pon is also a client</p>"
+  banner_button: "Poncms"

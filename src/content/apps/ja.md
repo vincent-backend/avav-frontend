@@ -28,3 +28,8 @@ maccms:
   ]
   banner_content: "<p class='text-text text-[14px] leading-tight'>広く使用されているコンテンツ管理プラットフォームである MacCMS は、オンデマンド ビデオ サービスを実行するために何万もの Web サイトで採用されています。<br/>このシステムは、効率的かつ簡潔なシネマ管理およびリリース機能で知られており、大規模な機能を備えています。世界中のユーザーベース。</p>"
   banner_button: "Maccms"
+poncms:
+  title: "<h3 class='text-cred text-center'>The world's largest video program</h3>
+  <h3 class='text-white text-center'>Support AVAV payment</h3>"
+  banner_content: "<p class='text-text text-[14px] max-w-[674px]'>1 billion daily visitors worldwide link to potential users worldwide. Pon is also a client</p>"
+  banner_button: "Poncms"

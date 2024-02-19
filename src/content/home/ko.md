@@ -29,5 +29,4 @@ home:
   dev_course: "Development Course"
   donation: "$AVAV community built donation address"
   donation_description: "Community donations are mainly used for community building.<br>The management team is primarily managed by early contributors to the community."
-  token_addr: "$AVAV Contract Token Address"
 ---

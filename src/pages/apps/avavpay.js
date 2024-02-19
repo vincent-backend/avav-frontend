@@ -11,6 +11,7 @@ import { markdownify } from "@/lib/utils/textConverter";
 import clsx from "clsx";
 import Link from "next/link";
 import ModalVideo from "@/layouts/components/home/ModalVideo";
+import AppEntrance from "@/layouts/components/apps/entrance";
 
 export default function AVAPAY({ data }) {
   const { locale, setLocale } = useTranslation();
@@ -114,16 +115,19 @@ export default function AVAPAY({ data }) {
               </div>
             </div>
           </div>
+          
+          {/* Entrance */}
+          <AppEntrance />
 
           {/* Portfolio */}
-          <div className="relative w-full justify-center md:justify-between mt-[10px] md:mt-[20px]">
+          <div className="relative w-full justify-center md:justify-between mt-[30px] md:mt-[70px]">
             {/* Background */}
             <Image
               alt="flower-1"
               src="/images/apps/umate/pic_flowers_1.gif"
               width={250}
               height={400}
-              className="-z-20 md:hidden absolute right-0 top-[50%]"
+              className="-z-20 md:hidden absolute right-0 top-[40%]"
             />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-[50px] md:gap-y-[100px] mx-auto max-w-[960px]">
               <div className="umate-portfolio">

@@ -5,7 +5,7 @@ nav:
 banner:
   title: "Welcome To"
   subtitle: "A Very Amazing Victory. A very amazing victory"
-  content: "$AVAV is the first inscription meme in Avalanche Ecology to receive the diamond badge, with a three-day transaction volume reaching 500,000 AVAX (25.5M usd vol). It took more than a month from the beginning to the end of the casting of the inscription, and the number of holders was as high as 50,000. When you see this name, you can create an emotional resonance with the community. It is the favorite inscription of young people and is a super meme with global attributes."
+  content: "$AVAV is the first inscription for young people, the traffic leader of entertainment coins. When you see the name AVAV, you can have a strong emotional consensus with the community: the favorite inscription for people who are passionate and enterprising and love life, and perfectly possess the global A super meme with the attribute of transformation."
   btn_con: "Launch App"
 blog_1:
   title: "BUILD IT YOUR WAY"
