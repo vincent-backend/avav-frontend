@@ -10,12 +10,14 @@ import useTranslation from "@/hooks/useTranslation";
 import useOutsideAlerter from "@/hooks/useOutsideAlterter";
 
 const MobileMenu = ({
+  id,
   c_menu,
   setShowMenu,
   setTelegramShow,
-  setTwitterShow
+  setTwitterShow,
+  active,
+  handleToggle
 }) => {
-  const [isActive, setActive] = useState(false);
   const { locale, setLocale } = useTranslation();
   const asPath = useRouter();
 
@@ -25,7 +27,7 @@ const MobileMenu = ({
         <>
           <div
             className="flex flex-row items-center justify-center gap-4"
-            onClick={() => setActive(!isActive)}
+            onClick={() => handleToggle(id)}
           >
             <p className="nav-link block cursor-pointer">
               {c_menu.name[locale]}
@@ -33,14 +35,14 @@ const MobileMenu = ({
             <div
               className={clsx(
                 "bg-[url('/images/nav/nav_ic_arrow_unfold.svg')] w-[10px] h-[10px] transition-all duration-200",
-                isActive && "rotate-180"
+                active !== id && "rotate-180"
               )}
             />
           </div>
           <div
             className={clsx(
               "flex flex-col overflow-y-hidden transition-all duration-200 ease-out h-0",
-              isActive && `h-auto`
+              active == id && `h-auto`
             )}
           >
             {c_menu.children.map((child, index) => (
@@ -178,6 +180,16 @@ const Header = () => {
 
   const asPath = useRouter();
 
+  // for mobile
+  const [mactive, setMActive] = useState(null);
+  const handleMobMenuToggle = (index) => {
+    if (mactive === index) {
+      setMActive(null);
+    } else {
+      setMActive(index);
+    }
+  };
+
   // telegram
   const refTelegramHeader = useRef();
   const [isTelegramMobileMenu, setTelegramMobileMenu] = useState(false);
@@ -190,7 +202,7 @@ const Header = () => {
 
   const onChangeLocale = (l) => {
     setLocale(l);
-    setShowMenu(false);
+    //setShowMenu(false);
   };
 
   //sticky header
@@ -201,7 +213,7 @@ const Header = () => {
 
     if (showMenu) {
       document.body.style.overflow = "hidden";
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      if (typeof window !== 'undefined') window.scrollTo({ top: 0, behavior: "smooth" });
     } else {
       document.body.style.overflow = "auto";
     }
@@ -216,7 +228,8 @@ const Header = () => {
         setDirection(null);
       }
     }
-    window.addEventListener("scroll", onScroll);
+    
+    if (typeof window !== "undefined") window.addEventListener("scroll", onScroll);
     
   }, [locale, showMenu]);
 
@@ -417,7 +430,7 @@ const Header = () => {
       </header>
       <div
         className={clsx(
-          "md:hidden absolute w-[100vw] h-[100vh] bg-[url('/images/home/bg-menu.png')] top-0 bg-cover transition-all duration-100 ease-linear z-10 overflow-y-scroll",
+          "md:hidden fixed w-[100vw] h-[100vh] bg-[url('/images/home/bg-menu.png')] top-0 bg-cover transition-all duration-100 ease-linear z-10 overflow-y-scroll",
           showMenu && "left-0",
           !showMenu && "-left-[100vw]"
         )}
@@ -440,7 +453,10 @@ const Header = () => {
             {main.map((menu, index) => (
               <MobileMenu
                 key={index}
+                id={index}
                 c_menu={menu}
+                active={mactive}
+                handleToggle={handleMobMenuToggle}
                 setShowMenu={setShowMenu}
                 setTelegramShow={setTelegramMobileMenu}
                 setTwitterShow={setTwitterMobileMenu}

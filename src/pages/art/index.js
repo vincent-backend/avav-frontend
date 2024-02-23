@@ -44,7 +44,12 @@ export default function Art({ data, init_vdata }) {
     //frontmatter
     setFrontmatter(data.filter((dt) => dt.lang === locale)[0]);
 
-    const handleStart = (url) => {url !== router.asPath && setLoading(true); window.scrollTo({top: 0, behavior: 'smooth'});}
+    const handleStart = (url) => { 
+      url !== router.asPath && setLoading(true);
+      if (typeof window !== 'undefined')
+        window.scrollTo({ top: 0, behavior: 'smooth' }); 
+    }
+    
     const handleComplete = (url) => url === router.asPath && setLoading(false);
 
     router.events.on("routeChangeStart", handleStart);

@@ -159,7 +159,7 @@ export default function Home({ data }) {
         return;
       }
     };
-    window.addEventListener("keydown", onKeyPress);
+    if (typeof window !== "undefined")  window.addEventListener("keydown", onKeyPress);
 
     // animate
     const ctx = gsap.context(() => {
@@ -192,7 +192,7 @@ export default function Home({ data }) {
 
     const handleStart = (url) => {
       url !== router.asPath && setLoading(true);
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      if (typeof window !== "undefined") window.scrollTo({ top: 0, behavior: "smooth" });
     };
     const handleComplete = (url) => url === router.asPath && setLoading(false);
 
@@ -205,7 +205,7 @@ export default function Home({ data }) {
       router.events.off("routeChangeComplete", handleComplete);
       router.events.off("routeChangeError", handleComplete);
       ctx.revert();
-      window.removeEventListener("keydown", onKeyPress);
+      if (typeof window !== "undefined") window.removeEventListener("keydown", onKeyPress);
     };
   }, [locale, data]);
 
@@ -219,18 +219,18 @@ export default function Home({ data }) {
         <>
           {/*background*/}
           <div className="absolute w-full h-[1602px] md:h-[1187px] top-0 left-0 overflow-x-hidden -z-20">
-          <div className="absolute w-full min-w-[400px] aspect-[0.592] md:aspect-auto md:w-[1920px] md:h-[1187px] top-0 sm:-left-0 md:left-auto md:right-[-350px] xl:right-[-200px] 2xl:right-0 bg-contain bg-center bg-no-repeat bg-[url('/images/home/bg_top_pic.png')] md:bg-[url('/images/home/md/bg_top_pic.png')] -z-40">
+            <div className="absolute w-full h-[100vh] md:aspect-auto md:w-[1920px] md:h-[1187px] top-0 left-0 md:left-auto md:right-[-350px] xl:right-[-200px] 2xl:right-0 bg-cover md:bg-contain bg-center bg-no-repeat bg-[url('/images/home/bg_top_pic_1.png')] md:bg-[url('/images/home/md/bg_top_pic.png')] -z-40">
               {/* top graph */}
-              <div className="top-graph opacity-0 absolute w-full min-w-[400px] aspect-square md:w-[750px] -bottom-[15%] right-0 md:top-[150px] md:right-[150px] bg-contain bg-center bg-no-repeat bg-[url('/images/home/top_graph-2.gif')] md:bg-[url('/images/home/md/top_graph-2.gif')] -z-10" />
+              <div className="top-graph opacity-0 absolute w-full aspect-square md:w-[750px] top-[165vw] right-0 md:top-[150px] md:right-[150px] bg-contain bg-center bg-no-repeat bg-[url('/images/home/top_graph_2.gif')] md:bg-[url('/images/home/md/top_graph-2.gif')] -z-10" />
             </div>
           </div>
           {/*Top left*/}
           <div className="absolute w-[70%] md:w-[358px] h-[670px] bg-contain bg-no-repeat bg-[url('/images/home/top_left_line.svg')] -z-10" />
           {/*Right light*/}
-          <div className="right-light absolute w-[80%] md:w-[1100px] h-[925px] md:h-[1658px] top-[450px] md:top-[260px] right-0 bg-contain bg-center bg-no-repeat bg-[url('/images/home/bg_right_light.svg')] md:bg-[url('/images/home/md/bg_right_light.svg')] opacity-70 -z-10" />
+          <div className="right-light absolute w-[80%] md:w-[1100px] h-[925px] md:h-[1658px] top-[250px] md:top-[260px] right-0 bg-contain bg-center bg-no-repeat bg-[url('/images/home/bg_right_light.svg')] md:bg-[url('/images/home/md/bg_right_light.svg')] opacity-70 -z-10" />
 
           {/* Banner */}
-          <section className="min-h-[120%] md:min-h-[1000px] pt-[90px] md:pt-[254px]">
+          <section className="min-h-[110vh] md:min-h-[1000px] pt-[90px] md:pt-[254px]">
             <div className="container">
               {/* Banner */}
               <div className="flex flex-col lg:flex-row">
@@ -276,7 +276,8 @@ export default function Home({ data }) {
                 </div>
               </div>
             </div>
-
+          </section>
+          <section className="animate mt-[195px] md:mt-20">
             {/* Site Link */}
             <div className="container">
               <Entrance
@@ -377,7 +378,7 @@ export default function Home({ data }) {
             </div>
           </section>
           {/* JOIN WEB3's MOST VIBRANT COMMUNITY */}
-          <section className="animate mt-12 md:mt-[212px] relative overflow-x-hidden">
+          <section className="animate mt-12 md:mt-[212px] relative overflow-hidden">
             <div className="-z-20 absolute w-[100%] h-[566px] md:w-[1000px] md:h-[800px] top-0 right-0 bg-contain bg-no-repeat bg-[url('/images/home/bg_Decoration_2.gif')] md:bg-[url('/images/home/md/bg_Decoration_2.gif')]" />
             <div className="container">
               <div className="flex flex-col mx-auto max-w-[890px]">
@@ -522,15 +523,18 @@ export default function Home({ data }) {
               {home.donation}
             </p>
             <div className="mt-7 md:mt-12 flex flex-col md:flex-row items-center">
-              <button className="border-none text-white text-[14px] font-primary min-w-[157px] md:h-[70px] md:bg-[#1A1C1F]">
+              <button className="relative group border-none text-white text-[14px] font-primary min-w-[157px] md:h-[70px] md:bg-[#1A1C1F]">
                 AVAV Address
                 <Image
                   src="/images/nav/nav_ic_arrow_unfold.svg"
                   alt="dropdown"
                   width={10}
                   height={10}
-                  className="inline-block ml-1"
+                  className="inline-block ml-1 group-hover:rotate-180 transition-all duration-200"
                 />
+                <ul className="absolute top-[calc(100%+2px)] w-full z-[100] bg-[#1A1C1F] rounded-sm opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-all duration-200">
+                  <li className="leading-[20px] py-3">AVAV Address</li>
+                </ul>
               </button>
               <div className="hidden md:block w-[10px] h-[70px] text-[30px] leading-[60px] text-[#292929] bg-[#1A1C1F]">
                 |
